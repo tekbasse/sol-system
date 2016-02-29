@@ -1,0 +1,2482 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Kepler orbit - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ = window.RLQ || []).push(function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Kepler_orbit","wgTitle":"Kepler orbit","wgCurRevisionId":705868717,"wgRevisionId":705868717,"wgArticleId":18352021,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Orbits","Johannes Kepler"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Kepler_orbit","wgRelevantArticleId":18352021,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wikilove-recipient":"","wikilove-anon":0,"wgGatherShouldShowTutorial":true,"wgGatherEnableSample":0,"wgGatherPageImageThumbnail":"//upload.wikimedia.org/wikipedia/commons/thumb/8/89/OrbitalEccentricityDemo.svg/100px-OrbitalEccentricityDemo.svg.png","wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSAcceptLanguageList":["en-us"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCentralAuthMobileDomain":false,"wgWikibaseItemId":"Q2946193","wgVisualEditorToolbarScrollOffset":0}); /* @nomin */mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"}); /* @nomin */ ;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","mw.MediaWikiPlayer.loader","mw.PopUpMediaTransform","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.math.styles%7Cext.tmh.thumbnail.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.raggett%2CsectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.27.0-wmf.14" />
+<meta name="referrer" content="origin-when-cross-origin" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Kepler_orbit" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Kepler_orbit&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Kepler_orbit&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Kepler_orbit" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Kepler_orbit skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Kepler orbit</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:OrbitalEccentricityDemo.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/OrbitalEccentricityDemo.svg/300px-OrbitalEccentricityDemo.svg.png" width="300" height="300" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/OrbitalEccentricityDemo.svg/450px-OrbitalEccentricityDemo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/89/OrbitalEccentricityDemo.svg/600px-OrbitalEccentricityDemo.svg.png 2x" data-file-width="400" data-file-height="400" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:OrbitalEccentricityDemo.svg" class="internal" title="Enlarge"></a></div>
+A diagram of the various forms of the <b>Kepler Orbit</b> and their eccentricities. Blue is a hyperbolic trajectory (<i>e</i> &gt; 1). Green is a parabolic trajectory (<i>e</i> = 1). Red is an elliptical orbit (0 &lt; <i>e</i> &lt; 1). Grey is a circular orbit (<i>e</i> = 0).</div>
+</div>
+</div>
+<p>In <a href="/wiki/Celestial_mechanics" title="Celestial mechanics">celestial mechanics</a>, a <b>Kepler orbit</b> (or <b>Keplerian orbit</b>) describes the motion of an orbiting body as an <a href="/wiki/Ellipse" title="Ellipse">ellipse</a>, <a href="/wiki/Parabola" title="Parabola">parabola</a>, or <a href="/wiki/Hyperbola" title="Hyperbola">hyperbola</a>, which forms a two-dimensional <a href="/wiki/Orbital_plane_(astronomy)" title="Orbital plane (astronomy)">orbital plane</a> in three-dimensional space. (A Kepler orbit can also form a <a href="/wiki/Straight_line" title="Straight line" class="mw-redirect">straight line</a>.) It considers only the point-like gravitational attraction of two bodies, neglecting <a href="/wiki/Perturbation_(astronomy)" title="Perturbation (astronomy)">perturbations</a> due to gravitational interactions with other objects, <a href="/wiki/Drag_(physics)" title="Drag (physics)">atmospheric drag</a>, <a href="/wiki/Solar_radiation_pressure" title="Solar radiation pressure" class="mw-redirect">solar radiation pressure</a>, a non-<a href="/wiki/Spherical" title="Spherical" class="mw-redirect">spherical</a> central body, and so on. It is thus said to be a solution of a special case of the <a href="/wiki/Two-body_problem" title="Two-body problem">two-body problem</a>, known as the <a href="/wiki/Kepler_problem" title="Kepler problem">Kepler problem</a>. As a theory in <a href="/wiki/Classical_mechanics" title="Classical mechanics">classical mechanics</a>, it also does not take into account the effects of <a href="/wiki/General_relativity" title="General relativity">general relativity</a>. Keplerian orbits can be <a href="/wiki/Parametrization" title="Parametrization">parametrized</a> into six <a href="/wiki/Orbital_elements" title="Orbital elements">orbital elements</a> in various ways.</p>
+<p>In most applications, there is a large central body, the center of mass of which is assumed to be the center of mass of the entire system. By decomposition, the orbits of two objects of similar mass can be described as Kepler orbits around their common center of mass, their <a href="/wiki/Barycentric_coordinates_(astronomy)" title="Barycentric coordinates (astronomy)" class="mw-redirect">barycenter</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Johannes_Kepler"><span class="tocnumber">1.1</span> <span class="toctext">Johannes Kepler</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Isaac_Newton"><span class="tocnumber">1.2</span> <span class="toctext">Isaac Newton</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Simplified_two_body_problem"><span class="tocnumber">2</span> <span class="toctext">Simplified two body problem</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Keplerian_elements"><span class="tocnumber">2.1</span> <span class="toctext">Keplerian elements</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Mathematical_solution_of_the_differential_equation_.281.29_above"><span class="tocnumber">3</span> <span class="toctext">Mathematical solution of the differential equation (<b>1</b>) above</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Alternate_derivation"><span class="tocnumber">3.1</span> <span class="toctext">Alternate derivation</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Properties_of_trajectory_equation"><span class="tocnumber">3.2</span> <span class="toctext">Properties of trajectory equation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Some_additional_formulae"><span class="tocnumber">4</span> <span class="toctext">Some additional formulae</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Determination_of_the_Kepler_orbit_that_corresponds_to_a_given_initial_state"><span class="tocnumber">5</span> <span class="toctext">Determination of the Kepler orbit that corresponds to a given initial state</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#The_osculating_Kepler_orbit"><span class="tocnumber">6</span> <span class="toctext">The osculating Kepler orbit</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Citations"><span class="tocnumber">8</span> <span class="toctext">Citations</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Introduction">Introduction</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler_orbit&amp;action=edit&amp;section=1" title="Edit section: Introduction">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>From ancient times until the 16th and 17th centuries, the motions of the planets were believed to follow perfectly circular <a href="/wiki/Geocentricism" title="Geocentricism" class="mw-redirect">geocentric</a> paths as taught by the ancient Greek philosophers <a href="/wiki/Aristotle" title="Aristotle">Aristotle</a> and <a href="/wiki/Ptolemy" title="Ptolemy">Ptolemy</a>. Variations in the motions of the planets were explained by smaller circular paths overlaid on the larger path (see <a href="/wiki/Deferent_and_epicycle" title="Deferent and epicycle">epicycle)</a>. As measurements of the planets became increasingly accurate, revisions to the theory were proposed. In 1543, <a href="/wiki/Nicolaus_Copernicus" title="Nicolaus Copernicus">Nicolaus Copernicus</a> published a <a href="/wiki/Heliocentric" title="Heliocentric" class="mw-redirect">heliocentric</a> model of the solar system, although he still believed that the planets traveled in perfectly circular paths centered on the sun.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+<h3><span class="mw-headline" id="Johannes_Kepler">Johannes Kepler</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler_orbit&amp;action=edit&amp;section=2" title="Edit section: Johannes Kepler">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In 1601, <a href="/wiki/Johannes_Kepler" title="Johannes Kepler">Johannes Kepler</a> acquired the extensive, meticulous observations of the planets made by <a href="/wiki/Tycho_Brahe" title="Tycho Brahe">Tycho Brahe</a>. Kepler would spend the next five years trying to fit the observations of the planet <a href="/wiki/Mars" title="Mars">Mars</a> to various curves. In 1609, Kepler published the first two of his three <a href="/wiki/Kepler%27s_laws_of_planetary_motion" title="Kepler's laws of planetary motion">laws of planetary motion</a>. The first law states:</p>
+<dl>
+<dd>"The <a href="/wiki/Orbit" title="Orbit">orbit</a> of every planet is an <a href="/wiki/Ellipse" title="Ellipse">ellipse</a> with the sun at a <a href="/wiki/Focus_(geometry)" title="Focus (geometry)">focus</a>."</dd>
+</dl>
+<p>More generally, the path of an object undergoing Keplerian motion may also follow a <a href="/wiki/Parabola" title="Parabola">parabola</a> or a <a href="/wiki/Hyperbola" title="Hyperbola">hyperbola</a>, which, along with ellipses, belong to a group of curves known as <a href="/wiki/Conic_sections" title="Conic sections" class="mw-redirect">conic sections</a>. Mathematically, the distance between a central body and an orbiting body can be expressed as:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" r(\nu) = \frac{a(1-e^2)}{1+e\cos(\nu)} " src="//upload.wikimedia.org/math/6/6/8/6680f4210f6f2e5ebff39ebb058d9479.png" /></dd>
+</dl>
+<p>where:</p>
+<ul>
+<li><img class="mwe-math-fallback-image-inline tex" alt="r" src="//upload.wikimedia.org/math/4/b/4/4b43b0aee35624cd95b910189b3dc231.png" /> is the distance</li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="a" src="//upload.wikimedia.org/math/0/c/c/0cc175b9c0f1b6a831c399e269772661.png" /> is the <a href="/wiki/Semi-major_axis" title="Semi-major axis">semi-major axis</a>, which defines the size of the orbit</li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="e" src="//upload.wikimedia.org/math/e/1/6/e1671797c52e15f763380b45e841ec32.png" /> is the <a href="/wiki/Orbital_eccentricity" title="Orbital eccentricity">eccentricity</a>, which defines the shape of the orbit</li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="\nu" src="//upload.wikimedia.org/math/7/3/6/7368318dd3647eb6bbf6afaf6d26c48d.png" /> is the <a href="/wiki/True_anomaly" title="True anomaly">true anomaly</a>, which is the angle between the current position of the orbiting object and the location in the orbit at which it is closest to the central body (called the <a href="/wiki/Periapsis" title="Periapsis" class="mw-redirect">periapsis</a>)</li>
+</ul>
+<p>Alternately, the equation can be expressed as:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" r(\nu) = \frac{p}{1+e\cos(\nu)} " src="//upload.wikimedia.org/math/b/6/5/b65b0717d6cdc79a00058c119080323d.png" /></dd>
+</dl>
+<p>Where <img class="mwe-math-fallback-image-inline tex" alt="p" src="//upload.wikimedia.org/math/8/3/8/83878c91171338902e0fe0fb97a8c47a.png" /> is called the <a href="/wiki/Conic_section#Features" title="Conic section">semi-latus rectum</a> of the curve. This form of the equation is particularly useful when dealing with parabolic trajectories, for which the semi-major axis is infinite.</p>
+<p>Despite developing these laws from observations, Kepler was never able to develop a theory to explain these motions.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<h3><span class="mw-headline" id="Isaac_Newton">Isaac Newton</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler_orbit&amp;action=edit&amp;section=3" title="Edit section: Isaac Newton">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Between 1665 to 1666, <a href="/wiki/Isaac_Newton" title="Isaac Newton">Isaac Newton</a> developed several concepts related to motion, gravitation and differential calculus. However, these concepts were not published until 1687 in the <a href="/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica" title="Philosophiæ Naturalis Principia Mathematica">Principia</a>, in which he outlined his <a href="/wiki/Newton%27s_laws_of_motion" title="Newton's laws of motion">laws of motion</a> and his <a href="/wiki/Newton%27s_law_of_universal_gravitation" title="Newton's law of universal gravitation">law of universal gravitation</a>. His second of his three laws of motion states:</p>
+<blockquote>
+<p>The <a href="/wiki/Acceleration" title="Acceleration">acceleration</a> a of a body is parallel and directly proportional to the net <a href="/wiki/Force" title="Force">force</a> acting on the body, is in the direction of the net force, and is inversely proportional to the <a href="/wiki/Mass" title="Mass">mass</a> of the body:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \mathbf{F} = m\mathbf{a} = m\frac{d^2\mathbf{r}}{dt^2}" src="//upload.wikimedia.org/math/6/b/d/6bd1ae7738326bd6ee3363642937ecf7.png" /></dd>
+</dl>
+<p>Where:</p>
+<ul>
+<li><img class="mwe-math-fallback-image-inline tex" alt="\mathbf{F}" src="//upload.wikimedia.org/math/1/8/3/183083a13a40d344ebc290a84579b0c3.png" /> is the force vector</li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="m" src="//upload.wikimedia.org/math/6/f/8/6f8f57715090da2632453988d9a1501b.png" /> is the mass of the body on which the force is acting</li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="\mathbf{a}" src="//upload.wikimedia.org/math/3/c/4/3c47f830945ee6b24984ab0ba188e10e.png" /> is the acceleration vector, the second time derivative of the position vector <img class="mwe-math-fallback-image-inline tex" alt="\mathbf{r}" src="//upload.wikimedia.org/math/2/8/e/28ebd9df135b0bcfe8263a7a192aa2f7.png" /></li>
+</ul>
+</blockquote>
+<p>Strictly speaking, this form of the equation only applies to an object of constant mass, which holds true based on the simplifying assumptions made below.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:NewtonsLawOfUniversalGravitation.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0e/NewtonsLawOfUniversalGravitation.svg/300px-NewtonsLawOfUniversalGravitation.svg.png" width="300" height="210" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/0e/NewtonsLawOfUniversalGravitation.svg/450px-NewtonsLawOfUniversalGravitation.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/0e/NewtonsLawOfUniversalGravitation.svg/600px-NewtonsLawOfUniversalGravitation.svg.png 2x" data-file-width="400" data-file-height="280" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:NewtonsLawOfUniversalGravitation.svg" class="internal" title="Enlarge"></a></div>
+The mechanisms of Newton's law of universal gravitation; a point mass <i>m</i><sub>1</sub> attracts another point mass <i>m</i><sub>2</sub> by a force <i>F</i><sub>2</sub> which is proportional to the product of the two masses and inversely proportional to the square of the distance (<i>r</i>) between them. Regardless of masses or distance, the magnitudes of |<i>F</i><sub>1</sub>| and |<i>F</i><sub>2</sub>| will always be equal. <i>G</i> is the <a href="/wiki/Gravitational_constant" title="Gravitational constant">gravitational constant</a>.</div>
+</div>
+</div>
+<p>Newton's law of gravitation states:</p>
+<blockquote>
+<p>Every <a href="/wiki/Point_mass" title="Point mass" class="mw-redirect">point mass</a> attracts every other point mass by a <a href="/wiki/Force" title="Force">force</a> pointing along the line intersecting both points. The force is <a href="/wiki/Proportionality_(mathematics)" title="Proportionality (mathematics)">proportional</a> to the product of the two masses and inversely proportional to the square of the distance between the point masses:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="F = G \frac{m_1 m_2}{r^2}" src="//upload.wikimedia.org/math/b/6/5/b65000f8f887a68545ce63eb1cada232.png" /></dd>
+</dl>
+<p>where:</p>
+<ul>
+<li><img class="mwe-math-fallback-image-inline tex" alt="F" src="//upload.wikimedia.org/math/8/0/0/800618943025315f869e4e1f09471012.png" /> is the magnitude of the gravitational force between the two point masses</li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="G" src="//upload.wikimedia.org/math/d/f/c/dfcf28d0734569a6a693bc8194de62bf.png" /> is the <a href="/wiki/Gravitational_constant" title="Gravitational constant">gravitational constant</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="m_1" src="//upload.wikimedia.org/math/b/7/6/b76530f37a5cbc3d17ebe8df6fed402f.png" /> is the mass of the first point mass</li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="m_2" src="//upload.wikimedia.org/math/b/d/d/bdd1c7307b88ad20fe151890256e325a.png" /> is the mass of the second point mass</li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="r" src="//upload.wikimedia.org/math/4/b/4/4b43b0aee35624cd95b910189b3dc231.png" /> is the distance between the two point masses</li>
+</ul>
+</blockquote>
+<p>From the laws of motion and the law of universal gravitation, Newton was able to derive Kepler's laws, demonstrating consistency between observation and theory. The laws of Kepler and Newton formed the basis of modern <a href="/wiki/Celestial_mechanics" title="Celestial mechanics">celestial mechanics</a> until <a href="/wiki/Albert_Einstein" title="Albert Einstein">Albert Einstein</a> introduced the concepts of <a href="/wiki/Special_relativity" title="Special relativity">special</a> and <a href="/wiki/General_relativity" title="General relativity">general</a> relativity in the early 20th century. For most applications, Keplerian motion approximates the motions of planets and satellites to relatively high degrees of accuracy and is used extensively in <a href="/wiki/Astronomy" title="Astronomy">astronomy</a> and <a href="/wiki/Astrodynamics" title="Astrodynamics" class="mw-redirect">astrodynamics</a>.</p>
+<h2><span class="mw-headline" id="Simplified_two_body_problem">Simplified two body problem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler_orbit&amp;action=edit&amp;section=4" title="Edit section: Simplified two body problem">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>(See also <a href="/wiki/Orbit#Newtonian_Analysis_of_orbital_motion" title="Orbit">Orbit Analysis</a>)</p>
+<p>To solve for the motion of an object in a <a href="/wiki/Two-body_problem" title="Two-body problem">two body system</a>, two simplifying assumptions can be made:</p>
+<dl>
+<dd>1. The bodies are spherically symmetric and can be treated as point masses.</dd>
+<dd>2. There are no external or internal forces acting upon the bodies other than their mutual gravitation.</dd>
+</dl>
+<p>The shapes of large celestial bodies are close to spheres. By symmetry, the net gravitational force attracting a mass point towards a homogeneous sphere must be directed towards its centre. The <a href="/wiki/Shell_theorem" title="Shell theorem">shell theorem</a> (also proven by Isaac Newton) states that the magnitude of this force is the same as if all mass was concentrated in the middle of the sphere, even if the density of the sphere varies with depth (as it does for most celestial bodies). From this immediately follows that the attraction between two homogeneous spheres is as if both had its mass concentrated to its center.</p>
+<p>Smaller objects, like <a href="/wiki/Asteroid" title="Asteroid">asteroids</a> or <a href="/wiki/Spacecraft" title="Spacecraft">spacecraft</a> often have a shape strongly deviating from a sphere. But the gravitational forces produced by these irregularities are generally small compared to the gravity of the central body. The difference between an irregular shape and a perfect sphere also diminishes with distances, and most orbital distances are very large when compared with the diameter of a small orbiting body. Thus for some applications, shape irregularity can be neglected without significant impact on accuracy.</p>
+<p>Planets rotate at varying rates and thus may take a slightly oblate shape because of the centrifugal force. With such an oblate shape, the gravitational attraction will deviate somewhat from that of a homogeneous sphere. This phenomenon is quite noticeable for artificial Earth satellites, especially those in low orbits. At larger distances the effect of this oblateness becomes negligible. Planetary motions in the Solar System can be computed with sufficient precision if they are treated as point masses.</p>
+<p>Two point mass objects with masses <img class="mwe-math-fallback-image-inline tex" alt="m_1" src="//upload.wikimedia.org/math/b/7/6/b76530f37a5cbc3d17ebe8df6fed402f.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="m_2" src="//upload.wikimedia.org/math/b/d/d/bdd1c7307b88ad20fe151890256e325a.png" /> and position vectors <img class="mwe-math-fallback-image-inline tex" alt="\mathbf{r}_1" src="//upload.wikimedia.org/math/3/3/b/33b9c9ad6367e8e9165515345bafdf1e.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="\mathbf{r}_2" src="//upload.wikimedia.org/math/1/6/b/16bd3c1b1227e58adb433f79c8a8c87a.png" /> relative to some <a href="/wiki/Inertial_frame_of_reference" title="Inertial frame of reference">inertial reference frame</a> experience gravitational forces:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" m_1 \ddot{\mathbf{r}}_1 = \frac{-G m_1 m_2}{r^2} \mathbf{\hat{r}}" src="//upload.wikimedia.org/math/a/2/b/a2bbc54549e7513ddfbde97eafdf9563.png" /></dd>
+</dl>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" m_2 \ddot{\mathbf{r}}_2 = \frac{G m_1 m_2}{r^2} \mathbf{\hat{r}}" src="//upload.wikimedia.org/math/b/9/8/b981e7f125eac8f606e164c17b342a41.png" /></dd>
+</dl>
+<p>where <img class="mwe-math-fallback-image-inline tex" alt="\mathbf{r}" src="//upload.wikimedia.org/math/2/8/e/28ebd9df135b0bcfe8263a7a192aa2f7.png" /> is the relative position vector of mass 1 with respect to mass 2, expressed as:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \mathbf{r} = \mathbf{r}_1 - \mathbf{r}_2 " src="//upload.wikimedia.org/math/7/3/3/733cacbc26106c9eff73fec028a0149c.png" /></dd>
+</dl>
+<p>and <img class="mwe-math-fallback-image-inline tex" alt="\mathbf{\hat{r}}" src="//upload.wikimedia.org/math/b/c/9/bc9a431c46a5c00d1371e3e33c08e51b.png" /> is the <a href="/wiki/Unit_vector" title="Unit vector">unit vector</a> in that direction and <img class="mwe-math-fallback-image-inline tex" alt="r" src="//upload.wikimedia.org/math/4/b/4/4b43b0aee35624cd95b910189b3dc231.png" /> is the <a href="/wiki/Euclidean_vector#Length" title="Euclidean vector">length</a> of that vector.</p>
+<p>Dividing by their respective masses and subtracting the second equation from the first yields the equation of motion for the acceleration of the first object with respect to the second:</p>
+<dl>
+<dd>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt=" \ddot{\mathbf{r}} = - \frac{\mu}{r^2} \mathbf{\hat{r}}" src="//upload.wikimedia.org/math/0/1/5/01560c457f60b1841916970f04ed8dac.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_1" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">1</span>)</b></p>
+</td>
+</tr>
+</table>
+</dd>
+</dl>
+<p>where <img class="mwe-math-fallback-image-inline tex" alt="\mu" src="//upload.wikimedia.org/math/b/7/2/b72bb92668acc30b4474caff40274044.png" /> is the gravitational parameter and is equal to</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \mu = G(m_1 + m_2)" src="//upload.wikimedia.org/math/d/f/c/dfcd39acfd0b1e4c2362ca0c775cf42b.png" /></dd>
+</dl>
+<p>In many applications, a third simplifying assumption can be made:</p>
+<dl>
+<dd>3. When compared to the central body, the mass of the orbiting body is insignificant. Mathematically, <i>m</i><sub>1</sub> &gt;&gt; <i>m</i><sub>2</sub>, so <i>μ</i> = <i>G</i> (<i>m</i><sub>1</sub>&#160;+&#160;<i>m</i><sub>2</sub>) ≈ <i>Gm</i><sub>1</sub>.</dd>
+</dl>
+<p>This assumption is not necessary to solve the simplified two body problem, but it simplifies calculations, particularly with Earth-orbiting satellites and planets orbiting the sun. Even <a href="/wiki/Jupiter" title="Jupiter">Jupiter</a>'s mass is less than the sun's by a factor of 1047,<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup> which would constitute an error of 0.096% in the value of μ. Notable exceptions include the Earth-moon system (mass ratio of 81.3), the Pluto-Charon system (mass ratio of 8.9) and binary star systems.</p>
+<p>Under these assumptions the differential equation for the two body case can be completely solved mathematically and the resulting orbit which follows Kepler's laws of planetary motion is called a "Kepler orbit". The orbits of all planets are to high accuracy Kepler orbits around the Sun. The small deviations are due to the much weaker gravitational attractions between the planets, and in the case of <a href="/wiki/Mercury_(planet)" title="Mercury (planet)">Mercury</a>, due to <a href="/wiki/General_relativity" title="General relativity">general relativity</a>. The orbits of the artificial satellites around the Earth are, with a fair approximation, Kepler orbits with small perturbations due to the gravitational attraction of the sun, the moon and the oblateness of the Earth. In high accuracy applications for which the equation of motion must be integrated numerically with all gravitational and non-gravitational forces (such as <a href="/wiki/Solar_radiation_pressure" title="Solar radiation pressure" class="mw-redirect">solar radiation pressure</a> and <a href="/wiki/Drag_(physics)" title="Drag (physics)">atmospheric drag</a>) being taken into account, the Kepler orbit concepts are of paramount importance and heavily used.</p>
+<h3><span class="mw-headline" id="Keplerian_elements">Keplerian elements</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler_orbit&amp;action=edit&amp;section=5" title="Edit section: Keplerian elements">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:Orbit1.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Orbit1.svg/300px-Orbit1.svg.png" width="300" height="270" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Orbit1.svg/450px-Orbit1.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Orbit1.svg/600px-Orbit1.svg.png 2x" data-file-width="555" data-file-height="500" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Orbit1.svg" class="internal" title="Enlarge"></a></div>
+Keplerian <a href="/wiki/Orbital_elements" title="Orbital elements">orbital elements</a>.</div>
+</div>
+</div>
+<div role="note" class="hatnote relarticle mainarticle">Main article: <a href="/wiki/Keplerian_elements" title="Keplerian elements" class="mw-redirect">Keplerian elements</a></div>
+<p>It is worth mentioning that any Keplerian trajectory can be defined by six parameters. The motion of an object moving in three-dimensional space is characterized by a position vector and a velocity vector. Each vector has three components, so the total number of values needed to define a trajectory through space is six. An orbit is generally defined by six elements (known as <i>Keplerian elements</i>) that can be computed from position and velocity, three of which have already been discussed. These elements are convenient in that of the six, five are unchanging for an unperturbed orbit (a stark contrast to two constantly changing vectors). The future location of an object within its orbit can be predicted and its new position and velocity can be easily obtained from the orbital elements.</p>
+<p>Two define the size and shape of the trajectory:</p>
+<ul>
+<li><a href="/wiki/Semimajor_axis" title="Semimajor axis" class="mw-redirect">Semimajor axis</a> (<img class="mwe-math-fallback-image-inline tex" alt="a\,\!" src="//upload.wikimedia.org/math/1/2/d/12de7673992b1735e29cdd211851fa05.png" />)</li>
+<li><a href="/wiki/Eccentricity_(orbit)" title="Eccentricity (orbit)" class="mw-redirect">Eccentricity</a> (<img class="mwe-math-fallback-image-inline tex" alt="e\,\!" src="//upload.wikimedia.org/math/4/6/0/460a1940ceddf45878d2e095af31128a.png" />)</li>
+</ul>
+<p>Three define the orientation of the <a href="/wiki/Orbital_plane_(astronomy)" title="Orbital plane (astronomy)">orbital plane</a>:</p>
+<ul>
+<li><a href="/wiki/Inclination" title="Inclination" class="mw-redirect">Inclination</a> (<img class="mwe-math-fallback-image-inline tex" alt="i\,\!" src="//upload.wikimedia.org/math/a/7/9/a796b40d92e81ae190a1e4f4e2a2c3ed.png" />) defines the angle between the orbital plane and the reference plane.</li>
+<li><a href="/wiki/Longitude_of_the_ascending_node" title="Longitude of the ascending node">Longitude of the ascending node</a> (<img class="mwe-math-fallback-image-inline tex" alt="\Omega\,\!" src="//upload.wikimedia.org/math/4/2/e/42e294677ad426aff0fcadd03f77e54a.png" />) defines the angle between the reference direction and the upward crossing of the orbit on the reference plane (the ascending node).</li>
+<li><a href="/wiki/Argument_of_periapsis" title="Argument of periapsis">Argument of periapsis</a> (<img class="mwe-math-fallback-image-inline tex" alt="\omega\,\!" src="//upload.wikimedia.org/math/1/4/1/141205d798217ffe19177ba53c00c409.png" />) defines the angle between the ascending node and the periapsis.</li>
+</ul>
+<p>And finally:</p>
+<ul>
+<li><a href="/wiki/True_anomaly" title="True anomaly">True anomaly</a> (<img class="mwe-math-fallback-image-inline tex" alt="\nu" src="//upload.wikimedia.org/math/7/3/6/7368318dd3647eb6bbf6afaf6d26c48d.png" />) defines the position of the orbiting body along the trajectory, measured from periapsis. Several alternate values can be used instead of true anomaly, the most common being <img class="mwe-math-fallback-image-inline tex" alt="M" src="//upload.wikimedia.org/math/6/9/6/69691c7bdcc3ce6d5d8a1361f22d04ac.png" /> the <a href="/wiki/Mean_anomaly" title="Mean anomaly">mean anomaly</a> and <img class="mwe-math-fallback-image-inline tex" alt="T" src="//upload.wikimedia.org/math/b/9/e/b9ece18c950afbfa6b0fdbfa4ff731d3.png" />, the time since periapsis.</li>
+</ul>
+<p>Because <img class="mwe-math-fallback-image-inline tex" alt="i" src="//upload.wikimedia.org/math/8/6/5/865c0c0b4ab0e063e5caa3387c1a8741.png" />, <img class="mwe-math-fallback-image-inline tex" alt="\Omega" src="//upload.wikimedia.org/math/b/9/d/b9d99db8626de63193c7fe96273a6cae.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="\omega" src="//upload.wikimedia.org/math/4/d/1/4d1b7b74aba3cfabd624e898d86b4602.png" /> are simply angular measurements defining the orientation of the trajectory in the reference frame, they are not strictly necessary when discussing the motion of the object within the orbital plane. They have been mentioned here for completeness, but are not required for the proofs below.</p>
+<h2><span class="mw-headline" id="Mathematical_solution_of_the_differential_equation_.281.29_above">Mathematical solution of the differential equation (<b><a href="#math_1">1</a></b>) above</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler_orbit&amp;action=edit&amp;section=6" title="Edit section: Mathematical solution of the differential equation (1) above">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>For movement under any central force, i.e. a force parallel to <b>r</b>, the <a href="/wiki/Specific_relative_angular_momentum" title="Specific relative angular momentum">specific relative angular momentum</a> <img class="mwe-math-fallback-image-inline tex" alt=" \bold{H} = \bold{r} \times {\dot{\bold{r}}} " src="//upload.wikimedia.org/math/0/c/8/0c8d94e4ac41282305dc545035555eb0.png" /> stays constant:<br />
+<img class="mwe-math-fallback-image-inline tex" alt=" \dot {\bold{H}} = \frac{d}{dt}\left(\bold{r} \times {\dot{\bold{r}}}\right) = \dot{\bold{r}} \times {\dot{\bold{r}}} + \bold{r} \times {\ddot{\bold{r}}} =\bold{0} + \bold{0} = \bold{0}" src="//upload.wikimedia.org/math/5/c/3/5c37946cbdb79bc77081bd3bfcb39f5f.png" /><br /></p>
+<p>Since the cross product of the position vector and its velocity stays constant, they must lie in the same plane, orthogonal to <img class="mwe-math-fallback-image-inline tex" alt=" \bold{H} " src="//upload.wikimedia.org/math/d/a/3/da3623c683c463e210845c6d757af4dd.png" />. This implies the vector function is a <a href="/wiki/Plane_curve" title="Plane curve">plane curve</a>.<br />
+Because the equation has symmetry around its origin, it is easier to solve in polar coordinates. However, it is important to note that equation (<b><a href="#math_1">1</a></b>) refers to linear acceleration <img class="mwe-math-fallback-image-inline tex" alt=" \left (\ddot{\bold{r}} \right )" src="//upload.wikimedia.org/math/b/a/3/ba3999df5532360c663bf85a2f57eeb3.png" />, as opposed to angular <img class="mwe-math-fallback-image-inline tex" alt=" \left (\ddot{\theta} \right )" src="//upload.wikimedia.org/math/b/8/5/b8540ad5b5327122535de817743a953d.png" /> or radial <img class="mwe-math-fallback-image-inline tex" alt=" \left (\ddot{r} \right )" src="//upload.wikimedia.org/math/1/1/9/1198cc14a82e47b1ae7dbcbbf2909a8e.png" /> acceleration. Therefore, one must be cautious when transforming the equation. Introducing a cartesian coordinate system <img class="mwe-math-fallback-image-inline tex" alt="(\hat{\bold{x}} \ , \ \hat{\bold{y}})" src="//upload.wikimedia.org/math/0/f/d/0fd38f64525d961bc623abfaa62e7ab1.png" /> and <a href="/wiki/Unit_vector#Cylindrical_coordinates" title="Unit vector">polar unit vectors</a> <img class="mwe-math-fallback-image-inline tex" alt="(\hat{\bold{r}} \ , \ \hat{\boldsymbol\theta})" src="//upload.wikimedia.org/math/a/b/3/ab3a0b808c2a85f6bdd66a1aab8ec658.png" /> in the plane orthogonal to <img class="mwe-math-fallback-image-inline tex" alt=" \bold{H} " src="//upload.wikimedia.org/math/d/a/3/da3623c683c463e210845c6d757af4dd.png" />:<br /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt=" \hat{\bold{r}}=\cos(\theta)\hat{\bold{x}} + \sin(\theta)\hat{\bold{y}} " src="//upload.wikimedia.org/math/6/0/a/60a2b70a54f20d43ab01c83ae2f65130.png" /><br />
+<img class="mwe-math-fallback-image-inline tex" alt=" \hat{\boldsymbol\theta}=-\sin(\theta)\hat{\bold{x}} + \cos(\theta)\hat{\bold{y}} " src="//upload.wikimedia.org/math/1/c/a/1ca69d9d3677593901e99d5d846428d0.png" /><br /></p>
+<p>We can now rewrite the vector function <img class="mwe-math-fallback-image-inline tex" alt="\bold{r}" src="//upload.wikimedia.org/math/2/8/e/28ebd9df135b0bcfe8263a7a192aa2f7.png" /> and its derivatives as:<br /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt=" \bold{r} =r ( \cos\theta \hat{\bold{x}} + \sin \theta \hat{\bold{y}}) = r\hat{\mathbf{r}} " src="//upload.wikimedia.org/math/2/a/c/2ac69c2fe11c26b1c8de15cae0079a3f.png" /><br /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt=" \dot{\bold{r}} = \dot r \hat {\mathbf r} + r \dot \theta \hat {\boldsymbol{\theta}} " src="//upload.wikimedia.org/math/5/c/e/5ceb0a37773d3e193e39ad729f6d44d7.png" /><br /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt=" \ddot{\bold{r}} =  (\ddot r - r\dot\theta^2)\hat{\mathbf{r}} + (r \ddot\theta + 2 \dot r \dot\theta) \hat{\boldsymbol\theta} " src="//upload.wikimedia.org/math/f/b/1/fb1a9cefe0f33fcaefc3429a12ec115a.png" /><br /></p>
+<p>(see "<a href="/wiki/Polar_coordinates#Vector_calculus" title="Polar coordinates" class="mw-redirect">Vector calculus</a>"). Substituting these into (<b><a href="#math_1">1</a></b>), we find:<br /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt=" (\ddot r - r\dot\theta^2)\hat{\mathbf{r}} + (r \ddot\theta + 2 \dot r \dot\theta) \hat{\boldsymbol\theta} = \left (-\frac{\mu}{r^2}\right )\hat{\mathbf{r}} + (0)\hat{\boldsymbol\theta}" src="//upload.wikimedia.org/math/f/3/e/f3ecac534fce69dcf31bca7f4489563b.png" /><br /></p>
+<p>This gives the non-ordinary polar differential equation:</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\ddot{r} - r {\dot{\theta}}^2 = - \frac {\mu} {r^2}" src="//upload.wikimedia.org/math/a/3/8/a3870e30bba69ca72e7b7193caa2d74f.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_2" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">2</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>In order to solve this equation, we must first eliminate all time derivatives. We find that:</p>
+<p><img class="mwe-math-fallback-image-inline tex" alt=" H = |\bold{r}  \times  {\dot{\bold{r}}}| = |(r\cos(\theta), r\sin(\theta), 0) \times (\dot{r}\cos(\theta)-r\sin(\theta)\dot{\theta}, \dot{r}\sin(\theta)+r\cos(\theta)\dot{\theta}, 0)| = |(0,0,r^2\dot\theta)| = r^2\dot\theta" src="//upload.wikimedia.org/math/1/e/6/1e6741b788272615049a492e08efe733.png" /></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt=" \dot\theta = \frac{H}{r^2} " src="//upload.wikimedia.org/math/2/6/d/26dc9d0a1521666bda9eebb9df66c466.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_3" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">3</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>Taking the time derivative of (<b><a href="#math_3">3</a></b>), we get</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\ddot{\theta}  = - \frac {2 \cdot H \cdot \dot{r}} {r^3}" src="//upload.wikimedia.org/math/d/c/9/dc9aee2fdd95bd9018cfee30bb77c642.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_4" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">4</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>Equations (<b><a href="#math_3">3</a></b>) and (<b><a href="#math_4">4</a></b>) allow us to eliminate the time derivatives of <img class="mwe-math-fallback-image-inline tex" alt="\theta" src="//upload.wikimedia.org/math/5/0/d/50d91f80cbb8feda1d10e167107ad1ff.png" />. In order to eliminate the time derivatives of <img class="mwe-math-fallback-image-inline tex" alt="r" src="//upload.wikimedia.org/math/4/b/4/4b43b0aee35624cd95b910189b3dc231.png" />, we must use the chain rule to find appropriate substitutions:</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\dot{r}  =  \frac {dr} {d\theta} \cdot \dot {\theta}" src="//upload.wikimedia.org/math/4/3/8/4389e0975dd04b9a3211a13f405dcb80.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_5" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">5</span>)</b></p>
+</td>
+</tr>
+</table>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\ddot{r}  =  \frac {d^2r} {d\theta^2} \cdot {\dot {\theta}}^2 + \frac {dr} {d\theta} \cdot \ddot {\theta}" src="//upload.wikimedia.org/math/3/3/6/336b1c7f31c0cabab583ddc1c3456e40.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_6" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">6</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>Using these four substitutions, all time derivatives in (<b><a href="#math_2">2</a></b>) can be eliminated, yielding an <a href="/wiki/Ordinary_differential_equation" title="Ordinary differential equation">ordinary differential equation</a> for <img class="mwe-math-fallback-image-inline tex" alt="r" src="//upload.wikimedia.org/math/4/b/4/4b43b0aee35624cd95b910189b3dc231.png" /> as function of <img class="mwe-math-fallback-image-inline tex" alt="\theta\," src="//upload.wikimedia.org/math/1/f/0/1f09c25c5247c1eaf121df644ca42f8c.png" />.<br /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="\ddot{r} - r {\dot{\theta}}^2 = - \frac {\mu} {r^2}" src="//upload.wikimedia.org/math/a/3/8/a3870e30bba69ca72e7b7193caa2d74f.png" /><br /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="\frac {d^2r} {d\theta^2} \cdot {\dot {\theta}}^2 + \frac {dr} {d\theta} \cdot \ddot {\theta} - r {\dot{\theta}}^2 = - \frac {\mu} {r^2}" src="//upload.wikimedia.org/math/4/0/0/400a7f35a2f37e4e577e4cc473ce1ce3.png" /><br /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="\frac {d^2r} {d\theta^2} \cdot \left (\frac{H}{r^2} \right )^2 + \frac {dr} {d\theta} \cdot \left (- \frac {2 \cdot H \cdot \dot{r}} {r^3} \right ) - r\left (\frac{H}{r^2} \right )^2 = - \frac {\mu} {r^2}" src="//upload.wikimedia.org/math/9/5/0/950456a32fce4c2406e034e9f4b7ed2a.png" /></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\frac {H^2} {r^4} \cdot \left ( \frac{d^2 r} {d\theta ^2} - 2 \cdot \frac{\left (\frac {dr} {d\theta} \right ) ^2}
+{r} - r\right )= - \frac {\mu} {r^2}" src="//upload.wikimedia.org/math/4/2/8/42861955e095a99ac5529c2e054bf3b4.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_7" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">7</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>The differential equation (<b><a href="#math_7">7</a></b>) can be solved analytically by the variable substitution</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="r=\frac{1} {s}" src="//upload.wikimedia.org/math/4/8/9/489e2791f54819cc1be3a10d75b00772.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_8" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">8</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>Using the chain rule for differentiation one gets:</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\frac {dr} {d\theta} = -\frac {1} {s^2} \cdot \frac {ds} {d\theta}" src="//upload.wikimedia.org/math/f/c/4/fc4132ea47284d0258de936b7ac32756.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_9" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">9</span>)</b></p>
+</td>
+</tr>
+</table>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\frac {d^2r} {d\theta^2} = \frac {2} {s^3} \cdot \left (\frac {ds} {d\theta}\right )^2 -
+\frac {1} {s^2} \cdot \frac {d^2s} {d\theta^2}" src="//upload.wikimedia.org/math/1/6/2/16210e675507e336fa0ea9a0b21483ac.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_10" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">10</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>Using the expressions (<b><a href="#math_10">10</a></b>) and (<b><a href="#math_9">9</a></b>) for <img class="mwe-math-fallback-image-inline tex" alt="\frac {d^2r} {d\theta^2}" src="//upload.wikimedia.org/math/f/c/0/fc0192308e83121cb4d82406dff088c6.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="\frac {dr} {d\theta}" src="//upload.wikimedia.org/math/c/c/d/ccd19d04ab6244271739824592d7b4e9.png" /> one gets</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="H^2 \cdot  \left ( \frac {d^2s} {d\theta^2} + s \right ) = \mu" src="//upload.wikimedia.org/math/e/2/d/e2dd9630d283139b7ccec3e7bec9a37a.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_11" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">11</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>with the general solution</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="s = \frac {\mu} {H^2} \cdot \left ( 1 + e \cdot \cos (\theta-\theta_0)\right )" src="//upload.wikimedia.org/math/b/d/f/bdf0047599bebda97988354c0ef1c51b.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_12" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">12</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>where <i>e</i> and <img class="mwe-math-fallback-image-inline tex" alt="\theta_0\," src="//upload.wikimedia.org/math/4/a/5/4a5ea305c54072b4768bfff4f292de12.png" /> are constants of integration depending on the initial values for <i>s</i> and <img class="mwe-math-fallback-image-inline tex" alt="\frac {ds} {d\theta}" src="//upload.wikimedia.org/math/6/8/7/68792b8eaba526254bd8cc819dac8178.png" />.</p>
+<p>Instead of using the constant of integration <img class="mwe-math-fallback-image-inline tex" alt="\theta_0\," src="//upload.wikimedia.org/math/4/a/5/4a5ea305c54072b4768bfff4f292de12.png" /> explicitly one introduces the convention that the unit vectors <img class="mwe-math-fallback-image-inline tex" alt=" \hat{x} \ , \ \hat{y}" src="//upload.wikimedia.org/math/2/5/7/257c936c0064850c14bf692bf8de8888.png" /> defining the coordinate system in the orbital plane are selected such that <img class="mwe-math-fallback-image-inline tex" alt=" \theta_0\," src="//upload.wikimedia.org/math/4/a/5/4a5ea305c54072b4768bfff4f292de12.png" /> takes the value zero and <i>e</i> is positive. This then means that <img class="mwe-math-fallback-image-inline tex" alt="\theta\," src="//upload.wikimedia.org/math/1/f/0/1f09c25c5247c1eaf121df644ca42f8c.png" /> is zero at the point where <img class="mwe-math-fallback-image-inline tex" alt=" s" src="//upload.wikimedia.org/math/0/3/c/03c7c0ace395d80182db07ae2c30f034.png" /> is maximal and therefore <img class="mwe-math-fallback-image-inline tex" alt=" r= \frac {1}{s}" src="//upload.wikimedia.org/math/4/8/9/489e2791f54819cc1be3a10d75b00772.png" /> is minimal. Defining the parameter p as <img class="mwe-math-fallback-image-inline tex" alt=" \frac {H^2}{\mu}" src="//upload.wikimedia.org/math/7/9/0/790f1f11f4ca79ad885f502e6eae3fc6.png" /> one has that<br />
+<img class="mwe-math-fallback-image-inline tex" alt="r = \frac {1}{s} = \frac {p}{1 + e \cdot \cos \theta}" src="//upload.wikimedia.org/math/6/9/f/69f3c46db5093d03b3d72ba333d624af.png" /></p>
+<h3><span class="mw-headline" id="Alternate_derivation">Alternate derivation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler_orbit&amp;action=edit&amp;section=7" title="Edit section: Alternate derivation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Another way to solve this equation without the use of polar differential equations is as follows:<br />
+Define a unit vector <img class="mwe-math-fallback-image-inline tex" alt="\bold{u}" src="//upload.wikimedia.org/math/2/5/c/25cdaba0e466192c4086c413c442def1.png" /> such that <img class="mwe-math-fallback-image-inline tex" alt="\bold{r} = r\bold{u}" src="//upload.wikimedia.org/math/4/f/7/4f778cbb38820ef708924b44a58baf3b.png" /> and <img class="mwe-math-fallback-image-inline tex" alt=" \ddot{\bold{r}} = -\frac{\mu}{r^2}\bold{u}" src="//upload.wikimedia.org/math/b/d/c/bdcac927c74e29d2899055ec676cae97.png" />. It follows that<br /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="\bold{H} = \bold{r} \times \dot{\bold{r}} = r\bold{u} \times \frac{d}{dt}(r\bold{u}) = r\bold{u} \times (r\dot{\bold{u}}+\dot{r}\bold{u}) = r^2(\bold{u} \times \dot{\bold{u}}) + r\dot{r}(\bold{u} \times \bold{u}) = r^2\bold{u} \times \dot{\bold{u}}" src="//upload.wikimedia.org/math/b/8/0/b804940be847963212dbf3be09a96d6c.png" /><br /></p>
+<p>Now consider<br /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="\ddot{\bold{r}} \times \bold{H} = -\frac{\mu}{r^2}\bold{u} \times (r^2\bold{u} \times \dot{\bold{u}}) = -\mu\bold{u} \times (\bold{u} \times \dot{\bold{u}}) = -\mu[(\bold{u}\cdot\dot{\bold{u}})\bold{u}-(\bold{u}\cdot\bold{u})\dot{\bold{u}}]" src="//upload.wikimedia.org/math/8/a/b/8abc12ea4950c79fbb994eff4e37c682.png" /><br /></p>
+<p>(see <a href="/wiki/Triple_product#Vector_triple_product" title="Triple product">Vector triple product</a>). Notice that<br /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="\bold{u}\cdot\bold{u} = |\bold{u}|^2 = 1" src="//upload.wikimedia.org/math/b/8/2/b82fd921c80f0cb738b8f138d21bb6c3.png" /><br /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="\bold{u}\cdot\dot{\bold{u}} = \frac{1}{2}(\bold{u}\cdot\dot{\bold{u}} + \dot{\bold{u}}\cdot\bold{u}) = \frac{1}{2}\frac{d}{dt}(\bold{u}\cdot\bold{u}) = 0 " src="//upload.wikimedia.org/math/b/3/0/b30fd503423f0ba97f040aeae743d8b9.png" /><br /></p>
+<p>Substituting these values into the previous equation, one gets:<br /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="\ddot{\bold{r}}\times\bold{H}=\mu\dot{\bold{u}}" src="//upload.wikimedia.org/math/f/7/2/f725cd04156bcd82b72d9f25654dbf9c.png" /><br /></p>
+<p>Integrating both sides:<br /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="\dot{\bold{r}}\times\bold{H}=\mu\bold{u} + \bold{c}" src="//upload.wikimedia.org/math/e/f/4/ef49f4064ee82d90bffc797338b2013e.png" /><br /></p>
+<p>Where <b>c</b> is a constant vector. Dotting this with <b>r</b> yields an interesting result:<br /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt=" \bold{r}\cdot(\dot{\bold{r}}\times\bold{H})=\bold{r}\cdot(\mu\bold{u} + \bold{c}) = \mu\bold{r}\cdot\bold{u} + \bold{r}\cdot\bold{c} = \mu r(\bold{u}\cdot\bold{u})+rc\cos(\theta)=r(\mu + c\cos(\theta))" src="//upload.wikimedia.org/math/a/e/e/aee55d947104d2ca589798f685923f92.png" /><br /></p>
+<p>Where <img class="mwe-math-fallback-image-inline tex" alt="\theta" src="//upload.wikimedia.org/math/5/0/d/50d91f80cbb8feda1d10e167107ad1ff.png" /> is the angle between <img class="mwe-math-fallback-image-inline tex" alt="\bar{r}" src="//upload.wikimedia.org/math/0/d/c/0dc74bb3fd02599f40f2e62c0dd5f205.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="\bar{c}" src="//upload.wikimedia.org/math/a/a/4/aa4b2218d6f2ac59e29ffd0da3ce8e19.png" />. Solving for r:<br /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt=" r = \frac{\bold{r}\cdot(\dot{\bold{r}}\times\bold{H})}{\mu + c\cos(\theta)} = \frac{(\bold{r}\times\dot{\bold{r}})\cdot\bold{H}}{\mu + c\cos(\theta)} = \frac{|\bold{H}|^2}{\mu + c\cos(\theta)}" src="//upload.wikimedia.org/math/2/6/5/265f96e2847fb1c94246944ed7e179d3.png" /><br /></p>
+<p>Notice that <img class="mwe-math-fallback-image-inline tex" alt="(r,\theta)" src="//upload.wikimedia.org/math/d/a/0/da02cc7c3fe6bc9ce7861f8e52869baa.png" /> are effectively the polar coordinates of the vector function. Making the substitutions <img class="mwe-math-fallback-image-inline tex" alt="p=\frac{|\bold{H}|^2}{\mu}" src="//upload.wikimedia.org/math/d/a/6/da6cceead2e2dbba8ca36ffe4350a0d0.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="e=\frac{c}{\mu}" src="//upload.wikimedia.org/math/8/f/4/8f40f5feb4107c06498c9375c906fb49.png" />, we again arrive at the equation</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="r = \frac {p}{1 + e \cdot \cos \theta}" src="//upload.wikimedia.org/math/b/1/1/b115356a043a8d816886221bdd807dfb.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_13" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">13</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>This is the equation in polar coordinates for a <a href="/wiki/Conic_section" title="Conic section">conic section</a> with origin in a focal point. The argument <img class="mwe-math-fallback-image-inline tex" alt="\theta\," src="//upload.wikimedia.org/math/1/f/0/1f09c25c5247c1eaf121df644ca42f8c.png" /> is called "true anomaly".<br /></p>
+<h3><span class="mw-headline" id="Properties_of_trajectory_equation">Properties of trajectory equation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler_orbit&amp;action=edit&amp;section=8" title="Edit section: Properties of trajectory equation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>For <img class="mwe-math-fallback-image-inline tex" alt="e\ =\ 0\," src="//upload.wikimedia.org/math/1/0/6/106b70ebd6d052d831002beef1f7bd15.png" /> this is a circle with radius <i>p</i>.</p>
+<p>For <img class="mwe-math-fallback-image-inline tex" alt="0\ &lt; e\ &lt;\ 1\," src="//upload.wikimedia.org/math/2/5/8/258a6b99aca2357b64c25cc7221af03b.png" /> this is an <a href="/wiki/Ellipse" title="Ellipse">ellipse</a> with</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="a = \frac {p}{1-e^2}" src="//upload.wikimedia.org/math/e/a/6/ea665210f5d5de49de0826a7698e6613.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_14" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">14</span>)</b></p>
+</td>
+</tr>
+</table>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="b = \frac {p}{\sqrt{1-e^2}} = a \cdot \sqrt{1-e^2}" src="//upload.wikimedia.org/math/0/4/5/045959139682444155702e4113eb7568.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_15" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">15</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>For <img class="mwe-math-fallback-image-inline tex" alt="e\ =\ 1\," src="//upload.wikimedia.org/math/3/4/3/343baee1e53e0c9df6ad9897e23cc669.png" /> this is a <a href="/wiki/Parabola" title="Parabola">parabola</a> with focal length <img class="mwe-math-fallback-image-inline tex" alt="\frac {p}{2}" src="//upload.wikimedia.org/math/9/6/e/96e5e224038a87c6775e7b44cc9d77db.png" /></p>
+<p>For <img class="mwe-math-fallback-image-inline tex" alt="e\ &gt;\ 1\," src="//upload.wikimedia.org/math/7/f/3/7f3b6678372f4c004a7f4c9e4ee9cda3.png" /> this is a <a href="/wiki/Hyperbola" title="Hyperbola">hyperbola</a> with</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="a = \frac {p}{e^2-1}" src="//upload.wikimedia.org/math/d/2/f/d2f13aa18b45a80caf06c8e848f13d22.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_16" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">16</span>)</b></p>
+</td>
+</tr>
+</table>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="b = \frac {p}{\sqrt{e^2-1}} = a \cdot \sqrt{e^2-1}" src="//upload.wikimedia.org/math/0/f/2/0f2e59727c6f1161a16ed0f1c822ede5.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_17" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">17</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>The following image illustrates an ellipse (red), a parabola (green) and a hyperbola (blue)</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Kepler_orbits.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Kepler_orbits.svg/220px-Kepler_orbits.svg.png" width="220" height="267" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Kepler_orbits.svg/330px-Kepler_orbits.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Kepler_orbits.svg/440px-Kepler_orbits.svg.png 2x" data-file-width="494" data-file-height="600" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Kepler_orbits.svg" class="internal" title="Enlarge"></a></div>
+An elliptic Kepler orbit with an eccentricity of 0.7, a parabolic Kepler orbit and a hyperbolic Kepler orbit with an eccentricity of 1.3. The distance to the focal point is a function of the polar angle relative to the horizontal line as given by the equation (<b><a href="#math_13">13</a></b>)</div>
+</div>
+</div>
+<p>The point on the horizontal line going out to the right from the focal point is the point with <img class="mwe-math-fallback-image-inline tex" alt="\theta = 0\," src="//upload.wikimedia.org/math/7/a/6/7a699e3ea27000f251876801814f1803.png" /> for which the distance to the focus takes the minimal value <img class="mwe-math-fallback-image-inline tex" alt="\frac {p}{1 + e}" src="//upload.wikimedia.org/math/8/f/6/8f600ac315e22170357c1757299908a9.png" />, the pericentre. For the ellipse there is also an apocentre for which the distance to the focus takes the maximal value <img class="mwe-math-fallback-image-inline tex" alt="\frac {p}{1 - e}" src="//upload.wikimedia.org/math/c/9/0/c907baaf5532fa39a9398b5cb1c37183.png" />. For the hyperbola the range for <img class="mwe-math-fallback-image-inline tex" alt="\theta\," src="//upload.wikimedia.org/math/1/f/0/1f09c25c5247c1eaf121df644ca42f8c.png" /> is</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\left [ -\cos^{-1}\left(-\frac{1}{e}\right) &lt; \theta &lt; \cos^{-1}\left(-\frac{1}{e}\right)\right ]" src="//upload.wikimedia.org/math/8/d/2/8d2da49f6091003884f00698c8e33d1d.png" /></dd>
+</dl>
+<p>and for a parabola the range is</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\left [ -\pi &lt; \theta &lt; \pi \right ]" src="//upload.wikimedia.org/math/f/2/e/f2e6d27a7529b1316e7a423fc339bc7f.png" /></dd>
+</dl>
+<p>Using the chain rule for differentiation (<b><a href="#math_5">5</a></b>), the equation (<b><a href="#math_2">2</a></b>) and the definition of <i>p</i> as <img class="mwe-math-fallback-image-inline tex" alt="\frac {H^2}{\mu}" src="//upload.wikimedia.org/math/7/9/0/790f1f11f4ca79ad885f502e6eae3fc6.png" /> one gets that the radial velocity component is</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="V_r = \dot{r} = \frac {H}{p} \cdot e \cdot \sin \theta =  \sqrt{\frac {\mu}{p}} \cdot e \cdot \sin \theta" src="//upload.wikimedia.org/math/6/7/e/67e03a094ca037b04ee68f5849e396ca.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_18" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">18</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>and that the tangential component (velocity component perpendicular to <img class="mwe-math-fallback-image-inline tex" alt="V_r" src="//upload.wikimedia.org/math/7/1/7/7177826785152eff0426915d13356856.png" />) is</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="V_t = r \cdot \dot{\theta} = \frac {H}{r}  =  \sqrt{\frac {\mu}{p}} \cdot (1 + e \cdot \cos \theta)" src="//upload.wikimedia.org/math/5/4/a/54ac222a180210e96cc833cf1774d94d.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_19" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">19</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>The connection between the polar argument <img class="mwe-math-fallback-image-inline tex" alt="\theta\," src="//upload.wikimedia.org/math/1/f/0/1f09c25c5247c1eaf121df644ca42f8c.png" /> and time <i>t</i> is slightly different for elliptic and hyperbolic orbits.</p>
+<p>For an elliptic orbit one switches to the "<a href="/wiki/Eccentric_anomaly" title="Eccentric anomaly">eccentric anomaly</a>" <i>E</i> for which</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="x = a \cdot (\cos E -e)" src="//upload.wikimedia.org/math/f/6/f/f6ffaecef07c14a2c91f95181be4a985.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_20" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">20</span>)</b></p>
+</td>
+</tr>
+</table>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="y = b \cdot \sin E" src="//upload.wikimedia.org/math/4/3/b/43b5a6cd2e7240295b871354c3010caf.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_21" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">21</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>and consequently</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\dot{x} = -a \cdot \sin E \cdot \dot{E}" src="//upload.wikimedia.org/math/0/8/d/08df62105bd05e3409b15b95f48c56c4.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_22" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">22</span>)</b></p>
+</td>
+</tr>
+</table>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\dot{y} = b \cdot \cos E \cdot \dot{E}" src="//upload.wikimedia.org/math/6/b/4/6b40117d86ea239eed2bbe6035b57f32.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_23" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">23</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>and the angular momentum <i>H</i> is</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="H = x \cdot \dot{y} - y \cdot \dot{x}=a \cdot b \cdot ( 1 - e \cdot \cos E) \cdot \dot{E}" src="//upload.wikimedia.org/math/3/7/2/372e860d31c543614afe8bff0218beea.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_24" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">24</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>Integrating with respect to time <i>t</i> one gets</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="H \cdot t = a \cdot b \cdot ( E - e \cdot \sin E)" src="//upload.wikimedia.org/math/9/2/1/92107d6c59ff523b74316c388a998a70.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_25" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">25</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>under the assumption that time <img class="mwe-math-fallback-image-inline tex" alt="t=0" src="//upload.wikimedia.org/math/3/e/8/3e8f7b0adf6d7024b951f29a18225e4a.png" /> is selected such that the integration constant is zero.</p>
+<p>As by definition of <i>p</i> one has</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="H = \sqrt{\mu \cdot p}" src="//upload.wikimedia.org/math/5/8/8/588740fc7cc63ad55ee74553c055bd01.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_26" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">26</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>this can be written</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="t = a \cdot \sqrt{\frac{a} {\mu}} ( E - e \cdot \sin E)" src="//upload.wikimedia.org/math/3/e/d/3ed3ecee7a693cf08b14f7b8d6a88441.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_27" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">27</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>For a hyperbolic orbit one uses the <a href="/wiki/Hyperbolic_functions" title="Hyperbolic functions" class="mw-redirect">hyperbolic functions</a> for the parameterisation</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="x = a \cdot (e - \cosh E)" src="//upload.wikimedia.org/math/a/0/8/a0879cf6e28cca757140a73e20f481dc.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_28" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">28</span>)</b></p>
+</td>
+</tr>
+</table>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="y = b \cdot \sinh E" src="//upload.wikimedia.org/math/6/e/9/6e98b805bbc3ba53012712635f81f63a.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_29" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">29</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>for which one has</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\dot{x} = -a \cdot  \sinh E \cdot \dot{E}" src="//upload.wikimedia.org/math/0/5/c/05c92e128d06d7e517278c5bdd809e32.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_30" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">30</span>)</b></p>
+</td>
+</tr>
+</table>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\dot{y} = b \cdot \cosh E \cdot \dot{E}" src="//upload.wikimedia.org/math/e/e/b/eebdef18b5f6ec7606e549f8d0afd991.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_31" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">31</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>and the angular momentum <i>H</i> is</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="H = x \cdot \dot{y} - y \cdot \dot{x}=a \cdot b \cdot (  e \cdot \cosh E-1) \cdot \dot{E}" src="//upload.wikimedia.org/math/7/d/7/7d7860ac4e52fb814ea3780cfc27daca.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_32" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">32</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>Integrating with respect to time <i>t</i> one gets</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="H \cdot t= a \cdot b \cdot ( e \cdot \sinh E-E)" src="//upload.wikimedia.org/math/c/0/4/c04880fd4124691f42d6a4e162fbc81b.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_33" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">33</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>i.e.</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="t = a \cdot \sqrt{\frac{a} {\mu}} (e \cdot \sinh E-E)" src="//upload.wikimedia.org/math/d/6/3/d63a6318b53a9ca2b266690a7400588e.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_34" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">34</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>To find what time t that corresponds to a certain true anomaly <img class="mwe-math-fallback-image-inline tex" alt="\theta\," src="//upload.wikimedia.org/math/1/f/0/1f09c25c5247c1eaf121df644ca42f8c.png" /> one computes corresponding parameter <i>E</i> connected to time with relation (<b><a href="#math_27">27</a></b>) for an elliptic and with relation (<b><a href="#math_34">34</a></b>) for a hyperbolic orbit.</p>
+<p>Note that the relations (<b><a href="#math_27">27</a></b>) and (<b><a href="#math_34">34</a></b>) define a mapping between the ranges</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\left [ -\infin &lt; t &lt; \infin\right ]  \longleftrightarrow \left [-\infin &lt; E &lt; \infin \right ] " src="//upload.wikimedia.org/math/a/8/1/a810814abb724249974f90dd5db09d4a.png" /></dd>
+</dl>
+<h2><span class="mw-headline" id="Some_additional_formulae">Some additional formulae</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler_orbit&amp;action=edit&amp;section=9" title="Edit section: Some additional formulae">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>For an <i>elliptic orbit</i> one gets from (<b><a href="#math_20">20</a></b>) and (<b><a href="#math_21">21</a></b>) that</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="r = a \cdot (1-e \cdot \cos E)" src="//upload.wikimedia.org/math/8/7/c/87cf09f8a2e4fddbe48c8485eb934379.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_35" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">35</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>and therefore that</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\cos \theta = \frac{x} {r} =\frac{\cos E-e}{1-e \cdot \cos E}" src="//upload.wikimedia.org/math/0/e/5/0e5b3fa78a3b8f2b98cdf835357d7646.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_36" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">36</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>From (<b><a href="#math_36">36</a></b>) then follows that</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+\tan^2 \frac{\theta}{2} =
+\frac{1-\cos \theta}{1+\cos \theta}=
+\frac{1-\frac{\cos E-e}{1-e \cdot \cos E}}{1+\frac{\cos E-e}{1-e \cdot \cos E}}=
+\frac{1-e \cdot \cos E  -  \cos E+e}{1-e \cdot \cos E  +  \cos E-e}=
+\frac{1+e}{1-e} \ \cdot\ \frac{1-\cos E}{1+\cos E}=
+\frac{1+e}{1-e} \ \cdot\ \tan^2 \frac{E}{2}
+" src="//upload.wikimedia.org/math/8/1/9/819af04937806d47e674ed10f1a9db77.png" /></dd>
+</dl>
+<p>From the geometrical construction defining the <a href="/wiki/Eccentric_anomaly" title="Eccentric anomaly">eccentric anomaly</a> it is clear that the vectors <img class="mwe-math-fallback-image-inline tex" alt="(\ \cos E\ ,\ \sin E\ )" src="//upload.wikimedia.org/math/b/b/4/bb4404f60344e37a78f537b2d93b71f6.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="(\ \cos \theta\ ,\ \sin \theta\ )" src="//upload.wikimedia.org/math/7/8/7/7874cc5153bf7dc2b0e75f23545ae3b2.png" /> are on the same side of the <i>x</i>-axis. From this then follows that the vectors <img class="mwe-math-fallback-image-inline tex" alt="\left( \cos\frac{E}{2}\ ,\ \sin\frac{E}{2} \right)" src="//upload.wikimedia.org/math/1/7/6/17676a95b43d8a0f9fb960b3a86f347f.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="\left( \cos\frac{\theta}{2}\ ,\ \sin\frac{\theta}{2} \right)" src="//upload.wikimedia.org/math/8/4/4/844b2a4b582768d8ed81b262fceccf88.png" /> are in the same quadrant. One therefore has that</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\tan \frac{\theta}{2} = \sqrt{\frac{1+e}{1-e}} \cdot \tan \frac{E}{2}" src="//upload.wikimedia.org/math/f/9/e/f9e86507781d52cc564d7d759f6d44b2.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_37" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">37</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>and that</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\theta = 2 \cdot \operatorname{arg}\left(\sqrt{1-e} \ \cdot\  \cos \frac{E}{2}\ ,\ \sqrt{1+e} \ \cdot\  \sin\frac{E}{2}\right)+ n\cdot 2\pi" src="//upload.wikimedia.org/math/6/6/8/66892ea6bb0372f677dc668c9f86e4b8.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_38" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">38</span>)</b></p>
+</td>
+</tr>
+</table>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="E = 2 \cdot \operatorname{arg}\left(\sqrt{1+e} \ \cdot\  \cos \frac{\theta}{2}\ ,\ \sqrt{1-e} \ \cdot\  \sin\frac{\theta}{2}\right)+ n\cdot 2\pi" src="//upload.wikimedia.org/math/1/d/4/1d43c4e67f8a9526b1df105d8a07ab30.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_39" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">39</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>where "<img class="mwe-math-fallback-image-inline tex" alt="\operatorname{arg}(x\ ,\ y)" src="//upload.wikimedia.org/math/e/9/e/e9eefd69fe7114ca95e8e0e3414e24c6.png" />" is the polar argument of the vector <img class="mwe-math-fallback-image-inline tex" alt="(\ x\ ,\ y\ )" src="//upload.wikimedia.org/math/7/7/c/77c0c5ba6988a4aa1fbfafc697f7760e.png" /> and <i>n</i> is selected such that <img class="mwe-math-fallback-image-inline tex" alt="\left |E
+-\theta\right| &lt; \pi " src="//upload.wikimedia.org/math/b/7/7/b77613dbdf35cc61ca16fc1b3c966810.png" /></p>
+<p>For the numerical computation of <img class="mwe-math-fallback-image-inline tex" alt="\operatorname{arg}(x\ ,\ y)" src="//upload.wikimedia.org/math/e/9/e/e9eefd69fe7114ca95e8e0e3414e24c6.png" /> the standard function <a href="/wiki/Atan2" title="Atan2">ATAN2(y,x)</a> (or in <a href="/wiki/Double_precision" title="Double precision" class="mw-redirect">double precision</a> DATAN2(y,x)) available in for example the programming language <a href="/wiki/Fortran" title="Fortran">FORTRAN</a> can be used.</p>
+<p>Note that this is a mapping between the ranges</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\left [ -\infin &lt; \theta &lt; \infin\right ]  \longleftrightarrow \left [-\infin &lt; E &lt; \infin \right ] " src="//upload.wikimedia.org/math/1/f/8/1f8dfc86f8291e9b61b20ccc8640c03f.png" /></dd>
+</dl>
+<p>For a <i>hyperbolic orbit</i> one gets from (<b><a href="#math_28">28</a></b>) and (<b><a href="#math_29">29</a></b>) that</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="r = a \cdot (e \cdot \cosh E-1)" src="//upload.wikimedia.org/math/f/4/1/f41c21e47be939226158a64d2311173a.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_40" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">40</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>and therefore that</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\cos \theta = \frac{x} {r} =\frac{e-\cosh E}{e \cdot \cosh E-1}" src="//upload.wikimedia.org/math/1/3/a/13a618006327f67bfd51b98979b08744.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_41" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">41</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>As</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+\tan^2 \frac{\theta}{2} =
+\frac{1-\cos\theta}{1+\cos \theta}=
+\frac{1-\frac{e-\cosh E}{e \cdot \cosh E-1}}{1+\frac{e-\cosh E}{e \cdot \cosh E-1}}=
+\frac{e \cdot \cosh E - e +\cosh E}{e \cdot \cosh E + e -\cosh E}=
+\frac{e+1}{e-1}\ \cdot\ \frac{\cosh E-1}{\cosh E+1}=
+\frac{e+1}{e-1}\ \cdot\ \tanh^2 \frac{E}{2}
+" src="//upload.wikimedia.org/math/1/1/a/11a4e7d35ededf5504d3b562ca573b45.png" /></dd>
+</dl>
+<p>and as <img class="mwe-math-fallback-image-inline tex" alt=" \tan \frac{\theta}{2}" src="//upload.wikimedia.org/math/f/2/3/f2383be4733133d41662ed036a491b93.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="\tanh \frac{E}{2}" src="//upload.wikimedia.org/math/0/8/2/082b4d43b1b1c2d55bde8a8666877502.png" /> have the same sign it follows that</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\tan \frac{\theta}{2} = \sqrt{\frac{e+1}{e-1}} \cdot \tanh \frac{E}{2}" src="//upload.wikimedia.org/math/a/d/a/adac9743ccb4c5668c17cc7a298c262a.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_42" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">42</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>This relation is convenient for passing between "true anomaly" and the parameter <i>E</i>, the latter being connected to time through relation (<b><a href="#math_34">34</a></b>). Note that this is a mapping between the ranges</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\left [ -\cos^{-1}\left(-\frac{1}{e}\right) &lt; \theta &lt; \cos^{-1}\left(-\frac{1}{e}\right)\right ]  \longleftrightarrow \left [-\infin &lt; E &lt; \infin \right ] " src="//upload.wikimedia.org/math/e/5/4/e544eed326a31f0093ca56c12930b3e5.png" /></dd>
+</dl>
+<p>and that <img class="mwe-math-fallback-image-inline tex" alt="\frac{E}{2}" src="//upload.wikimedia.org/math/4/e/1/4e1a4a67939edc0b268e582b63be7f03.png" /> can be computed using the relation</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\tanh ^{-1}x=\frac{1}{2}\ln \left( \frac{1+x}{1-x} \right)" src="//upload.wikimedia.org/math/1/4/6/146502f3e96a1de841c3e22f324c7c25.png" /></dd>
+</dl>
+<p>From relation (<b><a href="#math_27">27</a></b>) follows that the orbital period <i>P</i> for an elliptic orbit is</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="P =  2\pi \cdot a \cdot \sqrt{\frac{a} {\mu}}" src="//upload.wikimedia.org/math/a/5/4/a545d640821d136f7643d56755b4d33b.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_43" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">43</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>As the potential energy corresponding to the force field of relation (<b><a href="#math_1">1</a></b>) is</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="-\frac {\mu} {r}" src="//upload.wikimedia.org/math/a/9/f/a9f4175001cdfff978e64948047a78d2.png" /></dd>
+</dl>
+<p>it follows from (<b><a href="#math_13">13</a></b>), (<b><a href="#math_14">14</a></b>), (<b><a href="#math_18">18</a></b>) and (<b><a href="#math_19">19</a></b>) that the sum of the kinetic and the potential energy</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\frac{{V_r}^2+{V_t}^2}{2}-\frac {\mu} {r}" src="//upload.wikimedia.org/math/2/4/2/242ac8bc26274ea1698d70da4ce76f11.png" /></dd>
+</dl>
+<p>for an elliptic orbit is</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="-\frac {\mu} {2 \cdot a}" src="//upload.wikimedia.org/math/4/d/5/4d5c52f87715caed7bc60c6d833ed1ff.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_44" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">44</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>and from (<b><a href="#math_13">13</a></b>), (<b><a href="#math_16">16</a></b>), (<b><a href="#math_18">18</a></b>) and (<b><a href="#math_19">19</a></b>) that the sum of the kinetic and the potential energy for a hyperbolic orbit is</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\frac {\mu} {2 \cdot a}" src="//upload.wikimedia.org/math/7/5/4/754886e08eb2cf1b08fdbfca87b330ec.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_45" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">45</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>Relative the inertial coordinate system</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \hat{x} \ , \ \hat{y}" src="//upload.wikimedia.org/math/2/5/7/257c936c0064850c14bf692bf8de8888.png" /></dd>
+</dl>
+<p>in the orbital plane with <img class="mwe-math-fallback-image-inline tex" alt=" \hat{x}" src="//upload.wikimedia.org/math/8/b/a/8baf9dc7043aae61e37e171dc9f537e9.png" /> towards pericentre one gets from (<b><a href="#math_18">18</a></b>) and (<b><a href="#math_19">19</a></b>) that the velocity components are</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="V_x = \cos \theta \cdot V_r - \sin \theta \cdot V_t = -\sqrt{\frac {\mu}{p}} \cdot \sin \theta" src="//upload.wikimedia.org/math/9/b/f/9bfee80a4026c4a6b055fef6f7607082.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_46" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">46</span>)</b></p>
+</td>
+</tr>
+</table>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="V_y = \sin \theta \cdot V_r + \cos \theta \cdot V_t = \sqrt{\frac {\mu}{p}} \cdot (e +\cos \theta)" src="//upload.wikimedia.org/math/5/5/a/55aeffeb801c309b954d444d25ca206e.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_47" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">47</span>)</b></p>
+</td>
+</tr>
+</table>
+<p><i>See also <a href="/wiki/Equation_of_the_center#Analytical_expansions" title="Equation of the center">Equation of the center – Analytical expansions</a></i><br />
+The Equation of the center relates mean anomaly to true anomaly for elliptical orbits, for small numerical eccentricity.</p>
+<h2><span class="mw-headline" id="Determination_of_the_Kepler_orbit_that_corresponds_to_a_given_initial_state">Determination of the Kepler orbit that corresponds to a given initial state</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler_orbit&amp;action=edit&amp;section=10" title="Edit section: Determination of the Kepler orbit that corresponds to a given initial state">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>This is the "<a href="/wiki/Initial_value_problem" title="Initial value problem">initial value problem</a>" for the differential equation (<b><a href="#math_1">1</a></b>) which is a first order equation for the 6-dimensional "state vector" <img class="mwe-math-fallback-image-inline tex" alt="(\ \bar{r}\ ,\bar{v}\ )" src="//upload.wikimedia.org/math/d/6/c/d6c337fd6bc465bc3a58044f3aaa7e3f.png" /> when written as</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\dot {\bar{v}} = -\mu \cdot \frac {\hat{r}} {r^2}" src="//upload.wikimedia.org/math/b/2/0/b20c755588a8cf0e11875ab151bb822a.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_48" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">48</span>)</b></p>
+</td>
+</tr>
+</table>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\dot {\bar{r}} = \bar{v}" src="//upload.wikimedia.org/math/b/1/b/b1bb8547f213225eb90019d003cbe601.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_49" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">49</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>For any values for the initial "state vector" <img class="mwe-math-fallback-image-inline tex" alt="(\ \bar{r_0}\ ,\bar{v_0}\ )" src="//upload.wikimedia.org/math/5/a/d/5ade7d942fb52f978bb1bcd92a78e75f.png" /> the Kepler orbit corresponding to the solution of this initial value problem can be found with the following algorithm:</p>
+<p>Define the orthogonal unit vectors <img class="mwe-math-fallback-image-inline tex" alt="(\hat{r}\ ,\ \hat{t})" src="//upload.wikimedia.org/math/1/a/4/1a41f4bede63dd49d958499a44133303.png" /> through</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\bar{r_0} = r \cdot \hat{r}" src="//upload.wikimedia.org/math/e/2/5/e25cb6d776a3e288e656ecca4091f3d4.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_50" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">50</span>)</b></p>
+</td>
+</tr>
+</table>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\bar{v_0} = V_r \cdot \hat{r} + V_t \cdot \hat{t}" src="//upload.wikimedia.org/math/7/8/a/78ae858a3f0202bf53cc5b966eb4c425.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_51" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">51</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>with <img class="mwe-math-fallback-image-inline tex" alt="r &gt; 0" src="//upload.wikimedia.org/math/7/e/6/7e670c394c1c4e04ac216cd3e98810b2.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="V_t &gt; 0" src="//upload.wikimedia.org/math/2/a/4/2a4d8202738825fde43e816af3d43ac8.png" /></p>
+<p>From (<b><a href="#math_13">13</a></b>), (<b><a href="#math_18">18</a></b>) and (<b><a href="#math_19">19</a></b>) follows that by setting</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="p = \frac{{(r \cdot V_t)}^2}{\mu }" src="//upload.wikimedia.org/math/a/e/a/aeaab781d4a4670737ceabe4f2c08f6a.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_52" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">52</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>and by defining <img class="mwe-math-fallback-image-inline tex" alt="e \ge 0" src="//upload.wikimedia.org/math/b/a/8/ba867b14136d5caee920af37f8756fb2.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="\theta" src="//upload.wikimedia.org/math/5/0/d/50d91f80cbb8feda1d10e167107ad1ff.png" /> such that</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="e \cdot \cos \theta = \frac{V_t} {V_0} - 1" src="//upload.wikimedia.org/math/6/f/5/6f53a171eebc1b709e418b4a78c9d0a0.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_53" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">53</span>)</b></p>
+</td>
+</tr>
+</table>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="e \cdot \sin \theta = \frac{V_r} {V_0}" src="//upload.wikimedia.org/math/8/f/7/8f789f7504f59027b3c11d55827e1aae.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_54" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">54</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>where</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="V_0 = \sqrt{\frac{\mu}{p}}" src="//upload.wikimedia.org/math/2/4/f/24fca15a3a8325e6f6e6fbd70a406d25.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_55" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">55</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>one gets a Kepler orbit that for true anomaly <img class="mwe-math-fallback-image-inline tex" alt="\theta" src="//upload.wikimedia.org/math/5/0/d/50d91f80cbb8feda1d10e167107ad1ff.png" /> has the same <i>r</i>, <img class="mwe-math-fallback-image-inline tex" alt="V_r" src="//upload.wikimedia.org/math/7/1/7/7177826785152eff0426915d13356856.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="V_t" src="//upload.wikimedia.org/math/f/2/d/f2d8ad6c8eee7080f25f3441c9eaeba2.png" /> values as those defined by (<b><a href="#math_50">50</a></b>) and (<b><a href="#math_51">51</a></b>).</p>
+<p>If this Kepler orbit then also has the same <img class="mwe-math-fallback-image-inline tex" alt="(\hat{r}\ ,\ \hat{t})" src="//upload.wikimedia.org/math/1/a/4/1a41f4bede63dd49d958499a44133303.png" /> vectors for this true anomaly <img class="mwe-math-fallback-image-inline tex" alt="\theta" src="//upload.wikimedia.org/math/5/0/d/50d91f80cbb8feda1d10e167107ad1ff.png" /> as the ones defined by (<b><a href="#math_50">50</a></b>) and (<b><a href="#math_51">51</a></b>) the state vector <img class="mwe-math-fallback-image-inline tex" alt="(\bar{r}\ ,\ \bar{v})" src="//upload.wikimedia.org/math/6/9/3/69379fe5e6f1528871837f7dccaf69f6.png" /> of the Kepler orbit takes the desired values <img class="mwe-math-fallback-image-inline tex" alt="(\ \bar{r_0}\ ,\bar{v_0}\ )" src="//upload.wikimedia.org/math/5/a/d/5ade7d942fb52f978bb1bcd92a78e75f.png" /> for true anomaly <img class="mwe-math-fallback-image-inline tex" alt="\theta" src="//upload.wikimedia.org/math/5/0/d/50d91f80cbb8feda1d10e167107ad1ff.png" />.</p>
+<p>The standard inertially fixed coordinate system <img class="mwe-math-fallback-image-inline tex" alt="(\hat{x}\ ,\ \hat{y})" src="//upload.wikimedia.org/math/c/6/a/c6a6289f03e101654fa957913c3a9eae.png" /> in the orbital plane (with <img class="mwe-math-fallback-image-inline tex" alt="\hat{x}" src="//upload.wikimedia.org/math/8/b/a/8baf9dc7043aae61e37e171dc9f537e9.png" /> directed from the centre of the homogeneous sphere to the pericentre) defining the orientation of the conical section (ellipse, parabola or hyperbola) can then be determined with the relation</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\hat{x} = \cos \theta \cdot \hat{r} - \sin \theta \cdot \hat{t}" src="//upload.wikimedia.org/math/b/2/c/b2c2026a123538be401cafbfc78abe58.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_56" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">56</span>)</b></p>
+</td>
+</tr>
+</table>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\hat{y} = \sin \theta \cdot \hat{r} + \cos \theta \cdot \hat{t}" src="//upload.wikimedia.org/math/7/f/6/7f6194f7758c9079fdd58cfad1abbc14.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_57" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">57</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>Note that the relations (<b><a href="#math_53">53</a></b>) and (<b><a href="#math_54">54</a></b>) has a singularity when <img class="mwe-math-fallback-image-inline tex" alt="V_r=0" src="//upload.wikimedia.org/math/6/c/a/6ca5f22e39540f0e108a6d0e70d45637.png" /> and</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="V_t=V_0=\sqrt{\frac{\mu}{p}}=\sqrt{\frac{\mu}{\frac{{(r \cdot V_t)}^2}{\mu }}}" src="//upload.wikimedia.org/math/1/5/d/15d8a8090d148d5850fac0cee410edd2.png" /></dd>
+</dl>
+<p>i.e.</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="V_t=\sqrt{\frac{\mu}{r}}" src="//upload.wikimedia.org/math/5/8/4/584211d936ae1ef8161fd06ed4168dfe.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_58" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">58</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>which is the case that it is a circular orbit that is fitting the initial state <img class="mwe-math-fallback-image-inline tex" alt="(\ \bar{r_0}\ ,\bar{v_0}\ )" src="//upload.wikimedia.org/math/5/a/d/5ade7d942fb52f978bb1bcd92a78e75f.png" /></p>
+<h2><span class="mw-headline" id="The_osculating_Kepler_orbit">The osculating Kepler orbit</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler_orbit&amp;action=edit&amp;section=11" title="Edit section: The osculating Kepler orbit">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote relarticle mainarticle">Main article: <a href="/wiki/Osculating_orbit" title="Osculating orbit">Osculating orbit</a></div>
+<p>For any state vector <img class="mwe-math-fallback-image-inline tex" alt="(\bar{r} , \bar{v} )" src="//upload.wikimedia.org/math/9/f/5/9f583c76560a6bc30c7267857216926b.png" /> the Kepler orbit corresponding to this state can be computed with the algorithm defined above. First the parameters <img class="mwe-math-fallback-image-inline tex" alt="p ,  e ,  \theta" src="//upload.wikimedia.org/math/c/1/5/c15745bf7e436b082eecfdd93ca36e4f.png" /> are determined from <img class="mwe-math-fallback-image-inline tex" alt="r ,  V_r ,  V_t" src="//upload.wikimedia.org/math/4/8/9/4896af40397cd7686926be92bf13f44e.png" /> and then the orthogonal unit vectors in the orbital plane <img class="mwe-math-fallback-image-inline tex" alt=" \hat{x} , \hat{y}" src="//upload.wikimedia.org/math/7/5/e/75e706f294b4bf0e114608a38d35c02b.png" /> using the relations (<b><a href="#math_56">56</a></b>) and (<b><a href="#math_57">57</a></b>).</p>
+<p>If now the equation of motion is</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\ddot {\bar{r}} = \operatorname{\bar{F}}(\bar{r},\dot {\bar{r}},t)" src="//upload.wikimedia.org/math/1/9/6/19616387fed3d8df6c38af44ead60936.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_59" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">59</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>where</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\operatorname{\bar{F}}(\bar{r},\dot {\bar{r}},t)" src="//upload.wikimedia.org/math/3/1/7/3174ca0af59831fca1aeff2805b6c122.png" /></dd>
+</dl>
+<p>is a function other than</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="-\mu \cdot  \frac {\hat{r}} {r^2}" src="//upload.wikimedia.org/math/1/1/e/11efe69617dd64407bd08d000e363513.png" /></dd>
+</dl>
+<p>the resulting parameters</p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="p ,\,  e ,\,  \theta,\,  \hat{x} ,\,  \hat{y}" src="//upload.wikimedia.org/math/4/5/0/450c745ea752ac33ded3af54c02df056.png" /></p>
+<p>defined by <img class="mwe-math-fallback-image-inline tex" alt="\bar{r},\dot {\bar{r}}" src="//upload.wikimedia.org/math/6/b/c/6bc47822930a01017a98df7f8bb26746.png" /> will all vary with time as opposed to the case of a Kepler orbit for which only the parameter <img class="mwe-math-fallback-image-inline tex" alt="\theta" src="//upload.wikimedia.org/math/5/0/d/50d91f80cbb8feda1d10e167107ad1ff.png" /> will vary</p>
+<p>The Kepler orbit computed in this way having the same "state vector" as the solution to the "equation of motion" (<b><a href="#math_59">59</a></b>) at time <i>t</i> is said to be "osculating" at this time.</p>
+<p>This concept is for example useful in case</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\operatorname{\bar{F}}(\bar{r},\dot {\bar{r}},t)=-\mu \cdot  \frac {\hat{r}} {r^2}+\operatorname{\bar{f}}(\bar{r},\dot {\bar{r}},t)" src="//upload.wikimedia.org/math/5/f/4/5f471b1f79f735ec25f4275df533a8f4.png" /></dd>
+</dl>
+<p>where</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\operatorname{\bar{f}}(\bar{r},\dot {\bar{r}},t)" src="//upload.wikimedia.org/math/c/c/8/cc8448fe716e501813ef8064639eab4e.png" /></dd>
+</dl>
+<p>is a small "perturbing force" due to for example a faint gravitational pull from other celestial bodies. The parameters of the osculating Kepler orbit will then only slowly change and the osculating Kepler orbit is a good approximation to the real orbit for a considerable time period before and after the time of osculation.</p>
+<p>This concept can also be useful for a rocket during powered flight as it then tells which Kepler orbit the rocket would continue in in case the thrust is switched off.</p>
+<p>For a "close to circular" orbit the concept "<a href="/wiki/Eccentricity_vector" title="Eccentricity vector">eccentricity vector</a>" defined as <img class="mwe-math-fallback-image-inline tex" alt="\bar{e}=e \cdot \hat{x}" src="//upload.wikimedia.org/math/0/e/a/0eac0138207990aeb439764a0076da0e.png" /> is useful. From (<b><a href="#math_53">53</a></b>), (<b><a href="#math_54">54</a></b>) and (<b><a href="#math_56">56</a></b>) follows that</p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\bar{e}=\frac{(V_t-V_0) \cdot \hat{r} - V_r \cdot \hat{t}}{V_0}" src="//upload.wikimedia.org/math/b/2/0/b209034605e85e4bac2732301b2ff940.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"><b>(<span id="math_60" class="reference nourlexpansion" style="font-weight:bold; font-style:italic;">60</span>)</b></p>
+</td>
+</tr>
+</table>
+<p>i.e. <img class="mwe-math-fallback-image-inline tex" alt="\bar{e}" src="//upload.wikimedia.org/math/4/6/5/4650ffd9ad6541b473210771a42d87d9.png" /> is a smooth differentiable function of the state vector <img class="mwe-math-fallback-image-inline tex" alt="( \bar{r} ,\bar{v} )" src="//upload.wikimedia.org/math/9/f/5/9f583c76560a6bc30c7267857216926b.png" /> also if this state corresponds to a circular orbit.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler_orbit&amp;action=edit&amp;section=12" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="noprint portal tright" style="border:solid #aaa 1px;margin:0.5em 0 0.5em 1em">
+<table style="background:#f9f9f9;font-size:85%;line-height:110%;max-width:175px">
+<tr style="vertical-align:middle">
+<td style="text-align:center"><a href="/wiki/File:Stylised_Lithium_Atom.svg" class="image"><img alt="Portal icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Stylised_Lithium_Atom.svg/25px-Stylised_Lithium_Atom.svg.png" width="25" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Stylised_Lithium_Atom.svg/37px-Stylised_Lithium_Atom.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Stylised_Lithium_Atom.svg/49px-Stylised_Lithium_Atom.svg.png 2x" data-file-width="266" data-file-height="303" /></a></td>
+<td style="padding:0 0.2em;vertical-align:middle;font-style:italic;font-weight:bold"><a href="/wiki/Portal:Physics" title="Portal:Physics">Physics portal</a></td>
+</tr>
+</table>
+</div>
+<ul>
+<li><a href="/wiki/Two-body_problem" title="Two-body problem">Two-body problem</a></li>
+<li><a href="/wiki/Gravitational_two-body_problem" title="Gravitational two-body problem">Gravitational two-body problem</a></li>
+<li><a href="/wiki/Kepler_problem" title="Kepler problem">Kepler problem</a></li>
+<li><a href="/wiki/Kepler%27s_laws_of_planetary_motion" title="Kepler's laws of planetary motion">Kepler's laws of planetary motion</a></li>
+<li><a href="/wiki/Elliptic_orbit" title="Elliptic orbit">Elliptic orbit</a></li>
+<li><a href="/wiki/Hyperbolic_trajectory" title="Hyperbolic trajectory">Hyperbolic trajectory</a></li>
+<li><a href="/wiki/Parabolic_trajectory" title="Parabolic trajectory">Parabolic trajectory</a></li>
+<li><a href="/wiki/Radial_trajectory" title="Radial trajectory">Radial trajectory</a></li>
+<li><a href="/wiki/Orbit_modeling" title="Orbit modeling">Orbit modeling</a></li>
+</ul>
+<h2><span class="mw-headline" id="Citations">Citations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler_orbit&amp;action=edit&amp;section=13" title="Edit section: Citations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">Copernicus. pp 513-514</span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">Bate, Mueller, White. pp 177–181</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://ssd.jpl.nasa.gov">http://ssd.jpl.nasa.gov</a></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler_orbit&amp;action=edit&amp;section=14" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>El'Yasberg "Theory of flight of artificial earth satellites", <b>Israel program for Scientific Translations (1967)</b></li>
+<li><cite class="citation book">Bate, Roger; Mueller, Donald; White, Jerry (1971). <i>Fundamentals of Astrodynamics</i>. Dover Publications, Inc., New York. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-486-60061-0" title="Special:BookSources/0-486-60061-0">0-486-60061-0</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKepler+orbit&amp;rft.aufirst=Roger&amp;rft.aulast=Bate&amp;rft.au=Mueller%2C+Donald&amp;rft.au=White%2C+Jerry&amp;rft.btitle=Fundamentals+of+Astrodynamics&amp;rft.date=1971&amp;rft.genre=book&amp;rft.isbn=0-486-60061-0&amp;rft.pub=Dover+Publications%2C+Inc.%2C+New+York&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite id="CITEREFCopernicus1952" class="citation"><a href="/wiki/Nicolaus_Copernicus" title="Nicolaus Copernicus">Copernicus, Nicolaus</a> (1952), "Book I, Chapter 4, The Movement of the Celestial Bodies Is Regular, Circular, and Everlasting-Or Else Compounded of Circular Movements", <i>On the Revolutions of the Heavenly Spheres</i>, Great Books of the Western World <b>16</b>, Translated by Charles Glenn Wallis, Chicago: William Benton, pp.&#160;497–838</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKepler+orbit&amp;rft.atitle=Book+I%2C+Chapter+4%2C+The+Movement+of+the+Celestial+Bodies+Is+Regular%2C+Circular%2C+and+Everlasting-Or+Else+Compounded+of+Circular+Movements&amp;rft.aufirst=Nicolaus&amp;rft.aulast=Copernicus&amp;rft.btitle=On+the+Revolutions+of+the+Heavenly+Spheres&amp;rft.date=1952&amp;rft.genre=bookitem&amp;rft.pages=497-838&amp;rft.place=Chicago&amp;rft.pub=William+Benton&amp;rft.series=Great+Books+of+the+Western+World&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler_orbit&amp;action=edit&amp;section=15" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://wgpqqror.homepage.t-online.de/work.html">JAVA applet animating the orbit of a satellite</a> in an elliptic Kepler orbit around the Earth with any value for semi-major axis and eccentricity.</li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1199
+Cached time: 20160220011006
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.777 seconds
+Real time usage: 1.089 seconds
+Preprocessor visited node count: 8384/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 92349/2097152 bytes
+Template argument size: 9862/2097152 bytes
+Highest expansion depth: 9/40
+Expensive parser function count: 0/500
+Lua time usage: 0.255/10.000 seconds
+Lua memory usage: 1.65 MB/50 MB
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  834.125      1 - -total
+ 53.74%  448.299     60 - Template:NumBlk
+ 38.93%  324.716    120 - Template:Repeat
+ 17.02%  141.954    120 - Template:Str_len
+  4.54%   37.832      1 - Template:Cite_book
+  1.95%   16.296      2 - Template:Main
+  1.79%   14.896     60 - Template:EquationRef
+  1.14%    9.536      1 - Template:Citation
+  1.05%    8.774      1 - Template:Portal
+  1.04%    8.693     51 - Template:EquationNote
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:18352021-0!*!0!!en!4!*!math=0 and timestamp 20160220011006 and revision id 705868717
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Kepler_orbit&amp;oldid=705868717">https://en.wikipedia.org/w/index.php?title=Kepler_orbit&amp;oldid=705868717</a>"					</div>
+				<div id='catlinks' class='catlinks' data-mw='interface'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Orbits" title="Category:Orbits">Orbits</a></li><li><a href="/wiki/Category:Johannes_Kepler" title="Category:Johannes Kepler">Johannes Kepler</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Kepler+orbit&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Kepler+orbit" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Kepler_orbit"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Kepler_orbit"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Kepler_orbit" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Kepler_orbit&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Kepler_orbit&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Kepler_orbit" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Kepler_orbit" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Kepler_orbit&amp;oldid=705868717" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Kepler_orbit&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q2946193" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Kepler_orbit&amp;id=705868717" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Kepler+orbit">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Kepler+orbit&amp;returnto=Kepler+orbit&amp;oldid=705868717&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Kepler_orbit&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-be"><a href="//be.wikipedia.org/wiki/%D0%9A%D0%B5%D0%BF%D0%BB%D0%B5%D1%80%D0%B0%D0%B2%D1%8B_%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B_%D0%B0%D1%80%D0%B1%D1%96%D1%82%D1%8B" title="Кеплеравы элементы арбіты – Belarusian" lang="be" hreflang="be">Беларуская</a></li><li class="interlanguage-link interwiki-de"><a href="//de.wikipedia.org/wiki/Keplerbahn" title="Keplerbahn – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-fr"><a href="//fr.wikipedia.org/wiki/Mouvement_k%C3%A9pl%C3%A9rien" title="Mouvement képlérien – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-hy"><a href="//hy.wikipedia.org/wiki/%D4%BF%D5%A5%D5%BA%D5%AC%D5%A5%D6%80%D5%AB_%D5%B8%D6%82%D5%B2%D5%A5%D5%AE%D6%80%D5%AB_%D5%A7%D5%AC%D5%A5%D5%B4%D5%A5%D5%B6%D5%BF%D5%B6%D5%A5%D6%80" title="Կեպլերի ուղեծրի էլեմենտներ – Armenian" lang="hy" hreflang="hy">Հայերեն</a></li><li class="interlanguage-link interwiki-lb"><a href="//lb.wikipedia.org/wiki/Keplerbunn" title="Keplerbunn – Luxembourgish" lang="lb" hreflang="lb">Lëtzebuergesch</a></li><li class="interlanguage-link interwiki-pt"><a href="//pt.wikipedia.org/wiki/%C3%93rbita_Kepler" title="Órbita Kepler – Portuguese" lang="pt" hreflang="pt">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="//ru.wikipedia.org/wiki/%D0%9A%D0%B5%D0%BF%D0%BB%D0%B5%D1%80%D0%BE%D0%B2%D1%8B_%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B_%D0%BE%D1%80%D0%B1%D0%B8%D1%82%D1%8B" title="Кеплеровы элементы орбиты – Russian" lang="ru" hreflang="ru">Русский</a></li><li class="interlanguage-link interwiki-tr"><a href="//tr.wikipedia.org/wiki/Kepler_Y%C3%B6r%C3%BCngesi" title="Kepler Yörüngesi – Turkish" lang="tr" hreflang="tr">Türkçe</a></li><li class="interlanguage-link interwiki-zh"><a href="//zh.wikipedia.org/wiki/%E5%85%8B%E5%8D%9C%E5%8B%92%E8%BB%8C%E9%81%93" title="克卜勒軌道 – Chinese" lang="zh" hreflang="zh">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q2946193#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 20 February 2016, at 01:10.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="//wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Kepler_orbit&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ = window.RLQ || []).push(function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.eventLogging.subscriber","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","mmv.bootstrap.autostart","ext.visualEditor.targetLoader","ext.wikimediaEvents","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>(window.RLQ = window.RLQ || []).push(function () {
+mw.config.set({"wgBackendResponseTime":84,"wgHostname":"mw1178"}); /* @nomin */
+} );</script>
+	</body>
+</html>

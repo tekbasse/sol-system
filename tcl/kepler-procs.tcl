@@ -1,0 +1,147 @@
+#/sol-system/tcl/kepler-procs.tcl
+# based on publication "Keplerian Elements for Approimate Positions of the Major Planets"
+#   by E M Standish, Solar System Dyamics Group, JPL/Caltech
+#   retrieved from http://ssd.jpl.nasa.gov/txt/aprx_pos_planets.pdf on 27 Feb 2016
+#
+
+eval ssk {
+
+    set planets_list [list Mercury Venus EM-Bary Mars Jupiter Saturn Uranus Neptune Pluto]
+    # EM-Bary = Earth-Moon Barycenter
+
+    # Table Data PDF to txt work already available by Sonia Keys (Cambridge Mass) 
+    # via public domain work in aprx.go file
+    #   retrieved from https://github.com/soniakeys/aprx.git on 28 Feb 2016
+    # The following "//" comments in comments are Sonia Keys'
+    #
+    #	// data copied from Table 1, file p_elem_t1.txt.  A table of Go numeric
+    #	// literals would be convenient, but data is copied as a single large
+    #	// string to avoid typographical errors.
+    #	//         a              e               I                L            long.peri.      long.node.
+    #	//     AU, AU/Cy     rad, rad/Cy     deg, deg/Cy      deg, deg/Cy      deg, deg/Cy     deg, deg/Cy
+    #
+
+    # data loaded directly as an array of planets, where each tableN(planet) returns an ordered list
+    set table1(Mercury) [list \
+                             0.38709927      0.20563593      7.00497902      252.25032350     77.45779628     48.33076593 \
+                             0.00000037      0.00001906     -0.00594749   149472.67411175      0.16047689     -0.12534081 ]
+    set table1(Venus) [list \
+                           0.72333566      0.00677672      3.39467605      181.97909950    131.60246718     76.67984255 \
+                           0.00000390     -0.00004107     -0.00078890    58517.81538729      0.00268329     -0.27769418 ]
+    set table1(EM-Bary) [list \
+                             1.00000261      0.01671123     -0.00001531      100.46457166    102.93768193      0.0 \
+                             0.00000562     -0.00004392     -0.01294668    35999.37244981      0.32327364      0.0 ]
+    set table1(Mars) [list \
+                          1.52371034      0.09339410      1.84969142       -4.55343205    -23.94362959     49.55953891 \
+                          0.00001847      0.00007882     -0.00813131    19140.30268499      0.44441088     -0.29257343 ]
+    set table1(Jupiter) [list \
+                             5.20288700      0.04838624      1.30439695       34.39644051     14.72847983    100.47390909 \
+                             -0.00011607     -0.00013253     -0.00183714     3034.74612775      0.21252668      0.20469106 ]
+    set table1(Saturn) [list \
+                            9.53667594      0.05386179      2.48599187       49.95424423     92.59887831    113.66242448 \
+                            -0.00125060     -0.00050991      0.00193609     1222.49362201     -0.41897216     -0.28867794 ]
+    set table1(Uranus) [list \
+                            19.18916464      0.04725744      0.77263783      313.23810451    170.95427630     74.01692503 \
+                            -0.00196176     -0.00004397     -0.00242939      428.48202785      0.40805281      0.04240589 ]
+    set table1(Neptune) [list \
+                             30.06992276      0.00859048      1.77004347      -55.12002969     44.96476227    131.78422574 \
+                             0.00026291      0.00005105      0.00035372      218.45945325     -0.32241464     -0.00508664 ]
+    set table1(Pluto) [list \
+                           39.48211675      0.24882730     17.14001206      238.92903833    224.06891629    110.30393684 \
+                           -0.00031596      0.00005170      0.00004818      145.20780515     -0.04062942     -0.01183482 ]
+
+    #    // data copied from Table 2a, p_elem_t2.txt
+    #    //         a              e               I                L            long.peri.      long.node.
+    #    //     AU, AU/Cy     rad, rad/Cy     deg, deg/Cy      deg, deg/Cy      deg, deg/Cy     deg, deg/Cy
+
+    set table2a(Mercury) [list \
+                              0.38709843      0.20563661      7.00559432      252.25166724     77.45771895     48.33961819 \
+                              0.00000000      0.00002123     -0.00590158   149472.67486623      0.15940013     -0.12214182 ]
+    set table2a(Venus) [list \
+                            0.72332102      0.00676399      3.39777545      181.97970850    131.76755713     76.67261496 \
+                            -0.00000026     -0.00005107      0.00043494    58517.81560260      0.05679648     -0.27274174 ] 
+    set table2a(EM-Bary) [list \
+                              1.00000018      0.01673163     -0.00054346      100.46691572    102.93005885     -5.11260389 \
+                              -0.00000003     -0.00003661     -0.01337178    35999.37306329      0.31795260     -0.24123856 ]
+    set table2a(Mars) [list \
+                           1.52371243      0.09336511      1.85181869       -4.56813164    -23.91744784     49.71320984 \
+                           0.00000097      0.00009149     -0.00724757    19140.29934243      0.45223625     -0.26852431 ]
+    set table2a(Jupiter) [list \
+                              5.20248019      0.04853590      1.29861416       34.33479152     14.27495244    100.29282654 \
+                              -0.00002864      0.00018026     -0.00322699     3034.90371757      0.18199196      0.13024619 ]
+    set table2a(Saturn) [list \
+                             9.54149883      0.05550825      2.49424102       50.07571329     92.86136063    113.63998702 \
+                             -0.00003065     -0.00032044      0.00451969     1222.11494724      0.54179478     -0.25015002 ]
+    set table2a(Uranus) [list \
+                             19.18797948      0.04685740      0.77298127      314.20276625    172.43404441     73.96250215 \
+                             -0.00020455     -0.00001550     -0.00180155      428.49512595      0.09266985      0.05739699 ]
+    set table2a(Neptune) [list \
+                              30.06952752      0.00895439      1.77005520      304.22289287     46.68158724    131.78635853 \
+                              0.00006447      0.00000818      0.00022400      218.46515314      0.01009938     -0.00606302 ]
+    set table2a(Pluto) [list \
+                            39.48686035      0.24885238     17.14104260      238.96535011    224.09702598    110.30167986 \
+                            0.00449751      0.00006016      0.00000501      145.18042903     -0.00968827     -0.00809981 ]
+
+    #    // data copied from Table 2b, p_elem_t2.txt
+    #    //                           b             c             s            f
+
+    # for simplicity in coding, adding blank values for planets not in original table2b
+    set table2b(Mercury) [list ]
+    set table2b(Venus) [list ]
+    set table2b(EM-Bary) [list ]
+    set table2b(Mars) [list ]
+    set table2b(Jupiter) [list   -0.00012452    0.06064060   -0.35635438   38.35125000 ]
+    set table2b(Saturn) [list     0.00025899   -0.13434469    0.87320147   38.35125000 ]
+    set table2b(Uranus) [list     0.00058331   -0.97731848    0.17689245    7.67025000 ]
+    set table2b(Neptune) [list   -0.00041348    0.68346318   -0.10162547    7.67025000 ]
+    # only one reference for Pluto, by using lindex, other references will be empty, just as in cases of Mercury through Mars.
+    set table2b(Pluto) [list     -0.01262724 ]
+
+}
+
+ad_proc ssk::days_since_j2000 {
+    yyyymmdd
+} {
+    Returns decimal days since j2000, where yyyymmdd is in format "20160102" for Jan. 2, 2016. 
+    A negative number means days before j2000.
+    Time can be optionally appended to yyyymmdd, such as "20160102 11:05 AM".
+} {
+    # per https://en.wikipedia.org/wiki/Epoch_(reference_date)#J2000.0
+    # j2000.0
+    #  = Gregorian date 1, 2000 cira 12:00GMT
+    #  = Julian date 2451545.0 TT (Terrestrial Time)
+    #  = January 1, 2000 11:59:27.816 International Atomic Time
+    #  = January 1, 2000 11:58:55.816 UTC (Coordinated Universal time)
+    # see also https://en.wikipedia.org/wiki/Epoch_(astronomy)#Julian_years_and_J2000
+    # Julian epoch = 2000.0 = ( Julian date - 2451545.0 ) / 365.25
+
+    #// Julian dates corresponding to years
+    #
+    #set	j3000b 625673.5
+    #set	j1800  2378496.5
+    # j2000 = 2451545.0
+    #set	j2000  2451545.0
+    #set	j2050  2469807.5
+    #set	j3000  2816787.5
+    # Returning value $delta_days is about half a day different for j2050, j3000, j1800, if time standard is not included.
+    # So, including time standard in s1. Theoretically, s2 could include time also.
+
+    set s1 [clock scan "20000101 12:00"]
+    set s2 [clock scan $yyyymmdd ]
+    #set day_in_secs \[expr { 24 * 60 * 60 } \]
+    set day_in_secs 86400.0
+    set delta_days [expr { ( $s2 - $s1 ) / $day_in_secs } ]
+    return $delta_days
+}
+
+
+ad_proc ssk::pos_kepler -public {
+    yyyy-mm-dd
+    planets
+} {
+    Returns position of planet. Planets can be one or more of an index number of (0..8), or a direct reference of,  ssk::planets_list ie  Mercury Venus EM-Bary Mars Jupiter Saturn Uranus Neptune Pluto, where EM-Bary refers to Earth-Moon Barycenter. 
+} {
+    # store values in an array ssk::pos_k(planet,date) to cache repeat calculations.
+
+
+}
