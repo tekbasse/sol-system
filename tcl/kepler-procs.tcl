@@ -159,6 +159,41 @@ ad_proc ssk::pos_kepler -public {
     Returns position of planet. Planets can be one or more of an index number of (0..8), or a direct reference of,  ssk::planets_list ie  Mercury Venus EM-Bary Mars Jupiter Saturn Uranus Neptune Pluto, where EM-Bary refers to Earth-Moon Barycenter. 
 } {
     # store values in an array ssk::__pos_k_arr(planet,date) to cache repeat calculations.
-    upvar 1 __pos_k_arr
+    upvar 1 __pos_k_arr pos_k_arr
 
+    # 1. Compute the value of planet's six orbital elements
+
+    # 2. Compute argument of perihelion, omega and mean anomaly m_cap, where
+    #     omega = pi_sym - omega_cap  
+    #
+    #     m_cap = el_cap - pi_sym + b*pow(tau,2) + c*cos(f*tau) + s* sin(f*tau)
+    #
+
+    # alpha       semi-major axis (au, au / century)
+    # epsilon     eccentricity ( - , - / century )
+    # iota_cap    inclination ( degrees, degrees / century )
+    # el_cap      mean longitude ( degrees, degrees / century )
+    # pi_sym      longitude of perihelion ( degrees , degrees / century )
+    # omega_cap   longitude of ascending node ( degrees , degrees / century )
+
+    # 3a. Modulus the mean anomaly 
+
+    # 3b. Obtain the eccentric anomaly, e_cap from:
+    #     m_cap = e_cap - e_star * sin(e_cap) where e_star = 180*e/pi = 57.29578*e
+    
+    # 4. Compute planet's heliocentric coordinates in its orbital plane, r_prime
+    #    with x_prime axis aligned from the focus to the perhihelion.
+    #    x_prime = a* (co(E) - e) 
+    #    y_prime = a* sqrt(1 - pow(e,2)) * sin(e_cap)
+    #    z_prime = 0
+
+    # 5. Compute coordinates, r_ecliptic in the J2000 ecliptic plane, with 
+    #    x-axis aligned toward the equinox:
+
+    # x_ecl = (cos(omega) *cos(omega_cap) - sin(omega)*sin(omega_cap)*cos(iota_cap) ) * x_prime + ( -1 * sin(omega)*cos(omega_cap)-cos(omega)*sin(omega_cap)*cos(iota_cap) ) * y_prime
+    # y_ecl = (cos(omega) *sin(omega_cap) + sin(omega)*cos(omega_cap)*cos(iota_cap) ) * x_prime + ( -1 * sin(omega)*sin(omega_cap)+cos(omega)*cos(omega_cap)*cos(iota_cap) ) * y_prime
+    # z_ecl = (sin(omega)*sin(iota_cap)) * x_prime + (cos(omega)*sin(iota_cap) ) * y_prime
+
+
+    
 }
