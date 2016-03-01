@@ -276,7 +276,7 @@ ad_proc ssk::pos_kepler -public {
         set e $epsilon_arr($mp) 
         # Normally, use i for iteration, here using "n" per Standish paper
         set n 0
-        set e_cap_arr($n) [expr { $m_cap + $e * $180perpi * sin( $m_cap / $180perpi) } ]
+        set e_cap_n [expr { $m_cap + $e * $180perpi * sin( $m_cap / $180perpi) } ]
         # interation calculations
         # tol is tollerance in degres
         set tol 1e-6
@@ -285,28 +285,38 @@ ad_proc ssk::pos_kepler -public {
         set lc_limit 10000.
         while { $delta_e_cap > $tol && $n < $lc_limit } {
             if { $n >= $lc_limit } {
-                ns_log Warning "ssk::pos_kepler interation limit of ${lc_limit} reached, n is ${n} "
+                ns_log Warning "ssk::pos_kepler interation limit of '${lc_limit}' reached, n '${n}' delta_e_cap '${delta_e_cap}' tol '${tol}'"
             }
-            set delta_m_cap [expr { $m_cap - ( $e_cap_arr($n) - $e * $180perpi( $e_cap_arr($n) / $180perpi ) ) } ]
-            set delta_e_cap [expr { $delta_m_cap / ( 1. - $e * cos( $e_cap_arr($n) / $180perpi ) ) } ]
-            set n_prev $n
+            set delta_m_cap [expr { $m_cap - ( $e_cap_n - $e * $180perpi( $e_cap_n / $180perpi ) ) } ]
+            set delta_e_cap [expr { $delta_m_cap / ( 1. - $e * cos( $e_cap_n / $180perpi ) ) } ]
+            #set n_prev $n
+            # c/e_cap_arr($n)/e_cap_n/
+            #set e_cap_n_prev $e_cap_n
+            # e_cap_n_prev is just used once; in setting new e_cap_n, so 
+            # we can simplify by just referring to old e_cap_n when calculating new one
             incr n        
-            set e_cap_arr($n) [expr { $e_cap_arr($n_prev) + $delta_e_cap } ]
+            #set e_cap_n\ [expr { $e_cap_n_prev + $delta_e_cap } \]
+            set e_cap_n [expr { $e_cap_n + $delta_e_cap } ]
         }
+        # eccentric anomoly is e_cap, assign to mp
+        set e_cap_arr($mp) $e_cap_n
+
+        # 4. Compute planet's heliocentric coordinates in its orbital plane, r_prime
+        #    with x_prime axis aligned from the focus to the perhihelion.
+        #    x_prime = a* (co(E) - e) 
+        #    y_prime = a* sqrt(1 - pow(e,2)) * sin(e_cap)
+        #    z_prime = 0
+        set x_prime_arr($mp) [expr { $alpha_arr($mp) * ( cos( $e_cap_arr($mp) / $180perpi ) - $epsilon_arr($mp) ) } ]
+        set y_prime_arr($mp) [expr { $alpha_arr($mp) * sin( $e_cap_arr($mp) / $180perpi ) * sqrt(1. - pow( $epsilon_arr($mp), 2.) ) } ]
+        set z_prime_arr($mp) 0.
+
+        # 5. Compute coordinates, r_ecliptic in the J2000 ecliptic plane, with 
+        #    x-axis aligned toward the equinox:
         
-    # 4. Compute planet's heliocentric coordinates in its orbital plane, r_prime
-    #    with x_prime axis aligned from the focus to the perhihelion.
-    #    x_prime = a* (co(E) - e) 
-    #    y_prime = a* sqrt(1 - pow(e,2)) * sin(e_cap)
-    #    z_prime = 0
+        # x_ecl = (cos(omega) *cos(omega_cap) - sin(omega)*sin(omega_cap)*cos(iota_cap) ) * x_prime + ( -1 * sin(omega)*cos(omega_cap)-cos(omega)*sin(omega_cap)*cos(iota_cap) ) * y_prime
+        # y_ecl = (cos(omega) *sin(omega_cap) + sin(omega)*cos(omega_cap)*cos(iota_cap) ) * x_prime + ( -1 * sin(omega)*sin(omega_cap)+cos(omega)*cos(omega_cap)*cos(iota_cap) ) * y_prime
+        # z_ecl = (sin(omega)*sin(iota_cap)) * x_prime + (cos(omega)*sin(iota_cap) ) * y_prime
 
-                      # 5. Compute coordinates, r_ecliptic in the J2000 ecliptic plane, with 
-    #    x-axis aligned toward the equinox:
-
-    # x_ecl = (cos(omega) *cos(omega_cap) - sin(omega)*sin(omega_cap)*cos(iota_cap) ) * x_prime + ( -1 * sin(omega)*cos(omega_cap)-cos(omega)*sin(omega_cap)*cos(iota_cap) ) * y_prime
-    # y_ecl = (cos(omega) *sin(omega_cap) + sin(omega)*cos(omega_cap)*cos(iota_cap) ) * x_prime + ( -1 * sin(omega)*sin(omega_cap)+cos(omega)*cos(omega_cap)*cos(iota_cap) ) * y_prime
-    # z_ecl = (sin(omega)*sin(iota_cap)) * x_prime + (cos(omega)*sin(iota_cap) ) * y_prime
-
-                  }
+    }
     
 }
