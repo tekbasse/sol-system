@@ -200,7 +200,8 @@ ad_proc ssk::pos_kepler -public {
         # el_cap      mean longitude ( degrees, degrees / century )
         # pi_sym      longitude of perihelion ( degrees , degrees / century )
         # omega_cap   longitude of ascending node ( degrees , degrees / century )
-        # note: variable names follow naming from Standish page.
+
+        # note: variable names follow naming from Standish paper.
         # *_cap means letter or variable capitalized (caps)
         # *_sym means letter in symbolic form (different than standard, such as pi_sym)
         # *_star means letter with asterisk suffix.
@@ -226,10 +227,11 @@ ad_proc ssk::pos_kepler -public {
         # 2. Compute argument of perihelion, omega and mean anomaly m_cap, where
         #     omega = pi_sym - omega_cap  
         #
-        #     m_cap = el_cap - pi_sym + b*pow(tau,2) + c*cos(f*tau) + s* sin(f*tau)
+        #     m_cap = el_cap - pi_sym + b*pow(t_cap,2) + c*cos(f*t_cap) + s* sin(f*t_cap)
         #
         set omega_arr($mp) [expr { $pi_sym_arr($mp) - $omega_cap_arr($mp) } ]
         set m_cap_arr($mp) [expr { $el_cap_arr($mp) - $pi_sym_arr($mp) } ]
+
         if { !$use_table1_p } {
             # add Table2 additional terms, if existing
             # terms from tabl2b
@@ -254,13 +256,44 @@ ad_proc ssk::pos_kepler -public {
             }
         }
 
-        # 3a. Modulus the mean anomaly 
-
+        # 3a. Modulus the mean anomaly (m_cap) to within 180 degrees of 0.
+        
+        set m_cap_arr($mp) [expr { fmod( $m_cap_arr($mp), 180.) } ]
         
 
         # 3b. Obtain the eccentric anomaly, e_cap from:
-    #     m_cap = e_cap - e_star * sin(e_cap) where e_star = 180*e/pi = 57.29578*e
-    
+        #   Kepler's Equation:
+        #     m_cap = e_cap - e_star * sin(e_cap) where e_star = 180*e/pi = 57.29578*e
+        # From Standish paper, 
+        #   Solution of Kepler's Equation 
+        #   Given:
+        #   m_cap  is mean anomaly in degrees
+        #   e_star is eccentricity in degrees (ie epsilon * $180perpi)
+        
+        # Start with e_cap_0 = m_cap + e_star * sin( m_cap / $180perpi )
+        # converting array to scalar for speed
+        set m_cap $m_cap_arr($mp)
+        set e $epsilon_arr($mp) 
+        # Normally, use i for iteration, here using "n" per Standish paper
+        set n 0
+        set e_cap_arr($n) [expr { $m_cap + $e * $180perpi * sin( $m_cap / $180perpi) } ]
+        # interation calculations
+        # tol is tollerance in degres
+        set tol 1e-6
+        # Make test fail first time:
+        set delta_e_cap 1
+        set lc_limit 10000.
+        while { $delta_e_cap > $tol && $n < $lc_limit } {
+            if { $n >= $lc_limit } {
+                ns_log Warning "ssk::pos_kepler interation limit of ${lc_limit} reached, n is ${n} "
+            }
+            set delta_m_cap [expr { $m_cap - ( $e_cap_arr($n) - $e * $180perpi( $e_cap_arr($n) / $180perpi ) ) } ]
+            set delta_e_cap [expr { $delta_m_cap / ( 1. - $e * cos( $e_cap_arr($n) / $180perpi ) ) } ]
+            set n_prev $n
+            incr n        
+            set e_cap_arr($n) [expr { $e_cap_arr($n_prev) + $delta_e_cap } ]
+        }
+        
     # 4. Compute planet's heliocentric coordinates in its orbital plane, r_prime
     #    with x_prime axis aligned from the focus to the perhihelion.
     #    x_prime = a* (co(E) - e) 
