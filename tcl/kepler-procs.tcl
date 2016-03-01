@@ -156,11 +156,14 @@ ad_proc ssk::pos_kepler -public {
     yyyymmdd
     planets
 } {
-    Returns position of planet(s). Planets can be one or more of an index number of (0..8), or a direct reference of,  ssk::planets_list ie  Mercury Venus EM-Bary Mars Jupiter Saturn Uranus Neptune Pluto, where EM-Bary refers to Earth-Moon Barycenter. 
+    Returns position of planet(s) . Planets can be one or more of an index number of (0..8), or a direct reference of,  ssk::planets_list ie  Mercury Venus EM-Bary Mars Jupiter Saturn Uranus Neptune Pluto, where EM-Bary refers to Earth-Moon Barycenter. 
 } {
     # store values in an array ssk::__pos_k_arr(planet,j2000_date) to cache repeat calculations.
     upvar 1 __pos_k_arr pos_k_arr 
     upvar 1 planets_list planets_list
+    upvar 1 table1_larr table1_larr
+    upvar 1 table2a_larr table2a_larr
+    upvar 1 table2b_larr table2b_larr
     # constant used in trig functions, 180degrees per pi radians
     #set 180perpi \[expr { 180. / ( 2. * acos(0.) ) } \]
     set 180perpi 57.29577951308232
@@ -181,12 +184,13 @@ ad_proc ssk::pos_kepler -public {
     # t_cap is number of centuries past J2000.0
     # one J2000 year is 365.25 days
     set t_cap [expr { [ssk::days_since_j2000 $yyyymmdd] / 36525. } ]
-    if { $t_cap > -2. && $tcap < 0.5 } {
+    if { $t_cap > -2. && $t_cap < 0.5 } {
         # Use table1 for time range 1800 AD to 2050AD
         set use_table1_p 1
     } else {
         # If not table 1, then table2 will be used.
-        # Use table2 for range 3000BC to 3000AD
+        # Use table2 is valid for range 3000BC to 3000AD, but best available if
+        # table1 is not used, regardless.
         set use_table1_p 0
     }
     foreach mp_i $mp_list {
@@ -312,11 +316,30 @@ ad_proc ssk::pos_kepler -public {
 
         # 5. Compute coordinates, r_ecliptic in the J2000 ecliptic plane, with 
         #    x-axis aligned toward the equinox:
-        
-        # x_ecl = (cos(omega) *cos(omega_cap) - sin(omega)*sin(omega_cap)*cos(iota_cap) ) * x_prime + ( -1 * sin(omega)*cos(omega_cap)-cos(omega)*sin(omega_cap)*cos(iota_cap) ) * y_prime
-        # y_ecl = (cos(omega) *sin(omega_cap) + sin(omega)*cos(omega_cap)*cos(iota_cap) ) * x_prime + ( -1 * sin(omega)*sin(omega_cap)+cos(omega)*cos(omega_cap)*cos(iota_cap) ) * y_prime
-        # z_ecl = (sin(omega)*sin(iota_cap)) * x_prime + (cos(omega)*sin(iota_cap) ) * y_prime
+        # cache factors for speed and simplicity
+        set omega $omega_arr($pm)
+        set cos_omega [expr { cos( $omega / $180perpi ) } ]
+        set sin_omega [expr { sin( $omega / $180perpi ) } ]
+        set omega_cap $omega_cap_arr($pm)
+        set cos_omega_cap [expr { cos( $omega_cap / $180perpi ) } ]
+        set sin_omega_cap [expr { sin( $omega_cap / $180perpi ) } ]
+        set iota_cap $iota_cap_arr($mp)
+        set cos_iota_cap [expr { cos( $iota_cap / $180perpi ) } ]
+        set sin_iota_cap [expr { sin( $iota_cap / $180perpi ) } ]
 
+        # x_ecl = (cos(omega) *cos(omega_cap) - sin(omega)*sin(omega_cap)*cos(iota_cap) ) * x_prime 
+        #         + ( -1 * sin(omega)*cos(omega_cap)-cos(omega)*sin(omega_cap)*cos(iota_cap) ) * y_prime
+        # y_ecl = (cos(omega) *sin(omega_cap) + sin(omega)*cos(omega_cap)*cos(iota_cap) ) * x_prime 
+        #         + ( -1 * sin(omega)*sin(omega_cap)+cos(omega)*cos(omega_cap)*cos(iota_cap) ) * y_prime
+        # z_ecl = (sin(omega)*sin(iota_cap)) * x_prime + (cos(omega)*sin(iota_cap) ) * y_prime
+        set x_ecl_arr($mp) [expr { ( $cos_omega * $cos_omega_cap - $sin_omega * $sin_omega_cap * $cos_iota_cap ) * $x_prime_arr($mp) \
+                                       + ( -1. * $sin_omega * $cos_omega_cap - $cos_omega * $sin_omega_cap * $cos_iota_cap ) * $y_prime_arr($mp) } ]
+        set y_ecl_arr($mp) [expr { ( $cos_omega * $sin_omega_cap + $sin_omega * $cos_omega_cap * $cos_iota_cap ) * $x_prime_arr($mp) \
+                                       + ( -1. * $sin_omega * $sin_omega_cap + $cos_omega * $cos_oemga_cap * $cos_iota_cap ) * $y_prime_arr($mp) } ]
+        set z_ecl_arr($mp) [expr { ( $sin_omega * $sin_iota_cap ) * $x_prime_arr($mp) \
+                                       + ( $cos_omega * $sin_iota_cap ) * $y_prime_arr($mp) } ]
+
+        
     }
     
 }
