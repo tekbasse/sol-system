@@ -213,19 +213,19 @@ ad_proc ssk::pos_kepler -public {
         # *_arr indicates variable is an array
         # *_larr indicates variable is an array, where each array value is a list
         if { $use_table1_p } {
-            set alpha_arr($mp) [expr { [lindex $table1_larr($mp) 0] + $t_cap * [lindex $table1_larr($mp) 1] } ]
-            set epsilon_arr($mp) [expr { [lindex $table1_larr($mp) 2] + $t_cap * [lindex $table1_larr($mp) 3] } ]
-            set iota_cap_arr($mp) [expr { [lindex $table1_larr($mp) 4] + $t_cap * [lindex $table1_larr($mp) 5] } ]
-            set el_cap_arr($mp) [expr { [lindex $table1_larr($mp) 6] + $t_cap * [lindex $table1_larr($mp) 7] } ]
-            set pi_sym_arr($mp) [expr { [lindex $table1_larr($mp) 8] + $t_cap * [lindex $table1_larr($mp) 9] } ]
-            set omega_cap_arr($mp) [expr { [lindex $table1_larr($mp) 10] + $t_cap * [lindex $table1_larr($mp) 11] } ]
+            set alpha [expr { [lindex $table1_larr($mp) 0] + $t_cap * [lindex $table1_larr($mp) 1] } ]
+            set epsilon [expr { [lindex $table1_larr($mp) 2] + $t_cap * [lindex $table1_larr($mp) 3] } ]
+            set iota_cap [expr { [lindex $table1_larr($mp) 4] + $t_cap * [lindex $table1_larr($mp) 5] } ]
+            set el_cap [expr { [lindex $table1_larr($mp) 6] + $t_cap * [lindex $table1_larr($mp) 7] } ]
+            set pi_sym [expr { [lindex $table1_larr($mp) 8] + $t_cap * [lindex $table1_larr($mp) 9] } ]
+            set omega_cap [expr { [lindex $table1_larr($mp) 10] + $t_cap * [lindex $table1_larr($mp) 11] } ]
         } else {
-            set alpha_arr($mp) [expr { [lindex $table2a_larr($mp) 0] + $t_cap * [lindex $table2a_larr($mp) 1] } ]
-            set epsilon_arr($mp) [expr { [lindex $table2a_larr($mp) 2] + $t_cap * [lindex $table2a_larr($mp) 3] } ]
-            set iota_cap_arr($mp) [expr { [lindex $table2a_larr($mp) 4] + $t_cap * [lindex $table2a_larr($mp) 5] } ]
-            set el_cap_arr($mp) [expr { [lindex $table2a_larr($mp) 6] + $t_cap * [lindex $table2a_larr($mp) 7] } ]
-            set pi_sym_arr($mp) [expr { [lindex $table2a_larr($mp) 8] + $t_cap * [lindex $table2a_larr($mp) 9] } ]
-            set omega_cap_arr($mp) [expr { [lindex $table2a_larr($mp) 10] + $t_cap * [lindex $table2a_larr($mp) 11] } ]
+            set alpha [expr { [lindex $table2a_larr($mp) 0] + $t_cap * [lindex $table2a_larr($mp) 1] } ]
+            set epsilon [expr { [lindex $table2a_larr($mp) 2] + $t_cap * [lindex $table2a_larr($mp) 3] } ]
+            set iota_cap [expr { [lindex $table2a_larr($mp) 4] + $t_cap * [lindex $table2a_larr($mp) 5] } ]
+            set el_cap [expr { [lindex $table2a_larr($mp) 6] + $t_cap * [lindex $table2a_larr($mp) 7] } ]
+            set pi_sym [expr { [lindex $table2a_larr($mp) 8] + $t_cap * [lindex $table2a_larr($mp) 9] } ]
+            set omega_cap [expr { [lindex $table2a_larr($mp) 10] + $t_cap * [lindex $table2a_larr($mp) 11] } ]
         }
 
         # 2. Compute argument of perihelion, omega and mean anomaly m_cap, where
@@ -233,8 +233,8 @@ ad_proc ssk::pos_kepler -public {
         #
         #     m_cap = el_cap - pi_sym + b*pow(t_cap,2) + c*cos(f*t_cap) + s* sin(f*t_cap)
         #
-        set omega_arr($mp) [expr { $pi_sym_arr($mp) - $omega_cap_arr($mp) } ]
-        set m_cap_arr($mp) [expr { $el_cap_arr($mp) - $pi_sym_arr($mp) } ]
+        set omega [expr { $pi_sym - $omega_cap } ]
+        set m_cap [expr { $el_cap - $pi_sym } ]
 
         if { !$use_table1_p } {
             # add Table2 additional terms, if existing
@@ -244,25 +244,25 @@ ad_proc ssk::pos_kepler -public {
             set s [lindex $table2b_larr($mp) 2]
             set f [lindex $table2b_larr($mp) 3]
             if { $b ne "" } {
-                set m_cap_arr($mp) [expr { $m_cap_arr($mp) + $b * pow( $t_cap , 2.) } ]
+                set m_cap [expr { $m_cap + $b * pow( $t_cap , 2.) } ]
             }
             if { $c ne "" && $f ne "" } {
                 # c requres f
                 # cos expects radians, does original equation expect radians or degrees? degrees
                 # Adding conversion via 180perpi
-                set m_cap_arr($mp) [expr { $m_cap_arr($mp) + $c * cos( $f * $t_cap / $180perpi ) } ]
+                set m_cap [expr { $m_cap + $c * cos( $f * $t_cap / $180perpi ) } ]
             }
             if { $s ne "" && $f ne "" } {
                 # s requires f
                 # sin expects radians, does original equation expect radians or degrees? degrees
                 # Adding conversion via 180perpi
-                set m_cap_arr($mp) [expr { $m_cap_arr($mp) + $s * sin( $f * $t_cap / $180perpi ) } ]
+                set m_cap [expr { $m_cap + $s * sin( $f * $t_cap / $180perpi ) } ]
             }
         }
 
         # 3a. Modulus the mean anomaly (m_cap) to within 180 degrees of 0.
         
-        set m_cap_arr($mp) [expr { fmod( $m_cap_arr($mp), 180.) } ]
+        set m_cap [expr { fmod( $m_cap, 180.) } ]
         
 
         # 3b. Obtain the eccentric anomaly, e_cap from:
@@ -276,8 +276,8 @@ ad_proc ssk::pos_kepler -public {
         
         # Start with e_cap_0 = m_cap + e_star * sin( m_cap / $180perpi )
         # converting array to scalar for speed
-        set m_cap $m_cap_arr($mp)
-        set e $epsilon_arr($mp) 
+        set m_cap $m_cap
+        set e $epsilon 
         # Normally, use i for iteration, here using "n" per Standish paper
         set n 0
         set e_cap_n [expr { $m_cap + $e * $180perpi * sin( $m_cap / $180perpi) } ]
@@ -285,8 +285,8 @@ ad_proc ssk::pos_kepler -public {
         # tol is tollerance in degres
         set tol 1e-6
         # Make test fail first time:
-        set delta_e_cap 1
-        set lc_limit 10000.
+        set delta_e_cap [expr { $tol + 1. } ]
+        set lc_limit 10000
         while { $delta_e_cap > $tol && $n < $lc_limit } {
             if { $n >= $lc_limit } {
                 ns_log Warning "ssk::pos_kepler interation limit of '${lc_limit}' reached, n '${n}' delta_e_cap '${delta_e_cap}' tol '${tol}'"
@@ -298,32 +298,29 @@ ad_proc ssk::pos_kepler -public {
             #set e_cap_n_prev $e_cap_n
             # e_cap_n_prev is just used once; in setting new e_cap_n, so 
             # we can simplify by just referring to old e_cap_n when calculating new one
-            incr n        
+            incr n
             #set e_cap_n\ [expr { $e_cap_n_prev + $delta_e_cap } \]
             set e_cap_n [expr { $e_cap_n + $delta_e_cap } ]
         }
-        # eccentric anomoly is e_cap, assign to mp
-        set e_cap_arr($mp) $e_cap_n
+        # eccentric anomoly is e_cap, assign from iteration
+        set e_cap $e_cap_n
 
         # 4. Compute planet's heliocentric coordinates in its orbital plane, r_prime
         #    with x_prime axis aligned from the focus to the perhihelion.
         #    x_prime = a* (co(E) - e) 
         #    y_prime = a* sqrt(1 - pow(e,2)) * sin(e_cap)
         #    z_prime = 0
-        set x_prime_arr($mp) [expr { $alpha_arr($mp) * ( cos( $e_cap_arr($mp) / $180perpi ) - $epsilon_arr($mp) ) } ]
-        set y_prime_arr($mp) [expr { $alpha_arr($mp) * sin( $e_cap_arr($mp) / $180perpi ) * sqrt(1. - pow( $epsilon_arr($mp), 2.) ) } ]
-        set z_prime_arr($mp) 0.
+        set x_prime [expr { $alpha * ( cos( $e_cap / $180perpi ) - $epsilon ) } ]
+        set y_prime [expr { $alpha * sin( $e_cap / $180perpi ) * sqrt( 1. - pow( $epsilon, 2.) ) } ]
+        set z_prime 0.
 
         # 5. Compute coordinates, r_ecliptic in the J2000 ecliptic plane, with 
         #    x-axis aligned toward the equinox:
-        # cache factors for speed and simplicity
-        set omega $omega_arr($pm)
+
         set cos_omega [expr { cos( $omega / $180perpi ) } ]
         set sin_omega [expr { sin( $omega / $180perpi ) } ]
-        set omega_cap $omega_cap_arr($pm)
         set cos_omega_cap [expr { cos( $omega_cap / $180perpi ) } ]
         set sin_omega_cap [expr { sin( $omega_cap / $180perpi ) } ]
-        set iota_cap $iota_cap_arr($mp)
         set cos_iota_cap [expr { cos( $iota_cap / $180perpi ) } ]
         set sin_iota_cap [expr { sin( $iota_cap / $180perpi ) } ]
 
@@ -332,12 +329,12 @@ ad_proc ssk::pos_kepler -public {
         # y_ecl = (cos(omega) *sin(omega_cap) + sin(omega)*cos(omega_cap)*cos(iota_cap) ) * x_prime 
         #         + ( -1 * sin(omega)*sin(omega_cap)+cos(omega)*cos(omega_cap)*cos(iota_cap) ) * y_prime
         # z_ecl = (sin(omega)*sin(iota_cap)) * x_prime + (cos(omega)*sin(iota_cap) ) * y_prime
-        set x_ecl_arr($mp) [expr { ( $cos_omega * $cos_omega_cap - $sin_omega * $sin_omega_cap * $cos_iota_cap ) * $x_prime_arr($mp) \
-                                       + ( -1. * $sin_omega * $cos_omega_cap - $cos_omega * $sin_omega_cap * $cos_iota_cap ) * $y_prime_arr($mp) } ]
-        set y_ecl_arr($mp) [expr { ( $cos_omega * $sin_omega_cap + $sin_omega * $cos_omega_cap * $cos_iota_cap ) * $x_prime_arr($mp) \
-                                       + ( -1. * $sin_omega * $sin_omega_cap + $cos_omega * $cos_oemga_cap * $cos_iota_cap ) * $y_prime_arr($mp) } ]
-        set z_ecl_arr($mp) [expr { ( $sin_omega * $sin_iota_cap ) * $x_prime_arr($mp) \
-                                       + ( $cos_omega * $sin_iota_cap ) * $y_prime_arr($mp) } ]
+        set x_ecl_arr($mp) [expr { ( $cos_omega * $cos_omega_cap - $sin_omega * $sin_omega_cap * $cos_iota_cap ) * $x_prime \
+                                       + ( -1. * $sin_omega * $cos_omega_cap - $cos_omega * $sin_omega_cap * $cos_iota_cap ) * $y_prime } ]
+        set y_ecl_arr($mp) [expr { ( $cos_omega * $sin_omega_cap + $sin_omega * $cos_omega_cap * $cos_iota_cap ) * $x_prime \
+                                       + ( -1. * $sin_omega * $sin_omega_cap + $cos_omega * $cos_oemga_cap * $cos_iota_cap ) * $y_prime } ]
+        set z_ecl_arr($mp) [expr { ( $sin_omega * $sin_iota_cap ) * $x_prime \
+                                       + ( $cos_omega * $sin_iota_cap ) * $y_prime } ]
 
         
     }
