@@ -19,7 +19,7 @@ eval ssk {
     #	// string to avoid typographical errors.
     #	//         a              e               I                L            long.peri.      long.node.
     #	//     AU, AU/Cy     rad, rad/Cy     deg, deg/Cy      deg, deg/Cy      deg, deg/Cy     deg, deg/Cy
-    #
+    # file url: http://ssd.jpl.nasa.gov/txt/p_elem_t1.txt
 
     # data loaded directly as an array of planets, where each tableN(planet) returns an ordered list
     set table1_larr(Mercury) [list \
@@ -53,7 +53,7 @@ eval ssk {
     #    // data copied from Table 2a, p_elem_t2.txt
     #    //         a              e               I                L            long.peri.      long.node.
     #    //     AU, AU/Cy     rad, rad/Cy     deg, deg/Cy      deg, deg/Cy      deg, deg/Cy     deg, deg/Cy
-
+    #  file url: http://ssd.jpl.nasa.gov/txt/p_elem_t2.txt
     set table2a_larr(Mercury) [list \
                               0.38709843      0.20563661      7.00559432      252.25166724     77.45771895     48.33961819 \
                               0.00000000      0.00002123     -0.00590158   149472.67486623      0.15940013     -0.12214182 ]
