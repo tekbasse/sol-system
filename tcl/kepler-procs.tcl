@@ -12,7 +12,7 @@ namespace eval ssk {
     # constant used in trig functions, 180degrees per pi radians
     #set 180perpi \[expr { 180. / ( 2. * acos(0.) ) } \]
     variable 180perpi 57.29577951308232
-
+    variable icrf1_epsilon_deg 23.43928
     # Table Data PDF to txt work already available by Sonia Keys (Cambridge Mass) 
     # via public domain work in aprx.go file
     #   retrieved from https://github.com/soniakeys/aprx.git on 28 Feb 2016
@@ -163,9 +163,15 @@ ad_proc -public ssk::pos_kepler {
     yyyymmdd
     planets
     array_name
+    {icrf_p 0}
 } {
-    Returns position of planet(s) . Planets can be one or more of an index number of (0..8), or a direct reference of,  ssk::planets_list ie  Mercury Venus EM-Bary Mars Jupiter Saturn Uranus Neptune Pluto, where EM-Bary refers to Earth-Moon Barycenter. Values are returned to array_name, where array_name(planet_ref) contains a list of x, y, and z cartesian values relative to the plane of the ecliptic with sun at origin and units in Astronomical Units (AU) per Kepler calculations and supplied data; See code for details.
+    Returns position of planet(s). 
+    Planets can be one or more of an index number of (0..8), or a direct reference of,  ssk::planets_list ie  Mercury Venus EM-Bary Mars Jupiter Saturn Uranus Neptune Pluto, where EM-Bary refers to Earth-Moon Barycenter.
+    Values are returned to array_name, where array_name(planet_ref) contains a list of x, y, and z cartesian values relative to the plane of the ecliptic, x-axis aligned with Earth equinoxes (Vernal positive, Autumnal negative), and with sun at origin and units in Astronomical Units (AU) per Kepler calculations and supplied data; See code for details.
+    Set icrf_p to 1 to return coordinates in standardized "ICRF/J2000 frame" where obliquity at J2000 is epsilon = 23.43928 degrees.
 } {
+    # More about ICRF at: https://en.wikipedia.org/wiki/International_Celestial_Reference_Frame
+
     upvar 1 array_name temp_larr
     # store values in an array ssk::pos_k_arr(planet,j2000_date) to cache repeat calculations at least within same request.
     variable ::ssk::pos_k_arr
@@ -174,7 +180,7 @@ ad_proc -public ssk::pos_kepler {
     variable ::ssk::table2a_larr
     variable ::ssk::table2b_larr
     variable ::ssk::180perpi
-   
+    variable ::ssk::icrf1_epsilon_deg
 
     set p_list [split $planets ]
     # Major Planets list
@@ -205,12 +211,12 @@ ad_proc -public ssk::pos_kepler {
     foreach mp_i $mp_list {
         set mp [lindex $planets_list $mp_i]
 
-        if { ![info exists pos_k_arr(${mp},${yyyymmdd}) ] } {
+        if { ![info exists pos_k_arr(${mp},${yyyymmdd},0) ] } {
             # 1. Compute the value of planet's six orbital elements
             #
 
             # alpha       semi-major axis (au, au / century)
-            # epsilon     eccentricity ( - , - / century )
+            # ecc     eccentricity ( - , - / century )
             # iota_cap    inclination ( degrees, degrees / century )
             # el_cap      mean longitude ( degrees, degrees / century )
             # pi_sym      longitude of perihelion ( degrees , degrees / century )
@@ -225,14 +231,14 @@ ad_proc -public ssk::pos_kepler {
             # *_larr indicates variable is an array, where each array value is a list
             if { $use_table1_p } {
                 set alpha [expr { [lindex $table1_larr($mp) 0] + $t_cap * [lindex $table1_larr($mp) 1] } ]
-                set epsilon [expr { [lindex $table1_larr($mp) 2] + $t_cap * [lindex $table1_larr($mp) 3] } ]
+                set ecc [expr { [lindex $table1_larr($mp) 2] + $t_cap * [lindex $table1_larr($mp) 3] } ]
                 set iota_cap [expr { [lindex $table1_larr($mp) 4] + $t_cap * [lindex $table1_larr($mp) 5] } ]
                 set el_cap [expr { [lindex $table1_larr($mp) 6] + $t_cap * [lindex $table1_larr($mp) 7] } ]
                 set pi_sym [expr { [lindex $table1_larr($mp) 8] + $t_cap * [lindex $table1_larr($mp) 9] } ]
                 set omega_cap [expr { [lindex $table1_larr($mp) 10] + $t_cap * [lindex $table1_larr($mp) 11] } ]
             } else {
                 set alpha [expr { [lindex $table2a_larr($mp) 0] + $t_cap * [lindex $table2a_larr($mp) 1] } ]
-                set epsilon [expr { [lindex $table2a_larr($mp) 2] + $t_cap * [lindex $table2a_larr($mp) 3] } ]
+                set ecc [expr { [lindex $table2a_larr($mp) 2] + $t_cap * [lindex $table2a_larr($mp) 3] } ]
                 set iota_cap [expr { [lindex $table2a_larr($mp) 4] + $t_cap * [lindex $table2a_larr($mp) 5] } ]
                 set el_cap [expr { [lindex $table2a_larr($mp) 6] + $t_cap * [lindex $table2a_larr($mp) 7] } ]
                 set pi_sym [expr { [lindex $table2a_larr($mp) 8] + $t_cap * [lindex $table2a_larr($mp) 9] } ]
@@ -283,12 +289,12 @@ ad_proc -public ssk::pos_kepler {
             #   Solution of Kepler's Equation 
             #   Given:
             #   m_cap  is mean anomaly in degrees
-            #   e_star is eccentricity in degrees (ie epsilon * $180perpi)
+            #   e_star is eccentricity in degrees (ie ecc * $180perpi)
             
             # Start with e_cap_0 = m_cap + e_star * sin( m_cap / $180perpi )
             # converting array to scalar for speed
             set m_cap $m_cap
-            set e $epsilon 
+            set e $ecc 
             # Normally, use i for iteration, here using "n" per Standish paper
             set n 0
             set e_cap_n [expr { $m_cap + $e * $180perpi * sin( $m_cap / $180perpi) } ]
@@ -321,8 +327,8 @@ ad_proc -public ssk::pos_kepler {
             #    x_prime = a* (co(E) - e) 
             #    y_prime = a* sqrt(1 - pow(e,2)) * sin(e_cap)
             #    z_prime = 0
-            set x_prime [expr { $alpha * ( cos( $e_cap / $180perpi ) - $epsilon ) } ]
-            set y_prime [expr { $alpha * sin( $e_cap / $180perpi ) * sqrt( 1. - pow( $epsilon, 2.) ) } ]
+            set x_prime [expr { $alpha * ( cos( $e_cap / $180perpi ) - $ecc ) } ]
+            set y_prime [expr { $alpha * sin( $e_cap / $180perpi ) * sqrt( 1. - pow( $ecc, 2.) ) } ]
             set z_prime 0.
 
             # 5. Compute coordinates, r_ecliptic in the J2000 ecliptic plane, with 
@@ -347,9 +353,28 @@ ad_proc -public ssk::pos_kepler {
             set z_ecl [expr { ( $sin_omega * $sin_iota_cap ) * $x_prime \
                                            + ( $cos_omega * $sin_iota_cap ) * $y_prime } ]
 
-            set pos_k_arr(${mp},${yyyymmdd}) [list $x_ecl $y_ecl $z_ecl]
+            set pos_k_arr(${mp},${yyyymmdd},0) [list $x_ecl $y_ecl $z_ecl]
         } 
-        set temp_larr(${mp}) $pos_k_arr(${mp},${yyyymmdd})
+        if { $ifrc_p } {
+            # see if value already exists.
+            if { ![info exists $pos_k_arr(${mp},${yyyymmdd},1) ] } {
+                # transform to ICRF/J2000 frame format
+                # we can't depend on prior x_ecl,y_ecl,z_ecl, because value may have been previously calculated.
+                set ecl_list $pos_k_arr(${mp},${yyyymmdd},0)
+                set x_ecl [lindex $ecl_list 0]
+                set y_ecl [lindex $ecl_list 1]
+                set z_ecl [lindex $ecl_list 2]
+                set x_eq $x_ecl
+                set cos_epsilon [expr { cos($icrf1_epsilon_deg) } ]
+                set sin_epsilon [expr { sin($icrf1_epsilon_deg) } ]
+                set y_eq [expr { $cos_epsilon * $y_ecl - $sin_epsilon * $z_ecl } ]
+                set z_eq [expr { $sin_epsilon * $y_ecl - $cos_epsilon * $z_ecl } ]
+                set pos_k_arr(${mp},${yyyymmdd},1) [list $x_eq $y_eq $z_eq]
+            }
+            set temp_larr(${mp}) $pos_k_arr(${mp},${yyyymmdd},1)
+        } else {
+            set temp_larr(${mp}) $pos_k_arr(${mp},${yyyymmdd},0)
+        }
     }
-    
+    return 1
 }
