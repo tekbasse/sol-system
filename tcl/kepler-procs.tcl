@@ -106,7 +106,7 @@ namespace eval ssk {
 
 }
 
-ad_proc ssk::days_since_j2000 {
+ad_proc -public ssk::days_since_j2000 {
     yyyymmdd
 } {
     Returns decimal days since j2000, where yyyymmdd is in format "20160102" for Jan. 2, 2016. 
@@ -141,7 +141,7 @@ ad_proc ssk::days_since_j2000 {
     return $delta_days
 }
 
-ad_proc ssk::in_j2000 {
+ad_proc -public ssk::in_j2000 {
     yyyymmdd
 } {
     Returns decimal days in j2000.
@@ -159,7 +159,7 @@ ad_proc ssk::in_j2000 {
 }
 
 
-ad_proc ssk::pos_kepler -public {
+ad_proc -public ssk::pos_kepler {
     yyyymmdd
     planets
     array_name
