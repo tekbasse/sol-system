@@ -365,8 +365,8 @@ ad_proc -public ssk::pos_kepler {
                 set y_ecl [lindex $ecl_list 1]
                 set z_ecl [lindex $ecl_list 2]
                 set x_eq $x_ecl
-                set cos_epsilon [expr { cos($icrf1_epsilon_deg) } ]
-                set sin_epsilon [expr { sin($icrf1_epsilon_deg) } ]
+                set cos_epsilon [expr { cos($icrf1_epsilon_deg / $180perpi ) } ]
+                set sin_epsilon [expr { sin($icrf1_epsilon_deg / $180perpi ) } ]
                 set y_eq [expr { $cos_epsilon * $y_ecl - $sin_epsilon * $z_ecl } ]
                 set z_eq [expr { $sin_epsilon * $y_ecl - $cos_epsilon * $z_ecl } ]
                 set pos_k_arr(${mp},${yyyymmdd},1) [list $x_eq $y_eq $z_eq]
