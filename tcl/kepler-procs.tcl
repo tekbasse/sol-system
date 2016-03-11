@@ -187,7 +187,7 @@ ad_proc -public ssk::pos_kepler {
 } {
     # More about ICRF at: https://en.wikipedia.org/wiki/International_Celestial_Reference_Frame
 
-    upvar 1 array_name temp_larr
+    upvar 1 $array_name temp_larr
     # store values in an array ssk::pos_k_arr(planet,j2000_date) to cache repeat calculations at least within same request.
     variable ::ssk::pos_k_arr
     variable ::ssk::planets_list
@@ -245,19 +245,28 @@ ad_proc -public ssk::pos_kepler {
             # *_arr indicates variable is an array
             # *_larr indicates variable is an array, where each array value is a list
             if { $use_table1_p } {
-                set alpha [expr { [lindex $table1_larr($mp) 0] + $t_cap * [lindex $table1_larr($mp) 1] } ]
-                set ecc [expr { [lindex $table1_larr($mp) 2] + $t_cap * [lindex $table1_larr($mp) 3] } ]
-                set iota_cap [expr { [lindex $table1_larr($mp) 4] + $t_cap * [lindex $table1_larr($mp) 5] } ]
-                set el_cap [expr { [lindex $table1_larr($mp) 6] + $t_cap * [lindex $table1_larr($mp) 7] } ]
-                set pi_sym [expr { [lindex $table1_larr($mp) 8] + $t_cap * [lindex $table1_larr($mp) 9] } ]
-                set omega_cap [expr { [lindex $table1_larr($mp) 10] + $t_cap * [lindex $table1_larr($mp) 11] } ]
+                set alpha [expr { [lindex $table1_larr(${mp}) 0] + $t_cap * [lindex $table1_larr(${mp}) 6] } ]
+                set ecc [expr { [lindex $table1_larr(${mp}) 1] + $t_cap * [lindex $table1_larr(${mp}) 7] } ]
+                set iota_cap [expr { [lindex $table1_larr(${mp}) 2] + $t_cap * [lindex $table1_larr(${mp}) 8] } ]
+                set el_cap [expr { [lindex $table1_larr(${mp}) 3] + $t_cap * [lindex $table1_larr(${mp}) 9] } ]
+                set pi_sym [expr { [lindex $table1_larr(${mp}) 4] + $t_cap * [lindex $table1_larr(${mp}) 10] } ]
+                set omega_cap [expr { [lindex $table1_larr(${mp}) 5] + $t_cap * [lindex $table1_larr(${mp}) 11] } ]
             } else {
-                set alpha [expr { [lindex $table2a_larr($mp) 0] + $t_cap * [lindex $table2a_larr($mp) 1] } ]
-                set ecc [expr { [lindex $table2a_larr($mp) 2] + $t_cap * [lindex $table2a_larr($mp) 3] } ]
-                set iota_cap [expr { [lindex $table2a_larr($mp) 4] + $t_cap * [lindex $table2a_larr($mp) 5] } ]
-                set el_cap [expr { [lindex $table2a_larr($mp) 6] + $t_cap * [lindex $table2a_larr($mp) 7] } ]
-                set pi_sym [expr { [lindex $table2a_larr($mp) 8] + $t_cap * [lindex $table2a_larr($mp) 9] } ]
-                set omega_cap [expr { [lindex $table2a_larr($mp) 10] + $t_cap * [lindex $table2a_larr($mp) 11] } ]
+                set alpha [expr { [lindex $table2a_larr(${mp}) 0] + $t_cap * [lindex $table2a_larr(${mp}) 6] } ]
+                set ecc [expr { [lindex $table2a_larr(${mp}) 1] + $t_cap * [lindex $table2a_larr(${mp}) 7] } ]
+                set iota_cap [expr { [lindex $table2a_larr(${mp}) 2] + $t_cap * [lindex $table2a_larr(${mp}) 8] } ]
+                set el_cap [expr { [lindex $table2a_larr(${mp}) 3] + $t_cap * [lindex $table2a_larr(${mp}) 9] } ]
+                set pi_sym [expr { [lindex $table2a_larr(${mp}) 4] + $t_cap * [lindex $table2a_larr(${mp}) 10] } ]
+                set omega_cap [expr { [lindex $table2a_larr(${mp}) 5] + $t_cap * [lindex $table2a_larr(${mp}) 11] } ]
+            }
+            if { $ecc > 1 } {
+                # ecc cannot be > 1. log error
+                ns_log Warning "ssk::pos_kepler(264): ecentricity (ecc) gt 1. for body $mp use_table1_p $use_table1_p t_cap $t_cap "
+                if { $use_table1_p } {
+                    ns_log Warning "ssk::pos_kepler(265): lindex table1_larr(${mp}) 1 '[lindex table1_larr(${mp}) 1]' lindex table1_larr(${mp}) 7 [lindex table1_larr(${mp}) 7]"
+                } else {
+                    ns_log Warning "ssk::pos_kepler(266): lindex table2a_larr(${mp}) 2 '[lindex table2a_larr(${mp}) 1]' lindex table2a_larr(${mp}) 7 [lindex table2a_larr(${mp}) 7]"
+                }
             }
 
             # 2. Compute argument of perihelion, omega and mean anomaly m_cap, where
@@ -271,10 +280,10 @@ ad_proc -public ssk::pos_kepler {
             if { !$use_table1_p } {
                 # add Table2 additional terms, if existing
                 # terms from tabl2b
-                set b [lindex $table2b_larr($mp) 0]
-                set c [lindex $table2b_larr($mp) 1]
-                set s [lindex $table2b_larr($mp) 2]
-                set f [lindex $table2b_larr($mp) 3]
+                set b [lindex $table2b_larr(${mp}) 0]
+                set c [lindex $table2b_larr(${mp}) 1]
+                set s [lindex $table2b_larr(${mp}) 2]
+                set f [lindex $table2b_larr(${mp}) 3]
                 if { $b ne "" } {
                     set m_cap [expr { $m_cap + $b * pow( $t_cap , 2.) } ]
                 }
@@ -342,8 +351,9 @@ ad_proc -public ssk::pos_kepler {
             #    x_prime = a* (co(E) - e) 
             #    y_prime = a* sqrt(1 - pow(e,2)) * sin(e_cap)
             #    z_prime = 0
-            set x_prime [expr { $alpha * ( cos( $e_cap / $180perpi ) - $ecc ) } ]
-            set y_prime [expr { $alpha * sin( $e_cap / $180perpi ) * sqrt( 1. - pow( $ecc, 2.) ) } ]
+            set e_cap_radians [expr { $e_cap / $180perpi } ]
+            set x_prime [expr { $alpha * ( cos( $e_cap_radians ) - $ecc ) } ]
+            set y_prime [expr { $alpha * sin( $e_cap_radians ) * sqrt( 1. - pow( $ecc , 2 ) ) } ]
             set z_prime 0.
 
             # 5. Compute coordinates, r_ecliptic in the J2000 ecliptic plane, with 
@@ -364,13 +374,13 @@ ad_proc -public ssk::pos_kepler {
             set x_ecl [expr { ( $cos_omega * $cos_omega_cap - $sin_omega * $sin_omega_cap * $cos_iota_cap ) * $x_prime \
                                            + ( -1. * $sin_omega * $cos_omega_cap - $cos_omega * $sin_omega_cap * $cos_iota_cap ) * $y_prime } ]
             set y_ecl [expr { ( $cos_omega * $sin_omega_cap + $sin_omega * $cos_omega_cap * $cos_iota_cap ) * $x_prime \
-                                           + ( -1. * $sin_omega * $sin_omega_cap + $cos_omega * $cos_oemga_cap * $cos_iota_cap ) * $y_prime } ]
+                                           + ( -1. * $sin_omega * $sin_omega_cap + $cos_omega * $cos_omega_cap * $cos_iota_cap ) * $y_prime } ]
             set z_ecl [expr { ( $sin_omega * $sin_iota_cap ) * $x_prime \
                                            + ( $cos_omega * $sin_iota_cap ) * $y_prime } ]
 
             set pos_k_arr(${mp},${yyyymmdd},0) [list $x_ecl $y_ecl $z_ecl]
         } 
-        if { $ifrc_p } {
+        if { $icrf_p } {
             # see if value already exists.
             if { ![info exists $pos_k_arr(${mp},${yyyymmdd},1) ] } {
                 # transform to ICRF/J2000 frame format
