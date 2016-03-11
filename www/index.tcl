@@ -11,15 +11,23 @@ set date [clock format [clock seconds] -format "%Y%m%d"]
 
 ssk::pos_kepler $date $p_list bodies_larr
 
-set results "<pre>"
+set results "<p>for today: $date</p>\n\n"
+append results "<table>"
+append results "<tr><td>body</td><td>x</td><td>y</td><td>z</td><td>r</td></tr>"
 foreach b $p_list {
-    append results "${b}: "
+    append results "<tr><td>${b}</td>"
     set i 0
     set i_list [list x y z]
+    set r 0.
+
     foreach dim $bodies_larr($b) {
-        append results "[lindex $i_list $i]=${dim}"
+        set r [expr { $r + pow( $dim , 2. ) } ]
+        #append results "<td>[lindex $i_list $i]=${dim}</td>"
+        append results "<td>${dim}</td>"
         incr i
     }
+    set r [expr { sqrt( $r ) } ]
+    append results "<td>${r} AU</td></tr>"
     append results "\n\n"
 }
-append results "</pre>"
+append results "</table>"
