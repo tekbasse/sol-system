@@ -1,12 +1,27 @@
 #/sol-system/tcl/kepler-procs.tcl
+ad_library {
+
+    Sol System package procedures
+    @creation-date 13 Feb 2016
+    @cvs-id $Id:
+    @Copyright (c) 2016 Benjamin Brink
+    @license GNU General Public License 3, see project home or http://www.gnu.org/licenses/gpl-3.0.en.html
+    @project home: http://github.com/tekbasse/sol-system
+    @address: po box 20, Marylhurst, OR 97036-0020 usa
+    @email: tekbasse@yahoo.com
+
+    Temporary comment about git commit comments: http://xkcd.com/1296/
+}
+
 # based on publication "Keplerian Elements for Approimate Positions of the Major Planets"
 #   by E M Standish, Solar System Dyamics Group, JPL/Caltech
 #   retrieved from http://ssd.jpl.nasa.gov/txt/aprx_pos_planets.pdf on 27 Feb 2016
 #
+namespace eval ::ssk {}
+namespace eval ::ssk {
 
-namespace eval ssk {
-
-    variable planets_list [list Mercury Venus EM-Bary Mars Jupiter Saturn Uranus Neptune Pluto]
+    variable planets_list
+    set planets_list [list Mercury Venus EM-Bary Mars Jupiter Saturn Uranus Neptune Pluto]
     # EM-Bary = Earth-Moon Barycenter
 
     # constant used in trig functions, 180degrees per pi radians
@@ -308,7 +323,7 @@ ad_proc -public ssk::pos_kepler {
                 if { $n >= $lc_limit } {
                     ns_log Warning "ssk::pos_kepler interation limit of '${lc_limit}' reached, n '${n}' delta_e_cap '${delta_e_cap}' tol '${tol}'"
                 }
-                set delta_m_cap [expr { $m_cap - ( $e_cap_n - $e * $180perpi( $e_cap_n / $180perpi ) ) } ]
+                set delta_m_cap [expr { $m_cap - ( $e_cap_n - $e * $180perpi * sin( $e_cap_n / $180perpi ) ) } ]
                 set delta_e_cap [expr { $delta_m_cap / ( 1. - $e * cos( $e_cap_n / $180perpi ) ) } ]
                 #set n_prev $n
                 # c/e_cap_arr($n)/e_cap_n/
