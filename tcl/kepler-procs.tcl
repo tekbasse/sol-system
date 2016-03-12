@@ -282,6 +282,7 @@ ad_proc -public ssk::pos_kepler {
             #
             set omega [expr { $pi_sym - $omega_cap } ]
             set m_cap [expr { $el_cap - $pi_sym } ]
+            # omega and m_cap are in degrees units
 
             if { !$use_table1_p } {
                 # add Table2 additional terms, if existing
@@ -322,12 +323,11 @@ ad_proc -public ssk::pos_kepler {
             #   e_star is eccentricity in degrees (ie ecc * $180perpi)
             
             # Start with e_cap_0 = m_cap + e_star * sin( m_cap / $180perpi )
-            # converting array to scalar for speed
-            set m_cap $m_cap
-            set e $ecc 
+
+            #set e $ecc 
             # Normally, use i for iteration, here using "n" per Standish paper
             set n 0
-            set e_cap_n [expr { $m_cap + $e * $180perpi * sin( $m_cap / $180perpi) } ]
+            set e_cap_n [expr { $m_cap + $ecc * $180perpi * sin( $m_cap / $180perpi) } ]
             # interation calculations
             # tol is tollerance in degres
             set tol 1e-6
@@ -338,8 +338,8 @@ ad_proc -public ssk::pos_kepler {
                 if { $n >= $lc_limit } {
                     ns_log Warning "ssk::pos_kepler interation limit of '${lc_limit}' reached, n '${n}' delta_e_cap '${delta_e_cap}' tol '${tol}'"
                 }
-                set delta_m_cap [expr { $m_cap - ( $e_cap_n - $e * $180perpi * sin( $e_cap_n / $180perpi ) ) } ]
-                set delta_e_cap [expr { $delta_m_cap / ( 1. - $e * cos( $e_cap_n / $180perpi ) ) } ]
+                set delta_m_cap [expr { $m_cap - ( $e_cap_n - $ecc * $180perpi * sin( $e_cap_n / $180perpi ) ) } ]
+                set delta_e_cap [expr { $delta_m_cap / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
                 #set n_prev $n
                 # c/e_cap_arr($n)/e_cap_n/
                 #set e_cap_n_prev $e_cap_n
@@ -378,11 +378,11 @@ ad_proc -public ssk::pos_kepler {
             #         + ( -1 * sin(omega)*sin(omega_cap)+cos(omega)*cos(omega_cap)*cos(iota_cap) ) * y_prime
             # z_ecl = (sin(omega)*sin(iota_cap)) * x_prime + (cos(omega)*sin(iota_cap) ) * y_prime
             set x_ecl [expr { ( $cos_omega * $cos_omega_cap - $sin_omega * $sin_omega_cap * $cos_iota_cap ) * $x_prime \
-                                           + ( -1. * $sin_omega * $cos_omega_cap - $cos_omega * $sin_omega_cap * $cos_iota_cap ) * $y_prime } ]
+                                  + ( -1. * $sin_omega * $cos_omega_cap - $cos_omega * $sin_omega_cap * $cos_iota_cap ) * $y_prime } ]
             set y_ecl [expr { ( $cos_omega * $sin_omega_cap + $sin_omega * $cos_omega_cap * $cos_iota_cap ) * $x_prime \
-                                           + ( -1. * $sin_omega * $sin_omega_cap + $cos_omega * $cos_omega_cap * $cos_iota_cap ) * $y_prime } ]
+                                  + ( -1. * $sin_omega * $sin_omega_cap + $cos_omega * $cos_omega_cap * $cos_iota_cap ) * $y_prime } ]
             set z_ecl [expr { ( $sin_omega * $sin_iota_cap ) * $x_prime \
-                                           + ( $cos_omega * $sin_iota_cap ) * $y_prime } ]
+                                  + ( $cos_omega * $sin_iota_cap ) * $y_prime } ]
 
             set pos_k_arr(${mp},${yyyymmdd},0) [list $x_ecl $y_ecl $z_ecl]
         } 
