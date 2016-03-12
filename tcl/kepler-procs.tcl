@@ -196,14 +196,14 @@ ad_proc -public ssk::pos_kepler {
     variable ::ssk::table2b_larr
     variable ::ssk::180perpi
     variable ::ssk::icrf1_epsilon_deg
-
+    # validate
     set p_list [split $planets ]
     # Major Planets list
     set mp_list [list ]
     foreach p $p_list {
         set p_i -1
-        if { [qf_is_natural_number $p] } {
-            set p_i [lindex $planets_list $p]
+        if { [qf_is_natural_number $p] && [lindex $planets_list $p] ne "" } {
+            set p_i $p
         } else {
             set p_i [lsearch -exact -nocase $planets_list $p]
         }
@@ -211,6 +211,12 @@ ad_proc -public ssk::pos_kepler {
             lappend mp_list $p_i
         }
     }
+    if { [string length $yyyymmdd] == 10 && [string range $yyyymmdd 4 4] eq "-" } {
+        # must be in yyyy-mm-dd format, concatinate
+        set yyyymmdd "[string range $yyyymmdd 0 3][string range $yyyymmdd 5 6][string range $yyyymmdd 8 9]"
+    }
+
+
     # t_cap is number of centuries past J2000.0
     # one J2000 year is 365.25 days
     set t_cap [expr { [ssk::days_since_j2000 $yyyymmdd] / 36525. } ]

@@ -48,7 +48,7 @@ set ea_plus [expr { $ea + 25 * $day_s } ]
 set day_list [list ]
 set time_list [list $ev_minus $ev $ev_plus $ea_minus $ea $ea_plus $sn $ss]
 foreach time_s $time_list {
-    set date [clock format $time_s -f "%Y-%m-%d"]
+    set date [clock format $time_s -f "%Y%m%d"]
     lappend day_list $date
 }
 #set day_list [list 65 88 115 154 180 206]
@@ -58,7 +58,7 @@ append results "<table>"
 append results "<tr><td>date</td><td>x</td><td>y</td><td>z</td><td>radians</td><td>degrees</td></tr>"
 foreach day $day_list {
     # 2 is earth, 0 is Mercury
-    ssk::pos_kepler $date 2 earth_larr
+    ssk::pos_kepler $day 2 earth_larr
     set ii [lindex $::ssk::planets_list 2]
     set x [lindex $earth_larr($ii) 0]
     set y [lindex $earth_larr($ii) 1]
