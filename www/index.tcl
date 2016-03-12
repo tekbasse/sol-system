@@ -55,18 +55,21 @@ foreach time_s $time_list {
 #append results "<p>For days 87 +/- 26 and 180 +/- 26, ie [join ${day_list} ","]</p>"
 append results "<p>What's the angle and size of theoretical current disc at Earth's radius? </p>"
 append results "<table>"
-append results "<tr><td>z</td><td>degrees</td></tr>"
+append results "<tr><td>date</td><td>x</td><td>y</td><td>z</td><td>radians</td><td>degrees</td></tr>"
 foreach day $day_list {
     # 2 is earth, 0 is Mercury
     ssk::pos_kepler $date 2 earth_larr
-    set x [lindex $earth_larr(2) 0]
-    set y [lindex $earth_larr(2) 1]
-    set z [lindex $earth_larr(2) 2]
+    set ii [lindex $::ssk::planets_list 2]
+    set x [lindex $earth_larr($ii) 0]
+    set y [lindex $earth_larr($ii) 1]
+    set z [lindex $earth_larr($ii) 2]
+    unset earth_larr
     # z is in au, convert to degrees for the heck of it
     # arctan (z / r_of_xy) = angle in radians
-    set z_rad [expr { atan( $z / sqrt( pow( $y , 2) + pow( $x , 2 ) ) ) } ]
+    set r_xy [expr {  sqrt( pow( $y , 2. ) + pow( $x , 2. ) ) } ]
+    set z_rad [expr { atan( $z / $r_xy ) } ]
     set z_deg [expr { $z_rad * $::ssk::180perpi } ]
-    append results "<tr><td>${x}</td><td>${z_deg}</td></tr>"
+    append results "<tr><td>$day</td><td>${x}</td><td>${y}</td><td>${z}</td><td>${z_rad}</td><td>${z_deg}</td></tr>"
 }
 append results "</table>"
 
