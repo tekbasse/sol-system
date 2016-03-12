@@ -31,3 +31,42 @@ foreach b $p_list {
     append results "\n\n"
 }
 append results "</table>"
+
+set equinox_vernal "2016-03-20"
+set equinox_autumnal "2016-09-22"
+set solstice_north "2016-06-20"
+set solstice_south "2016-12-21"
+set ev [clock scan $equinox_vernal]
+set ea [clock scan $equinox_autumnal]
+set sn [clock scan $solstice_north]
+set ss [clock scan $solstice_south]
+set day_s [expr { 24 * 60 * 60 } ]
+set ev_minus [expr { $ev - 25 * $day_s } ]
+set ev_plus [expr { $ev + 25 * $day_s } ]
+set ea_minus [expr { $ea - 25 * $day_s } ]
+set ea_plus [expr { $ea + 25 * $day_s } ]
+set day_list [list ]
+set time_list [list $ev_minus $ev $ev_plus $ea_minus $ea $ea_plus $sn $ss]
+foreach time_s $time_list {
+    set date [clock format $time_s -f "%Y-%m-%d"]
+    lappend day_list $date
+}
+#set day_list [list 65 88 115 154 180 206]
+#append results "<p>For days 87 +/- 26 and 180 +/- 26, ie [join ${day_list} ","]</p>"
+append results "<p>What's the angle and size of theoretical current disc at Earth's radius? </p>"
+append results "<table>"
+append results "<tr><td>z</td><td>degrees</td></tr>"
+foreach day $day_list {
+    # 2 is earth, 0 is Mercury
+    ssk::pos_kepler $date 2 earth_larr
+    set x [lindex $earth_larr(2) 0]
+    set y [lindex $earth_larr(2) 1]
+    set z [lindex $earth_larr(2) 2]
+    # z is in au, convert to degrees for the heck of it
+    # arctan (z / r_of_xy) = angle in radians
+    set z_rad [expr { atan( $z / sqrt( pow( $y , 2) + pow( $x , 2 ) ) ) } ]
+    set z_deg [expr { $z_rad * $::ssk::180perpi } ]
+    append results "<tr><td>${x}</td><td>${z_deg}</td></tr>"
+}
+append results "</table>"
+
