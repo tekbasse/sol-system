@@ -51,25 +51,65 @@ foreach time_s $time_list {
     set date [clock format $time_s -f "%Y%m%d"]
     lappend day_list $date
 }
+
 #set day_list [list 65 88 115 154 180 206]
 #append results "<p>For days 87 +/- 26 and 180 +/- 26, ie [join ${day_list} ","]</p>"
+
+    
+
 append results "<p>What's the angle and size of theoretical current disc at Earth's radius? </p>"
+
 append results "<table>"
-append results "<tr><td>date</td><td>x</td><td>y</td><td>z</td><td>radians</td><td>degrees</td></tr>"
+append results "<tr><td>date</td><td>x</td><td>y</td><td>z (AU)</td><td>z (km)</td><td>radians</td><td>degrees</td></tr>"
+
+set ii [lindex $::ssk::planets_list 2]
 foreach day $day_list {
     # 2 is earth, 0 is Mercury
     ssk::pos_kepler $day 2 earth_larr
-    set ii [lindex $::ssk::planets_list 2]
     set x [lindex $earth_larr($ii) 0]
     set y [lindex $earth_larr($ii) 1]
     set z [lindex $earth_larr($ii) 2]
-    unset earth_larr
+    # 149497870.7 km/AU
+    set z_km [expr { round( $z * 149597870.7 ) } ]
+
     # z is in au, convert to degrees for the heck of it
     # arctan (z / r_of_xy) = angle in radians
     set r_xy [expr {  sqrt( pow( $y , 2. ) + pow( $x , 2. ) ) } ]
     set z_rad [expr { atan( $z / $r_xy ) } ]
     set z_deg [expr { $z_rad * $::ssk::180perpi } ]
-    append results "<tr><td>$day</td><td>${x}</td><td>${y}</td><td>${z}</td><td>${z_rad}</td><td>${z_deg}</td></tr>"
+    append results "<tr><td>$day</td><td>${x}</td><td>${y}</td><td>${z}</td><td>${z_km}</td><td>${z_rad}</td><td>${z_deg}</td></tr>"
 }
 append results "</table>"
 
+# Let's add a years worth of motion, to get a sense of tracking.
+set step [expr { 7 * $day_s } ]
+set year_s [expr { round( 365.256 * $day_s ) } ]
+set t [expr { $ss - $year_s } ]
+append results "<p>A year's worth of Earth's motion</p>"
+append results "<table>"
+append results "<tr><td>date</td><td>x</td><td>y</td><td>z (AU)</td><td>z (km)</td><td>radians</td><td>degrees</td></tr>"
+while { $t < $ss } {
+    set t_yyyymmdd [clock format $t -f "%Y%m%d"]
+    ssk::pos_kepler $t_yyyymmdd 2 earth_larr
+    set x [lindex $earth_larr($ii) 0]
+    set y [lindex $earth_larr($ii) 1]
+    set z [lindex $earth_larr($ii) 2]
+    # 149497870.7 km/AU
+    set z_km [expr { round( $z * 149597870.7 ) } ]
+
+    # z is in au, convert to degrees for the heck of it
+    # arctan (z / r_of_xy) = angle in radians
+    set r_xy [expr { sqrt( pow( $y , 2. ) + pow( $x , 2. ) ) } ]
+    set z_rad [expr { atan( $z / $r_xy ) } ]
+    set z_deg [expr { $z_rad * $::ssk::180perpi } ]
+    # format
+    set f "%.5G"
+    set x [format $f $x]
+    set y [format $f $y]
+    set z [format $f $z]
+    set z_rad [format $f $z_rad]
+    set z_deg [format $f $z_deg]
+    append results "<tr><td>${t_yyyymmdd}</td><td>${x}</td><td>${y}</td><td>${z}</td><td>${z_km}</td><td>${z_rad}</td><td>${z_deg}</td></tr>"
+    set t [expr { $t + $step } ]
+    }
+append results "</table>"
