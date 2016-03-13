@@ -27,6 +27,7 @@ namespace eval ::ssk {
     # constant used in trig functions, 180degrees per pi radians
     #set 180perpi \[expr { 180. / ( 2. * acos(0.) ) } \]
     variable 180perpi 57.29577951308232
+    # Epsilon is the obliauity of the ecliptic.
     variable icrf1_epsilon_deg 23.43928
     # Table Data PDF to txt work already available by Sonia Keys (Cambridge Mass) 
     # via public domain work in aprx.go file
@@ -376,8 +377,14 @@ ad_proc -public ssk::pos_kepler {
 
                 # 3a. Modulus the mean anomaly (m_cap) to within 180 degrees of 0.
                 
-                set m_cap [expr { fmod( $m_cap, 180.) } ]
-                
+                # fmod doesn't work as the solution expects. Using a manual rotation calc instead.
+                #set m_cap \[expr { fmod( $m_cap, 180.) } \]
+                while { $m_cap < -180. } {
+                    set m_cap [expr { $m_cap + 360. } ]
+                }
+                while { $m_cap > 180. } {
+                    set m_cap [expr { $m_cap - 360. } ]
+                }
 
                 # 3b. Obtain the eccentric anomaly, e_cap from:
                 #   Kepler's Equation:
@@ -399,7 +406,7 @@ ad_proc -public ssk::pos_kepler {
 
                 #   m_cap  is mean anomaly in degrees
                 #   e_star is eccentricity in degrees (ie ecc * $180perpi)
-                
+                set e_star [expr { $ecc * $180perpi } ]
                 #   e_cap  is eccentric anomaly in radians
 
                 # Start with e_cap_0 = m_cap + ecc * sin( m_cap / $180perpi )
@@ -409,39 +416,34 @@ ad_proc -public ssk::pos_kepler {
                 set e_cap_n [expr { $m_cap + $ecc * sin( $m_cap / $180perpi) } ]
 
                 set m_cap_n $m_cap
+                # for diagnostics, save original value
                 set m_cap_original $m_cap
                 # interation calculations
                 # tol is tollerance in degrees
                 set tol 1.0e-6
                 set abs_delta_e_cap [expr { $tol * 1.1 } ]
 
-                # first iteration:
-                set numerator [expr { $e_cap_n - $ecc * sin( $e_cap_n / $180perpi ) } ]
-                set delta_m_cap [expr { $m_cap_n - $numerator } ]
-                set delta_e_cap [expr { $delta_m_cap  / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
-                # or..
-                #set delta_e_cap [expr { ( 0. - $numerator - $delta_m_cap ) / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
-                
-                set e_cap_n [expr { $e_cap_n + $delta_e_cap } ]
-                set m_cap_n [expr { $m_cap_n + $delta_m_cap } ]
-                # assume m_cap doesn't iterate?
-                set abs_delta_e_cap [expr { abs( $delta_e_cap ) } ]
-
                 set lc_limit 10000
                 while { $abs_delta_e_cap > $tol && $n < $lc_limit } {
                     # These were the numerical approximation equations as understood from Standish paper only:
-                    #set delta_m_cap \[expr { $m_cap - ( $e_cap_n - $ecc * sin( $e_cap_n / $180perpi ) ) } \]
+                    #set delta_m_cap \[expr { $m_cap - ( $e_cap_n - $e_star * sin( $e_cap_n / $180perpi ) ) } \]
                     #set delta_e_cap \[expr { $delta_m_cap / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } \]
-                    if { $Debug } {
-                        ns_log Notice "ssk::pos_kepler(414): delta_e_cap $delta_e_cap e_cap_n $e_cap_n m_cap_n $m_cap_n"
-                    }
                     # Standish restated:
-                    set numerator [expr { $e_cap_n - $ecc * sin( $e_cap_n / $180perpi ) } ]
+                    set numerator [expr { $e_cap_n - $e_star * sin( $e_cap_n / $180perpi ) } ]
                     set delta_m_cap [expr { $m_cap_n - $numerator } ]
+                    # case 1
                     set delta_e_cap [expr { $delta_m_cap  / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
                     # or..
+                    # case 2
                     #set delta_e_cap [expr { ( 0. - $numerator - $delta_m_cap ) / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
+                    # # The main difference between  these two sets of equations, is that 
+                    # # m_cap is added in one delta_e_cap calc, or subtracted in the other.. verify
+                    # case 2 causes planet to bob up and down in orbit.. must be case 1.
 
+                    if { $Debug } {
+                        ns_log Notice "ssk::pos_kepler(414): n $n delta_e_cap $delta_e_cap e_cap_n $e_cap_n"
+                        ns_log Notice "ssk::pos_kepler(415): n $n delta_m_cap $delta_m_cap m_cap_n $m_cap_n "
+                    }
 
                     set e_cap_n [expr { $e_cap_n + $delta_e_cap } ]
                     #set m_cap_n [expr { $m_cap_n + $delta_m_cap } ]
@@ -467,9 +469,9 @@ ad_proc -public ssk::pos_kepler {
                 #    z_prime = 0
                 set e_cap_radians [expr { $e_cap / $180perpi } ]
 
-#### x_prime appears to be source of issue, goes from .9 to -1 over a day. See debug log.
-
-                set x_prime [expr { $alpha * ( cos( $e_cap_radians ) - $ecc ) } ]
+                #set x_prime [expr { $alpha * ( cos( $e_cap_radians ) - $ecc ) } ]
+                # https://en.wikipedia.org/wiki/Kepler%27s_equation#Equation shows equation differently:
+                set x_prime [expr { $alpha * cos( $e_cap_radians - $ecc ) } ]
                 set y_prime [expr { $alpha * sin( $e_cap_radians ) * sqrt( 1. - pow( $ecc , 2 ) ) } ]
                 set z_prime 0.
 
@@ -506,10 +508,14 @@ ad_proc -public ssk::pos_kepler {
                                       + ( -1. * $sin_omega * $sin_omega_cap + $cos_omega * $cos_omega_cap * $cos_iota_cap ) * $y_prime } ]
                 set z_ecl [expr { ( $sin_omega * $sin_iota_cap ) * $x_prime \
                                       + ( $cos_omega * $sin_iota_cap ) * $y_prime } ]
+                #ns_log Notice "ssk::pos_kepler(507): time_s $time_s t_cache $t_cache"
 
                 set pos_k_arr(${mp},${t_cache},0) [list $x_ecl $y_ecl $z_ecl]
             } 
             if { $icrf_p } {
+                # Convert from equatorial coordinates to ecliptic coordinates
+                # See https://en.wikipedia.org/wiki/Ecliptic_coordinate_system#Conversion_from_equatorial_coordinates_to_ecliptic_coordinates
+
                 # see if value already exists.
                 # for diagnostics, don't use cache
                 if { ![info exists $pos_k_arr(${mp},${t_cache},1) ] || 1 } {
@@ -523,6 +529,7 @@ ad_proc -public ssk::pos_kepler {
                     set cos_epsilon [expr { cos($icrf1_epsilon_deg / $180perpi ) } ]
                     set sin_epsilon [expr { sin($icrf1_epsilon_deg / $180perpi ) } ]
                     set y_eq [expr { $cos_epsilon * $y_ecl - $sin_epsilon * $z_ecl } ]
+                    # Wikipedia suggests following calc should be: + $cos_epsilon * $z_ecl, instead of - ...
                     set z_eq [expr { $sin_epsilon * $y_ecl - $cos_epsilon * $z_ecl } ]
                     set pos_k_arr(${mp},${t_cache},1) [list $x_eq $y_eq $z_eq]
                 }
