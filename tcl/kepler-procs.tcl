@@ -229,10 +229,10 @@ ad_proc -public ssk::pos_kepler {
             lappend mp_list $p_i
         }
     }
-    ns_log Notice "ssk::pos_kepler(230): yyyymmdd '${yyyymmdd}'"
+    #ns_log Notice "ssk::pos_kepler(230): yyyymmdd '${yyyymmdd}'"
     if { [string match -nocase "j*" [string range $yyyymmdd 0 0]] } {
         set numeric_q [string range $yyyymmdd 1 end]
-        ns_log Notice "ssk::pos_kepler(232): numeric_q $numeric_q"
+        #ns_log Notice "ssk::pos_kepler(232): numeric_q $numeric_q"
         if { [qf_is_decimal $numeric_q ] } {
             set t_cap [expr { ( $numeric_q - $j2000 ) / 36525. } ]
             set time_s [clock scan [ssk::j2000_to_utc $numeric_q] -format "%Y-%h-%d %H:%M:%S" -gmt 1]
@@ -322,7 +322,7 @@ ad_proc -public ssk::pos_kepler {
                 set pi_sym [expr { $py_sym0 + $t_cap * $py_sym_rate } ]
                 set omega_cap [expr { $omega_cap0 + $t_cap * $omega_cap_rate } ]
                 if { $ecc > 1 } {
-                    # ecc cannot be > 1. log error
+                    # ecc cannot be > 1. for planetary bodies. log error
                     ns_log Warning "ssk::pos_kepler(264): ecentricity (ecc) gt 1. for body $mp use_table1_p $use_table1_p t_cap $t_cap "
                     if { $use_table1_p } {
                         ns_log Warning "ssk::pos_kepler(265): lindex table1_larr(${mp}) 1 '[lindex table1_larr(${mp}) 1]' lindex table1_larr(${mp}) 7 [lindex table1_larr(${mp}) 7]"
@@ -372,47 +372,83 @@ ad_proc -public ssk::pos_kepler {
                 # 3b. Obtain the eccentric anomaly, e_cap from:
                 #   Kepler's Equation:
                 #     m_cap = e_cap - e_star * sin(e_cap) where e_star = 180*e/pi = 57.29578*e
-                # From Standish paper, 
-                #   Solution of Kepler's Equation 
+                # From Standish paper,    Solution of Kepler's Equation. 
+                # The obscurity of e_star can be dispelled via wikipedia's entry for Kepler's equation:
+                # https://en.wikipedia.org/wiki/Kepler%27s_equation#Equation
+                # m_cap = e_cap - e * sin(e_cap)
+                # Therefore: e_cap = m_cap + e * sin(e_cap)
+                
                 #   Given:
+
+                # alpha       semi-major axis (au, au / century)
+                # ecc     eccentricity ( - , - / century )
+                # iota_cap    inclination ( degrees, degrees / century )
+                # el_cap      mean longitude ( degrees, degrees / century )
+                # pi_sym      longitude of perihelion ( degrees , degrees / century )
+                # omega_cap   longitude of ascending node ( degrees , degrees / century )
+
                 #   m_cap  is mean anomaly in degrees
                 #   e_star is eccentricity in degrees (ie ecc * $180perpi)
                 
-                # Start with e_cap_0 = m_cap + e_star * sin( m_cap / $180perpi )
+                #   e_cap  is eccentric anomaly in radians
 
-                #set e $ecc 
+                # Start with e_cap_0 = m_cap + ecc * sin( m_cap / $180perpi )
+
                 # Normally, use i for iteration, here using "n" per Standish paper
                 set n 0
-                set ecc_radians [expr { $ecc / $180perpi } ]
-                set e_cap_n [expr { $m_cap + $ecc_radians * sin( $m_cap / $180perpi) } ]
+                set e_cap_n [expr { $m_cap + $ecc * sin( $m_cap / $180perpi) } ]
+
+                set m_cap_n $m_cap
+
                 # interation calculations
-                # tol is tollerance in degres
+                # tol is tollerance in degrees
                 set tol 1e-6
-                # Make test fail first time:
-                set abs_delta_e_cap [expr { $tol + 1. } ]
+                set abs_delta_e_cap [expr { $tol * 1.1 } ]
+
+                # first iteration:
+                set numerator [expr { $e_cap_n - $ecc * sin( $e_cap_n / $180perpi ) } ]
+                set delta_m_cap [expr { $m_cap_n - $numerator } ]
+                #set delta_e_cap [expr { $delta_m_cap  / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
+                # or..
+                set delta_e_cap [expr { ( 0. - $numerator - $delta_m_cap ) / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
+                
+                set e_cap_n [expr { $e_cap_n + $delta_e_cap } ]
+                set m_cap_n [expr { $m_cap_n + $delta_m_cap } ]
+                # assume m_cap doesn't iterate?
+                set abs_delta_e_cap [expr { abs( $delta_e_cap ) } ]
+
                 set lc_limit 10000
                 while { $abs_delta_e_cap > $tol && $n < $lc_limit } {
+                    # These were the numerical approximation equations as understood from Standish paper only:
+                    #set delta_m_cap \[expr { $m_cap - ( $e_cap_n - $ecc * sin( $e_cap_n / $180perpi ) ) } \]
+                    #set delta_e_cap \[expr { $delta_m_cap / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } \]
+                    ns_log Notice "ssk::pos_kepler(414): delta_e_cap $delta_e_cap e_cap_n $e_cap_n m_cap_n $m_cap_n"
+                    # Standish restated:
+                    set numerator [expr { $e_cap_n - $ecc * sin( $e_cap_n / $180perpi ) } ]
+                    set delta_m_cap [expr { $m_cap_n - $numerator } ]
+                    #set delta_e_cap [expr { $delta_m_cap  / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
+                    # or..
+                    set delta_e_cap [expr { ( 0. - $numerator - $delta_m_cap ) / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
+
+
+                    set e_cap_n [expr { $e_cap_n + $delta_e_cap } ]
+                    set m_cap_n [expr { $m_cap_n + $delta_m_cap } ]
+                    # assume m_cap doesn't iterate?
+                    set abs_delta_e_cap [expr { abs( $delta_e_cap ) } ]
+                    incr n
                     if { $n >= $lc_limit } {
                         ns_log Warning "ssk::pos_kepler interation limit of '${lc_limit}' reached, n '${n}' delta_e_cap '${delta_e_cap}' tol '${tol}'"
                     }
-                    set delta_m_cap [expr { $m_cap - ( $e_cap_n - $ecc_radians * sin( $e_cap_n / $180perpi ) ) } ]
-                    set delta_e_cap [expr { $delta_m_cap / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
-                    set abs_delta_e_cap [expr { abs( $delta_e_cap ) } ]
-                    #set n_prev $n
-                    # c/e_cap_arr($n)/e_cap_n/
-                    #set e_cap_n_prev $e_cap_n
-                    # e_cap_n_prev is just used once; in setting new e_cap_n, so 
-                    # we can simplify by just referring to old e_cap_n when calculating new one
-                    incr n
-                    #set e_cap_n\ [expr { $e_cap_n_prev + $delta_e_cap } \]
-                    set e_cap_n [expr { $e_cap_n + $delta_e_cap } ]
                 }
                 # eccentric anomoly is e_cap, assign from iteration
+                ns_log Notice "ssk::pos_kepler(434): e_cap_n $e_cap_n m_cap_n $m_cap_n"
                 set e_cap $e_cap_n
+                # m_cap not used beyond this point.
+                #set m_cap $m_cap_n
 
                 # 4. Compute planet's heliocentric coordinates in its orbital plane, r_prime
                 #    with x_prime axis aligned from the focus to the perhihelion.
-                #    x_prime = a* (co(E) - e) 
+                #    x_prime = a* (cos(E) - e) 
                 #    y_prime = a* sqrt(1 - pow(e,2)) * sin(e_cap)
                 #    z_prime = 0
                 set e_cap_radians [expr { $e_cap / $180perpi } ]
