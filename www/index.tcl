@@ -83,6 +83,7 @@ append results "</table>"
 
 # Let's add a years worth of motion, to get a sense of tracking.
 set step [expr { 7 * $day_s } ]
+set step [expr { int( $day_s / 3.) } ]
 set year_s [expr { round( 365.256 * $day_s ) } ]
 set t [expr { $ss - $year_s } ]
 append results "<p>A year's worth of Earth's motion</p>"
@@ -113,6 +114,42 @@ while { $t < $ss } {
     set t [expr { $t + $step } ]
     }
 append results "</table>"
+
+
+# Let's focus in on a troubling point in orbital calcs
+set step [expr { int( $day_s / 3.) } ]
+#set year_s [expr { round( 365.256 * $day_s ) } ]
+set t [clock scan "20160104" -format "%Y%m%d"]
+set t_end [clock scan "20160111" -format "%Y%m%d"]
+append results "<p>Orbital calculations in a troubled place.</p>"
+append results "<table>"
+append results "<tr><td>date</td><td>x</td><td>y</td><td>z (AU)</td><td>z (km)</td><td>radians</td><td>degrees</td></tr>"
+while { $t < $t_end && 0 } {
+    set t_yyyymmdd [clock format $t -f "%Y%m%d" -gmt 1]
+    ssk::pos_kepler $t_yyyymmdd 2 earth_larr
+    set x [lindex $earth_larr($ii) 0]
+    set y [lindex $earth_larr($ii) 1]
+    set z [lindex $earth_larr($ii) 2]
+    # 149497870.7 km/AU
+    set z_km [expr { round( $z * 149597870.7 ) } ]
+
+    # z is in au, convert to degrees for the heck of it
+    # arctan (z / r_of_xy) = angle in radians
+    set r_xy [expr { sqrt( pow( $y , 2. ) + pow( $x , 2. ) ) } ]
+    set z_rad [expr { atan( $z / $r_xy ) } ]
+    set z_deg [expr { $z_rad * $::ssk::180perpi } ]
+    # format
+    set f "%.5G"
+    set x [format $f $x]
+    set y [format $f $y]
+    set z [format $f $z]
+    set z_rad [format $f $z_rad]
+    set z_deg [format $f $z_deg]
+    append results "<tr><td>${t_yyyymmdd}</td><td>${x}</td><td>${y}</td><td>${z}</td><td>${z_km}</td><td>${z_rad}</td><td>${z_deg}</td></tr>"
+    set t [expr { $t + $step } ]
+    }
+append results "</table>"
+
 
 
 # tests from github.com/soniakeys/aprx/aprx_test.go

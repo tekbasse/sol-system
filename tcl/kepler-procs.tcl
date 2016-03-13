@@ -235,7 +235,8 @@ ad_proc -public ssk::pos_kepler {
         #ns_log Notice "ssk::pos_kepler(232): numeric_q $numeric_q"
         if { [qf_is_decimal $numeric_q ] } {
             set t_cap [expr { ( $numeric_q - $j2000 ) / 36525. } ]
-            set time_s [clock scan [ssk::j2000_to_utc $numeric_q] -format "%Y-%h-%d %H:%M:%S" -gmt 1]
+            set yyyymmdd [ssk::j2000_to_utc $numeric_q]
+            set time_s [clock scan $yyyymmdd -format "%Y-%h-%d %H:%M:%S" -gmt 1]
         } else {
             set success_p 0
         }
@@ -250,6 +251,14 @@ ad_proc -public ssk::pos_kepler {
     } else {
         set success_p 0
     }
+
+    set test_ymd [string range $yyyymmdd 0 7]
+    set Debug 0
+    if { $test_ymd eq "20160104" || $test_ymd eq "20160105" || $test_ymd eq "20160704" || $test_ymd eq "20160705" } {
+        # log some diagnostic info as z switches signs between these days.
+        set Debug 1
+    } 
+
 
     if { $success_p } {
         # validated input
@@ -341,6 +350,7 @@ ad_proc -public ssk::pos_kepler {
                 # omega and m_cap are in degrees units
 
                 if { !$use_table1_p } {
+                    ns_log Notice "ssk::pos_kepler(352): Using table2"
                     # add Table2 additional terms, if existing
                     # terms from tabl2b
                     set b [lindex $table2b_larr(${mp}) 0]
@@ -399,18 +409,18 @@ ad_proc -public ssk::pos_kepler {
                 set e_cap_n [expr { $m_cap + $ecc * sin( $m_cap / $180perpi) } ]
 
                 set m_cap_n $m_cap
-
+                set m_cap_original $m_cap
                 # interation calculations
                 # tol is tollerance in degrees
-                set tol 1e-6
+                set tol 1.0e-6
                 set abs_delta_e_cap [expr { $tol * 1.1 } ]
 
                 # first iteration:
                 set numerator [expr { $e_cap_n - $ecc * sin( $e_cap_n / $180perpi ) } ]
                 set delta_m_cap [expr { $m_cap_n - $numerator } ]
-                #set delta_e_cap [expr { $delta_m_cap  / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
+                set delta_e_cap [expr { $delta_m_cap  / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
                 # or..
-                set delta_e_cap [expr { ( 0. - $numerator - $delta_m_cap ) / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
+                #set delta_e_cap [expr { ( 0. - $numerator - $delta_m_cap ) / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
                 
                 set e_cap_n [expr { $e_cap_n + $delta_e_cap } ]
                 set m_cap_n [expr { $m_cap_n + $delta_m_cap } ]
@@ -422,17 +432,19 @@ ad_proc -public ssk::pos_kepler {
                     # These were the numerical approximation equations as understood from Standish paper only:
                     #set delta_m_cap \[expr { $m_cap - ( $e_cap_n - $ecc * sin( $e_cap_n / $180perpi ) ) } \]
                     #set delta_e_cap \[expr { $delta_m_cap / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } \]
-                    ns_log Notice "ssk::pos_kepler(414): delta_e_cap $delta_e_cap e_cap_n $e_cap_n m_cap_n $m_cap_n"
+                    if { $Debug } {
+                        ns_log Notice "ssk::pos_kepler(414): delta_e_cap $delta_e_cap e_cap_n $e_cap_n m_cap_n $m_cap_n"
+                    }
                     # Standish restated:
                     set numerator [expr { $e_cap_n - $ecc * sin( $e_cap_n / $180perpi ) } ]
                     set delta_m_cap [expr { $m_cap_n - $numerator } ]
-                    #set delta_e_cap [expr { $delta_m_cap  / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
+                    set delta_e_cap [expr { $delta_m_cap  / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
                     # or..
-                    set delta_e_cap [expr { ( 0. - $numerator - $delta_m_cap ) / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
+                    #set delta_e_cap [expr { ( 0. - $numerator - $delta_m_cap ) / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
 
 
                     set e_cap_n [expr { $e_cap_n + $delta_e_cap } ]
-                    set m_cap_n [expr { $m_cap_n + $delta_m_cap } ]
+                    #set m_cap_n [expr { $m_cap_n + $delta_m_cap } ]
                     # assume m_cap doesn't iterate?
                     set abs_delta_e_cap [expr { abs( $delta_e_cap ) } ]
                     incr n
@@ -441,7 +453,9 @@ ad_proc -public ssk::pos_kepler {
                     }
                 }
                 # eccentric anomoly is e_cap, assign from iteration
-                ns_log Notice "ssk::pos_kepler(434): e_cap_n $e_cap_n m_cap_n $m_cap_n"
+                if { $Debug } {
+                    ns_log Notice "ssk::pos_kepler(434): $mp e_cap_n $e_cap_n m_cap_n $m_cap_n m_cap_original $m_cap_original"
+                }
                 set e_cap $e_cap_n
                 # m_cap not used beyond this point.
                 #set m_cap $m_cap_n
@@ -452,6 +466,9 @@ ad_proc -public ssk::pos_kepler {
                 #    y_prime = a* sqrt(1 - pow(e,2)) * sin(e_cap)
                 #    z_prime = 0
                 set e_cap_radians [expr { $e_cap / $180perpi } ]
+
+#### x_prime appears to be source of issue, goes from .9 to -1 over a day. See debug log.
+
                 set x_prime [expr { $alpha * ( cos( $e_cap_radians ) - $ecc ) } ]
                 set y_prime [expr { $alpha * sin( $e_cap_radians ) * sqrt( 1. - pow( $ecc , 2 ) ) } ]
                 set z_prime 0.
@@ -465,6 +482,18 @@ ad_proc -public ssk::pos_kepler {
                 set sin_omega_cap [expr { sin( $omega_cap / $180perpi ) } ]
                 set cos_iota_cap [expr { cos( $iota_cap / $180perpi ) } ]
                 set sin_iota_cap [expr { sin( $iota_cap / $180perpi ) } ]
+                if { $Debug } {
+                    ns_log Notice "ssk::pos_kepler(473) $mp cos_omega $cos_omega"
+                    ns_log Notice "ssk::pos_kepler(474) $mp sin_omega $sin_omega"
+                    ns_log Notice "ssk::pos_kepler(475) $mp cos_omega_cap $cos_omega_cap"
+                    ns_log Notice "ssk::pos_kepler(476) $mp sin_omega_cap $sin_omega_cap"
+                    ns_log Notice "ssk::pos_kepler(477) $mp cos_iota_cap $cos_iota_cap"
+                    ns_log Notice "ssk::pos_kepler(478) $mp sin_iota_cap $sin_iota_cap"
+                    ns_log Notice "ssk::pos_kepler(479) $mp x_prime $x_prime"
+                    ns_log Notice "ssk::pos_kepler(479) $mp y_prime $y_prime"
+                    ns_log Notice "ssk::pos_kepler(480) $mp z_prime $z_prime"
+                }
+                                                                                                                                
 
                 # x_ecl = (cos(omega) *cos(omega_cap) - sin(omega)*sin(omega_cap)*cos(iota_cap) ) * x_prime 
                 #         + ( -1 * sin(omega)*cos(omega_cap)-cos(omega)*sin(omega_cap)*cos(iota_cap) ) * y_prime
@@ -504,5 +533,6 @@ ad_proc -public ssk::pos_kepler {
 
         }
     }
+    set Debug 0
     return $success_p
 }
