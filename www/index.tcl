@@ -96,6 +96,11 @@ if { 1 } {
     set step [expr { int( $day_s / 3.) } ]
     set year_s [expr { round( 365.256 * $day_s ) } ]
     set t [expr { $ss - $year_s } ]
+    append results "This run shows z km is too small, should vary by +/- up to circa: 18,000,000km. see calcs in comments."
+    # set k [expr { acos(0) / 90. } ]
+    # 0.017453292519943295
+    # expr sin( 7 * $k ) * 149497870.7
+    # 18219207.342676632
     append results "<p>A year's worth of Earth's motion in steps of $step seconds. A day has $day_s seconds.</p>"
     append results "<table>"
     append results "<tr>"

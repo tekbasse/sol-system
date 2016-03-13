@@ -41,6 +41,16 @@ namespace eval ::ssk {
     #	//     AU, AU/Cy     rad, rad/Cy     deg, deg/Cy      deg, deg/Cy      deg, deg/Cy     deg, deg/Cy
     # file url: http://ssd.jpl.nasa.gov/txt/p_elem_t1.txt
 
+    # Code       Math
+    # VarName    Variable    Represents
+    # ---------  --------    ------------
+    # alpha      a           semi-major axis (au, au / century)
+    # ecc        e           eccentricity ( - , - / century )
+    # iota_cap   &Iota;      inclination ( degrees, degrees / century )
+    # el_cap     L           mean longitude ( degrees, degrees / century )
+    # pi_sym     &piv;       longitude of perihelion ( degrees , degrees / century )
+    # omega_cap  &Omega;     longitude of ascending node ( degrees , degrees / century )
+    
     # data loaded directly as an array of planets, where each tableN(planet) returns an ordered list
     variable table1_larr
     set table1_larr(Mercury) [list \
@@ -281,21 +291,34 @@ ad_proc -public ssk::pos_kepler {
 
             # for diagnostics don't use cache
             if { ![info exists pos_k_arr(${mp},${t_cache},0) ] || 1 } {
-                # 1. Compute the value of planet's six orbital elements
+                # 1. Compute the value of planet's six orbital elements for indicated century
                 #
 
-                # alpha       semi-major axis (au, au / century)
-                # ecc     eccentricity ( - , - / century )
-                # iota_cap    inclination ( degrees, degrees / century )
-                # el_cap      mean longitude ( degrees, degrees / century )
-                # pi_sym      longitude of perihelion ( degrees , degrees / century )
-                # omega_cap   longitude of ascending node ( degrees , degrees / century )
+                # Code        Math
+                # VarName     Variable    Represents
+                # ---------   --------    ------------
+                # alpha       a           semi-major axis (au, au / century)
+                # ecc         e           eccentricity ( - , - / century )
+                # iota_cap    &Iota;      inclination ( degrees, degrees / century )
+                # el_cap      L           mean longitude ( degrees, degrees / century )
+                # pi_sym      &piv;       longitude of perihelion ( degrees , degrees / century )
+                # omega_cap   &Omega;     longitude of ascending node ( degrees , degrees / century )
+                # omega       &omega;     argument of perihelion ( degrees )
+                # m_cap       M           mean anomaly ( degrees )
+                # e_cap       E           eccentric anomaly ( degrees )
+                # delta_m_cap &delta;M    change in M ( degrees )
+                # delta_e_cap &delta;E    change in E ( degrees )
+                # t_cap       T           decimal number of centuries past J2000.0
+                # mp_i                    planetary body index reference 0..8
+                # mp                      planetary body name reference
+                # e_star      e*          eccentricity * 180/pi ( degrees )
+
 
                 # note: variable names follow naming from Standish paper.
                 # *_cap means letter or variable capitalized (caps)
                 # *_sym means letter in symbolic form (different than standard, such as pi_sym)
                 # *_star means letter with asterisk suffix.
-                # *_(other suffix) is standard tcl for subnotation, such as sub i as in index etc.
+                # *_(other suffix) is standard tcl for subnotation, such as n_i for "n subscript i" etc.
                 # *_arr indicates variable is an array
                 # *_larr indicates variable is an array, where each array value is a list
                 if { $use_table1_p } {
@@ -325,6 +348,7 @@ ad_proc -public ssk::pos_kepler {
                     set omega_cap0 [lindex $table2a_larr(${mp}) 5]
                     set omega_cap_rate [lindex $table2a_larr(${mp}) 11]
                 }
+
                 set alpha [expr { $alpha0 + $t_cap * $alpha_rate } ]
                 set ecc [expr { $ecc0 + $t_cap * $ecc_rate } ]
                 set iota_cap [expr { $iota_cap0 + $t_cap * $iota_cap_rate } ]
@@ -341,11 +365,12 @@ ad_proc -public ssk::pos_kepler {
                     }
                 }
 
-                # 2. Compute argument of perihelion, omega and mean anomaly m_cap, where
+                # 2. Compute argument of perihelion (omega) and mean anomaly (m_cap), where
                 #     omega = pi_sym - omega_cap  
                 #
                 #     m_cap = el_cap - pi_sym + b*pow(t_cap,2) + c*cos(f*t_cap) + s* sin(f*t_cap)
                 #
+
                 set omega [expr { $pi_sym - $omega_cap } ]
                 set m_cap [expr { $el_cap - $pi_sym } ]
                 # omega and m_cap are in degrees units
