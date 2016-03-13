@@ -148,8 +148,8 @@ ad_proc -public ssk::days_since_j2000 {
     # Returning value $delta_days is about half a day different for j2050, j3000, j1800, if time standard is not included.
     # So, including time standard in s1. Theoretically, s2 could include time also.
 
-    set s1 [clock scan "20000101 12:00"]
-    set s2 [clock scan $yyyymmdd ]
+    set s1 [clock scan "20000101 12:00" -format "%Y%m%d %H:%M" -gmt 1]
+    set s2 [clock scan $yyyymmdd -gmt 1]
     #set day_in_secs \[expr { 24 * 60 * 60 } \]
     set day_in_secs 86400.0
     set delta_days [expr { ( $s2 - $s1 ) / $day_in_secs } ]
@@ -164,8 +164,8 @@ ad_proc -public ssk::in_j2000 {
 } {
     # Based on days_since_j2000
     # adding standard value of j2000
-    set s1 [clock scan "20000101 12:00"]
-    set s2 [clock scan $yyyymmdd ]
+    set s1 [clock scan "20000101 12:00" -format "%Y%m%d %H:%M" -gmt 1]
+    set s2 [clock scan $yyyymmdd -gmt 1]
     #set day_in_secs \[expr { 24 * 60 * 60 } \]
     set day_in_secs 86400.0
     set j2000 2451545.0
@@ -173,6 +173,20 @@ ad_proc -public ssk::in_j2000 {
     return $j2000_days
 }
 
+ad_proc -public ssk::j2000_to_utc {
+    j2000_time
+    {utc_format "%Y-%h-%d %H:%M:%S"}
+} {
+    For format string, see 'clock format'. 
+} {
+    set j2000 2451545.0
+    set j2000_utc [clock scan "20000101 12:00" -format "%Y%m%d %H:%M" -gmt 1]
+    # covert days to seconds, 24 h/day * 60min/hr * 60s/min = 86400
+    set delta_j2000_s [expr { ($j2000_time - $j2000 ) * 86400. } ]
+    set time_utc_s [expr { round( $j2000_utc + $delta_j2000_s ) } ]
+    set time_utc [clock format $time_utc_s -format $utc_format -gmt 1]
+    return $time_utc
+}
 
 ad_proc -public ssk::pos_kepler {
     yyyymmdd
@@ -180,7 +194,8 @@ ad_proc -public ssk::pos_kepler {
     array_name
     {icrf_p 0}
 } {
-    Returns position of planet(s). 
+    Returns position of planet(s).
+    If yyyymmdd is a decimal number with a prefix of "J", then value is assumed to be j2000 number.
     Planets can be one or more of an index number of (0..8), or a direct reference of,  ssk::planets_list ie  Mercury Venus EM-Bary Mars Jupiter Saturn Uranus Neptune Pluto, where EM-Bary refers to Earth-Moon Barycenter.
     Values are returned to array_name, where array_name(planet_ref) contains a list of x, y, and z cartesian values relative to the plane of the ecliptic, x-axis aligned with Earth equinoxes (Vernal positive, Autumnal negative), and with sun at origin and units in Astronomical Units (AU) per Kepler calculations and supplied data; See code for details.
     Set icrf_p to 1 to return coordinates in standardized "ICRF/J2000 frame" where obliquity at J2000 is epsilon = 23.43928 degrees.
@@ -196,7 +211,10 @@ ad_proc -public ssk::pos_kepler {
     variable ::ssk::table2b_larr
     variable ::ssk::180perpi
     variable ::ssk::icrf1_epsilon_deg
+    set j2000 2451545.0
+    set cache_accuracy_s 100
     # validate
+    set success_p 1
     set p_list [split $planets ]
     # Major Planets list
     set mp_list [list ]
@@ -211,201 +229,244 @@ ad_proc -public ssk::pos_kepler {
             lappend mp_list $p_i
         }
     }
-    if { [string length $yyyymmdd] == 10 && [string range $yyyymmdd 4 4] eq "-" } {
+    ns_log Notice "ssk::pos_kepler(230): yyyymmdd '${yyyymmdd}'"
+    if { [string match -nocase "j*" [string range $yyyymmdd 0 0]] } {
+        set numeric_q [string range $yyyymmdd 1 end]
+        ns_log Notice "ssk::pos_kepler(232): numeric_q $numeric_q"
+        if { [qf_is_decimal $numeric_q ] } {
+            set t_cap [expr { ( $numeric_q - $j2000 ) / 36525. } ]
+            set time_s [clock scan [ssk::j2000_to_utc $numeric_q] -format "%Y-%h-%d %H:%M:%S" -gmt 1]
+        } else {
+            set success_p 0
+        }
+    } elseif { [string length $yyyymmdd] == 10 && [string range $yyyymmdd 4 4] eq "-" } {
         # must be in yyyy-mm-dd format, concatinate
         set yyyymmdd "[string range $yyyymmdd 0 3][string range $yyyymmdd 5 6][string range $yyyymmdd 8 9]"
-    }
-
-
-    # t_cap is number of centuries past J2000.0
-    # one J2000 year is 365.25 days
-    set t_cap [expr { [ssk::days_since_j2000 $yyyymmdd] / 36525. } ]
-    if { $t_cap > -2. && $t_cap < 0.5 } {
-        # Use table1 for time range 1800 AD to 2050AD
-        set use_table1_p 1
+        set t_cap [expr { [ssk::days_since_j2000 $yyyymmdd] / 36525. } ]
+        set time_s [clock scan $yyyymmdd -format "%Y%m%d" -gmt 1]
+    } elseif { [string length $yyyymmdd] == 8 } {
+        set t_cap [expr { [ssk::days_since_j2000 $yyyymmdd] / 36525. } ]
+        set time_s [clock scan $yyyymmdd -format "%Y%m%d" -gmt 1]
     } else {
-        # If not table 1, then table2 will be used.
-        # Use table2 is valid for range 3000BC to 3000AD, but best available if
-        # table1 is not used, regardless.
-        set use_table1_p 0
+        set success_p 0
     }
-    foreach mp_i $mp_list {
-        set mp [lindex $planets_list $mp_i]
 
-        if { ![info exists pos_k_arr(${mp},${yyyymmdd},0) ] } {
-            # 1. Compute the value of planet's six orbital elements
-            #
-
-            # alpha       semi-major axis (au, au / century)
-            # ecc     eccentricity ( - , - / century )
-            # iota_cap    inclination ( degrees, degrees / century )
-            # el_cap      mean longitude ( degrees, degrees / century )
-            # pi_sym      longitude of perihelion ( degrees , degrees / century )
-            # omega_cap   longitude of ascending node ( degrees , degrees / century )
-
-            # note: variable names follow naming from Standish paper.
-            # *_cap means letter or variable capitalized (caps)
-            # *_sym means letter in symbolic form (different than standard, such as pi_sym)
-            # *_star means letter with asterisk suffix.
-            # *_(other suffix) is standard tcl for subnotation, such as sub i as in index etc.
-            # *_arr indicates variable is an array
-            # *_larr indicates variable is an array, where each array value is a list
-            if { $use_table1_p } {
-                set alpha [expr { [lindex $table1_larr(${mp}) 0] + $t_cap * [lindex $table1_larr(${mp}) 6] } ]
-                set ecc [expr { [lindex $table1_larr(${mp}) 1] + $t_cap * [lindex $table1_larr(${mp}) 7] } ]
-                set iota_cap [expr { [lindex $table1_larr(${mp}) 2] + $t_cap * [lindex $table1_larr(${mp}) 8] } ]
-                set el_cap [expr { [lindex $table1_larr(${mp}) 3] + $t_cap * [lindex $table1_larr(${mp}) 9] } ]
-                set pi_sym [expr { [lindex $table1_larr(${mp}) 4] + $t_cap * [lindex $table1_larr(${mp}) 10] } ]
-                set omega_cap [expr { [lindex $table1_larr(${mp}) 5] + $t_cap * [lindex $table1_larr(${mp}) 11] } ]
-            } else {
-                set alpha [expr { [lindex $table2a_larr(${mp}) 0] + $t_cap * [lindex $table2a_larr(${mp}) 6] } ]
-                set ecc [expr { [lindex $table2a_larr(${mp}) 1] + $t_cap * [lindex $table2a_larr(${mp}) 7] } ]
-                set iota_cap [expr { [lindex $table2a_larr(${mp}) 2] + $t_cap * [lindex $table2a_larr(${mp}) 8] } ]
-                set el_cap [expr { [lindex $table2a_larr(${mp}) 3] + $t_cap * [lindex $table2a_larr(${mp}) 9] } ]
-                set pi_sym [expr { [lindex $table2a_larr(${mp}) 4] + $t_cap * [lindex $table2a_larr(${mp}) 10] } ]
-                set omega_cap [expr { [lindex $table2a_larr(${mp}) 5] + $t_cap * [lindex $table2a_larr(${mp}) 11] } ]
-            }
-            if { $ecc > 1 } {
-                # ecc cannot be > 1. log error
-                ns_log Warning "ssk::pos_kepler(264): ecentricity (ecc) gt 1. for body $mp use_table1_p $use_table1_p t_cap $t_cap "
-                if { $use_table1_p } {
-                    ns_log Warning "ssk::pos_kepler(265): lindex table1_larr(${mp}) 1 '[lindex table1_larr(${mp}) 1]' lindex table1_larr(${mp}) 7 [lindex table1_larr(${mp}) 7]"
-                } else {
-                    ns_log Warning "ssk::pos_kepler(266): lindex table2a_larr(${mp}) 2 '[lindex table2a_larr(${mp}) 1]' lindex table2a_larr(${mp}) 7 [lindex table2a_larr(${mp}) 7]"
-                }
-            }
-
-            # 2. Compute argument of perihelion, omega and mean anomaly m_cap, where
-            #     omega = pi_sym - omega_cap  
-            #
-            #     m_cap = el_cap - pi_sym + b*pow(t_cap,2) + c*cos(f*t_cap) + s* sin(f*t_cap)
-            #
-            set omega [expr { $pi_sym - $omega_cap } ]
-            set m_cap [expr { $el_cap - $pi_sym } ]
-            # omega and m_cap are in degrees units
-
-            if { !$use_table1_p } {
-                # add Table2 additional terms, if existing
-                # terms from tabl2b
-                set b [lindex $table2b_larr(${mp}) 0]
-                set c [lindex $table2b_larr(${mp}) 1]
-                set s [lindex $table2b_larr(${mp}) 2]
-                set f [lindex $table2b_larr(${mp}) 3]
-                if { $b ne "" } {
-                    set m_cap [expr { $m_cap + $b * pow( $t_cap , 2.) } ]
-                }
-                if { $c ne "" && $f ne "" } {
-                    # c requres f
-                    # cos expects radians, does original equation expect radians or degrees? degrees
-                    # Adding conversion via 180perpi
-                    set m_cap [expr { $m_cap + $c * cos( $f * $t_cap / $180perpi ) } ]
-                }
-                if { $s ne "" && $f ne "" } {
-                    # s requires f
-                    # sin expects radians, does original equation expect radians or degrees? degrees
-                    # Adding conversion via 180perpi
-                    set m_cap [expr { $m_cap + $s * sin( $f * $t_cap / $180perpi ) } ]
-                }
-            }
-
-            # 3a. Modulus the mean anomaly (m_cap) to within 180 degrees of 0.
-            
-            set m_cap [expr { fmod( $m_cap, 180.) } ]
-            
-
-            # 3b. Obtain the eccentric anomaly, e_cap from:
-            #   Kepler's Equation:
-            #     m_cap = e_cap - e_star * sin(e_cap) where e_star = 180*e/pi = 57.29578*e
-            # From Standish paper, 
-            #   Solution of Kepler's Equation 
-            #   Given:
-            #   m_cap  is mean anomaly in degrees
-            #   e_star is eccentricity in degrees (ie ecc * $180perpi)
-            
-            # Start with e_cap_0 = m_cap + e_star * sin( m_cap / $180perpi )
-
-            #set e $ecc 
-            # Normally, use i for iteration, here using "n" per Standish paper
-            set n 0
-            set e_cap_n [expr { $m_cap + $ecc * $180perpi * sin( $m_cap / $180perpi) } ]
-            # interation calculations
-            # tol is tollerance in degres
-            set tol 1e-6
-            # Make test fail first time:
-            set delta_e_cap [expr { $tol + 1. } ]
-            set lc_limit 10000
-            while { $delta_e_cap > $tol && $n < $lc_limit } {
-                if { $n >= $lc_limit } {
-                    ns_log Warning "ssk::pos_kepler interation limit of '${lc_limit}' reached, n '${n}' delta_e_cap '${delta_e_cap}' tol '${tol}'"
-                }
-                set delta_m_cap [expr { $m_cap - ( $e_cap_n - $ecc * $180perpi * sin( $e_cap_n / $180perpi ) ) } ]
-                set delta_e_cap [expr { $delta_m_cap / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
-                #set n_prev $n
-                # c/e_cap_arr($n)/e_cap_n/
-                #set e_cap_n_prev $e_cap_n
-                # e_cap_n_prev is just used once; in setting new e_cap_n, so 
-                # we can simplify by just referring to old e_cap_n when calculating new one
-                incr n
-                #set e_cap_n\ [expr { $e_cap_n_prev + $delta_e_cap } \]
-                set e_cap_n [expr { $e_cap_n + $delta_e_cap } ]
-            }
-            # eccentric anomoly is e_cap, assign from iteration
-            set e_cap $e_cap_n
-
-            # 4. Compute planet's heliocentric coordinates in its orbital plane, r_prime
-            #    with x_prime axis aligned from the focus to the perhihelion.
-            #    x_prime = a* (co(E) - e) 
-            #    y_prime = a* sqrt(1 - pow(e,2)) * sin(e_cap)
-            #    z_prime = 0
-            set e_cap_radians [expr { $e_cap / $180perpi } ]
-            set x_prime [expr { $alpha * ( cos( $e_cap_radians ) - $ecc ) } ]
-            set y_prime [expr { $alpha * sin( $e_cap_radians ) * sqrt( 1. - pow( $ecc , 2 ) ) } ]
-            set z_prime 0.
-
-            # 5. Compute coordinates, r_ecliptic in the J2000 ecliptic plane, with 
-            #    x-axis aligned toward the equinox:
-
-            set cos_omega [expr { cos( $omega / $180perpi ) } ]
-            set sin_omega [expr { sin( $omega / $180perpi ) } ]
-            set cos_omega_cap [expr { cos( $omega_cap / $180perpi ) } ]
-            set sin_omega_cap [expr { sin( $omega_cap / $180perpi ) } ]
-            set cos_iota_cap [expr { cos( $iota_cap / $180perpi ) } ]
-            set sin_iota_cap [expr { sin( $iota_cap / $180perpi ) } ]
-
-            # x_ecl = (cos(omega) *cos(omega_cap) - sin(omega)*sin(omega_cap)*cos(iota_cap) ) * x_prime 
-            #         + ( -1 * sin(omega)*cos(omega_cap)-cos(omega)*sin(omega_cap)*cos(iota_cap) ) * y_prime
-            # y_ecl = (cos(omega) *sin(omega_cap) + sin(omega)*cos(omega_cap)*cos(iota_cap) ) * x_prime 
-            #         + ( -1 * sin(omega)*sin(omega_cap)+cos(omega)*cos(omega_cap)*cos(iota_cap) ) * y_prime
-            # z_ecl = (sin(omega)*sin(iota_cap)) * x_prime + (cos(omega)*sin(iota_cap) ) * y_prime
-            set x_ecl [expr { ( $cos_omega * $cos_omega_cap - $sin_omega * $sin_omega_cap * $cos_iota_cap ) * $x_prime \
-                                  + ( -1. * $sin_omega * $cos_omega_cap - $cos_omega * $sin_omega_cap * $cos_iota_cap ) * $y_prime } ]
-            set y_ecl [expr { ( $cos_omega * $sin_omega_cap + $sin_omega * $cos_omega_cap * $cos_iota_cap ) * $x_prime \
-                                  + ( -1. * $sin_omega * $sin_omega_cap + $cos_omega * $cos_omega_cap * $cos_iota_cap ) * $y_prime } ]
-            set z_ecl [expr { ( $sin_omega * $sin_iota_cap ) * $x_prime \
-                                  + ( $cos_omega * $sin_iota_cap ) * $y_prime } ]
-
-            set pos_k_arr(${mp},${yyyymmdd},0) [list $x_ecl $y_ecl $z_ecl]
-        } 
-        if { $icrf_p } {
-            # see if value already exists.
-            if { ![info exists $pos_k_arr(${mp},${yyyymmdd},1) ] } {
-                # transform to ICRF/J2000 frame format
-                # we can't depend on prior x_ecl,y_ecl,z_ecl, because value may have been previously calculated.
-                set ecl_list $pos_k_arr(${mp},${yyyymmdd},0)
-                set x_ecl [lindex $ecl_list 0]
-                set y_ecl [lindex $ecl_list 1]
-                set z_ecl [lindex $ecl_list 2]
-                set x_eq $x_ecl
-                set cos_epsilon [expr { cos($icrf1_epsilon_deg / $180perpi ) } ]
-                set sin_epsilon [expr { sin($icrf1_epsilon_deg / $180perpi ) } ]
-                set y_eq [expr { $cos_epsilon * $y_ecl - $sin_epsilon * $z_ecl } ]
-                set z_eq [expr { $sin_epsilon * $y_ecl - $cos_epsilon * $z_ecl } ]
-                set pos_k_arr(${mp},${yyyymmdd},1) [list $x_eq $y_eq $z_eq]
-            }
-            set temp_larr(${mp}) $pos_k_arr(${mp},${yyyymmdd},1)
+    if { $success_p } {
+        # validated input
+        # t_cap is number of centuries past J2000.0
+        # one J2000 year is 365.25 days
+        set t_cache [expr { $cache_accuracy_s * round( $time_s / $cache_accuracy_s ) } ]
+        
+        if { $t_cap > -2. && $t_cap < 0.5 } {
+            # Use table1 for time range 1800 AD to 2050AD
+            set use_table1_p 1
         } else {
-            set temp_larr(${mp}) $pos_k_arr(${mp},${yyyymmdd},0)
+            # If not table 1, then table2 will be used.
+            # Use table2 is valid for range 3000BC to 3000AD, but best available if
+            # table1 is not used, regardless.
+            set use_table1_p 0
+        }
+        foreach mp_i $mp_list {
+            set mp [lindex $planets_list $mp_i]
+
+            # for diagnostics don't use cache
+            if { ![info exists pos_k_arr(${mp},${t_cache},0) ] || 1 } {
+                # 1. Compute the value of planet's six orbital elements
+                #
+
+                # alpha       semi-major axis (au, au / century)
+                # ecc     eccentricity ( - , - / century )
+                # iota_cap    inclination ( degrees, degrees / century )
+                # el_cap      mean longitude ( degrees, degrees / century )
+                # pi_sym      longitude of perihelion ( degrees , degrees / century )
+                # omega_cap   longitude of ascending node ( degrees , degrees / century )
+
+                # note: variable names follow naming from Standish paper.
+                # *_cap means letter or variable capitalized (caps)
+                # *_sym means letter in symbolic form (different than standard, such as pi_sym)
+                # *_star means letter with asterisk suffix.
+                # *_(other suffix) is standard tcl for subnotation, such as sub i as in index etc.
+                # *_arr indicates variable is an array
+                # *_larr indicates variable is an array, where each array value is a list
+                if { $use_table1_p } {
+                    set alpha0 [lindex $table1_larr(${mp}) 0]
+                    set alpha_rate [lindex $table1_larr(${mp}) 6]
+                    set ecc0 [lindex $table1_larr(${mp}) 1]
+                    set ecc_rate [lindex $table1_larr(${mp}) 7]
+                    set iota_cap0 [lindex $table1_larr(${mp}) 2]
+                    set iota_cap_rate [lindex $table1_larr(${mp}) 8]
+                    set el_cap0 [lindex $table1_larr(${mp}) 3]
+                    set el_cap_rate [lindex $table1_larr(${mp}) 9]
+                    set py_sym0 [lindex $table1_larr(${mp}) 4]
+                    set py_sym_rate [lindex $table1_larr(${mp}) 10]
+                    set omega_cap0 [lindex $table1_larr(${mp}) 5]
+                    set omega_cap_rate [lindex $table1_larr(${mp}) 11]
+                } else {
+                    set alpha0 [lindex $table2a_larr(${mp}) 0]
+                    set alpha_rate [lindex $table2a_larr(${mp}) 6]
+                    set ecc0 [lindex $table2a_larr(${mp}) 1]
+                    set ecc_rate [lindex $table2a_larr(${mp}) 7]
+                    set iota_cap0 [lindex $table2a_larr(${mp}) 2]
+                    set iota_cap_rate [lindex $table2a_larr(${mp}) 8]
+                    set el_cap0 [lindex $table2a_larr(${mp}) 3]
+                    set el_cap_rate [lindex $table2a_larr(${mp}) 9]
+                    set py_sym0 [lindex $table2a_larr(${mp}) 4]
+                    set py_sym_rate [lindex $table2a_larr(${mp}) 10]
+                    set omega_cap0 [lindex $table2a_larr(${mp}) 5]
+                    set omega_cap_rate [lindex $table2a_larr(${mp}) 11]
+                }
+                set alpha [expr { $alpha0 + $t_cap * $alpha_rate } ]
+                set ecc [expr { $ecc0 + $t_cap * $ecc_rate } ]
+                set iota_cap [expr { $iota_cap0 + $t_cap * $iota_cap_rate } ]
+                set el_cap [expr { $el_cap0 + $t_cap * $el_cap_rate } ]
+                set pi_sym [expr { $py_sym0 + $t_cap * $py_sym_rate } ]
+                set omega_cap [expr { $omega_cap0 + $t_cap * $omega_cap_rate } ]
+                if { $ecc > 1 } {
+                    # ecc cannot be > 1. log error
+                    ns_log Warning "ssk::pos_kepler(264): ecentricity (ecc) gt 1. for body $mp use_table1_p $use_table1_p t_cap $t_cap "
+                    if { $use_table1_p } {
+                        ns_log Warning "ssk::pos_kepler(265): lindex table1_larr(${mp}) 1 '[lindex table1_larr(${mp}) 1]' lindex table1_larr(${mp}) 7 [lindex table1_larr(${mp}) 7]"
+                    } else {
+                        ns_log Warning "ssk::pos_kepler(266): lindex table2a_larr(${mp}) 2 '[lindex table2a_larr(${mp}) 1]' lindex table2a_larr(${mp}) 7 [lindex table2a_larr(${mp}) 7]"
+                    }
+                }
+
+                # 2. Compute argument of perihelion, omega and mean anomaly m_cap, where
+                #     omega = pi_sym - omega_cap  
+                #
+                #     m_cap = el_cap - pi_sym + b*pow(t_cap,2) + c*cos(f*t_cap) + s* sin(f*t_cap)
+                #
+                set omega [expr { $pi_sym - $omega_cap } ]
+                set m_cap [expr { $el_cap - $pi_sym } ]
+                # omega and m_cap are in degrees units
+
+                if { !$use_table1_p } {
+                    # add Table2 additional terms, if existing
+                    # terms from tabl2b
+                    set b [lindex $table2b_larr(${mp}) 0]
+                    set c [lindex $table2b_larr(${mp}) 1]
+                    set s [lindex $table2b_larr(${mp}) 2]
+                    set f [lindex $table2b_larr(${mp}) 3]
+                    if { $b ne "" } {
+                        set m_cap [expr { $m_cap + $b * pow( $t_cap , 2.) } ]
+                    }
+                    if { $c ne "" && $f ne "" } {
+                        # c requres f
+                        # cos expects radians, does original equation expect radians or degrees? degrees
+                        # Adding conversion via 180perpi
+                        set m_cap [expr { $m_cap + $c * cos( $f * $t_cap / $180perpi ) } ]
+                    }
+                    if { $s ne "" && $f ne "" } {
+                        # s requires f
+                        # sin expects radians, does original equation expect radians or degrees? degrees
+                        # Adding conversion via 180perpi
+                        set m_cap [expr { $m_cap + $s * sin( $f * $t_cap / $180perpi ) } ]
+                    }
+                }
+
+                # 3a. Modulus the mean anomaly (m_cap) to within 180 degrees of 0.
+                
+                set m_cap [expr { fmod( $m_cap, 180.) } ]
+                
+
+                # 3b. Obtain the eccentric anomaly, e_cap from:
+                #   Kepler's Equation:
+                #     m_cap = e_cap - e_star * sin(e_cap) where e_star = 180*e/pi = 57.29578*e
+                # From Standish paper, 
+                #   Solution of Kepler's Equation 
+                #   Given:
+                #   m_cap  is mean anomaly in degrees
+                #   e_star is eccentricity in degrees (ie ecc * $180perpi)
+                
+                # Start with e_cap_0 = m_cap + e_star * sin( m_cap / $180perpi )
+
+                #set e $ecc 
+                # Normally, use i for iteration, here using "n" per Standish paper
+                set n 0
+                set ecc_radians [expr { $ecc / $180perpi } ]
+                set e_cap_n [expr { $m_cap + $ecc_radians * sin( $m_cap / $180perpi) } ]
+                # interation calculations
+                # tol is tollerance in degres
+                set tol 1e-6
+                # Make test fail first time:
+                set abs_delta_e_cap [expr { $tol + 1. } ]
+                set lc_limit 10000
+                while { $abs_delta_e_cap > $tol && $n < $lc_limit } {
+                    if { $n >= $lc_limit } {
+                        ns_log Warning "ssk::pos_kepler interation limit of '${lc_limit}' reached, n '${n}' delta_e_cap '${delta_e_cap}' tol '${tol}'"
+                    }
+                    set delta_m_cap [expr { $m_cap - ( $e_cap_n - $ecc_radians * sin( $e_cap_n / $180perpi ) ) } ]
+                    set delta_e_cap [expr { $delta_m_cap / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
+                    set abs_delta_e_cap [expr { abs( $delta_e_cap ) } ]
+                    #set n_prev $n
+                    # c/e_cap_arr($n)/e_cap_n/
+                    #set e_cap_n_prev $e_cap_n
+                    # e_cap_n_prev is just used once; in setting new e_cap_n, so 
+                    # we can simplify by just referring to old e_cap_n when calculating new one
+                    incr n
+                    #set e_cap_n\ [expr { $e_cap_n_prev + $delta_e_cap } \]
+                    set e_cap_n [expr { $e_cap_n + $delta_e_cap } ]
+                }
+                # eccentric anomoly is e_cap, assign from iteration
+                set e_cap $e_cap_n
+
+                # 4. Compute planet's heliocentric coordinates in its orbital plane, r_prime
+                #    with x_prime axis aligned from the focus to the perhihelion.
+                #    x_prime = a* (co(E) - e) 
+                #    y_prime = a* sqrt(1 - pow(e,2)) * sin(e_cap)
+                #    z_prime = 0
+                set e_cap_radians [expr { $e_cap / $180perpi } ]
+                set x_prime [expr { $alpha * ( cos( $e_cap_radians ) - $ecc ) } ]
+                set y_prime [expr { $alpha * sin( $e_cap_radians ) * sqrt( 1. - pow( $ecc , 2 ) ) } ]
+                set z_prime 0.
+
+                # 5. Compute coordinates, r_ecliptic in the J2000 ecliptic plane, with 
+                #    x-axis aligned toward the equinox:
+
+                set cos_omega [expr { cos( $omega / $180perpi ) } ]
+                set sin_omega [expr { sin( $omega / $180perpi ) } ]
+                set cos_omega_cap [expr { cos( $omega_cap / $180perpi ) } ]
+                set sin_omega_cap [expr { sin( $omega_cap / $180perpi ) } ]
+                set cos_iota_cap [expr { cos( $iota_cap / $180perpi ) } ]
+                set sin_iota_cap [expr { sin( $iota_cap / $180perpi ) } ]
+
+                # x_ecl = (cos(omega) *cos(omega_cap) - sin(omega)*sin(omega_cap)*cos(iota_cap) ) * x_prime 
+                #         + ( -1 * sin(omega)*cos(omega_cap)-cos(omega)*sin(omega_cap)*cos(iota_cap) ) * y_prime
+                # y_ecl = (cos(omega) *sin(omega_cap) + sin(omega)*cos(omega_cap)*cos(iota_cap) ) * x_prime 
+                #         + ( -1 * sin(omega)*sin(omega_cap)+cos(omega)*cos(omega_cap)*cos(iota_cap) ) * y_prime
+                # z_ecl = (sin(omega)*sin(iota_cap)) * x_prime + (cos(omega)*sin(iota_cap) ) * y_prime
+                set x_ecl [expr { ( $cos_omega * $cos_omega_cap - $sin_omega * $sin_omega_cap * $cos_iota_cap ) * $x_prime \
+                                      + ( -1. * $sin_omega * $cos_omega_cap - $cos_omega * $sin_omega_cap * $cos_iota_cap ) * $y_prime } ]
+                set y_ecl [expr { ( $cos_omega * $sin_omega_cap + $sin_omega * $cos_omega_cap * $cos_iota_cap ) * $x_prime \
+                                      + ( -1. * $sin_omega * $sin_omega_cap + $cos_omega * $cos_omega_cap * $cos_iota_cap ) * $y_prime } ]
+                set z_ecl [expr { ( $sin_omega * $sin_iota_cap ) * $x_prime \
+                                      + ( $cos_omega * $sin_iota_cap ) * $y_prime } ]
+
+                set pos_k_arr(${mp},${t_cache},0) [list $x_ecl $y_ecl $z_ecl]
+            } 
+            if { $icrf_p } {
+                # see if value already exists.
+                # for diagnostics, don't use cache
+                if { ![info exists $pos_k_arr(${mp},${t_cache},1) ] || 1 } {
+                    # transform to ICRF/J2000 frame format
+                    # we can't depend on prior x_ecl,y_ecl,z_ecl, because value may have been previously calculated.
+                    set ecl_list $pos_k_arr(${mp},${t_cache},0)
+                    set x_ecl [lindex $ecl_list 0]
+                    set y_ecl [lindex $ecl_list 1]
+                    set z_ecl [lindex $ecl_list 2]
+                    set x_eq $x_ecl
+                    set cos_epsilon [expr { cos($icrf1_epsilon_deg / $180perpi ) } ]
+                    set sin_epsilon [expr { sin($icrf1_epsilon_deg / $180perpi ) } ]
+                    set y_eq [expr { $cos_epsilon * $y_ecl - $sin_epsilon * $z_ecl } ]
+                    set z_eq [expr { $sin_epsilon * $y_ecl - $cos_epsilon * $z_ecl } ]
+                    set pos_k_arr(${mp},${t_cache},1) [list $x_eq $y_eq $z_eq]
+                }
+                set temp_larr(${mp}) $pos_k_arr(${mp},${t_cache},1)
+            } else {
+                set temp_larr(${mp}) $pos_k_arr(${mp},${t_cache},0)
+            }
+
         }
     }
-    return 1
+    return $success_p
 }

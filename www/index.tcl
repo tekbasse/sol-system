@@ -36,10 +36,10 @@ set equinox_vernal "2016-03-20"
 set equinox_autumnal "2016-09-22"
 set solstice_north "2016-06-20"
 set solstice_south "2016-12-21"
-set ev [clock scan $equinox_vernal]
-set ea [clock scan $equinox_autumnal]
-set sn [clock scan $solstice_north]
-set ss [clock scan $solstice_south]
+set ev [clock scan $equinox_vernal -gmt 1 ]
+set ea [clock scan $equinox_autumnal -gmt 1 ]
+set sn [clock scan $solstice_north -gmt 1 ]
+set ss [clock scan $solstice_south -gmt 1 ]
 set day_s [expr { 24 * 60 * 60 } ]
 set ev_minus [expr { $ev - 25 * $day_s } ]
 set ev_plus [expr { $ev + 25 * $day_s } ]
@@ -48,7 +48,7 @@ set ea_plus [expr { $ea + 25 * $day_s } ]
 set day_list [list ]
 set time_list [list $ev_minus $ev $ev_plus $ea_minus $ea $ea_plus $sn $ss]
 foreach time_s $time_list {
-    set date [clock format $time_s -f "%Y%m%d"]
+    set date [clock format $time_s -f "%Y%m%d" -gmt 1]
     lappend day_list $date
 }
 
@@ -89,7 +89,7 @@ append results "<p>A year's worth of Earth's motion</p>"
 append results "<table>"
 append results "<tr><td>date</td><td>x</td><td>y</td><td>z (AU)</td><td>z (km)</td><td>radians</td><td>degrees</td></tr>"
 while { $t < $ss } {
-    set t_yyyymmdd [clock format $t -f "%Y%m%d"]
+    set t_yyyymmdd [clock format $t -f "%Y%m%d" -gmt 1]
     ssk::pos_kepler $t_yyyymmdd 2 earth_larr
     set x [lindex $earth_larr($ii) 0]
     set y [lindex $earth_larr($ii) 1]
@@ -113,3 +113,37 @@ while { $t < $ss } {
     set t [expr { $t + $step } ]
     }
 append results "</table>"
+
+
+# tests from github.com/soniakeys/aprx/aprx_test.go
+foreach b $p_list {
+   append results "\n\n<p>for body: ${b}</p>"
+    append results "<table>"
+    append results "<tr><td>date</td><td>x</td><td>y</td><td>z</td><td>r</td></tr>"
+ 
+    #set date_list [list 18380901 18440103 19020919 19050408 19110822 19191113 19370726 19440518 19580929 19941125]
+    set j2000_date_list [list 2392618.348888889 2394577.781967592 2416010.781122685 2416942.849571759 2419270.121215278 2422274.928819444 2428739.750625000 2431227.969537037 2436474.748576389 2449680.541712963 ]
+    foreach date_j2000 $j2000_date_list { 
+        set date_f [::ssk::j2000_to_utc $date_j2000]
+        set date [::ssk::j2000_to_utc $date_j2000 ]
+        set jdate "j${date_j2000}"
+        ssk::pos_kepler $jdate $p_list bodies_larr
+ 
+        append results "<tr><td>${date_j2000} or ${date}</td>"
+        set i 0
+        set i_list [list x y z]
+        set r 0.
+
+        foreach dim $bodies_larr($b) {
+            set r [expr { $r + pow( $dim , 2. ) } ]
+            #append results "<td>[lindex $i_list $i]=${dim}</td>"
+            set dim_f [format " %.8E" $dim]
+            append results "<td>${dim_f}</td>"
+            incr i
+        }
+        set r [expr { sqrt( $r ) } ]
+        append results "<td>${r} AU</td></tr>"
+        append results "\n\n"
+    }
+    append results "</table>"
+}
