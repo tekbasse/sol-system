@@ -27,7 +27,7 @@ namespace eval ::ssk {
     # constant used in trig functions, 180degrees per pi radians
     #set 180perpi \[expr { 180. / ( 2. * acos(0.) ) } \]
     variable 180perpi 57.29577951308232
-    # Epsilon is the obliauity of the ecliptic.
+    # Epsilon is the obliquity of the ecliptic.
     variable icrf1_epsilon_deg 23.43928
     # Table Data PDF to txt work already available by Sonia Keys (Cambridge Mass) 
     # via public domain work in aprx.go file
@@ -291,6 +291,8 @@ ad_proc -public ssk::pos_kepler {
 
             # for diagnostics don't use cache
             if { ![info exists pos_k_arr(${mp},${t_cache},0) ] || 1 } {
+
+
                 # 1. Compute the value of planet's six orbital elements for indicated century
                 #
 
@@ -312,7 +314,9 @@ ad_proc -public ssk::pos_kepler {
                 # mp_i                    planetary body index reference 0..8
                 # mp                      planetary body name reference
                 # e_star      e*          eccentricity * 180/pi ( degrees )
-
+                # tol         tol         E tollerance ( degrees )
+                # epsilon                 obliquity of the ecliptic.
+                #  aka: icrf1_epsilon_deg 23.43928
 
                 # note: variable names follow naming from Standish paper.
                 # *_cap means letter or variable capitalized (caps)
@@ -365,6 +369,7 @@ ad_proc -public ssk::pos_kepler {
                     }
                 }
 
+
                 # 2. Compute argument of perihelion (omega) and mean anomaly (m_cap), where
                 #     omega = pi_sym - omega_cap  
                 #
@@ -400,6 +405,7 @@ ad_proc -public ssk::pos_kepler {
                     }
                 }
 
+
                 # 3a. Modulus the mean anomaly (m_cap) to within 180 degrees of 0.
                 
                 # fmod doesn't work as the solution expects. Using a manual rotation calc instead.
@@ -411,43 +417,34 @@ ad_proc -public ssk::pos_kepler {
                     set m_cap [expr { $m_cap - 360. } ]
                 }
 
+
                 # 3b. Obtain the eccentric anomaly, e_cap from:
                 #   Kepler's Equation:
                 #     m_cap = e_cap - e_star * sin(e_cap) where e_star = 180*e/pi = 57.29578*e
-                # From Standish paper,    Solution of Kepler's Equation. 
                 # The obscurity of e_star can be dispelled via wikipedia's entry for Kepler's equation:
                 # https://en.wikipedia.org/wiki/Kepler%27s_equation#Equation
                 # m_cap = e_cap - e * sin(e_cap)
                 # Therefore: e_cap = m_cap + e * sin(e_cap)
-                
-                #   Given:
 
-                # alpha       semi-major axis (au, au / century)
-                # ecc     eccentricity ( - , - / century )
-                # iota_cap    inclination ( degrees, degrees / century )
-                # el_cap      mean longitude ( degrees, degrees / century )
-                # pi_sym      longitude of perihelion ( degrees , degrees / century )
-                # omega_cap   longitude of ascending node ( degrees , degrees / century )
-
-                #   m_cap  is mean anomaly in degrees
-                #   e_star is eccentricity in degrees (ie ecc * $180perpi)
+                # From Standish paper,    Solution of Kepler's Equation. 
+                # given m_cap and ecc, and thus e_star,
                 set e_star [expr { $ecc * $180perpi } ]
-                #   e_cap  is eccentric anomaly in radians
+                # e_cap_0 = m_cap + e_star * sin( m_cap in rads)
+                set e_cap_n [expr { $m_cap + $e_star * sin( $m_cap / $180perpi ) } ]
 
-                # Start with e_cap_0 = m_cap + ecc * sin( m_cap / $180perpi )
-
-                # Normally, use i for iteration, here using "n" per Standish paper
+                # and iterate the following three equations with n = 0,1,2,3.. 
                 set n 0
-                set e_cap_n [expr { $m_cap + $ecc * sin( $m_cap / $180perpi) } ]
-
-                set m_cap_n $m_cap
-                # for diagnostics, save original value
-                set m_cap_original $m_cap
-                # interation calculations
+                # ..until abs(delta e_cap) <= tollerance.
                 # tol is tollerance in degrees
                 set tol 1.0e-6
-                set abs_delta_e_cap [expr { $tol * 1.1 } ]
 
+                # for diagnostics, save original value, if next line is uncommented.
+                set m_cap_original $m_cap
+
+                # interation calculations
+                set abs_delta_e_cap [expr { $tol * 1.1 } ]
+                set m_cap_n $m_cap
+                # adding an iteration loop limit. We don't want this to spin indefinitely at the server.
                 set lc_limit 10000
                 while { $abs_delta_e_cap > $tol && $n < $lc_limit } {
                     # These were the numerical approximation equations as understood from Standish paper only:
@@ -463,16 +460,16 @@ ad_proc -public ssk::pos_kepler {
                     #set delta_e_cap [expr { ( 0. - $numerator - $delta_m_cap ) / ( 1. - $ecc * cos( $e_cap_n / $180perpi ) ) } ]
                     # # The main difference between  these two sets of equations, is that 
                     # # m_cap is added in one delta_e_cap calc, or subtracted in the other.. verify
-                    # case 2 causes planet to bob up and down in orbit.. must be case 1.
+                    # case 2 causes planet to bob up and down in orbit many times per orbit.. must be case 1.
+                    set e_cap_n [expr { $e_cap_n + $delta_e_cap } ]
 
                     if { $Debug } {
                         ns_log Notice "ssk::pos_kepler(414): n $n delta_e_cap $delta_e_cap e_cap_n $e_cap_n"
                         ns_log Notice "ssk::pos_kepler(415): n $n delta_m_cap $delta_m_cap m_cap_n $m_cap_n "
                     }
 
-                    set e_cap_n [expr { $e_cap_n + $delta_e_cap } ]
                     #set m_cap_n [expr { $m_cap_n + $delta_m_cap } ]
-                    # assume m_cap doesn't iterate?
+                    # assume m_cap doesn't iterate?  According to Standish paper, m_cap changers per delta_m_cap only.
                     set abs_delta_e_cap [expr { abs( $delta_e_cap ) } ]
                     incr n
                     if { $n >= $lc_limit } {
@@ -487,6 +484,7 @@ ad_proc -public ssk::pos_kepler {
                 # m_cap not used beyond this point.
                 #set m_cap $m_cap_n
 
+
                 # 4. Compute planet's heliocentric coordinates in its orbital plane, r_prime
                 #    with x_prime axis aligned from the focus to the perhihelion.
                 #    x_prime = a* (cos(E) - e) 
@@ -494,15 +492,24 @@ ad_proc -public ssk::pos_kepler {
                 #    z_prime = 0
                 set e_cap_radians [expr { $e_cap / $180perpi } ]
 
-                #set x_prime [expr { $alpha * ( cos( $e_cap_radians ) - $ecc ) } ]
-                # https://en.wikipedia.org/wiki/Kepler%27s_equation#Equation shows equation differently:
-                set x_prime [expr { $alpha * cos( $e_cap_radians - $ecc ) } ]
+
+                # https://en.wikipedia.org/wiki/Kepler%27s_equation#Equation confirms this equation.
+                set x_prime [expr { $alpha * ( cos( $e_cap_radians ) - $ecc ) } ]
+                # In the wikipedia page, y = b * sin(E)
+                # in ellipses, e = sqrt( 1 - pow( b / a , 2 ) ), or b = a * sqrt( pow( e , 2) - 1 )
+                # confirming this one:
                 set y_prime [expr { $alpha * sin( $e_cap_radians ) * sqrt( 1. - pow( $ecc , 2 ) ) } ]
                 set z_prime 0.
 
-                # 5. Compute coordinates, r_ecliptic in the J2000 ecliptic plane, with 
+                # Note: since z_prime is 0, this orbit is in the plane of the body's orbit, with one foci at Sun.
+                # For Earth, this would be the ecliptic plane.
+
+
+                # 5. Compute coordinates in ecliptic plane, r_ecliptic in the J2000 ecliptic plane, with 
                 #    x-axis aligned toward the equinox:
 
+
+                # save some processor time, by pre-calcing these repeated trignometric functions:
                 set cos_omega [expr { cos( $omega / $180perpi ) } ]
                 set sin_omega [expr { sin( $omega / $180perpi ) } ]
                 set cos_omega_cap [expr { cos( $omega_cap / $180perpi ) } ]
@@ -535,34 +542,46 @@ ad_proc -public ssk::pos_kepler {
                                       + ( $cos_omega * $sin_iota_cap ) * $y_prime } ]
                 #ns_log Notice "ssk::pos_kepler(507): time_s $time_s t_cache $t_cache"
 
+
                 set pos_k_arr(${mp},${t_cache},0) [list $x_ecl $y_ecl $z_ecl]
             } 
             if { $icrf_p } {
-                # Convert from equatorial coordinates to ecliptic coordinates
-                # See https://en.wikipedia.org/wiki/Ecliptic_coordinate_system#Conversion_from_equatorial_coordinates_to_ecliptic_coordinates
+
+                # 6. Convert to equatorial coordinates from ecliptic coordinates
+                #    with the x-axis aligned toward the equinox:
 
                 # see if value already exists.
                 # for diagnostics, don't use cache
                 if { ![info exists $pos_k_arr(${mp},${t_cache},1) ] || 1 } {
-                    # transform to ICRF/J2000 frame format
-                    # we can't depend on prior x_ecl,y_ecl,z_ecl, because value may have been previously calculated.
+                    # transform to ICRF/J2000 frame
+
+                    # A previous calculation may have wiped the usefulness of existing variable values. Get again.
                     set ecl_list $pos_k_arr(${mp},${t_cache},0)
                     set x_ecl [lindex $ecl_list 0]
                     set y_ecl [lindex $ecl_list 1]
                     set z_ecl [lindex $ecl_list 2]
+                    # save some processor time by pre-calcing these trig functions
+                    set cos_epsilon [expr { cos( $icrf1_epsilon_deg / $180perpi ) } ]
+                    set sin_epsilon [expr { sin( $icrf1_epsilon_deg / $180perpi ) } ]
+
+                    # transform per Standish paper.
                     set x_eq $x_ecl
-                    set cos_epsilon [expr { cos($icrf1_epsilon_deg / $180perpi ) } ]
-                    set sin_epsilon [expr { sin($icrf1_epsilon_deg / $180perpi ) } ]
                     set y_eq [expr { $cos_epsilon * $y_ecl - $sin_epsilon * $z_ecl } ]
-                    # Wikipedia suggests following calc should be: + $cos_epsilon * $z_ecl, instead of - ...
-                    set z_eq [expr { $sin_epsilon * $y_ecl - $cos_epsilon * $z_ecl } ]
+                    set z_eq [expr { $sin_epsilon * $y_ecl + $cos_epsilon * $z_ecl } ]
+                    # Wikipedia confirms these transformations.
+                    # https://en.wikipedia.org/wiki/Celestial_coordinate_system#Equatorial_.E2.86.90.E2.86.92_ecliptic
+                    # see also 
+                    # https://en.wikipedia.org/wiki/Ecliptic_coordinate_system#Conversion_from_ecliptic_coordinates_to_equatorial_coordinates
+
+
+                    # store values in temporary cache.
                     set pos_k_arr(${mp},${t_cache},1) [list $x_eq $y_eq $z_eq]
                 }
                 set temp_larr(${mp}) $pos_k_arr(${mp},${t_cache},1)
             } else {
                 set temp_larr(${mp}) $pos_k_arr(${mp},${t_cache},0)
             }
-
+            # 
         }
     }
     set Debug 0
