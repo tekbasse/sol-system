@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Eccentric anomaly - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ = window.RLQ || []).push(function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Eccentric_anomaly","wgTitle":"Eccentric anomaly","wgCurRevisionId":698007154,"wgRevisionId":698007154,"wgArticleId":969597,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Orbits"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Eccentric_anomaly","wgRelevantArticleId":969597,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wikilove-recipient":"","wikilove-anon":0,"wgPreferredVariant":"en","wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSAcceptLanguageList":[],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCentralAuthMobileDomain":false,"wgWikibaseItemId":"Q2000619","wgVisualEditorToolbarScrollOffset":0}); /* @nomin */mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"}); /* @nomin */ ;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","mw.MediaWikiPlayer.loader","mw.PopUpMediaTransform","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.math.styles%7Cext.tmh.thumbnail.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.raggett%2CsectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.27.0-wmf.16" />
+<meta name="referrer" content="origin-when-cross-origin" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Eccentric_anomaly" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Eccentric_anomaly&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Eccentric_anomaly&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Eccentric_anomaly" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Eccentric_anomaly skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Eccentric anomaly</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>In <a href="/wiki/Orbital_mechanics" title="Orbital mechanics">orbital mechanics</a>, <b>eccentric anomaly</b> is an <a href="/wiki/Keplerian_element" title="Keplerian element" class="mw-redirect">angular parameter</a> that defines the position of a body that is moving along an <a href="/wiki/Ellipse" title="Ellipse">elliptic</a> <a href="/wiki/Kepler_orbit" title="Kepler orbit">Kepler orbit</a>. The eccentric anomaly is one of three angular parameters ("anomalies") that define a position along an orbit, the other two being the <a href="/wiki/True_anomaly" title="True anomaly">true anomaly</a> and the <a href="/wiki/Mean_anomaly" title="Mean anomaly">mean anomaly</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Graphical_Representation"><span class="tocnumber">1</span> <span class="toctext">Graphical Representation</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Formulas"><span class="tocnumber">2</span> <span class="toctext">Formulas</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Radius_and_eccentric_anomaly"><span class="tocnumber">2.1</span> <span class="toctext">Radius and eccentric anomaly</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#From_the_true_anomaly"><span class="tocnumber">2.2</span> <span class="toctext">From the true anomaly</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#From_the_mean_anomaly"><span class="tocnumber">2.3</span> <span class="toctext">From the mean anomaly</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#In-line_references_and_notes"><span class="tocnumber">3</span> <span class="toctext">In-line references and notes</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Background_references"><span class="tocnumber">4</span> <span class="toctext">Background references</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Graphical_Representation">Graphical Representation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Eccentric_anomaly&amp;action=edit&amp;section=1" title="Edit section: Graphical Representation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Eccentric_and_true_anomaly.PNG" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Eccentric_and_true_anomaly.PNG/220px-Eccentric_and_true_anomaly.PNG" width="220" height="194" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Eccentric_and_true_anomaly.PNG/330px-Eccentric_and_true_anomaly.PNG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Eccentric_and_true_anomaly.PNG/440px-Eccentric_and_true_anomaly.PNG 2x" data-file-width="688" data-file-height="608" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Eccentric_and_true_anomaly.PNG" class="internal" title="Enlarge"></a></div>
+The eccentric anomaly of point <i>P</i> is the angle <i>E</i>. The center of the ellipse is point <i>C</i>, and the focus is point <i>F</i>.</div>
+</div>
+</div>
+<p>Consider the ellipse with equation given by:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1, " src="//upload.wikimedia.org/math/8/7/3/873002a5c2212cc8e96111084b4de2b5.png" /></dd>
+</dl>
+<p>where <i>a</i> is the <i>semi-major</i> axis and <i>b</i> is the <i>semi-minor</i> axis.</p>
+<p>For a point on the ellipse, <i>P=P(x, y)</i>, representing the position of an orbiting body in an elliptical orbit, the eccentric anomaly is the angle <i>E</i> in the figure to the right. The eccentric anomaly, <i>E</i>, is observed by drawing a right triangle with one vertex at the center of the ellipse, having hypotenuse <i>a</i> (equal to the <i>semi-major</i> axis of the ellipse), and opposite side (perpendicular to the <i>major-axis</i> and touching the point <i>P′</i> on the auxiliary circle of radius <i>a</i>) that crosses through the point <i>P</i>. The eccentric anomaly is measured in the same direction as the true anomaly, shown in the figure as <i>f</i>. The eccentric anomaly <i>E</i> in terms of these coordinates is given by:<sup id="cite_ref-Wentworth_1-0" class="reference"><a href="#cite_note-Wentworth-1"><span>[</span>1<span>]</span></a></sup></p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\cos E = \frac{x}{a} ," src="//upload.wikimedia.org/math/1/d/5/1d5547571c002efe7bbc3dd12e896f40.png" /></dd>
+</dl>
+<p>and</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\sin E = \frac{y}{b}" src="//upload.wikimedia.org/math/5/8/0/580429f4af1eb9046552edb52aa06f72.png" /></dd>
+</dl>
+<p>The second equation is established using the relationship <img class="mwe-math-fallback-image-inline tex" alt="{\left( \frac{y}{b}\right)}^2 = 1-{\cos}^2 E={\sin}^2 E" src="//upload.wikimedia.org/math/8/9/d/89df55f2eba865e9241323635a5ba939.png" />, which implies that <img class="mwe-math-fallback-image-inline tex" alt="\sin E = \pm \frac{y}{b}" src="//upload.wikimedia.org/math/2/5/9/2590e3a53790dd1d04db6730d84ae399.png" />. The equation <img class="mwe-math-fallback-image-inline tex" alt="\sin E = - \frac{y}{b}" src="//upload.wikimedia.org/math/c/0/1/c012bf5d00fecd4d74ccf37ce20972fe.png" /> is immediately able to be ruled out since it traverses the ellipse in the wrong direction. It can also be noted that the second equation can be viewed as being the similar triangle with adjacent side through <i>P</i> and the minor auxiliary circle, hypotenuse b, and whose opposite side is y.</p>
+<h2><span class="mw-headline" id="Formulas">Formulas</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Eccentric_anomaly&amp;action=edit&amp;section=2" title="Edit section: Formulas">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Radius_and_eccentric_anomaly">Radius and eccentric anomaly</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Eccentric_anomaly&amp;action=edit&amp;section=3" title="Edit section: Radius and eccentric anomaly">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <a href="/wiki/Eccentricity_(mathematics)" title="Eccentricity (mathematics)">eccentricity</a> <i>e</i> is defined as:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="e=\sqrt{1 - \left(\frac{b}{a}\right)^2 } \ . " src="//upload.wikimedia.org/math/9/d/d/9ddae5492029c4db00a918387f5d34ed.png" /></dd>
+</dl>
+<p>From Pythagoras' theorem applied to the triangle with <i>r</i> (a distance <i>FP</i>) as hypotenuse:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\begin{align} r^2 &amp;= b^2 \sin^2E + (ae-a\cos E)^2 \\
+&amp;=a^2(1-e^2)(1-\cos^2 E)+a^2 (e^2 -2e \cos E +\cos^2 E)\\
+&amp;=a^2  -2a^2e \cos E +a^2e^2 \cos^2 E \\
+&amp;=a^2 (1-e \cos E )^2\\
+\end{align} " src="//upload.wikimedia.org/math/2/e/0/2e0d4bb9f0965242bffc6ba9d56de960.png" /></dd>
+</dl>
+<p>Thus, the radius (distance from the focus to point <i>P</i>) is related to the eccentric anomaly by the formula</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="r = a \left ( 1 - e \cdot \cos{E} \right ) \ ." src="//upload.wikimedia.org/math/e/9/2/e922f74143ff080d6decbd1f24a4054e.png" /></dd>
+</dl>
+<p>With this result the eccentric anomaly can be determined from the true anomaly as shown next.</p>
+<h3><span class="mw-headline" id="From_the_true_anomaly">From the true anomaly</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Eccentric_anomaly&amp;action=edit&amp;section=4" title="Edit section: From the true anomaly">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <i><a href="/wiki/True_anomaly" title="True anomaly">true anomaly</a></i> is the angle labeled <i>f</i> in the figure, located at the focus of the ellipse; it is often referred to as <i>θ</i> as in the calculations below. The true anomaly and the eccentric anomaly are related as follows.<sup id="cite_ref-Tsui_2-0" class="reference"><a href="#cite_note-Tsui-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>Using the formula for <i>r</i> above, the sine and cosine of <i>E</i> are found in terms of θ:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="  \cos E = \frac{x}{a} =  \frac{ae +r \cos \theta}{a} = e+ (1-e \cos E) \cos \theta \ \to \cos E = \frac{ e + \cos \theta }{1 + e \cos \theta } " src="//upload.wikimedia.org/math/5/a/5/5a579dbd806c8a116bda63e2e7bc6109.png" /></dd>
+</dl>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="  \sin  E = \sqrt{1 - \cos^2 E}  =  \frac{ \sqrt{1 - e^2} \, \sin \theta }{1 +  e \cos \theta } \ . " src="//upload.wikimedia.org/math/6/c/a/6ca739c4b4f494173e9ed26da4039dc9.png" /></dd>
+</dl>
+<p>Hence,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \tan E =\frac{\sin E}{\cos E} = \frac{ \sqrt{1-e^2} \sin \theta }{e + \cos \theta} \ . " src="//upload.wikimedia.org/math/4/5/8/4585baa6efb4a6716049f7035ae7f8c3.png" /></dd>
+</dl>
+<p>Angle <i>E</i> is therefore the adjacent angle of a right triangle with hypotenuse 1 + <i>e</i> cosθ, adjacent side <i>e</i> + cosθ, and opposite side √(1-e<sup>2</sup>) sinθ.</p>
+<p>Also,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\tan \frac{\theta}{2} = \sqrt{\frac{1+e}{1-e}} \cdot \tan \frac{E}{2}" src="//upload.wikimedia.org/math/f/9/e/f9e86507781d52cc564d7d759f6d44b2.png" /></dd>
+</dl>
+<p>Substituting cos<i>E</i> as found above into the expression for <i>r</i>, the radial distance from the focal point to the point <i>P</i>, can be found in terms of the true anomaly as well:<sup id="cite_ref-Tsui_2-1" class="reference"><a href="#cite_note-Tsui-2"><span>[</span>2<span>]</span></a></sup></p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="r = \frac{a \left( 1-e^2\right)}{1+e\cos \theta} \ . " src="//upload.wikimedia.org/math/c/a/3/ca3ef71179cb1500f1e96dbde349fd33.png" /></dd>
+</dl>
+<h3><span class="mw-headline" id="From_the_mean_anomaly">From the mean anomaly</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Eccentric_anomaly&amp;action=edit&amp;section=5" title="Edit section: From the mean anomaly">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The eccentric anomaly <img class="mwe-math-fallback-image-inline tex" alt="E" src="//upload.wikimedia.org/math/3/a/3/3a3ea00cfc35332cedf6e5e9a32e94da.png" /> is related to the <a href="/wiki/Mean_anomaly" title="Mean anomaly">mean anomaly</a> <img class="mwe-math-fallback-image-inline tex" alt="M" src="//upload.wikimedia.org/math/6/9/6/69691c7bdcc3ce6d5d8a1361f22d04ac.png" /> by <a href="/wiki/Kepler%27s_equation" title="Kepler's equation">Kepler's equation</a>:<sup id="cite_ref-Capderou_3-0" class="reference"><a href="#cite_note-Capderou-3"><span>[</span>3<span>]</span></a></sup></p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="M =  E - e \cdot \sin E" src="//upload.wikimedia.org/math/7/4/a/74a295c19e61a931cc179ea9347ea27e.png" /></dd>
+</dl>
+<p>This equation does not have a <a href="/wiki/Closed-form_solution" title="Closed-form solution" class="mw-redirect">closed-form solution</a> for <img class="mwe-math-fallback-image-inline tex" alt="E" src="//upload.wikimedia.org/math/3/a/3/3a3ea00cfc35332cedf6e5e9a32e94da.png" /> given <img class="mwe-math-fallback-image-inline tex" alt="M" src="//upload.wikimedia.org/math/6/9/6/69691c7bdcc3ce6d5d8a1361f22d04ac.png" />. It is usually solved by numerical methods, e.g. <a href="/wiki/Newton%27s_method" title="Newton's method">Newton-Raphson method</a>.</p>
+<h2><span class="mw-headline" id="In-line_references_and_notes">In-line references and notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Eccentric_anomaly&amp;action=edit&amp;section=6" title="Edit section: In-line references and notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ol class="references">
+<li id="cite_note-Wentworth-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-Wentworth_1-0">^</a></b></span> <span class="reference-text"><cite class="citation book">George Albert Wentworth (1914). "The ellipse §126". <a rel="nofollow" class="external text" href="http://books.google.com/books?id=XjEAAAAAYAAJ&amp;pg=PA142&amp;dq"><i>Elements of analytic geometry</i></a> (2nd ed.). Ginn &amp; Co. p.&#160;141.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEccentric+anomaly&amp;rft.atitle=The+ellipse++%A7126&amp;rft.au=George+Albert+Wentworth&amp;rft.btitle=Elements+of+analytic+geometry&amp;rft.date=1914&amp;rft.edition=2nd&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DXjEAAAAAYAAJ%26pg%3DPA142%26dq&amp;rft.pages=141&amp;rft.pub=Ginn+%26+Co.&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Tsui-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-Tsui_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Tsui_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation book">James Bao-yen Tsui (2000). <a rel="nofollow" class="external text" href="http://books.google.com/books?id=jPRCxNDZqDQC&amp;pg=PA48"><i>Fundamentals of global positioning system receivers: a software approach</i></a> (3rd ed.). John Wiley &amp; Sons. p.&#160;48. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-471-38154-3" title="Special:BookSources/0-471-38154-3">0-471-38154-3</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEccentric+anomaly&amp;rft.au=James+Bao-yen+Tsui&amp;rft.btitle=Fundamentals+of+global+positioning+system+receivers%3A+a+software+approach&amp;rft.date=2000&amp;rft.edition=3rd&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DjPRCxNDZqDQC%26pg%3DPA48&amp;rft.isbn=0-471-38154-3&amp;rft.pages=48&amp;rft.pub=John+Wiley+%26+Sons&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Capderou-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-Capderou_3-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Michel Capderou (2005). "Definition of the mean anomaly, Eq. 1.68". <a rel="nofollow" class="external text" href="http://books.google.com/books?id=BAihdjtLZXcC&amp;pg=PA21"><i>Satellites: orbits and missions</i></a>. Springer. p.&#160;21. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/2-287-21317-1" title="Special:BookSources/2-287-21317-1">2-287-21317-1</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEccentric+anomaly&amp;rft.atitle=Definition+of+the+mean+anomaly%2C+Eq.+1.68&amp;rft.au=Michel+Capderou&amp;rft.btitle=Satellites%3A+orbits+and+missions&amp;rft.date=2005&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DBAihdjtLZXcC%26pg%3DPA21&amp;rft.isbn=2-287-21317-1&amp;rft.pages=21&amp;rft.pub=Springer&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+<h2><span class="mw-headline" id="Background_references">Background references</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Eccentric_anomaly&amp;action=edit&amp;section=7" title="Edit section: Background references">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Murray, Carl D.; &amp; Dermott, Stanley F. (1999); <i>Solar System Dynamics</i>, Cambridge University Press, Cambridge, GB</li>
+<li>Plummer, Henry C. K. (1960); <i>An Introductory Treatise on Dynamical Astronomy</i>, Dover Publications, New York, NY (Reprint of the 1918 Cambridge University Press edition)</li>
+</ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Eccentric_anomaly&amp;action=edit&amp;section=8" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Eccentricity_vector" title="Eccentricity vector">Eccentricity vector</a></li>
+<li><a href="/wiki/Orbital_eccentricity" title="Orbital eccentricity">Orbital eccentricity</a></li>
+</ul>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks hlist collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Orbits" title="Template:Orbits"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Orbits" title="Template talk:Orbits"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Orbits&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div style="font-size:114%">Gravitational <a href="/wiki/Orbit" title="Orbit">orbits</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";"><span style="float:left;width:6em">&#160;</span>
+<div style="font-size:114%"><a href="/wiki/Orbit" title="Orbit">Types</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="width:9em">General</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Box_orbit" title="Box orbit">Box</a></li>
+<li><a href="/wiki/Parabolic_trajectory" title="Parabolic trajectory">Capture</a></li>
+<li><a href="/wiki/Circular_orbit" title="Circular orbit">Circular</a></li>
+<li><a href="/wiki/Elliptic_orbit" title="Elliptic orbit">Elliptical</a> / <a href="/wiki/Highly_elliptical_orbit" title="Highly elliptical orbit">Highly elliptical</a></li>
+<li><a href="/wiki/Parabolic_trajectory" title="Parabolic trajectory">Escape</a></li>
+<li><a href="/wiki/Graveyard_orbit" title="Graveyard orbit">Graveyard</a></li>
+<li><a href="/wiki/Hyperbolic_trajectory" title="Hyperbolic trajectory">Hyperbolic trajectory</a></li>
+<li><a href="/wiki/Inclined_orbit" title="Inclined orbit">Inclined</a> / <a href="/wiki/Non-inclined_orbit" title="Non-inclined orbit">Non-inclined</a></li>
+<li><a href="/wiki/Osculating_orbit" title="Osculating orbit">Osculating</a></li>
+<li><a href="/wiki/Parabolic_trajectory" title="Parabolic trajectory">Parabolic trajectory</a></li>
+<li><a href="/wiki/Parking_orbit" title="Parking orbit">Parking</a></li>
+<li><a href="/wiki/Synchronous_orbit" title="Synchronous orbit">Synchronous</a>
+<ul>
+<li><a href="/wiki/Semi-synchronous_orbit" title="Semi-synchronous orbit">semi</a></li>
+<li><a href="/wiki/Subsynchronous_orbit" title="Subsynchronous orbit">sub</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Hohmann_transfer_orbit" title="Hohmann transfer orbit">Transfer orbit</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:9em"><a href="/wiki/Geocentric_orbit" title="Geocentric orbit">Geocentric</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Geosynchronous_orbit" title="Geosynchronous orbit">Geosynchronous</a></li>
+<li><a href="/wiki/Geostationary_orbit" title="Geostationary orbit">Geostationary</a></li>
+<li><a href="/wiki/Sun-synchronous_orbit" title="Sun-synchronous orbit">Sun-synchronous</a></li>
+<li><a href="/wiki/Low_Earth_orbit" title="Low Earth orbit">Low Earth</a></li>
+<li><a href="/wiki/Medium_Earth_orbit" title="Medium Earth orbit">Medium Earth</a></li>
+<li><a href="/wiki/High_Earth_orbit" title="High Earth orbit">High Earth</a></li>
+<li><a href="/wiki/Molniya_orbit" title="Molniya orbit">Molniya</a></li>
+<li><a href="/wiki/Near_equatorial_orbit" title="Near equatorial orbit" class="mw-redirect">Near-equatorial</a></li>
+<li><a href="/wiki/Orbit_of_the_Moon" title="Orbit of the Moon">Orbit of the Moon</a></li>
+<li><a href="/wiki/Polar_orbit" title="Polar orbit">Polar</a></li>
+<li><a href="/wiki/Tundra_orbit" title="Tundra orbit">Tundra</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:9em">About other points</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Areosynchronous_orbit" title="Areosynchronous orbit">Areosynchronous</a></li>
+<li><a href="/wiki/Areostationary_orbit" title="Areostationary orbit">Areostationary</a></li>
+<li><a href="/wiki/Halo_orbit" title="Halo orbit">Halo</a></li>
+<li><a href="/wiki/Lissajous_orbit" title="Lissajous orbit">Lissajous</a></li>
+<li><a href="/wiki/Lunar_orbit" title="Lunar orbit">Lunar</a></li>
+<li><a href="/wiki/Heliocentric_orbit" title="Heliocentric orbit">Heliocentric</a></li>
+<li><a href="/wiki/Heliosynchronous_orbit" title="Heliosynchronous orbit" class="mw-redirect">Heliosynchronous</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";"><span style="float:left;width:6em">&#160;</span>
+<div style="font-size:114%"><a href="/wiki/Orbital_elements" title="Orbital elements">Parameters</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="width:9em">
+<div class="hlist">
+<ul>
+<li>Shape</li>
+<li>Size</li>
+</ul>
+</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><img class="mwe-math-fallback-image-inline tex" alt="e\,\!" src="//upload.wikimedia.org/math/4/6/0/460a1940ceddf45878d2e095af31128a.png" />&#160;<a href="/wiki/Orbital_eccentricity" title="Orbital eccentricity">Eccentricity</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="a\,\!" src="//upload.wikimedia.org/math/1/2/d/12de7673992b1735e29cdd211851fa05.png" />&#160;<a href="/wiki/Semi-major_axis" title="Semi-major axis">Semi-major axis</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="b\,\!" src="//upload.wikimedia.org/math/6/f/1/6f1f9c73279ad1872b1fa74df9858c5c.png" />&#160;<a href="/wiki/Semi-minor_axis" title="Semi-minor axis">Semi-minor axis</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="Q,q\,\!" src="//upload.wikimedia.org/math/9/c/d/9cdcc6a784cb2550a0ccd5a22362d47e.png" />&#160;<a href="/wiki/Apsis" title="Apsis">Apsides</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:9em">Orientation</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><img class="mwe-math-fallback-image-inline tex" alt="i\,\!" src="//upload.wikimedia.org/math/a/7/9/a796b40d92e81ae190a1e4f4e2a2c3ed.png" />&#160;<a href="/wiki/Inclination" title="Inclination" class="mw-redirect">Inclination</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="\Omega\,\!" src="//upload.wikimedia.org/math/4/2/e/42e294677ad426aff0fcadd03f77e54a.png" />&#160;<a href="/wiki/Longitude_of_the_ascending_node" title="Longitude of the ascending node">Longitude of the ascending node</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="\omega\,\!" src="//upload.wikimedia.org/math/1/4/1/141205d798217ffe19177ba53c00c409.png" />&#160;<a href="/wiki/Argument_of_periapsis" title="Argument of periapsis">Argument of periapsis</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="\varpi\,\!" src="//upload.wikimedia.org/math/e/1/6/e161137344373f046e2cfe3f095325de.png" />&#160;<a href="/wiki/Longitude_of_the_periapsis" title="Longitude of the periapsis">Longitude of the periapsis</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:9em">Position</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><img class="mwe-math-fallback-image-inline tex" alt="M\,\!" src="//upload.wikimedia.org/math/3/b/6/3b652357e59da356dbb6f2105020406e.png" />&#160;<a href="/wiki/Mean_anomaly" title="Mean anomaly">Mean anomaly</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="\nu\,\!" src="//upload.wikimedia.org/math/2/f/2/2f22ac11583dfea7c5f77622cd09363c.png" />&#160;<a href="/wiki/True_anomaly" title="True anomaly">True anomaly</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="E\,\!" src="//upload.wikimedia.org/math/8/0/1/801dd8e49c12855a8fb959ec5fe215ee.png" />&#160;<strong class="selflink">Eccentric anomaly</strong></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="L\,\!" src="//upload.wikimedia.org/math/1/0/2/102dc7004515c2ac64327380faa80844.png" />&#160;<a href="/wiki/Mean_longitude" title="Mean longitude">Mean longitude</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="l\,\!" src="//upload.wikimedia.org/math/2/4/a/24a4d5e671be5bb7026ad86a68d14220.png" />&#160;<a href="/wiki/True_longitude" title="True longitude">True longitude</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:9em">Variation</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><img class="mwe-math-fallback-image-inline tex" alt="T\,\!" src="//upload.wikimedia.org/math/c/d/3/cd322a0269b30952befe1f9ae7972bcc.png" />&#160;<a href="/wiki/Orbital_period" title="Orbital period">Orbital period</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="n\,\!" src="//upload.wikimedia.org/math/b/a/a/baa52b85c066dbd5eeff3c078a69205b.png" />&#160;<a href="/wiki/Mean_motion" title="Mean motion">Mean motion</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="v\,\!" src="//upload.wikimedia.org/math/7/8/e/78e5b690a2281690cf20f3ce49f2caab.png" />&#160;<a href="/wiki/Orbital_speed" title="Orbital speed">Orbital speed</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="t_0\,\!" src="//upload.wikimedia.org/math/9/b/6/9b69f8cc025b84cfc0c42487abaa77b7.png" />&#160;<a href="/wiki/Epoch_(astronomy)" title="Epoch (astronomy)">Epoch</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";"><span style="float:left;width:6em">&#160;</span>
+<div style="font-size:114%"><a href="/wiki/Orbital_maneuver" title="Orbital maneuver">Maneuvers</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Collision_avoidance_(spacecraft)" title="Collision avoidance (spacecraft)">Collision avoidance (spacecraft)</a></li>
+<li><a href="/wiki/Delta-v" title="Delta-v">Delta-v</a></li>
+<li><a href="/wiki/Delta-v_budget" title="Delta-v budget">Delta-v budget</a></li>
+<li><a href="/wiki/Bi-elliptic_transfer" title="Bi-elliptic transfer">Bi-elliptic transfer</a></li>
+<li><a href="/wiki/Geostationary_transfer_orbit" title="Geostationary transfer orbit">Geostationary transfer</a></li>
+<li><a href="/wiki/Gravity_assist" title="Gravity assist">Gravity assist</a></li>
+<li><a href="/wiki/Gravity_turn" title="Gravity turn">Gravity turn</a></li>
+<li><a href="/wiki/Hohmann_transfer_orbit" title="Hohmann transfer orbit">Hohmann transfer</a></li>
+<li><a href="/wiki/Low_energy_transfer" title="Low energy transfer" class="mw-redirect">Low energy transfer</a></li>
+<li><a href="/wiki/Oberth_effect" title="Oberth effect">Oberth effect</a></li>
+<li><a href="/wiki/Orbital_inclination_change" title="Orbital inclination change">Inclination change</a></li>
+<li><a href="/wiki/Orbit_phasing" title="Orbit phasing">Phasing</a></li>
+<li><a href="/wiki/Rocket_equation" title="Rocket equation" class="mw-redirect">Rocket equation</a></li>
+<li><a href="/wiki/Space_rendezvous" title="Space rendezvous">Rendezvous</a></li>
+<li><a href="/wiki/Transposition,_docking,_and_extraction" title="Transposition, docking, and extraction">Transposition, docking, and extraction</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";"><span style="float:left;width:6em">&#160;</span>
+<div style="font-size:114%">Other <a href="/wiki/Orbital_mechanics" title="Orbital mechanics">orbital mechanics</a> topics</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Celestial_coordinate_system" title="Celestial coordinate system">Celestial coordinate system</a></li>
+<li><a href="/wiki/Characteristic_energy" title="Characteristic energy">Characteristic energy</a></li>
+<li><a href="/wiki/Ephemeris" title="Ephemeris">Ephemeris</a></li>
+<li><a href="/wiki/Equatorial_coordinate_system" title="Equatorial coordinate system">Equatorial coordinate system</a></li>
+<li><a href="/wiki/Ground_track" title="Ground track">Ground track</a></li>
+<li><a href="/wiki/Hill_sphere" title="Hill sphere">Hill sphere</a></li>
+<li><a href="/wiki/Interplanetary_Transport_Network" title="Interplanetary Transport Network">Interplanetary Transport Network</a></li>
+<li><a href="/wiki/Kepler%27s_laws_of_planetary_motion" title="Kepler's laws of planetary motion">Kepler's laws of planetary motion</a></li>
+<li><a href="/wiki/Lagrangian_point" title="Lagrangian point">Lagrangian point</a></li>
+<li><a href="/wiki/N-body_problem" title="N-body problem"><i>n</i>-body problem</a></li>
+<li><a href="/wiki/Orbit_equation" title="Orbit equation">Orbit equation</a></li>
+<li><a href="/wiki/Orbital_state_vectors" title="Orbital state vectors">Orbital state vectors</a></li>
+<li><a href="/wiki/Perturbation_(astronomy)" title="Perturbation (astronomy)">Perturbation</a></li>
+<li><a href="/wiki/Retrograde_motion" title="Retrograde motion" class="mw-redirect">Retrograde motion</a></li>
+<li><a href="/wiki/Specific_orbital_energy" title="Specific orbital energy">Specific orbital energy</a></li>
+<li><a href="/wiki/Specific_relative_angular_momentum" title="Specific relative angular momentum">Specific relative angular momentum</a></li>
+<li><a href="/wiki/Two-line_element_set" title="Two-line element set">Two-line elements</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><b><a href="/wiki/List_of_orbits" title="List of orbits">List of orbits</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1248
+Cached time: 20160302144117
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.142 seconds
+Real time usage: 0.225 seconds
+Preprocessor visited node count: 975/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 54702/2097152 bytes
+Template argument size: 5636/2097152 bytes
+Highest expansion depth: 10/40
+Expensive parser function count: 0/500
+Lua time usage: 0.051/10.000 seconds
+Lua memory usage: 2.22 MB/50 MB
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  122.940      1 - -total
+ 53.27%   65.493      1 - Template:Orbits
+ 50.69%   62.320      1 - Template:Navbox_with_collapsible_groups
+ 42.75%   52.553      3 - Template:Cite_book
+ 21.35%   26.249      2 - Template:Navbox
+  5.56%    6.831      1 - Template:Hlist
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:969597-0!*!0!!en!4!*!math=0 and timestamp 20160302144117 and revision id 698007154
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Eccentric_anomaly&amp;oldid=698007154">https://en.wikipedia.org/w/index.php?title=Eccentric_anomaly&amp;oldid=698007154</a>"					</div>
+				<div id='catlinks' class='catlinks' data-mw='interface'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Orbits" title="Category:Orbits">Orbits</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Eccentric+anomaly&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Eccentric+anomaly" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Eccentric_anomaly"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Eccentric_anomaly"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Eccentric_anomaly" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Eccentric_anomaly&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Eccentric_anomaly&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Eccentric_anomaly" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Eccentric_anomaly" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Eccentric_anomaly&amp;oldid=698007154" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Eccentric_anomaly&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q2000619" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Eccentric_anomaly&amp;id=698007154" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Eccentric+anomaly">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Eccentric+anomaly&amp;returnto=Eccentric+anomaly&amp;oldid=698007154&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Eccentric_anomaly&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ca"><a href="//ca.wikipedia.org/wiki/Anomalia_exc%C3%A8ntrica" title="Anomalia excèntrica – Catalan" lang="ca" hreflang="ca">Català</a></li><li class="interlanguage-link interwiki-de"><a href="//de.wikipedia.org/wiki/Exzentrische_Anomalie" title="Exzentrische Anomalie – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="//es.wikipedia.org/wiki/Anomal%C3%ADa_exc%C3%A9ntrica" title="Anomalía excéntrica – Spanish" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="//fr.wikipedia.org/wiki/Anomalie_excentrique" title="Anomalie excentrique – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-it"><a href="//it.wikipedia.org/wiki/Anomalia_eccentrica" title="Anomalia eccentrica – Italian" lang="it" hreflang="it">Italiano</a></li><li class="interlanguage-link interwiki-lt"><a href="//lt.wikipedia.org/wiki/Ekscentrin%C4%97_anomalija" title="Ekscentrinė anomalija – Lithuanian" lang="lt" hreflang="lt">Lietuvių</a></li><li class="interlanguage-link interwiki-ja"><a href="//ja.wikipedia.org/wiki/%E9%9B%A2%E5%BF%83%E8%BF%91%E7%82%B9%E8%A7%92" title="離心近点角 – Japanese" lang="ja" hreflang="ja">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="//no.wikipedia.org/wiki/Eksentrisk_anomali" title="Eksentrisk anomali – Norwegian" lang="no" hreflang="no">Norsk bokmål</a></li><li class="interlanguage-link interwiki-pl"><a href="//pl.wikipedia.org/wiki/Anomalia_mimo%C5%9Brodowa" title="Anomalia mimośrodowa – Polish" lang="pl" hreflang="pl">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="//pt.wikipedia.org/wiki/Anomalia_exc%C3%AAntrica" title="Anomalia excêntrica – Portuguese" lang="pt" hreflang="pt">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="//ro.wikipedia.org/wiki/Anomalie_excentric%C4%83" title="Anomalie excentrică – Romanian" lang="ro" hreflang="ro">Română</a></li><li class="interlanguage-link interwiki-sl"><a href="//sl.wikipedia.org/wiki/Ekscentri%C4%8Dna_anomalija" title="Ekscentrična anomalija – Slovenian" lang="sl" hreflang="sl">Slovenščina</a></li><li class="interlanguage-link interwiki-fi"><a href="//fi.wikipedia.org/wiki/Eksentrinen_anomalia" title="Eksentrinen anomalia – Finnish" lang="fi" hreflang="fi">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="//sv.wikipedia.org/wiki/Excentrisk_anomali" title="Excentrisk anomali – Swedish" lang="sv" hreflang="sv">Svenska</a></li><li class="interlanguage-link interwiki-zh"><a href="//zh.wikipedia.org/wiki/%E5%81%8F%E8%BF%91%E9%BB%9E%E8%A7%92" title="偏近點角 – Chinese" lang="zh" hreflang="zh">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q2000619#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 3 January 2016, at 11:32.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="//wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Eccentric_anomaly&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ = window.RLQ || []).push(function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.eventLogging.subscriber","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","mmv.bootstrap.autostart","ext.visualEditor.targetLoader","ext.wikimediaEvents","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>(window.RLQ = window.RLQ || []).push(function () {
+mw.config.set({"wgBackendResponseTime":82,"wgHostname":"mw1185"}); /* @nomin */
+} );</script>
+	</body>
+</html>

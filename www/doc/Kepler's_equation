@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Kepler's equation - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ = window.RLQ || []).push(function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Kepler's_equation","wgTitle":"Kepler's equation","wgCurRevisionId":700342297,"wgRevisionId":700342297,"wgArticleId":32172638,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 Latin-language sources (la)","Articles with attributed pull quotes","Commons category with local link same as on Wikidata","Johannes Kepler","Orbits"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Kepler's_equation","wgRelevantArticleId":32172638,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wikilove-recipient":"","wikilove-anon":0,"wgPreferredVariant":"en","wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSAcceptLanguageList":["en-us","en"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCentralAuthMobileDomain":false,"wgWikibaseItemId":"Q932001","wgVisualEditorToolbarScrollOffset":0}); /* @nomin */mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"}); /* @nomin */ ;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","mw.MediaWikiPlayer.loader","mw.PopUpMediaTransform","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.math.styles%7Cext.tmh.thumbnail.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.raggett%2CsectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.27.0-wmf.16" />
+<meta name="referrer" content="origin-when-cross-origin" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Kepler%27s_equation" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Kepler%27s_equation&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Kepler%27s_equation&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Kepler%27s_equation" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Kepler_s_equation skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Kepler's equation</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div role="note" class="hatnote">For specific applications of Kepler's equation, see <a href="/wiki/Kepler%27s_laws_of_planetary_motion" title="Kepler's laws of planetary motion">Kepler's laws of planetary motion</a>.</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Kepler%27s_equation_solutions.PNG" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Kepler%27s_equation_solutions.PNG/220px-Kepler%27s_equation_solutions.PNG" width="220" height="220" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Kepler%27s_equation_solutions.PNG/330px-Kepler%27s_equation_solutions.PNG 1.5x, //upload.wikimedia.org/wikipedia/commons/1/15/Kepler%27s_equation_solutions.PNG 2x" data-file-width="400" data-file-height="400" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Kepler%27s_equation_solutions.PNG" class="internal" title="Enlarge"></a></div>
+Kepler's equation solutions for five different eccentricities between 0 and 1</div>
+</div>
+</div>
+<p>In <a href="/wiki/Orbital_mechanics" title="Orbital mechanics">orbital mechanics</a>, <b>Kepler's equation</b> relates various geometric properties of the orbit of a body subject to a <a href="/wiki/Central_force" title="Central force">central force</a>.</p>
+<p>It was first derived by <a href="/wiki/Johannes_Kepler" title="Johannes Kepler">Johannes Kepler</a> in 1609 in Chapter 60 of his <i><a href="/wiki/Astronomia_nova" title="Astronomia nova">Astronomia nova</a></i>,<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup> and in book V of his <i><a href="/wiki/Epitome_of_Copernican_Astronomy" title="Epitome of Copernican Astronomy" class="mw-redirect">Epitome of Copernican Astronomy</a></i> (1621) Kepler proposed an iterative solution to the equation.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup> The equation has played an important role in the history of both physics and mathematics, particularly classical <a href="/wiki/Celestial_mechanics" title="Celestial mechanics">celestial mechanics</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Equation"><span class="tocnumber">1</span> <span class="toctext">Equation</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Alternate_forms"><span class="tocnumber">2</span> <span class="toctext">Alternate forms</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Hyperbolic_Kepler_equation"><span class="tocnumber">2.1</span> <span class="toctext">Hyperbolic Kepler equation</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Radial_Kepler_equation"><span class="tocnumber">2.2</span> <span class="toctext">Radial Kepler equation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Inverse_problem"><span class="tocnumber">3</span> <span class="toctext">Inverse problem</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Inverse_Kepler_equation"><span class="tocnumber">3.1</span> <span class="toctext">Inverse Kepler equation</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Algorithm_for_the_inverse_Kepler_equation"><span class="tocnumber">3.2</span> <span class="toctext">Algorithm for the inverse Kepler equation</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Inverse_radial_Kepler_equation"><span class="tocnumber">3.3</span> <span class="toctext">Inverse radial Kepler equation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Numerical_approximation_of_inverse_problem"><span class="tocnumber">4</span> <span class="toctext">Numerical approximation of inverse problem</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Equation">Equation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler%27s_equation&amp;action=edit&amp;section=1" title="Edit section: Equation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><b>Kepler's equation</b> is</p>
+<dl>
+<dd>
+<table cellpadding="5" style="border:2px solid #50C878;background: #ECFCF4; text-align: center;">
+<tr>
+<td>
+<p><img class="mwe-math-fallback-image-inline tex" alt=" M = E - e \sin E " src="//upload.wikimedia.org/math/8/b/a/8ba3a09dd3507b8c14486efe48d44dc6.png" /></p>
+</td>
+</tr>
+</table>
+</dd>
+</dl>
+<p>where <span class="texhtml"><var>M</var></span> is the <a href="/wiki/Mean_anomaly" title="Mean anomaly">mean anomaly</a>, <span class="texhtml"><var>E</var></span> is the <a href="/wiki/Eccentric_anomaly" title="Eccentric anomaly">eccentric anomaly</a>, and <span class="texhtml"><var>e</var></span> is the <a href="/wiki/Eccentricity_(mathematics)" title="Eccentricity (mathematics)">eccentricity</a>.</p>
+<p>The 'eccentric anomaly' <span class="texhtml"><var>E</var></span> is useful to compute the position of a point moving in a Keplerian orbit. As for instance, if the body passes the periastron at coordinates <span class="texhtml"><var>x</var> = <var>a</var>(1 − <var>e</var>)</span>, <span class="texhtml"><var>y</var> = 0</span>, at time <span class="texhtml"><var>t</var> = <var>t</var><sub>0</sub></span>, then to find out the position of the body at any time, you first calculate the mean anomaly <span class="texhtml"><var>M</var></span> from the time and the <a href="/wiki/Mean_motion" title="Mean motion">mean motion</a> <span class="texhtml"><var>n</var></span> by the formula <span class="texhtml"><var>M</var> = <var>n</var>(<var>t</var> − <var>t</var><sub>0</sub>)</span>, then solve the Kepler equation above to get <span class="texhtml"><var>E</var></span>, then get the coordinates from:</p>
+<dl>
+<dd>
+<table cellpadding="5" style="border:2px solid #50C878;background: #ECFCF4; text-align: center;">
+<tr>
+<td>
+<p><img class="mwe-math-fallback-image-inline tex" alt=" \begin{array}{lcl}
+x &amp; =  &amp; a (\cos E - e) \\
+y &amp; = &amp;  b \sin E
+\end{array}
+ " src="//upload.wikimedia.org/math/2/5/1/2513281cd01e2904026d4da6bdbabb86.png" /></p>
+</td>
+</tr>
+</table>
+</dd>
+</dl>
+<p>Kepler's equation is a <a href="/wiki/Transcendental_equation" title="Transcendental equation">transcendental equation</a> because <a href="/wiki/Sine" title="Sine">sine</a> is a <a href="/wiki/Transcendental_function" title="Transcendental function">transcendental function</a>, meaning it cannot be solved for <span class="texhtml"><var>E</var></span> <a href="/wiki/Algebraic_function" title="Algebraic function">algebraically</a>. <a href="/wiki/Numerical_analysis" title="Numerical analysis">Numerical analysis</a> and <a href="/wiki/Series_(mathematics)" title="Series (mathematics)">series</a> expansions are generally required to evaluate <span class="texhtml"><var>E</var></span>.</p>
+<h2><span class="mw-headline" id="Alternate_forms">Alternate forms</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler%27s_equation&amp;action=edit&amp;section=2" title="Edit section: Alternate forms">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There are several forms of Kepler's equation. Each form is associated with a specific type of orbit. The standard Kepler equation is used for elliptic orbits (0 ≤ <i>e</i> &lt; 1). The hyperbolic Kepler equation is used for hyperbolic orbits (<i>e</i> ≫ 1). The radial Kepler equation is used for linear (radial) orbits (<i>e</i> = 1). <a href="/wiki/Parabolic_trajectory#Barker.27s_equation" title="Parabolic trajectory">Barker's equation</a> is used for parabolic orbits (<i>e</i> = 1). When <i>e</i> = 1, Kepler's equation is not associated with an orbit.</p>
+<p>When <i>e</i> = 0, the orbit is circular. Increasing <i>e</i> causes the circle to flatten into an ellipse. When <i>e</i> = 1, the orbit is completely flat, and it appears to be a either a segment if the orbit is closed, or a ray if the orbit is open. An infinitesimal increase to <i>e</i> results in a hyperbolic orbit with a turning angle of 180 degrees, and the orbit appears to be a ray. Further increases reduce the turning angle, and as <i>e</i> goes to infinity, the orbit becomes a straight line of infinite length.</p>
+<h3><span class="mw-headline" id="Hyperbolic_Kepler_equation">Hyperbolic Kepler equation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler%27s_equation&amp;action=edit&amp;section=3" title="Edit section: Hyperbolic Kepler equation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The Hyperbolic Kepler equation is:</p>
+<dl>
+<dd>
+<table cellpadding="5" style="border:2px solid #50C878;background: #ECFCF4; text-align: center;">
+<tr>
+<td>
+<p><img class="mwe-math-fallback-image-inline tex" alt=" M = e \sinh H - H " src="//upload.wikimedia.org/math/4/1/9/419fe3fc8db5beca5e12f5e7ebbde183.png" /></p>
+</td>
+</tr>
+</table>
+</dd>
+</dl>
+<p>where <i>H</i> is the hyperbolic eccentric anomaly. This equation is derived by multiplying Kepler's equation by the <a href="/wiki/Imaginary_number" title="Imaginary number">square root of −1</a>; <i>i</i> = √<span style="text-decoration:overline;">−1</span> for <a href="/wiki/Imaginary_unit" title="Imaginary unit">imaginary unit</a>, and replacing</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" E = i H " src="//upload.wikimedia.org/math/1/4/3/1438d14054cdea4619a3760f39213297.png" /></dd>
+</dl>
+<p>to obtain</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" M = i \left( E - e \sin E \right) " src="//upload.wikimedia.org/math/6/5/e/65e1ab44a60806158ea7a72227026f8a.png" /></dd>
+</dl>
+<h3><span class="mw-headline" id="Radial_Kepler_equation">Radial Kepler equation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler%27s_equation&amp;action=edit&amp;section=4" title="Edit section: Radial Kepler equation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The Radial Kepler equation is:</p>
+<dl>
+<dd>
+<table cellpadding="5" style="border:2px solid #50C878;background: #ECFCF4; text-align: center;">
+<tr>
+<td>
+<p><img class="mwe-math-fallback-image-inline tex" alt=" t(x) = \sin^{-1}( \sqrt{ x } ) - \sqrt{ x ( 1 - x ) }  " src="//upload.wikimedia.org/math/d/8/a/d8a828dd16e703515313596c66e3121a.png" /></p>
+</td>
+</tr>
+</table>
+</dd>
+</dl>
+<p>where <i>t</i> is time, and <i>x</i> is the distance along an <i>x</i>-axis. This equation is derived by multiplying Kepler's equation by 1/2 making the replacement</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" E = 2 \sin^{-1}(\sqrt{ x }) " src="//upload.wikimedia.org/math/0/3/e/03ea57a2dbad49e8e91bb8a8e42022f5.png" /></dd>
+</dl>
+<p>and setting <i>e</i> = 1 gives</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" t(x) = \frac{1}{2}\left[ E - \sin( E )  \right]. " src="//upload.wikimedia.org/math/0/7/f/07fb83fc16670cb46dab848523912591.png" /></dd>
+</dl>
+<h2><span class="mw-headline" id="Inverse_problem">Inverse problem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler%27s_equation&amp;action=edit&amp;section=5" title="Edit section: Inverse problem">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Calculating <i>M</i> for a given value of <i>E</i> is straightforward. However, solving for <i>E</i> when <i>M</i> is given can be considerably more challenging.</p>
+<p>Kepler's equation can be solved for <i>E</i> <a href="/wiki/Analytic_function" title="Analytic function">analytically</a> by <a href="/wiki/Lagrange_inversion_theorem" title="Lagrange inversion theorem">Lagrange inversion</a>. The solution of Kepler's equation given by two Taylor series below.</p>
+<p>Confusion over the solvability of Kepler's equation has persisted in the literature for four centuries.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>5<span>]</span></a></sup> Kepler himself expressed doubt at the possibility of ﬁnding a general solution.</p>
+<table class="cquote" role="presentation" style="margin:auto; border-collapse: collapse; border: none; background-color: transparent; width: auto;">
+<tr>
+<td style="width: 20px; vertical-align: top; border: none; color: #B2B7F2; font-size: 40px; font-family: 'Times New Roman', Times, serif; font-weight: bold; line-height: .6em; text-align: left; padding: 10px 10px;">“</td>
+<td style="vertical-align: top; border: none; padding: 4px 10px;">I am sufficiently satisfied that it [Kepler's equation] cannot be solved a priori, on account of the different nature of the arc and the sine. But if I am mistaken, and any one shall point out the way to me, he will be in my eyes the great <a href="/wiki/Apollonius_of_Perga" title="Apollonius of Perga">Apollonius</a>.</td>
+<td style="width: 20px; vertical-align: bottom; border: none; color: #B2B7F2; font-size: 40px; font-family: 'Times New Roman', Times, serif; font-weight: bold; line-height: .6em; text-align: right; padding: 10px 10px;">”</td>
+</tr>
+<tr>
+<td colspan="3" class="cquotecite" style="border: none; padding-right: 4%">
+<div style="font-size: smaller; text-align: right;"><cite>— Johannes Kepler<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>6<span>]</span></a></sup></cite></div>
+</td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="Inverse_Kepler_equation">Inverse Kepler equation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler%27s_equation&amp;action=edit&amp;section=6" title="Edit section: Inverse Kepler equation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The inverse Kepler equation is the solution of Kepler's equation for all real values of e:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+ E =
+\begin{cases}
+
+\displaystyle \sum_{n=1}^\infty
+ {\frac{M^{\frac{n}{3}}}{n!}} \lim_{\theta \to 0^+} \! \Bigg(
+  \frac{\mathrm{d}^{\,n-1}}{\mathrm{d}\theta^{\,n-1}} \bigg( \bigg(
+  \frac{\theta}{ \sqrt[3]{\theta - \sin(\theta)} } \bigg)^{\!\!\!n} \bigg)
+\Bigg)
+,  &amp; e = 1  \\
+
+\displaystyle \sum_{n=1}^\infty
+{ \frac{ M^n }{ n! } }
+\lim_{\theta \to 0^+} \! \Bigg(
+  \frac{\mathrm{d}^{\,n-1}}{\mathrm{d}\theta^{\,n-1}}  \bigg( \Big(
+  \frac{ \theta }{ \theta - e \sin(\theta)} \Big)^{\!n} \bigg)
+\Bigg)
+, &amp;  e \ne  1
+
+\end{cases}
+" src="//upload.wikimedia.org/math/a/3/5/a3562b658382e38e18892a143db7ee1d.png" /></dd>
+</dl>
+<p>Evaluating this yields:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+E =
+\begin{cases} \displaystyle
+x + \frac{1}{60} x^3 + \frac{1}{1400}x^5 + \frac{1}{25200}x^7 + \frac{43}{17248000}x^9 + \frac{ 1213}{7207200000 }x^{11} +
+ \frac{151439}{12713500800000 }x^{13}+ \cdots \ | \ x = ( 6 M )^\frac{1}{3}
+ ,  &amp; e = 1  \\
+\\
+\displaystyle
+  \frac{1}{1-e} M
+- \frac{e}{(1-e)^4 } \frac{M^3}{3!}
++ \frac{(9 e^2 + e)}{(1-e)^7 } \frac{M^5}{5!}
+- \frac{(225 e^3 + 54 e^2 + e) }{(1-e)^{10} } \frac{M^7}{7!}
++ \frac{ (11025 e^4 + 4131 e^3 + 243 e^2 + e) }{(1-e)^{13} } \frac{M^9}{9!}+ \cdots
+, &amp; e \ne  1
+
+\end{cases} " src="//upload.wikimedia.org/math/1/e/e/1ee7123dcb786b07b05ad74bff2c911e.png" /></dd>
+</dl>
+<p>These series can be reproduced in <a href="/wiki/Mathematica" title="Mathematica">Mathematica</a> with the InverseSeries operation.</p>
+<dl>
+<dd><code>InverseSeries[Series[M - Sin[M], {M, 0, 10}]]</code></dd>
+<dd><code>InverseSeries[Series[M - e Sin[M], {M, 0, 10}]]</code></dd>
+</dl>
+<p>These functions are simple Taylor series. Taylor series representations of transcendental functions are considered to be definitions of those functions. Therefore this solution is a formal definition of the inverse Kepler equation. While this solution is the simplest in a certain mathematical sense, for values of <i>e</i> near 1 the convergence is very poor, other solutions are preferable for most applications. Alternatively, Kepler's equation can be solved numerically.</p>
+<p>The solution for <i>e</i> ≠ 1 was discovered by <a href="/wiki/Karl_Stumpff" title="Karl Stumpff">Karl Stumpff</a> in 1968,<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>7<span>]</span></a></sup> but its significance wasn't recognized.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>8<span>]</span></a></sup></p>
+<h3><span class="mw-headline" id="Algorithm_for_the_inverse_Kepler_equation">Algorithm for the inverse Kepler equation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler%27s_equation&amp;action=edit&amp;section=7" title="Edit section: Algorithm for the inverse Kepler equation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Note that E = M+e·sin(E). Repeatedly substituting the expression on the right for the E on the right yields a simple algorithm for evaluating E(e,M).</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\begin{align}
+ &amp; \text{function}\ \text{E(e,M,n)} \\ 
+ &amp; \text{ E = M} \\ 
+ &amp; \text{ for k = 1 to n} \\ 
+ &amp; \ \text{ E = M + e}\cdot \text{sin E} \\ 
+ &amp; \text{ next k} \\ 
+ &amp; \text{ return E} \\ 
+\end{align}" src="//upload.wikimedia.org/math/2/e/0/2e0087dd8a8fd4e822555642b9d020cc.png" /></dd>
+</dl>
+<p>The number of iterations, n , depends on the value of e.</p>
+<p>Using <a href="/wiki/Newton%27s_method" title="Newton's method">Newton's method</a> to find the zero of f = E - e·sin(E) - M one gets,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\Delta E = \frac{M + e\cdot \sin{E} - E}{1 - e\cdot \cos{E}} = \frac {(M + e\cdot \sin{E} - E)(1 + e\cdot \cos{E})}{1 - e^2\cdot (\cos{E})^2} \approx M  - E + e\cdot \sin{E}" src="//upload.wikimedia.org/math/4/6/7/4677e87f38e254c52b37f1465db13cf4.png" /></dd>
+</dl>
+<p>to first order in the small quantities M - E and e, or,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="E' = E + \Delta E = M + e\cdot \sin{E}" src="//upload.wikimedia.org/math/c/0/f/c0f16746b058cc61966e66b76bc10f48.png" />.</dd>
+</dl>
+<p>The algorithm actually uses a simplified version of Newton's method to improve on a value for E. Although Newton's method usually converges faster to the correct value for E there are situations where it requires division by 0 and the method above is then preferred.</p>
+<h3><span class="mw-headline" id="Inverse_radial_Kepler_equation">Inverse radial Kepler equation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler%27s_equation&amp;action=edit&amp;section=8" title="Edit section: Inverse radial Kepler equation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The inverse radial Kepler equation is:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+ x( t ) = \sum_{n=1}^{ \infty }
+\left[
+\lim_{ r \to 0^+ } \left(
+ {\frac{ t^{ \frac{ 2 }{ 3 } n }}{ n! }}
+ \frac{\mathrm{d}^{\,n-1}}{\mathrm{ d } r ^{\,n-1}} \! \left(
+    r^n \left( \frac{ 3 }{ 2 } \Big( \sin^{-1}( \sqrt{ r } ) - \sqrt{ r - r^2 }  \Big)
+    \right)^{ \! -\frac{2}{3} n }
+  \right) \right)
+ \right] " src="//upload.wikimedia.org/math/0/6/0/0605408b84ad0a0f2ffcf6fadb60711b.png" /></dd>
+</dl>
+<p>Evaluating this yields:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="x(t) =  p - \frac{1}{5} p^2 - \frac{3}{175}p^3
+ - \frac{23}{7875}p^4 - \frac{1894}{3931875}p^5 - \frac{3293}{21896875}p^6 - \frac{2418092}{62077640625}p^7 - \ \cdots \ 
+ \bigg| { p = \left( \tfrac{3}{2} t  \right)^{2/3} }  " src="//upload.wikimedia.org/math/3/2/4/324989f12408862c31bd35f1aebfa18c.png" /></dd>
+</dl>
+<p><br />
+To obtain this result using <a href="/wiki/Mathematica" title="Mathematica">Mathematica</a>:</p>
+<dl>
+<dd><code>InverseSeries[Series[ArcSin[Sqrt[t]] - Sqrt[(1 - t) t], {t, 0, 15}]]</code></dd>
+</dl>
+<h2><span class="mw-headline" id="Numerical_approximation_of_inverse_problem">Numerical approximation of inverse problem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler%27s_equation&amp;action=edit&amp;section=9" title="Edit section: Numerical approximation of inverse problem">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>For most applications, the inverse problem can be computed numerically by finding the <a href="/wiki/Zero_of_a_function" title="Zero of a function">root</a> of the function:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+f(E) = E - e \sin(E) - M(t)
+" src="//upload.wikimedia.org/math/5/d/1/5d1c121a6eadd369f5d0c0437ff0c9c6.png" /></dd>
+</dl>
+<p>This can be done iteratively via <a href="/wiki/Newton%27s_method" title="Newton's method">Newton's method</a>:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+E_{n+1} = E_{n} - \frac{f(E_{n})}{f'(E_{n})} = 
+E_{n} - \frac{ E_{n} - e \sin(E_{n}) - M(t) }{ 1 - e \cos(E_{n})}
+" src="//upload.wikimedia.org/math/9/b/d/9bd833af6d01a2bb395d6c2b6def1195.png" /></dd>
+</dl>
+<p>Note that <i>E</i> and <i>M</i> are in units of radians in this computation. This iteration is repeated until desired accuracy is obtained (e.g. when <i>f</i>(<i>E</i>) &lt; desired accuracy). For most elliptical orbits an initial value of <i>E</i><sub>0</sub> = <i>M</i>(<i>t</i>) is sufficient. For orbits with <i>e</i> &gt; 0.8, an initial value of <i>E</i><sub>0</sub> = <i>π</i> should be used.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span>[</span>9<span>]</span></a></sup> A similar approach can be used for the hyperbolic form of Kepler's equation. In the case of a parabolic trajectory, <a href="/wiki/Parabolic_trajectory#Barker.27s_equation" title="Parabolic trajectory">Barker's equation</a> is used.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler%27s_equation&amp;action=edit&amp;section=10" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Kepler%27s_laws_of_planetary_motion" title="Kepler's laws of planetary motion">Kepler's laws of planetary motion</a></li>
+<li><a href="/wiki/Kepler_problem" title="Kepler problem">Kepler problem</a></li>
+<li><a href="/wiki/Kepler_problem_in_general_relativity" title="Kepler problem in general relativity" class="mw-redirect">Kepler problem in general relativity</a></li>
+<li><a href="/wiki/Radial_trajectory" title="Radial trajectory">Radial trajectory</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler%27s_equation&amp;action=edit&amp;section=11" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation book">Kepler, Johannes (1609). <a rel="nofollow" class="external text" href="http://www.e-rara.ch/zut/content/pageview/162861">"LX. Methodus, ex hac Physica, hoc est genuina &amp; verissima hypothesi, extruendi utramque partem æquationis, &amp; distantias genuinas: quorum utrumque simul per vicariam fieri hactenus non potuit. argumentum falsæ hypotheseos"</a>. <i><a href="/wiki/Astronomia_Nova" title="Astronomia Nova" class="mw-redirect">Astronomia Nova Aitiologētos, Seu Physica Coelestis, tradita commentariis De Motibus Stellæ Martis, Ex observationibus G. V. Tychonis Brahe</a></i> (in Latin). pp.&#160;299–300.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKepler%27s+equation&amp;rft.atitle=LX.+Methodus%2C+ex+hac+Physica%2C+hoc+est+genuina+%26+verissima+hypothesi%2C+extruendi+utramque+partem+%C3%A6quationis%2C+%26+distantias+genuinas%3A+quorum+utrumque+simul+per+vicariam+fieri+hactenus+non+potuit.+argumentum+fals%C3%A6+hypotheseos&amp;rft.aufirst=Johannes&amp;rft.aulast=Kepler&amp;rft.btitle=Astronomia+Nova+Aitiolog%C4%93tos%2C+Seu+Physica+Coelestis%2C+tradita+commentariis+De+Motibus+Stell%C3%A6+Martis%2C+Ex+observationibus+G.+V.+Tychonis+Brahe&amp;rft.date=1609&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Fwww.e-rara.ch%2Fzut%2Fcontent%2Fpageview%2F162861&amp;rft.pages=299-300&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation book">Aaboe, Asger (2001). <a rel="nofollow" class="external text" href="http://books.google.com/books?id=yK8Tp0izorMC&amp;pg=PA146"><i>Episodes from the Early History of Astronomy</i></a>. Springer. pp.&#160;146–147. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-387-95136-2" title="Special:BookSources/978-0-387-95136-2">978-0-387-95136-2</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKepler%27s+equation&amp;rft.aufirst=Asger&amp;rft.aulast=Aaboe&amp;rft.btitle=Episodes+from+the+Early+History+of+Astronomy&amp;rft.date=2001&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DyK8Tp0izorMC%26pg%3DPA146&amp;rft.isbn=978-0-387-95136-2&amp;rft.pages=146-147&amp;rft.pub=Springer&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation book">Kepler, Johannes (1621). "Libri V. Pars altera.". <a rel="nofollow" class="external text" href="http://www.e-rara.ch/zut/content/pageview/956468"><i>Epitome astronomiæ Copernicanæ usitatâ formâ Quæstionum &amp; Responsionum conscripta, inq; VII. Libros digesta, quorum tres hi priores sunt de Doctrina Sphæricâ</i></a> (in Latin). pp.&#160;695–696.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKepler%27s+equation&amp;rft.atitle=Libri+V.+Pars+altera.&amp;rft.aufirst=Johannes&amp;rft.aulast=Kepler&amp;rft.btitle=Epitome+astronomi%C3%A6+Copernican%C3%A6+usitat%C3%A2+form%C3%A2+Qu%C3%A6stionum+%26+Responsionum+conscripta%2C+inq%3B+VII.+Libros+digesta%2C+quorum+tres+hi+priores+sunt+de+Doctrina+Sph%C3%A6ric%C3%A2&amp;rft.date=1621&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Fwww.e-rara.ch%2Fzut%2Fcontent%2Fpageview%2F956468&amp;rft.pages=695-696&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation journal">Swerdlow, N. M. (2000). <a rel="nofollow" class="external text" href="http://adsabs.harvard.edu/full/2000JHA....31..339S">"Kepler's Iterative Solution to Kepler's Equation"</a>. <i><a href="/wiki/Journal_for_the_History_of_Astronomy" title="Journal for the History of Astronomy">Journal for the History of Astronomy</a></i> <b>31</b>: 339–341. <a href="/wiki/Bibcode" title="Bibcode">Bibcode</a>:<a rel="nofollow" class="external text" href="http://adsabs.harvard.edu/abs/2000JHA....31..339S">2000JHA....31..339S</a>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1177%2F002182860003100404">10.1177/002182860003100404</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKepler%27s+equation&amp;rft.atitle=Kepler%27s+Iterative+Solution+to+Kepler%27s+Equation&amp;rft.aufirst=N.+M.&amp;rft.aulast=Swerdlow&amp;rft.date=2000&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fadsabs.harvard.edu%2Ffull%2F2000JHA....31..339S&amp;rft_id=info%3Abibcode%2F2000JHA....31..339S&amp;rft_id=info%3Adoi%2F10.1177%2F002182860003100404&amp;rft.jtitle=Journal+for+the+History+of+Astronomy&amp;rft.pages=339-341&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=31" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text">It is often erroneously claimed that Kepler's equation "cannot be solved analytically"; see for example <a rel="nofollow" class="external text" href="http://www.jgiesen.de/kepler/kepler.html">here</a>. Other authors make the absurd claim that it cannot be solved at all; see for example M. V. K. Chari, Sheppard Joel Salon 2000 Technology &amp; Engineering.</span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation journal">Hall, Asaph (May 1883). <a rel="nofollow" class="external text" href="https://archive.org/details/jstor-2635832">"Kepler's Problem"</a>. <i>Annals of Mathematics</i> <b>10</b> (3): 65–66. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.2307%2F2635832">10.2307/2635832</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKepler%27s+equation&amp;rft.atitle=Kepler%27s+Problem&amp;rft.aufirst=Asaph&amp;rft.aulast=Hall&amp;rft.date=1883-05&amp;rft.genre=article&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fjstor-2635832&amp;rft_id=info%3Adoi%2F10.2307%2F2635832&amp;rft.issue=3&amp;rft.jtitle=Annals+of+Mathematics&amp;rft.pages=65-66&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=10" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation journal">Stumpff, Karl (1 June 1968). <a rel="nofollow" class="external text" href="http://ntrs.nasa.gov/search.jsp?R=19680017171">"On The application of Lie-series to the problems of celestial mechanics"</a>. NASA Technical Note D-4460.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKepler%27s+equation&amp;rft.atitle=On+The+application+of+Lie-series+to+the+problems+of+celestial+mechanics&amp;rft.aufirst=Karl&amp;rft.aulast=Stumpff&amp;rft.date=1968-06-01&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fntrs.nasa.gov%2Fsearch.jsp%3FR%3D19680017171&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation book">Colwell, Peter (1993). <i>Solving Kepler's Equation Over Three Centuries</i>. Willmann–Bell. p.&#160;43. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-943396-40-9" title="Special:BookSources/0-943396-40-9">0-943396-40-9</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKepler%27s+equation&amp;rft.aufirst=Peter&amp;rft.aulast=Colwell&amp;rft.btitle=Solving+Kepler%27s+Equation+Over+Three+Centuries&amp;rft.date=1993&amp;rft.genre=book&amp;rft.isbn=0-943396-40-9&amp;rft.pages=43&amp;rft.pub=Willmann%93Bell&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation book">Montenbruck, Oliver; Pfleger, Thomas (2009). <i>Astronomy on the Personal Computer</i>. Springer-Verlag Berlin Heidelberg. pp.&#160;64–65. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-3-540-67221-0" title="Special:BookSources/978-3-540-67221-0">978-3-540-67221-0</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKepler%27s+equation&amp;rft.aufirst=Oliver&amp;rft.aulast=Montenbruck&amp;rft.au=Pfleger%2C+Thomas&amp;rft.btitle=Astronomy+on+the+Personal+Computer&amp;rft.date=2009&amp;rft.genre=book&amp;rft.isbn=978-3-540-67221-0&amp;rft.pages=64-65&amp;rft.pub=Springer-Verlag+Berlin+Heidelberg&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Kepler%27s_equation&amp;action=edit&amp;section=12" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></td>
+<td class="mbox-text plainlist">Wikimedia Commons has media related to <i><b><a href="//commons.wikimedia.org/wiki/Category:Kepler%27s_equation" class="extiw" title="commons:Category:Kepler's equation">Kepler's equation</a></b></i>.</td>
+</tr>
+</table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://mathworld.wolfram.com/KeplersEquation.html">Kepler's Equation at Wolfram Mathworld</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1237
+Cached time: 20160222060246
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.161 seconds
+Real time usage: 0.269 seconds
+Preprocessor visited node count: 1030/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 19263/2097152 bytes
+Template argument size: 1199/2097152 bytes
+Highest expansion depth: 9/40
+Expensive parser function count: 0/500
+Lua time usage: 0.053/10.000 seconds
+Lua memory usage: 2.9 MB/50 MB
+Number of Wikibase entities loaded: 1-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  237.442      1 - -total
+ 36.29%   86.161      1 - Template:Reflist
+ 23.07%   54.767      5 - Template:Cite_book
+ 14.24%   33.800      4 - Template:Equation_box_1
+ 12.41%   29.472      1 - Template:Commons_category
+  8.92%   21.169      1 - Template:For
+  7.92%   18.811      1 - Template:Hatnote
+  5.37%   12.742      1 - Template:Commons
+  4.57%   10.853      1 - Template:Sister_project
+  3.75%    8.905      2 - Template:Cite_journal
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:32172638-0!*!0!!en!4!*!math=0 and timestamp 20160222060246 and revision id 700342297
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Kepler%27s_equation&amp;oldid=700342297">https://en.wikipedia.org/w/index.php?title=Kepler%27s_equation&amp;oldid=700342297</a>"					</div>
+				<div id='catlinks' class='catlinks' data-mw='interface'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Johannes_Kepler" title="Category:Johannes Kepler">Johannes Kepler</a></li><li><a href="/wiki/Category:Orbits" title="Category:Orbits">Orbits</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_Latin-language_sources_(la)" title="Category:CS1 Latin-language sources (la)">CS1 Latin-language sources (la)</a></li><li><a href="/wiki/Category:Articles_with_attributed_pull_quotes" title="Category:Articles with attributed pull quotes">Articles with attributed pull quotes</a></li><li><a href="/wiki/Category:Commons_category_with_local_link_same_as_on_Wikidata" title="Category:Commons category with local link same as on Wikidata">Commons category with local link same as on Wikidata</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Kepler%27s+equation&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Kepler%27s+equation" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Kepler%27s_equation"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Kepler%27s_equation"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Kepler%27s_equation" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Kepler%27s_equation&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Kepler%27s_equation&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Kepler%27s_equation" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Kepler%27s_equation" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Kepler%27s_equation&amp;oldid=700342297" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Kepler%27s_equation&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q932001" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Kepler%27s_equation&amp;id=700342297" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Kepler%27s+equation">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Kepler%27s+equation&amp;returnto=Kepler%27s+equation&amp;oldid=700342297&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Kepler%27s_equation&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:Kepler%27s_equation" hreflang="en">Wikimedia Commons</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-be"><a href="//be.wikipedia.org/wiki/%D0%A3%D1%80%D0%B0%D1%9E%D0%BD%D0%B5%D0%BD%D0%BD%D0%B5_%D0%9A%D0%B5%D0%BF%D0%BB%D0%B5%D1%80%D0%B0" title="Ураўненне Кеплера – Belarusian" lang="be" hreflang="be">Беларуская</a></li><li class="interlanguage-link interwiki-ca"><a href="//ca.wikipedia.org/wiki/Equaci%C3%B3_de_Kepler" title="Equació de Kepler – Catalan" lang="ca" hreflang="ca">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="//cs.wikipedia.org/wiki/Keplerova_rovnice" title="Keplerova rovnice – Czech" lang="cs" hreflang="cs">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="//de.wikipedia.org/wiki/Kepler-Gleichung" title="Kepler-Gleichung – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="//es.wikipedia.org/wiki/Ecuaci%C3%B3n_de_Kepler" title="Ecuación de Kepler – Spanish" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="//fr.wikipedia.org/wiki/%C3%89quation_de_Kepler" title="Équation de Kepler – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-kk"><a href="//kk.wikipedia.org/wiki/%D0%9A%D0%B5%D0%BF%D0%BB%D0%B5%D1%80_%D1%82%D0%B5%D2%A3%D0%B4%D0%B5%D1%83%D1%96" title="Кеплер теңдеуі – Kazakh" lang="kk" hreflang="kk">Қазақша</a></li><li class="interlanguage-link interwiki-nl"><a href="//nl.wikipedia.org/wiki/Vergelijking_van_Kepler" title="Vergelijking van Kepler – Dutch" lang="nl" hreflang="nl">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="//ja.wikipedia.org/wiki/%E3%82%B1%E3%83%97%E3%83%A9%E3%83%BC%E3%81%AE%E6%96%B9%E7%A8%8B%E5%BC%8F" title="ケプラーの方程式 – Japanese" lang="ja" hreflang="ja">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="//no.wikipedia.org/wiki/Keplers_ligning" title="Keplers ligning – Norwegian" lang="no" hreflang="no">Norsk bokmål</a></li><li class="interlanguage-link interwiki-pl"><a href="//pl.wikipedia.org/wiki/R%C3%B3wnanie_Keplera" title="Równanie Keplera – Polish" lang="pl" hreflang="pl">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="//pt.wikipedia.org/wiki/Equa%C3%A7%C3%A3o_de_Kepler" title="Equação de Kepler – Portuguese" lang="pt" hreflang="pt">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="//ru.wikipedia.org/wiki/%D0%A3%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5_%D0%9A%D0%B5%D0%BF%D0%BB%D0%B5%D1%80%D0%B0" title="Уравнение Кеплера – Russian" lang="ru" hreflang="ru">Русский</a></li><li class="interlanguage-link interwiki-sk"><a href="//sk.wikipedia.org/wiki/Keplerova_rovnica" title="Keplerova rovnica – Slovak" lang="sk" hreflang="sk">Slovenčina</a></li><li class="interlanguage-link interwiki-fi"><a href="//fi.wikipedia.org/wiki/Keplerin_yht%C3%A4l%C3%B6" title="Keplerin yhtälö – Finnish" lang="fi" hreflang="fi">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="//sv.wikipedia.org/wiki/Keplers_ekvation" title="Keplers ekvation – Swedish" lang="sv" hreflang="sv">Svenska</a></li><li class="interlanguage-link interwiki-te"><a href="//te.wikipedia.org/wiki/%E0%B0%95%E0%B1%86%E0%B0%AA%E0%B1%8D%E0%B0%B2%E0%B0%B0%E0%B1%8D_%E0%B0%B8%E0%B0%AE%E0%B1%80%E0%B0%95%E0%B0%B0%E0%B0%A3%E0%B0%AE%E0%B1%81" title="కెప్లర్ సమీకరణము – Telugu" lang="te" hreflang="te">తెలుగు</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q932001#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 17 January 2016, at 22:59.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="//wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Kepler%27s_equation&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ = window.RLQ || []).push(function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.eventLogging.subscriber","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","mmv.bootstrap.autostart","ext.visualEditor.targetLoader","ext.wikimediaEvents","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>(window.RLQ = window.RLQ || []).push(function () {
+mw.config.set({"wgBackendResponseTime":57,"wgHostname":"mw1251"}); /* @nomin */
+} );</script>
+	</body>
+</html>
