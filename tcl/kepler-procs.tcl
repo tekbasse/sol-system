@@ -130,6 +130,66 @@ namespace eval ::ssk {
     # only one reference for Pluto, by using lindex, other references will be empty, just as in cases of Mercury through Mars.
     set table2b_larr(Pluto) [list     -0.01262724 ]
 
+    # Franz and Harper's"Heliospheric coordinate systems" appears to reference the Earth ecliptic orbital plane
+    # for the Heliocentric coordinate systems with references to "GEI J2000".
+    # Geocentric Earth Equatorial (GEI) j2000 is the International Celestial Reference Frame (ICRF),
+    # where XY-plane is Earth mean equator at J2000.0.
+    # +X axis is vector Earth-Sun of vernal equinox at j2000.0.
+    # declination angle XYtoZ Z=90degrees
+    # right ascension is "right handed"
+    # Section 3.2.1. "Solar Pole and prime meridian" on page 4 provides some parameters comparing orientation of Solar poles to Earth poles:
+    # "Heliographic coordinate systems use the position of the solar rotation axis 
+    # which is defined by its declination and the right ascension with respect to the celestial pole (GEIJ 2000 + Z)."
+    # M. Franz, D. Harper / Planetary and Space Science 50 (2002) 217-233. 221 
+    # retrieved from http://jsoc.stanford.edu/doc/keywords/coordinates/Franz_Harper_2002.pdf
+    # These parameters are:
+    #        delta_sol     declination of the solar rotation axis (degrees)
+    #        alpha_sol     right ascension with respect to the celestial pole (GEI J2000 + Z) (degrees)
+    #        iota_sol      inclination of the solar equator at GEI J2000 (degrees)
+    #        omega_cap_sol = 75.75 degrees + 1.397 degrees per t_cap_0
+    #        t_cap_0       Julian centuries of 365.25 days from J2000.0
+    set delta_sol_deg 63.87
+    set alpha_sol_deg 286.13
+    set iota_sol_deg 7.25
+
+    #        siderial rotation of sun = 25.38 days
+    #        synodic rotation of sun (with respect to Earth) = 27.2753 days
+    # heliocentric ecliptic longitude is the apparent longitude of the Earth at center, where 
+    #        lambda_cap_sol = lambda_cap_geo - alpha (as defined in Eq. 36)
+    # Eq. 36:
+    #  lambda_cap_geo    geometric ecliptic longitude of the Earth
+    #  lambda_cap_geo = lambda_cap_mean + 1.915 degrees * sin( g) + 0.020 degrees * sin(2g)
+    # where
+    #  lambda_cap  is mean anomaly
+    #  g = lambda_cap - pi_sym for the Earth-Moon Barycenter , results in precision of within 34seconds Earth approx.
+    #  r_geo = 1.00014 - 001671*cos(g) - 0.00014*cos(2g)  in AU  r = distance between EMB and solar system barycenter?
+
+    #        alpha_0       position of the North pole in Right Ascension ( degrees ) 
+    #        delta_0       position of the North pole in Declination ( degrees )
+    #        alpha_dot     change in Right Ascension position ( degrees per century J2000 )
+    #        detla_dot     change in Declination position ( degrees per century J2000 )
+    #        w_cap_0       position of the prime meridian at GEI J2000 ( degrees )
+    #        w_cap         change in position ( degrees per day )
+    # Table 6 Physical ephemeris of planetary rotations of the planets in GEI j2000.
+    # table6 variable order: alpha_0 alpha_dot delta_0 delta_dot w_cap_0 w_cap
+    set table6_larr(Sun) [list 286.13 "" 63.87 "" 84.10 14.1844000 ]
+    set table6_larr(Mercury) [list 281.01 -0.003 61.45  -0.005  329.71 6.1385025 ]
+    set table6_larr(Venus) [list 272.72 "" 67.15 "" 160.26 -1.4813596 ]
+    set table6_larr(Earth) [list 0.00 -0.641 90.00 -0.557 190.16 360.9856235 ]
+    set table6_larr(Mars) [list 317.681 -0.108 52.886 -0.061 176.868 350.8919830 ]
+    # listed as Jupiter III ie magnetospheric rotation, II is atmospheric polar rotation
+    set table6_larr(Jupiter) [list 268.05 -0.009 64.49 0.003 284.95 870.5360000 ]
+    # listed as Saturn III ie magnetospheric rotation, II is atmospheric polar rotation
+    set table6_larr(Saturn) [list 40.58 -0.036 83.54 -0.004 38.90 810.7939024 ]
+    # listed as Uranus III ie magnetospheric rotation, II is atmospheric polar rotation
+    set table6_larr(Uranus) [list 257.43 "" -15.10 "" 203.81 -501.1600928 ]
+    # for Neptune, add pre-neptune adjustments 
+    # given t_cap
+    # set N [expr { 359.28 + 54.308*$t_cap } ]
+    #set table6_larr(Neptune) [list 299.36 0.70*sin($N) 43.46 -0.51*cos($N) 253.18 5363128492-0.48*sin($N)
+    set table6_larr(Pluto) [list 313.02 "" 9.09 "" 236.77 -56.3623195 ]
+
+
 }
 
 ad_proc -public ssk::days_since_j2000 {
@@ -587,3 +647,4 @@ ad_proc -public ssk::pos_kepler {
     set Debug 0
     return $success_p
 }
+
