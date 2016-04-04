@@ -59,6 +59,15 @@ ad_proc -public ssk::sol_earth_latitude {
     # Solar equator is the plane defined as perpendicular (orthogonal) to a polar oriented vector
     # given a vector N1,N2,N3, plane is equation N1*x + N2*y + N3*z = 0
 
+    # convert polar coordinates of sol's pole coordinates (in Geo RA, Dec) to Cartesian J2000
+    # Let's assume r is radius of Sol.
+    # using spherical polar coordinates to Cartesian transformations,
+    # where theta = 90 degrees - Dec angle, thus sin(theta) becomes cos(Dec Angle):
+    # x = r * cos( Dec angle ) * cos ( Right accension angle)
+    # y = r * cos( Dec angle ) * sin ( righ accension angle )
+    # z = r * sin( Dec angle )
+
+
     # get position of Earth in x y z coordinates
 
     # Since Sun is at origin (0,0,0), the angle of the line that intersects the Solar equatorial plane
