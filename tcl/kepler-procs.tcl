@@ -171,6 +171,7 @@ namespace eval ::ssk {
     #        w_cap_0       position of the prime meridian at GEI J2000 ( degrees )
     #        w_cap         change in position ( degrees per day )
     # Table 6 Physical ephemeris of planetary rotations of the planets in GEI j2000.
+    ## ie. These are orientation of the poles of astronomical bodies
     # table6 variable order: alpha_0 alpha_dot delta_0 delta_dot w_cap_0 w_cap
     set table6_larr(Sun) [list 286.13 "" 63.87 "" 84.10 14.1844000 ]
     set table6_larr(Mercury) [list 281.01 -0.003 61.45  -0.005  329.71 6.1385025 ]
