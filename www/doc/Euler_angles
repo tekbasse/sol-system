@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Euler angles - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ = window.RLQ || []).push(function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Euler_angles","wgTitle":"Euler angles","wgCurRevisionId":706966354,"wgRevisionId":706966354,"wgArticleId":411492,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with Italian-language external links","All articles with unsourced statements","Articles with unsourced statements from May 2011","Rotation in three dimensions","Euclidean symmetries","Angle","Analytic geometry"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Euler_angles","wgRelevantArticleId":411492,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wikilove-recipient":"","wikilove-anon":0,"wgPreferredVariant":"en","wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSAcceptLanguageList":["en-us","en"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCentralAuthMobileDomain":false,"wgWikibaseItemId":"Q751290","wgVisualEditorToolbarScrollOffset":0}); /* @nomin */mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"}); /* @nomin */ ;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","mw.MediaWikiPlayer.loader","mw.PopUpMediaTransform","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.math.styles%7Cext.tmh.thumbnail.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.raggett%2CsectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.27.0-wmf.16" />
+<meta name="referrer" content="origin-when-cross-origin" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Euler_angles" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Euler_angles&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Euler_angles&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Euler_angles" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Euler_angles skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Euler angles</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div role="note" class="hatnote">This article is about the Euler angles used in <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>.  For the use of the term in <a href="/wiki/Physics" title="Physics">physics</a> and <a href="/wiki/Aerospace_engineering" title="Aerospace engineering">aerospace engineering</a>, see <a href="/wiki/Rigid_body_dynamics" title="Rigid body dynamics">Rigid body dynamics</a>.  For chained rotations, see <a href="/wiki/Chained_rotations" title="Chained rotations" class="mw-redirect">chained rotations</a>.</div>
+<p>The <b>Euler angles</b> are three angles introduced by <a href="/wiki/Leonhard_Euler" title="Leonhard Euler">Leonhard Euler</a> to describe the <a href="/wiki/Orientation_(geometry)" title="Orientation (geometry)">orientation</a> of a <a href="/wiki/Rigid_body" title="Rigid body">rigid body</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup> To describe such an orientation in <a href="/wiki/Dimension" title="Dimension">3-dimensional</a> <a href="/wiki/Euclidean_space" title="Euclidean space">Euclidean space</a> three parameters are required. They can be given in several ways, Euler angles being one of them; see <a href="/wiki/Charts_on_SO(3)" title="Charts on SO(3)">charts on SO(3)</a> for others. Euler angles are also used to describe the orientation of a <a href="/wiki/Frame_of_reference" title="Frame of reference">frame of reference</a> (typically, a <a href="/wiki/Coordinate_system" title="Coordinate system">coordinate system</a> or <a href="/wiki/Basis_(linear_algebra)" title="Basis (linear algebra)">basis</a>) relative to another. They are typically denoted as <a href="/wiki/Alpha" title="Alpha">α</a>, <a href="/wiki/Beta" title="Beta">β</a>, <a href="/wiki/Gamma" title="Gamma">γ</a>, or <a href="/wiki/Phi" title="Phi">φ</a>, <a href="/wiki/Theta" title="Theta">θ</a>, <a href="/wiki/Psi_(letter)" title="Psi (letter)">ψ</a>.</p>
+<p>Euler angles represent a sequence of three <i><a href="/wiki/Elemental_rotation" title="Elemental rotation" class="mw-redirect">elemental rotations</a></i>, i.e. rotations about the axes of a <a href="/wiki/Coordinate_system" title="Coordinate system">coordinate system</a>. For instance, a first rotation about <i>z</i> by an angle α, a second rotation about <i>x</i> by an angle β, and a last rotation again about <i>z</i>, by an angle γ. These rotations start from a known standard orientation. In physics, this standard initial orientation is typically represented by a motionless (<i>fixed</i>, <i>global</i>, or <i>world</i>) <a href="/wiki/Coordinate_system" title="Coordinate system">coordinate system</a>; in linear algebra, by a <a href="/wiki/Standard_basis" title="Standard basis">standard basis</a>.</p>
+<p>Any orientation can be achieved by composing three elemental rotations. The elemental rotations can either occur about the axes of the fixed coordinate system (<a href="#Extrinsic_rotations">extrinsic rotations</a>) or about the axes of a rotating coordinate system, which is initially aligned with the fixed one, and modifies its orientation after each elemental rotation (<a href="#Intrinsic_rotations">intrinsic rotations</a>). The rotating coordinate system may be imagined to be rigidly attached to a rigid body. In this case, it is sometimes called a <i>local</i> coordinate system. Without considering the possibility of using two different conventions for the definition of the rotation axes (intrinsic or extrinsic), there exist twelve possible sequences of rotation axes, divided in two groups:</p>
+<ul>
+<li><b>Proper Euler angles</b> <span class="texhtml">(<i>z-x-z, x-y-x, y-z-y, z-y-z, x-z-x, y-x-y</i>)</span></li>
+<li><b>Tait–Bryan angles</b> <span class="texhtml">(<i>x-y-z, y-z-x, z-x-y, x-z-y, z-y-x, y-x-z</i>)</span>.</li>
+</ul>
+<p>Tait–Bryan angles are also called <b>Cardan angles</b>; <b>nautical angles</b>; <b>heading, elevation, and bank</b>; or <b>yaw, pitch, and roll</b>. Sometimes, both kinds of sequences are called "Euler angles". In that case, the sequences of the first group are called <i>proper</i> or <i>classic</i> Euler angles.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Proper_Euler_angles"><span class="tocnumber">1</span> <span class="toctext">Proper Euler angles</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Classic_definition"><span class="tocnumber">1.1</span> <span class="toctext">Classic definition</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Alternative_definition"><span class="tocnumber">1.2</span> <span class="toctext">Alternative definition</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Conventions"><span class="tocnumber">1.3</span> <span class="toctext">Conventions</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Signs_and_ranges"><span class="tocnumber">1.4</span> <span class="toctext">Signs and ranges</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Geometric_derivation"><span class="tocnumber">1.5</span> <span class="toctext">Geometric derivation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Tait.E2.80.93Bryan_angles"><span class="tocnumber">2</span> <span class="toctext">Tait–Bryan angles</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Conventions_2"><span class="tocnumber">2.1</span> <span class="toctext">Conventions</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Alternative_names"><span class="tocnumber">2.2</span> <span class="toctext">Alternative names</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Relationship_with_physical_motions"><span class="tocnumber">3</span> <span class="toctext">Relationship with physical motions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#Intrinsic_rotations"><span class="tocnumber">3.1</span> <span class="toctext">Intrinsic rotations</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Extrinsic_rotations"><span class="tocnumber">3.2</span> <span class="toctext">Extrinsic rotations</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Conversion_between_intrinsic_and_extrinsic_rotations"><span class="tocnumber">3.3</span> <span class="toctext">Conversion between intrinsic and extrinsic rotations</span></a>
+<ul>
+<li class="toclevel-3 tocsection-14"><a href="#The_proof_of_the_conversion_in_the_pre-multiply_case"><span class="tocnumber">3.3.1</span> <span class="toctext">The proof of the conversion in the pre-multiply case</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="#Gimbal_motion_relationship"><span class="tocnumber">4</span> <span class="toctext">Gimbal motion relationship</span></a>
+<ul>
+<li class="toclevel-2 tocsection-16"><a href="#Gimbal_analogy"><span class="tocnumber">4.1</span> <span class="toctext">Gimbal analogy</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Intermediate_frames"><span class="tocnumber">4.2</span> <span class="toctext">Intermediate frames</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="#Relationship_to_other_representations"><span class="tocnumber">5</span> <span class="toctext">Relationship to other representations</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a href="#Rotation_matrix"><span class="tocnumber">5.1</span> <span class="toctext">Rotation matrix</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Quaternions"><span class="tocnumber">5.2</span> <span class="toctext">Quaternions</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Geometric_algebra"><span class="tocnumber">5.3</span> <span class="toctext">Geometric algebra</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="#Properties"><span class="tocnumber">6</span> <span class="toctext">Properties</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#Higher_dimensions"><span class="tocnumber">7</span> <span class="toctext">Higher dimensions</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="#Applications"><span class="tocnumber">8</span> <span class="toctext">Applications</span></a>
+<ul>
+<li class="toclevel-2 tocsection-25"><a href="#Vehicles_and_moving_frames"><span class="tocnumber">8.1</span> <span class="toctext">Vehicles and moving frames</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#Crystallographic_texture"><span class="tocnumber">8.2</span> <span class="toctext">Crystallographic texture</span></a></li>
+<li class="toclevel-2 tocsection-27"><a href="#Others"><span class="tocnumber">8.3</span> <span class="toctext">Others</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-28"><a href="#See_also"><span class="tocnumber">9</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-29"><a href="#References"><span class="tocnumber">10</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-30"><a href="#Bibliography"><span class="tocnumber">11</span> <span class="toctext">Bibliography</span></a></li>
+<li class="toclevel-1 tocsection-31"><a href="#External_links"><span class="tocnumber">12</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Proper_Euler_angles">Proper Euler angles</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=1" title="Edit section: Proper Euler angles">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:Eulerangles.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Eulerangles.svg/300px-Eulerangles.svg.png" width="300" height="338" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Eulerangles.svg/450px-Eulerangles.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Eulerangles.svg/600px-Eulerangles.svg.png 2x" data-file-width="688" data-file-height="775" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Eulerangles.svg" class="internal" title="Enlarge"></a></div>
+Proper Euler angles representing rotations about <i>z</i>, <i>N</i>, and <i>Z</i> axes. The <i>xyz</i> (original) system is shown in blue, the <i>XYZ</i> (rotated) system is shown in red. The <a href="/wiki/Line_of_nodes" title="Line of nodes" class="mw-redirect">line of nodes</a> (<i>N</i>) is shown in green.</div>
+</div>
+</div>
+<h3><span class="mw-headline" id="Classic_definition">Classic definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=2" title="Edit section: Classic definition">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Euler angles are a means of representing the spatial orientation of any <a href="/wiki/Frame_of_reference" title="Frame of reference">reference frame</a> (<a href="/wiki/Coordinate_system" title="Coordinate system">coordinate system</a> or <a href="/wiki/Basis_(linear_algebra)" title="Basis (linear algebra)">basis</a>) as a composition of three elemental rotations starting from a known standard orientation, represented by another frame (sometimes referred to as the <i>original</i> or <i>fixed</i> reference frame, or <a href="/wiki/Standard_basis" title="Standard basis">standard basis</a>). The reference orientation can be imagined to be an initial orientation from which the frame virtually rotates to reach its actual orientation. In the following, the axes of the original frame are denoted as <i>x</i>,<i>y</i>,<i>z</i> and the axes of the rotated frame are denoted as <i>X</i>,<i>Y</i>,<i>Z</i>. In <a href="/wiki/Geometry" title="Geometry">geometry</a> and <a href="/wiki/Physics" title="Physics">physics</a>, the rotated coordinate system is often imagined to be rigidly attached to a <a href="/wiki/Rigid_body" title="Rigid body">rigid body</a>. In this case, it is called a "local" coordinate system, and it is meant to represent both the position and the orientation of the body.</p>
+<p>The geometrical definition (referred sometimes as static) of the Euler angles is based on the axes of the above-mentioned (original and rotated) reference frames and an additional axis called the <a href="/wiki/Line_of_nodes" title="Line of nodes" class="mw-redirect">line of nodes</a>. The line of nodes (<i>N</i>) is defined as the intersection of the <i>xy</i> and the <i>XY</i> coordinate planes. In other words, it is a line passing through the common origin of both frames, and perpendicular to the <i>zZ</i> plane, on which both <i>z</i> and <i>Z</i> lie. The three Euler angles are defined as follows:</p>
+<ul>
+<li><i>α</i> (or <img class="mwe-math-fallback-image-inline tex" alt="\varphi" src="//upload.wikimedia.org/math/3/5/3/3538eb9c84efdcbd130c4c953781cfdb.png" />) is the angle between the <i>x</i> axis and the <i>N</i> axis.</li>
+<li><i>β</i> (or <img class="mwe-math-fallback-image-inline tex" alt="\theta" src="//upload.wikimedia.org/math/5/0/d/50d91f80cbb8feda1d10e167107ad1ff.png" />) is the angle between the <i>z</i> axis and the <i>Z</i> axis.</li>
+<li><i>γ</i> (or <img class="mwe-math-fallback-image-inline tex" alt="\psi" src="//upload.wikimedia.org/math/1/9/d/19df1c2726ed43128440c1157f72a937.png" />) is the angle between the <i>N</i> axis and the <i>X</i> axis.</li>
+</ul>
+<p>This definition implies that:</p>
+<ul>
+<li><i>α</i> represents a rotation around the <i>z</i> axis,</li>
+<li><i>β</i> represents a rotation around the <i>N</i> axis,</li>
+<li><i>γ</i> represents a rotation around the <i>Z</i> axis.</li>
+</ul>
+<p>If <i>β</i> is zero, there is no rotation about <i>N</i>. As a consequence, <i>Z</i> coincides with <i>z</i>, <i>α</i> and <i>γ</i> represent rotations about the same axis (<i>z</i>), and the final orientation can be obtained with a single rotation about <i>z</i>, by an angle equal to <i>α</i>+<i>γ</i>.</p>
+<h3><span class="mw-headline" id="Alternative_definition">Alternative definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=3" title="Edit section: Alternative definition">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The rotated frame <i>XYZ</i> may be imagined to be initially aligned with <i>xyz</i>, before undergoing the three elemental rotations represented by Euler angles. Its successive orientations may be denoted as follows:</p>
+<ul>
+<li><i>x-y-z</i>, or <i>x</i><sub>0</sub>-<i>y</i><sub>0</sub>-<i>z</i><sub>0</sub> (initial)</li>
+<li><i>x’-y’-z’</i>, or <i>x</i><sub>1</sub>-<i>y</i><sub>1</sub>-<i>z</i><sub>1</sub> (after first rotation)</li>
+<li><i>x″-y″-z″</i>, or <i>x</i><sub>2</sub>-<i>y</i><sub>2</sub>-<i>z</i><sub>2</sub> (after second rotation)</li>
+<li><i>X-Y-Z</i>, or <i>x</i><sub>3</sub>-<i>y</i><sub>3</sub>-<i>z</i><sub>3</sub> (final)</li>
+</ul>
+<p>For the above-listed sequence of rotations, the <a href="/wiki/Line_of_nodes" title="Line of nodes" class="mw-redirect">line of nodes</a> <i>N</i> can be simply defined as the orientation of <i>X</i> after the first elemental rotation. Hence, <i>N</i> can be simply denoted <i>x’</i>. Moreover, since the third elemental rotation occurs about <i>Z</i>, it does not change the orientation of <i>Z</i>. Hence <i>Z</i> coincides with <i>z″</i>. This allows us to simplify the definition of the Euler angles as follows:</p>
+<ul>
+<li><i>α</i> (or <img class="mwe-math-fallback-image-inline tex" alt="\varphi" src="//upload.wikimedia.org/math/3/5/3/3538eb9c84efdcbd130c4c953781cfdb.png" />) represents a rotation around the <i>z</i> axis,</li>
+<li><i>β</i> (or <img class="mwe-math-fallback-image-inline tex" alt="\theta" src="//upload.wikimedia.org/math/5/0/d/50d91f80cbb8feda1d10e167107ad1ff.png" />) represents a rotation around the <i>x’</i> axis,</li>
+<li><i>γ</i> (or <img class="mwe-math-fallback-image-inline tex" alt="\psi" src="//upload.wikimedia.org/math/1/9/d/19df1c2726ed43128440c1157f72a937.png" />) represents a rotation around the <i>z″</i> axis.</li>
+</ul>
+<h3><span class="mw-headline" id="Conventions">Conventions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=4" title="Edit section: Conventions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Different authors may use different sets of rotation axes to define Euler angles, or different names for the same angles. Therefore, any discussion employing Euler angles should always be preceded by their definition.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup> Unless otherwise stated, this article will use the convention described above.</p>
+<p>The three elemental rotations may occur either about the axes <i>xyz</i> of the original coordinate system, which is assumed to remain motionless (<a href="#Extrinsic_rotations">extrinsic rotations</a>), or about the axes of the rotating coordinate system <i>XYZ</i>, which changes its orientation after each elemental rotation (<a href="#Intrinsic_rotations">intrinsic rotations</a>). The definition above uses intrinsic rotations.</p>
+<p>There are six possibilities of choosing the rotation axes for proper Euler angles. In all of them, the first and third rotation axes are the same. The six possible sequences are:</p>
+<ol>
+<li><i>z-x’-z″</i> (intrinsic rotations) or <i>z-x-z</i> (extrinsic rotations)</li>
+<li><i>x-y’-x″</i> (intrinsic rotations) or <i>x-y-x</i> (extrinsic rotations)</li>
+<li><i>y-z’-y″</i> (intrinsic rotations) or <i>y-z-y</i> (extrinsic rotations)</li>
+<li><i>z-y’-z″</i> (intrinsic rotations) or <i>z-y-z</i> (extrinsic rotations)</li>
+<li><i>x-z’-x″</i> (intrinsic rotations) or <i>x-z-x</i> (extrinsic rotations)</li>
+<li><i>y-x’-y″</i> (intrinsic rotations) or <i>y-x-y</i> (extrinsic rotations)</li>
+</ol>
+<p>Euler angles between two reference frames are defined only if both frames have the same <a href="/wiki/Orientation_(mathematics)" title="Orientation (mathematics)" class="mw-redirect">handedness</a>.</p>
+<h3><span class="mw-headline" id="Signs_and_ranges">Signs and ranges</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=5" title="Edit section: Signs and ranges">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Angles are commonly defined according to the <a href="/wiki/Right_hand_rule" title="Right hand rule" class="mw-redirect">right hand rule</a>. Namely, they have positive values when they represent a rotation that appears clockwise when looking in the positive direction of the axis, and negative values when the rotation appears counter-clockwise. The opposite convention (left hand rule) is less frequently adopted.</p>
+<p>About the ranges:</p>
+<ul>
+<li>for <i>α</i> and <i>γ</i>, the range is defined <a href="/wiki/Modular_arithmetic" title="Modular arithmetic">modulo</a> 2π <a href="/wiki/Radian" title="Radian">radians</a>. A valid range could be <span class="texhtml">[−π, π]</span>.</li>
+<li>for <i>β</i>, the range covers π radians (but can't be said to be modulo π). For example, could be <span class="texhtml">[0, π]</span> or <span class="texhtml">[−π/2, π/2]</span>.</li>
+</ul>
+<p>The angles <i>α</i>, <i>β</i> and <i>γ</i> are uniquely determined except for the singular case that the <i>xy</i> and the <i>XY</i> planes are identical, the <i>z</i> axis and the <i>Z</i> axis having the same or opposite directions. Indeed, if the <i>z</i> axis and the <i>Z</i> axis are the same, <i>β</i>&#160;=&#160;0 and only (<i>α</i>&#160;+&#160;<i>γ</i>) is uniquely defined (not the individual values), and, similarly, if the <i>z</i> axis and the <i>Z</i> axis are opposite, <i>β</i>&#160;=&#160;π and only (<i>α</i>&#160;−&#160;<i>γ</i>) is uniquely defined (not the individual values). These ambiguities are known as <a href="/wiki/Gimbal_lock" title="Gimbal lock">gimbal lock</a> in applications.</p>
+<h3><span class="mw-headline" id="Geometric_derivation">Geometric derivation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=6" title="Edit section: Geometric derivation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:202px;"><a href="/wiki/File:EulerProjections.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e5/EulerProjections.svg/200px-EulerProjections.svg.png" width="200" height="225" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e5/EulerProjections.svg/300px-EulerProjections.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e5/EulerProjections.svg/400px-EulerProjections.svg.png 2x" data-file-width="688" data-file-height="775" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:EulerProjections.svg" class="internal" title="Enlarge"></a></div>
+Projections of <i>Z</i> vector.</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:202px;"><a href="/wiki/File:EulerProjections2.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9e/EulerProjections2.svg/200px-EulerProjections2.svg.png" width="200" height="225" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9e/EulerProjections2.svg/300px-EulerProjections2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9e/EulerProjections2.svg/400px-EulerProjections2.svg.png 2x" data-file-width="688" data-file-height="775" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:EulerProjections2.svg" class="internal" title="Enlarge"></a></div>
+Projections of <i>Y</i> vector.</div>
+</div>
+</div>
+<p>The fastest way to get the Euler Angles of a given frame is to write the three given vectors as columns of a matrix and compare it with the expression of the theoretical matrix (see later table of matrices). Hence the three Euler Angles can be calculated. Nevertheless, the same result can be reached avoiding matrix algebra, which is more geometrical. Assuming a frame with <a href="/wiki/Unit_vector" title="Unit vector">unit vectors</a> (<i>X</i>, <i>Y</i>, <i>Z</i>) as in the main diagram, it can be seen that:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\cos (\beta) = Z_3." src="//upload.wikimedia.org/math/f/0/e/f0e65688ecf022322a1ccfdb5e9a676f.png" /></dd>
+</dl>
+<p>And, since</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\sin^2 x = 1 - \cos^2 x," src="//upload.wikimedia.org/math/3/6/9/3691aa3c3912ac742b77945ea1d07e79.png" /></dd>
+</dl>
+<p>we have</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\sin (\beta) = \sqrt {1 - Z_3^2}." src="//upload.wikimedia.org/math/4/1/3/413066b51624553173daae7a025afed1.png" /></dd>
+</dl>
+<p>As <img class="mwe-math-fallback-image-inline tex" alt="Z_2" src="//upload.wikimedia.org/math/2/a/5/2a5b995623e4ab087dd51fa989f23859.png" /> is the double projection of a unitary vector,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\cos(\alpha) \cdot \sin(\beta) = Z_2," src="//upload.wikimedia.org/math/c/5/1/c513b6b3f65a0eb8b0e6d6e9889c2bf7.png" /></dd>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\cos(\alpha) = Z_2 / \sqrt{1 - Z_3^2}." src="//upload.wikimedia.org/math/4/e/6/4e6b50158ee1f2ce0aa787160c780b62.png" /></dd>
+</dl>
+<p>There is a similar construction for <img class="mwe-math-fallback-image-inline tex" alt="Y_3" src="//upload.wikimedia.org/math/9/2/0/92026575592030fc47cf41c80e993698.png" />, projecting it first over the plane defined by the axis <i>z</i> and the line of nodes. As the angle between the planes is <img class="mwe-math-fallback-image-inline tex" alt="\pi/2 - \beta" src="//upload.wikimedia.org/math/9/7/a/97ab93c786ef47338a99cae229afa11e.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="\cos(\pi/2 - \beta) = \sin(\beta)" src="//upload.wikimedia.org/math/1/8/6/1864a0563a424255af133bdd5c2db3a2.png" />, this leads to:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\sin(\beta) \cdot \cos(\gamma) = Y_3," src="//upload.wikimedia.org/math/1/5/4/15433caf5d4f52edfb334255374123e4.png" /></dd>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\cos(\gamma) = Y_3 / \sqrt{1 - Z_3^2}," src="//upload.wikimedia.org/math/0/4/0/0406e63d569646da04fae3ee1918e437.png" /></dd>
+</dl>
+<p>and finally, using the <a href="/wiki/Inverse_trigonometric_functions" title="Inverse trigonometric functions">inverse cosine</a> function,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\alpha = \arccos(Z_2 / \sqrt{1 - Z_3^2})," src="//upload.wikimedia.org/math/e/9/0/e902938793b936ab65ab5ea1afccd0c6.png" /></dd>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\beta = \arccos(Z_3)," src="//upload.wikimedia.org/math/3/9/b/39bbeb42d0bcf222a1084d124cf0a699.png" /></dd>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\gamma = \arccos(Y_3 / \sqrt{1 - Z_3^2})." src="//upload.wikimedia.org/math/a/d/1/ad16888d02a1ab3e5d717f2d2890ffbd.png" /></dd>
+</dl>
+<p>It is interesting to note that the inverse cosine function yields two possible values for the argument. In this geometrical description only one of the solutions is valid. When Euler Angles are defined as a sequence of rotations, all the solutions can be valid, but there will be only one inside the angle ranges. This is because the sequence of rotations to reach the target frame is not unique if the ranges are not previously defined.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>For computational purposes, it may be useful to represent the angles using <a href="/wiki/Atan2" title="Atan2">atan2</a>(y,x):</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\alpha = \operatorname{atan2}(Z_1 , Z_2)," src="//upload.wikimedia.org/math/8/3/e/83e328b6d213cf3a4f2b3215c286e8e3.png" /></dd>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\gamma = \operatorname{atan2}(X_3 , Y_3)." src="//upload.wikimedia.org/math/3/0/3/3034b24f39197291ec3fd33224cf2c3b.png" /></dd>
+</dl>
+<h2><span class="mw-headline" id="Tait.E2.80.93Bryan_angles">Tait–Bryan angles</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=7" title="Edit section: Tait–Bryan angles">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tleft">
+<div class="thumbinner" style="width:202px;"><a href="/wiki/File:Taitbrianzyx.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/53/Taitbrianzyx.svg/200px-Taitbrianzyx.svg.png" width="200" height="196" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/53/Taitbrianzyx.svg/300px-Taitbrianzyx.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/53/Taitbrianzyx.svg/400px-Taitbrianzyx.svg.png 2x" data-file-width="680" data-file-height="665" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Taitbrianzyx.svg" class="internal" title="Enlarge"></a></div>
+Tait–Bryan angles. <i>z-y′-x″</i> sequence (intrinsic rotations; <i>N</i> coincides with <i>y’</i>). The angle rotation sequence is <i>ψ</i>, <i>θ</i>, <i>Ф</i>. Note that in this case <i>ψ &gt; 90°</i> and <i>θ</i> is a negative angle.</div>
+</div>
+</div>
+<p>The second type of formalism is called <b>Tait–Bryan angles</b>, after <a href="/wiki/Peter_Guthrie_Tait" title="Peter Guthrie Tait" class="mw-redirect">Peter Guthrie Tait</a> and <a href="/wiki/George_H._Bryan" title="George H. Bryan">George H. Bryan</a>.</p>
+<p>The definitions and notations used for Tait-Bryan angles are similar to those described above for proper Euler angles (<a href="#Classic_definition">Classic definition</a>, <a href="#Alternative_definition">Alternative definition</a>). The only difference is that Tait–Bryan angles represent rotations about three distinct axes (e.g. <i>x-y-z</i>, or <i>x-y’-z″</i>), while proper Euler angles use the same axis for both the first and third elemental rotations (e.g., <i>z-x-z</i>, or <i>z-x’-z″</i>).</p>
+<p>This implies a different definition for the <a href="/wiki/Line_of_nodes" title="Line of nodes" class="mw-redirect">line of nodes</a>. In the first case it was defined as the intersection between two homologous Cartesian planes (parallel when Euler angles are zero; e.g. <i>xy</i> and <i>XY</i>). In the second one, it is defined as the intersection of two non-homologous planes (perpendicular when Euler angles are zero; e.g. <i>xy</i> and <i>YZ</i>).</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:327px;"><a href="/wiki/File:Taitbrianangles.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Taitbrianangles.svg/325px-Taitbrianangles.svg.png" width="325" height="147" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Taitbrianangles.svg/488px-Taitbrianangles.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Taitbrianangles.svg/650px-Taitbrianangles.svg.png 2x" data-file-width="1547" data-file-height="700" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Taitbrianangles.svg" class="internal" title="Enlarge"></a></div>
+Tait–Bryan angles. <i>z-x’-y″</i> sequence (intrinsic rotations; <i>N</i> coincides with <i>x’</i>)</div>
+</div>
+</div>
+<h3><span class="mw-headline" id="Conventions_2">Conventions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=8" title="Edit section: Conventions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The three elemental rotations may occur either about the axes of the original coordinate system, which remains motionless (<a href="#Extrinsic_rotations">extrinsic rotations</a>), or about the axes of the rotating coordinate system, which changes its orientation after each elemental rotation (<a href="#Intrinsic_rotations">intrinsic rotations</a>).</p>
+<p>There are six possibilities of choosing the rotation axes for Tait–Bryan angles. The six possible sequences are:</p>
+<ol>
+<li><i>x-y’-z″</i> (intrinsic rotations) or <i>x-y-z</i> (extrinsic rotations)</li>
+<li><i>y-z’-x″</i> (intrinsic rotations) or <i>y-z-x</i> (extrinsic rotations)</li>
+<li><i>z-x’-y″</i> (intrinsic rotations) or <i>z-x-y</i> (extrinsic rotations)</li>
+<li><i>x-z’-y″</i> (intrinsic rotations) or <i>x-z-y</i> (extrinsic rotations)</li>
+<li><i>z-y’-x″</i> (intrinsic rotations) or <i>z-y-x</i> (extrinsic rotations): the intrinsic rotations are known as: yaw, pitch and roll</li>
+<li><i>y-x’-z″</i> (intrinsic rotations) or <i>y-x-z</i> (extrinsic rotations)</li>
+</ol>
+<h3><span class="mw-headline" id="Alternative_names">Alternative names</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=9" title="Edit section: Alternative names">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:252px;"><a href="/wiki/File:Yaw_Axis_Corrected.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Yaw_Axis_Corrected.svg/250px-Yaw_Axis_Corrected.svg.png" width="250" height="188" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Yaw_Axis_Corrected.svg/375px-Yaw_Axis_Corrected.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Yaw_Axis_Corrected.svg/500px-Yaw_Axis_Corrected.svg.png 2x" data-file-width="709" data-file-height="533" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Yaw_Axis_Corrected.svg" class="internal" title="Enlarge"></a></div>
+The <a href="/wiki/Aircraft_principal_axes" title="Aircraft principal axes">principal axes</a> of an aircraft</div>
+</div>
+</div>
+<p>Tait-Bryan angles, following z-y’-x″ (intrinsic rotations) convention, are also known as <b>nautical angles</b>, because they can be used to describe the orientation of a ship or aircraft, or <b>Cardan angles</b>, after the Italian mathematician and physicist <a href="/wiki/Gerolamo_Cardano" title="Gerolamo Cardano">Gerolamo Cardano</a>, who first described in detail the <a href="/wiki/Cardan_suspension" title="Cardan suspension" class="mw-redirect">Cardan suspension</a> and the <a href="/wiki/Cardan_joint" title="Cardan joint" class="mw-redirect">Cardan joint</a>. They are also called <b><a href="/wiki/Course_(navigation)#Aircraft_heading" title="Course (navigation)">heading</a>, <a href="/wiki/Elevation_(ballistics)" title="Elevation (ballistics)">elevation</a> and <a href="/wiki/Banked_turn" title="Banked turn">bank</a></b>, or <b><a href="/wiki/Yaw_(rotation)" title="Yaw (rotation)">yaw</a>, <a href="/wiki/Pitching_moment" title="Pitching moment">pitch</a> and roll</b>. Notice that the second set of terms is also used for the three <a href="/wiki/Aircraft_principal_axes" title="Aircraft principal axes">aircraft principal axes</a>.</p>
+<h2><span class="mw-headline" id="Relationship_with_physical_motions">Relationship with physical motions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=10" title="Edit section: Relationship with physical motions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote">See also: <a href="/wiki/Givens_rotation" title="Givens rotation">Givens rotations</a> and <a href="/wiki/Davenport_rotations" title="Davenport rotations" class="mw-redirect">Davenport rotations</a></div>
+<h3><span class="mw-headline" id="Intrinsic_rotations">Intrinsic rotations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=11" title="Edit section: Intrinsic rotations">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tmulti tright">
+<div class="thumbinner" style="width:328px;max-width:328px">
+<div class="tsingle" style="float:left;margin:1px;width:172px;max-width:172px">
+<div class="thumbimage"><a href="/wiki/File:Euler2a.gif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/85/Euler2a.gif/170px-Euler2a.gif" width="170" height="161" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/85/Euler2a.gif/255px-Euler2a.gif 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/85/Euler2a.gif/340px-Euler2a.gif 2x" data-file-width="368" data-file-height="348" /></a></div>
+</div>
+<div class="tsingle" style="float:left;margin:1px;width:152px;max-width:152px">
+<div class="thumbimage"><a href="/wiki/File:Intermediateframes.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Intermediateframes.svg/150px-Intermediateframes.svg.png" width="150" height="159" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Intermediateframes.svg/225px-Intermediateframes.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Intermediateframes.svg/300px-Intermediateframes.svg.png 2x" data-file-width="744" data-file-height="787" /></a></div>
+</div>
+<div style="clear:left"></div>
+<div class="thumbcaption" style="clear:left;text-align:left;background-color:transparent">Any target orientation can be reached, starting from a known reference orientation, using a specific sequence of intrinsic rotations, whose magnitudes are the Euler angles of the target orientation. This example uses the <i>z-x′-z″</i> sequence.</div>
+</div>
+</div>
+<p>Intrinsic rotations are elemental rotations that occur about the axes of the rotating coordinate system <i>XYZ</i>, which changes its orientation after each elemental rotation. The <i>XYZ</i> system rotates, while <i>xyz</i> is fixed. Starting with <i>XYZ</i> overlapping <i>xyz</i>, a composition of three intrinsic rotations can be used to reach any target orientation for <i>XYZ</i>. The Euler or Tait-Bryan angles (<i>α</i>, <i>β</i>, <i>γ</i>) are the amplitudes of these elemental rotations. For instance, the target orientation can be reached as follows:</p>
+<ul>
+<li>The <i>XYZ</i> system rotates by <i>α</i> about the <i>Z</i> axis (which coincides with the <i>z</i> axis). The <i>X</i> axis now lies on the line of nodes.</li>
+<li>The <i>XYZ</i> system rotates about the now rotated <i>X</i> axis by <i>β</i>. The <i>Z</i> axis is now in its final orientation, and the <i>X</i> axis remains on the line of nodes.</li>
+<li>The <i>XYZ</i> system rotates a third time about the new <i>Z</i> axis by <i>γ</i>.</li>
+</ul>
+<p>The above-mentioned <a href="#Alternative_definition">notation</a> allows us to summarize this as follows: the three elemental rotations of the XYZ-system occur about <i>z</i>, <i>x</i>’ and <i>z</i>″. Indeed, this sequence is often denoted <i>z-x’-z″</i>. Sets of rotation axes associated with both proper Euler angles and Tait-Bryan angles are commonly named using this notation (see above for details). Sometimes, the same sequence is simply called <i>z-x-z</i>, <i>Z-X-Z</i>, or <i>3-1-3</i>, but this notation may be ambiguous as it may be identical to that used for extrinsic rotations. In this case, it becomes necessary to separately specify whether the rotations are intrinsic or extrinsic.</p>
+<p><a href="/wiki/Rotation_matrix" title="Rotation matrix">Rotation matrices</a> can be used to represent a sequence of intrinsic rotations. For instance,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="R = X(\alpha) Y(\beta) Z(\gamma)" src="//upload.wikimedia.org/math/6/c/4/6c4607cb53027b015780c61fca8bafde.png" /></dd>
+</dl>
+<p>represents a composition of intrinsic rotations about axes <i>x-y’-z″</i>, if used to pre-multiply <a href="/wiki/Column_vector" title="Column vector" class="mw-redirect">column vectors</a>, while</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="R = Z(\gamma) Y(\beta) X(\alpha) " src="//upload.wikimedia.org/math/5/2/a/52a9b4f580b55ad173418fea07d8d851.png" /></dd>
+</dl>
+<p>represents exactly the same composition when used to post-multiply <a href="/wiki/Row_vector" title="Row vector" class="mw-redirect">row vectors</a>. See <a href="/wiki/Rotation_matrix#Ambiguities" title="Rotation matrix">Ambiguities in the definition of rotation matrices</a> for more details.</p>
+<h3><span class="mw-headline" id="Extrinsic_rotations">Extrinsic rotations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=12" title="Edit section: Extrinsic rotations">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Extrinsic rotations are elemental rotations that occur about the axes of the fixed coordinate system <i>xyz</i>. The <i>XYZ</i> system rotates, while <i>xyz</i> is fixed. Starting with <i>XYZ</i> overlapping <i>xyz</i>, a composition of three extrinsic rotations can be used to reach any target orientation for <i>XYZ</i>. The Euler or Tait-Bryan angles (<i>α</i>, <i>β</i>, <i>γ</i>) are the amplitudes of these elemental rotations. For instance, the target orientation can be reached as follows:</p>
+<ul>
+<li>The <i>XYZ</i> system rotates about the <i>z</i> axis by <i>α</i>. The <i>X</i> axis is now at angle <i>α</i> with respect to the <i>x</i> axis.</li>
+<li>The <i>XYZ</i> system rotates again about the <i>x</i> axis by <i>β</i>. The <i>Z</i> axis is now at angle β with respect to the <i>z</i> axis.</li>
+<li>The <i>XYZ</i> system rotates a third time about the <i>z</i> axis by <i>γ</i>.</li>
+</ul>
+<p>In sum, the three elemental rotations occur about <i>z</i>, <i>x</i> and <i>z</i>. Indeed, this sequence is often denoted <i>z-x-z</i> (or 3-1-3). Sets of rotation axes associated with both proper Euler angles and Tait–Bryan angles are commonly named using this notation (see above for details).</p>
+<p><a href="/wiki/Rotation_matrix" title="Rotation matrix">Rotation matrices</a> can be used to represent a sequence of extrinsic rotations. For instance,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="R = Z(\gamma) Y(\beta) X(\alpha) " src="//upload.wikimedia.org/math/5/2/a/52a9b4f580b55ad173418fea07d8d851.png" /></dd>
+</dl>
+<p>represents a composition of extrinsic rotations about axes <i>x-y-z</i>, if used to pre-multiply <a href="/wiki/Column_vector" title="Column vector" class="mw-redirect">column vectors</a>, while</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="R = X(\alpha) Y(\beta) Z(\gamma)" src="//upload.wikimedia.org/math/6/c/4/6c4607cb53027b015780c61fca8bafde.png" /></dd>
+</dl>
+<p>represents exactly the same composition when used to post-multiply <a href="/wiki/Row_vector" title="Row vector" class="mw-redirect">row vectors</a>. See <a href="/wiki/Rotation_matrix#Ambiguities" title="Rotation matrix">Ambiguities in the definition of rotation matrices</a> for more details.</p>
+<h3><span class="mw-headline" id="Conversion_between_intrinsic_and_extrinsic_rotations">Conversion between intrinsic and extrinsic rotations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=13" title="Edit section: Conversion between intrinsic and extrinsic rotations">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:EulerG.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/EulerG.png/300px-EulerG.png" width="300" height="93" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/EulerG.png/450px-EulerG.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/73/EulerG.png/600px-EulerG.png 2x" data-file-width="1735" data-file-height="537" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:EulerG.png" class="internal" title="Enlarge"></a></div>
+A rotation represented by Euler angles (<i>α</i>, <i>β</i>, <i>γ</i>) = (−60°, 30°, 45°), using <i>z-x’-z″</i> intrinsic rotations</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:EulerX.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/38/EulerX.png/300px-EulerX.png" width="300" height="95" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/38/EulerX.png/450px-EulerX.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/38/EulerX.png/600px-EulerX.png 2x" data-file-width="1524" data-file-height="485" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:EulerX.png" class="internal" title="Enlarge"></a></div>
+The same rotation represented by (γ, β, α) = (45°, 30°, −60°), using <i>z-x-z</i> extrinsic rotations</div>
+</div>
+</div>
+<p>Any extrinsic rotation is equivalent to an intrinsic rotation by the same angles but with inverted order of elemental rotations, and vice versa. For instance, the intrinsic rotations <i>x-y’-z″</i> by angles <i>α</i>, <i>β</i>, <i>γ</i> are equivalent to the extrinsic rotations <i>z-y-x</i> by angles <i>γ</i>, <i>β</i>, <i>α</i>. Both are represented by a matrix</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="R = X(\alpha) Y(\beta) Z(\gamma)" src="//upload.wikimedia.org/math/6/c/4/6c4607cb53027b015780c61fca8bafde.png" /></dd>
+</dl>
+<p>if <i>R</i> is used to pre-multiply <a href="/wiki/Column_vector" title="Column vector" class="mw-redirect">column vectors</a>, and by a matrix</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="R = Z(\gamma) Y(\beta) X(\alpha) " src="//upload.wikimedia.org/math/5/2/a/52a9b4f580b55ad173418fea07d8d851.png" /></dd>
+</dl>
+<p>if <i>R</i> is used to post-multiply <a href="/wiki/Row_vector" title="Row vector" class="mw-redirect">row vectors</a>. See <a href="/wiki/Rotation_matrix#Ambiguities" title="Rotation matrix">Ambiguities in the definition of rotation matrices</a> for more details.</p>
+<h4><span class="mw-headline" id="The_proof_of_the_conversion_in_the_pre-multiply_case">The proof of the conversion in the pre-multiply case</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=14" title="Edit section: The proof of the conversion in the pre-multiply case">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The rotation matrix of the intrinsic rotation sequence <i>x-y’-z″</i> can be obtained by the sequential intrinsic element rotations from the right to the left:</p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="R=Z''Y'X." src="//upload.wikimedia.org/math/f/7/8/f78ee664e2d1a22992e263e1d452a06f.png" /></p>
+<p>In this process there are three frames related in the intrinsic rotation sequence. Let's denote the frame 0 as the initial frame, the frame 1 after the first rotation around the <i>x axis</i>, the frame 2 after the second rotation around the <i>y’</i> axis and the frame 3 as the third rotation around <i>z″</i> axis.</p>
+<p>Since a rotation matrix can be represented among these three frames, let's use the left shoulder index to denote the representation frame. The following notation means the rotation matrix that transforms the frame <i>a</i> to the frame <i>b</i> and that is represented in the frame <i>c</i>&#160;:</p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="{}^c\!R_{a \rightarrow b}." src="//upload.wikimedia.org/math/b/a/f/baf858a67a8ebd245418db42d612b8cd.png" /></p>
+<p>An intrinsic element rotation matrix represented in that frame where the rotation happens has the same value as that of the corresponding extrinsic element rotation matrix:</p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="{}^0\!R_{1\rightarrow0}=X, \quad {}^1\!R_{2\rightarrow1}=Y, \quad {}^2\!R_{3\rightarrow2}=Z." src="//upload.wikimedia.org/math/d/e/b/deb075fa92315814473a7eb20dd11f54.png" /></p>
+<p>The intrinsic element rotation matrix <i>Y’</i> and <i>Z″</i> represented in the frame 0 can be expressed as other forms:</p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="\begin{align} Y' &amp; ={}^0\!R_{2\rightarrow1} \\
+&amp; ={}^0\!R_{1\rightarrow0}{}^1\!R_{2\rightarrow1}{}^0\!R_{1\rightarrow0}^{-1} \\
+&amp; =XYX^{-1} \\ \end{align}" src="//upload.wikimedia.org/math/f/c/1/fc1d9c7501399729ed74556bfeb10fc3.png" /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="\begin{align} Z'' &amp; ={}^0\!R_{3\rightarrow2} \\
+&amp; ={}^0\!R_{1\rightarrow0}{}^1\!R_{3\rightarrow2}{}^0\!R_{1\rightarrow0}^{-1} \\
+&amp; =X({}^1\!R_{2\rightarrow1}{}^2\!R_{3\rightarrow2}{}^1\!R_{2\rightarrow1}^{-1})X^{-1} \\
+&amp; =XYZY^{-1}X^{-1} \\ \end{align}" src="//upload.wikimedia.org/math/3/a/f/3afea4e5f79fe3037ebfed0448d1c12b.png" /></p>
+<p>The two equations above are substituted to the first equation:</p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="\begin{align} R &amp; =Z''Y'X \\
+&amp; = (XYZY^{-1}X^{-1})(XYX^{-1})X \\
+&amp; = XYZY^{-1}(X^{-1}X)Y(X^{-1}X) \\
+&amp; = XYZ(Y^{-1}Y) \\
+&amp; = XYZ \\ \end{align}" src="//upload.wikimedia.org/math/5/4/d/54dc001e6eb8e6e87b9fb1489c9ba5f8.png" /></p>
+<p>Therefore, the rotation matrix of an intrinsic element rotation sequence is the same as that of the inverse extrinsic element rotation sequence:</p>
+<p><img class="mwe-math-fallback-image-inline tex" alt=" R = Z''Y'X = XYZ." src="//upload.wikimedia.org/math/d/0/f/d0f7a688f5baa7eba18fd62a20fafd20.png" /></p>
+<h2><span class="mw-headline" id="Gimbal_motion_relationship">Gimbal motion relationship</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=15" title="Edit section: Gimbal motion relationship">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tleft">
+<div class="thumbinner" style="width:172px;"><a href="/wiki/File:Praezession.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Praezession.svg/170px-Praezession.svg.png" width="170" height="212" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Praezession.svg/255px-Praezession.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Praezession.svg/340px-Praezession.svg.png 2x" data-file-width="818" data-file-height="1021" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Praezession.svg" class="internal" title="Enlarge"></a></div>
+Euler basic motions of the Earth. Intrinsic (green), Precession (blue) and Nutation (red)</div>
+</div>
+</div>
+<p>Euler basic motions are defined as the movements obtained by changing one of the Euler angles while leaving the other two constant. Euler rotations are never expressed in terms of the external frame, or in terms of the co-moving rotated body frame, but in a mixture. They constitute a <b>mixed axes of rotation</b> system, where the first angle moves the line of nodes around the external axis <i>z</i>, the second rotates around the line of nodes and the third one is an intrinsic rotation around an axis fixed in the body that moves.</p>
+<p>These rotations are called <a href="/wiki/Precession" title="Precession">precession</a>, <a href="/wiki/Nutation" title="Nutation">nutation</a>, and <a href="/wiki/Rotation" title="Rotation">intrinsic rotation</a> (spin). As an example, consider a <a href="/wiki/Top" title="Top">top</a>. The top spins around its own axis of symmetry; this corresponds to its intrinsic rotation. It also rotates around its pivotal axis, with its center of mass orbiting the pivotal axis; this rotation is a precession. Finally, the top can wobble up and down; the inclination angle is the nutation angle. While all three are rotations when applied over individual frames, only precession is valid as a rotation operator, and only precession can be expressed in general as a matrix in the basis of the space.</p>
+<h3><span class="mw-headline" id="Gimbal_analogy">Gimbal analogy</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=16" title="Edit section: Gimbal analogy">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tmulti tright">
+<div class="thumbinner" style="width:348px;max-width:348px">
+<div class="tsingle" style="float:left;margin:1px;width:182px;max-width:182px">
+<div class="thumbimage"><a href="/wiki/File:Gimbaleuler.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Gimbaleuler.svg/180px-Gimbaleuler.svg.png" width="180" height="180" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Gimbaleuler.svg/270px-Gimbaleuler.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/72/Gimbaleuler.svg/360px-Gimbaleuler.svg.png 2x" data-file-width="480" data-file-height="480" /></a></div>
+</div>
+<div class="tsingle" style="float:left;margin:1px;width:162px;max-width:162px">
+<div class="thumbimage"><a href="/wiki/File:Gimbaleuler2.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/34/Gimbaleuler2.svg/160px-Gimbaleuler2.svg.png" width="160" height="180" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/34/Gimbaleuler2.svg/240px-Gimbaleuler2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/34/Gimbaleuler2.svg/320px-Gimbaleuler2.svg.png 2x" data-file-width="688" data-file-height="775" /></a></div>
+</div>
+<div style="clear:left"></div>
+<div class="thumbcaption" style="clear:left;text-align:left;background-color:transparent"><b>Left:</b> A three axes <i>z</i>-<i>x</i>-<i>z</i> <a href="/wiki/Gimbal" title="Gimbal">gimbal</a> where the external frame and external axis <i>x</i> are not shown and axes <i>Y</i> are perpendicular to each gimbal ring. <b>Right:</b> A simple diagram showing the Euler angles and where the axes <i>Y</i> of intermediate frames are located.</div>
+</div>
+</div>
+<p>If we suppose a set of frames, able to move each with respect to the former according to just one angle, like a gimbal, there will exist an external fixed frame, one final frame and two frames in the middle, which are called "intermediate frames". The two in the middle work as two gimbal rings that allow the last frame to reach any orientation in space.</p>
+<p>In these conditions, each Euler rotation works on one of the rings, independently from the rest.</p>
+<h3><span class="mw-headline" id="Intermediate_frames">Intermediate frames</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=17" title="Edit section: Intermediate frames">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The gimbal rings indicate some intermediate frames. They can be defined statically too. Taking some vectors <b>i</b>, <b>j</b> and <b>k</b> over the axes <i>x</i>, <i>y</i> and <i>z</i>, and vectors <b>I</b>, <b>J</b>, <b>K</b> over <i>X</i>, <i>Y</i> and <i>Z</i>, and a vector <b>N</b> over the line of nodes, some intermediate frames can be defined using the vector <a href="/wiki/Cross_product" title="Cross product">cross product</a>, as following:</p>
+<ul>
+<li>origin: [<b>i</b>,<b>j</b>,<b>k</b>] (where <b>k</b> = <b>i</b> × <b>j</b>)</li>
+<li>first: [<b>N</b>,<b>k</b> × <b>N</b>,<b>k</b>]</li>
+<li>second: [<b>N</b>,<b>K</b> × <b>N</b>,<b>K</b>]</li>
+<li>final: [<b>I</b>,<b>J</b>,<b>K</b>]</li>
+</ul>
+<p>These intermediate frames are equivalent to those of the gimbal. They are such that they differ from the previous one in just a single elemental rotation. This proves that:</p>
+<ul>
+<li>Any target frame can be reached from the reference frame just composing three rotations.</li>
+<li>The values of these three rotations are exactly the Euler angles of the target frame.</li>
+</ul>
+<h2><span class="mw-headline" id="Relationship_to_other_representations">Relationship to other representations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=18" title="Edit section: Relationship to other representations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote relarticle mainarticle">Main article: <a href="/wiki/Rotation_formalisms_in_three_dimensions#Conversion_formulae_between_formalisms" title="Rotation formalisms in three dimensions">Rotation formalisms in three dimensions § Conversion formulae between formalisms</a></div>
+<p>Euler angles are one way to represent orientations. There are others, and it is possible to change to and from other conventions.</p>
+<h3><span class="mw-headline" id="Rotation_matrix">Rotation matrix</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=19" title="Edit section: Rotation matrix">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Any orientation can be achieved by composing three elemental rotations, starting from a known standard orientation. Equivalently, any <a href="/wiki/Rotation_matrix" title="Rotation matrix">rotation matrix</a> <i>R</i> can be <a href="/wiki/Matrix_decomposition" title="Matrix decomposition">decomposed</a> as a product of three elemental rotation matrices. For instance:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="R = X(\alpha) Y(\beta) Z(\gamma)" src="//upload.wikimedia.org/math/6/c/4/6c4607cb53027b015780c61fca8bafde.png" /></dd>
+</dl>
+<p>is a rotation matrix that may be used to represent a composition of <a href="/wiki/Euler_angles#Intrinsic_rotations" title="Euler angles">intrinsic rotations</a> about axes <i>x-y’-z″</i>. However, both the definition of the elemental rotation matrices <i>X</i>, <i>Y</i>, <i>Z</i>, and their multiplication order depend on the choices taken by the user about the definition of both rotation matrices and Euler angles (see, for instance, <a href="/wiki/Rotation_matrix#Ambiguities" title="Rotation matrix">Ambiguities in the definition of rotation matrices</a>). Unfortunately, different sets of conventions are adopted by users in different contexts. The following table was built according to this set of conventions:</p>
+<ol>
+<li>Each matrix is meant to operate by pre-multiplying <a href="/wiki/Column_vector" title="Column vector" class="mw-redirect">column vectors</a> (see <a href="/wiki/Rotation_matrix#Ambiguities" title="Rotation matrix">Ambiguities in the definition of rotation matrices</a>)</li>
+<li>Each matrix is meant to represent an <a href="/wiki/Active_and_passive_transformation" title="Active and passive transformation">active rotation</a> (the composing and composed matrices are supposed to act on the coordinates of vectors defined in the initial fixed reference frame and give as a result the coordinates of a rotated vector defined in the same reference frame).</li>
+<li>Each matrix is meant to represent the composition of <a href="/wiki/Intrinsic_rotations" title="Intrinsic rotations" class="mw-redirect">intrinsic rotations</a> (around the axes of the rotating reference frame).</li>
+<li><a href="/wiki/Right_hand_rule" title="Right hand rule" class="mw-redirect">Right handed</a> reference frames are adopted, and the <a href="/wiki/Right_hand_rule" title="Right hand rule" class="mw-redirect">right hand rule</a> is used to determine the sign of the angles <i>α</i>, <i>β</i>, <i>γ</i>.</li>
+</ol>
+<p>For the sake of simplicity, the following table uses the following nomenclature:</p>
+<ol>
+<li>1, 2, 3 represent the angles <i>α</i>, <i>β</i>, <i>γ</i>.</li>
+<li><i>X, Y, Z</i> are the matrices representing the elemental rotations about the axes <i>x, y, z</i> of the fixed frame (e.g., <i>X</i><sub>1</sub> represents a rotation about <i>x</i> by an angle <i>α</i>).</li>
+<li><i>s</i> and <i>c</i> represent sine and cosine (e.g., <i>s</i><sub>1</sub> represents the sine of <i>α</i>).</li>
+<li>Each matrix is denoted by the formula used to calculate it. If <img class="mwe-math-fallback-image-inline tex" alt="R = Z_1 X_2 Z_3" src="//upload.wikimedia.org/math/9/a/a/9aafcb0f2f2b64c15adce7d34731bd7d.png" />, we name it <img class="mwe-math-fallback-image-inline tex" alt="Z_1 X_2 Z_3" src="//upload.wikimedia.org/math/b/2/b/b2b3fa8b61d407378abf1ea6de0ec2ea.png" />.</li>
+</ol>
+<dl>
+<dd>
+<table class="wikitable" style="background-color:white;font-weight:bold">
+<tr>
+<th>Proper Euler angles</th>
+<th>Tait-Bryan angles</th>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="X_1 Z_2 X_3 = \begin{bmatrix}
+ c_2 &amp; - c_3 s_2 &amp; s_2 s_3 \\
+ c_1 s_2 &amp; c_1 c_2 c_3 - s_1 s_3 &amp;  - c_3 s_1 - c_1 c_2 s_3 \\
+ s_1 s_2 &amp; c_1 s_3 + c_2 c_3 s_1 &amp; c_1 c_3 - c_2 s_1 s_3 
+\end{bmatrix}" src="//upload.wikimedia.org/math/9/8/d/98d05b3ea9cf2286b4d2f1829c5b63ed.png" /></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="X_1 Z_2 Y_3 = \begin{bmatrix}
+ c_2 c_3 &amp; - s_2 &amp; c_2 s_3 \\
+ s_1 s_3 + c_1 c_3 s_2 &amp; c_1 c_2 &amp; c_1 s_2 s_3 - c_3 s_1 \\
+ c_3 s_1 s_2 - c_1 s_3 &amp; c_2 s_1 &amp; c_1 c_3 + s_1 s_2 s_3 
+\end{bmatrix}" src="//upload.wikimedia.org/math/d/e/0/de02277b34a07f6ef6b5fa5630e32f49.png" /></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="X_1 Y_2 X_3 = \begin{bmatrix}
+ c_2 &amp; s_2 s_3 &amp; c_3 s_2 \\
+ s_1 s_2 &amp; c_1 c_3 - c_2 s_1 s_3 &amp;  - c_1 s_3 - c_2 c_3 s_1 \\
+ - c_1 s_2 &amp; c_3 s_1 + c_1 c_2 s_3 &amp; c_1 c_2 c_3 - s_1 s_3 
+\end{bmatrix}" src="//upload.wikimedia.org/math/7/c/9/7c9562f962f3666a0d60e2c56932deb1.png" /></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="X_1 Y_2 Z_3 = \begin{bmatrix}
+ c_2 c_3 &amp; - c_2 s_3 &amp; s_2 \\
+ c_1 s_3 + c_3 s_1 s_2 &amp; c_1 c_3 - s_1 s_2 s_3 &amp; - c_2 s_1 \\
+ s_1 s_3 - c_1 c_3 s_2 &amp; c_3 s_1 + c_1 s_2 s_3 &amp; c_1 c_2 
+\end{bmatrix}" src="//upload.wikimedia.org/math/a/9/6/a9675abac5967c098eb5da188a8e6960.png" /></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="Y_1 X_2 Y_3 = \begin{bmatrix}
+ c_1 c_3 - c_2 s_1 s_3 &amp; s_1 s_2 &amp; c_1 s_3 + c_2 c_3 s_1 \\
+ s_2 s_3 &amp; c_2 &amp; - c_3 s_2 \\
+  - c_3 s_1 - c_1 c_2 s_3 &amp; c_1 s_2 &amp; c_1 c_2 c_3 - s_1 s_3 
+\end{bmatrix}" src="//upload.wikimedia.org/math/c/2/d/c2d734683ab8244dc7426dfa2dd9a6c4.png" /></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="Y_1 X_2 Z_3 = \begin{bmatrix}
+ c_1 c_3 + s_1 s_2 s_3 &amp; c_3 s_1 s_2 - c_1 s_3 &amp;   c_2 s_1 \\
+  c_2 s_3 &amp; c_2 c_3 &amp; - s_2 \\
+ c_1 s_2 s_3 - c_3 s_1 &amp; c_1 c_3 s_2 + s_1 s_3 &amp; c_1 c_2 
+\end{bmatrix}" src="//upload.wikimedia.org/math/6/9/5/6959123e840391c8a664439138520e75.png" /></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="Y_1 Z_2 Y_3 = \begin{bmatrix}
+ c_1 c_2 c_3 - s_1 s_3 &amp; - c_1 s_2 &amp; c_3 s_1 + c_1 c_2 s_3 \\
+ c_3 s_2 &amp; c_2 &amp; s_2 s_3 \\
+  - c_1 s_3 - c_2 c_3 s_1 &amp; s_1 s_2 &amp; c_1 c_3 - c_2 s_1 s_3 
+\end{bmatrix}" src="//upload.wikimedia.org/math/b/e/5/be5180a41222280e49ec26ac3ea1b41d.png" /></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="Y_1 Z_2 X_3 = \begin{bmatrix}
+ c_1 c_2 &amp; s_1 s_3 - c_1 c_3 s_2 &amp; c_3 s_1 + c_1 s_2 s_3 \\
+ s_2 &amp; c_2 c_3 &amp; - c_2 s_3 \\
+ - c_2 s_1 &amp; c_1 s_3 + c_3 s_1 s_2 &amp; c_1 c_3 - s_1 s_2 s_3 
+\end{bmatrix}" src="//upload.wikimedia.org/math/5/d/2/5d25bd8ff38245cec76f127499b2195f.png" /></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="Z_1 Y_2 Z_3 = \begin{bmatrix}
+ c_1 c_2 c_3 - s_1 s_3 &amp;  - c_3 s_1 - c_1 c_2 s_3 &amp; c_1 s_2 \\
+ c_1 s_3 + c_2 c_3 s_1 &amp; c_1 c_3 - c_2 s_1 s_3 &amp; s_1 s_2 \\
+ - c_3 s_2 &amp; s_2 s_3 &amp; c_2 
+\end{bmatrix}" src="//upload.wikimedia.org/math/6/1/a/61a41ba5ca62caaa1ca6fe5b9bd52005.png" /></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="Z_1 Y_2 X_3 = \begin{bmatrix}
+ c_1 c_2 &amp; c_1 s_2 s_3 - c_3 s_1 &amp; s_1 s_3 + c_1 c_3 s_2 \\
+ c_2 s_1 &amp; c_1 c_3 + s_1 s_2 s_3 &amp; c_3 s_1 s_2 - c_1 s_3 \\
+ - s_2 &amp; c_2 s_3 &amp; c_2 c_3 
+\end{bmatrix}" src="//upload.wikimedia.org/math/3/b/c/3bcae89af1478010ee722e680af0afa9.png" /></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="Z_1 X_2 Z_3 = \begin{bmatrix}
+ c_1 c_3 - c_2 s_1 s_3 &amp;  - c_1 s_3 - c_2 c_3 s_1 &amp; s_1 s_2 \\
+ c_3 s_1 + c_1 c_2 s_3 &amp; c_1 c_2 c_3 - s_1 s_3 &amp; - c_1 s_2 \\
+ s_2 s_3 &amp; c_3 s_2 &amp; c_2 
+\end{bmatrix}" src="//upload.wikimedia.org/math/3/c/c/3cc24a6b6a27f8e4853043d46a7e7b8b.png" /></td>
+<td><img class="mwe-math-fallback-image-inline tex" alt="Z_1 X_2 Y_3 = \begin{bmatrix}
+ c_1 c_3 - s_1 s_2 s_3 &amp; - c_2 s_1 &amp; c_1 s_3 + c_3 s_1 s_2 \\
+ c_3 s_1 + c_1 s_2 s_3 &amp; c_1 c_2 &amp; s_1 s_3 - c_1 c_3 s_2 \\
+ - c_2 s_3 &amp; s_2 &amp; c_2 c_3 
+\end{bmatrix}" src="//upload.wikimedia.org/math/6/9/7/697689fa205e28f919253ca0c0145a38.png" /></td>
+</tr>
+</table>
+</dd>
+</dl>
+<p>To change the formulas for the opposite direction of rotation, change the signs of the sine functions. To change the formulas for <a href="/wiki/Active_and_passive_transformation" title="Active and passive transformation">passive rotations</a>, transpose the matrices (then each matrix transforms the initial coordinates of a vector remaining fixed to the coordinates of the same vector measured in the rotated reference system; same rotation axis, same angles, but now the coordinate system rotates, rather than the vector).</p>
+<h3><span class="mw-headline" id="Quaternions">Quaternions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=20" title="Edit section: Quaternions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Quaternions" title="Quaternions" class="mw-redirect">Unit quaternions</a>, also known as <a href="/wiki/Euler%E2%80%93Rodrigues_parameters" title="Euler–Rodrigues parameters" class="mw-redirect">Euler–Rodrigues parameters</a>, provide <a href="/wiki/Quaternions_and_spatial_rotation" title="Quaternions and spatial rotation">another mechanism</a> for representing 3D rotations. This is equivalent to the special unitary group description.</p>
+<p>Expressing rotations in 3D as unit quaternions instead of matrices has some advantages:</p>
+<ul>
+<li>Concatenating rotations is computationally faster and numerically more stable.</li>
+<li>Extracting the angle and axis of rotation is simpler.</li>
+<li>Interpolation is more straightforward. See for example <a href="/wiki/Slerp" title="Slerp">slerp</a>.</li>
+<li>Quaternions do not suffer from <a href="/wiki/Gimbal_lock" title="Gimbal lock">gimbal lock</a> as Euler angles do.</li>
+</ul>
+<h3><span class="mw-headline" id="Geometric_algebra">Geometric algebra</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=21" title="Edit section: Geometric algebra">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Other representation comes from the <a href="/wiki/Geometric_algebra" title="Geometric algebra">Geometric algebra</a>(GA). GA is a higher level abstraction, in which the quaternions are an even subalgebra. The principal tool in GA is the rotor <img class="mwe-math-fallback-image-inline tex" alt=" \bold{\R} = [ \cos(\theta / 2) - I u \sin(\theta / 2) ] " src="//upload.wikimedia.org/math/f/4/0/f403ececeef5192ab98226f4d9c91297.png" /> where <img class="mwe-math-fallback-image-inline tex" alt="\bold\theta =" src="//upload.wikimedia.org/math/4/d/9/4d9613d755b454ae8b3377dd80a05257.png" /><a href="/wiki/Angle_of_rotation" title="Angle of rotation">angle of rotation</a>, <img class="mwe-math-fallback-image-inline tex" alt="\bold(u) =" src="//upload.wikimedia.org/math/0/6/a/06a00964c8fb824f1b5147a259b94577.png" />rotation axis (unitary vector) and <img class="mwe-math-fallback-image-inline tex" alt="\bold(I)=" src="//upload.wikimedia.org/math/0/0/2/002b804b939c3b045ab3b6bc0bcd6610.png" />pseudoscalar (trivector in <img class="mwe-math-fallback-image-inline tex" alt="\mathbb{R}^3" src="//upload.wikimedia.org/math/4/3/2/4323e25409ba6e2046668f8fc174381a.png" />)</p>
+<h2><span class="mw-headline" id="Properties">Properties</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=22" title="Edit section: Properties">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote">See also: <a href="/wiki/Charts_on_SO(3)" title="Charts on SO(3)">Charts on SO(3)</a> and <a href="/wiki/Quaternions_and_spatial_rotation" title="Quaternions and spatial rotation">Quaternions and spatial rotation</a></div>
+<p>The Euler angles form a <a href="/wiki/Chart_(topology)" title="Chart (topology)" class="mw-redirect">chart</a> on all of <a href="/wiki/SO(3)" title="SO(3)" class="mw-redirect">SO(3)</a>, the <a href="/wiki/Special_orthogonal_group" title="Special orthogonal group" class="mw-redirect">special orthogonal group</a> of rotations in 3D space. The chart is smooth except for a polar coordinate style singularity along <i>β</i>=0. See <a href="/wiki/Charts_on_SO(3)" title="Charts on SO(3)">charts on SO(3)</a> for a more complete treatment.</p>
+<p>The space of rotations is called in general "The <a href="/wiki/Quaternions_and_spatial_rotation#Quaternion_rotation_operations" title="Quaternions and spatial rotation">Hypersphere of rotations</a>", though this is a misnomer: the group <a href="/wiki/Spin_group" title="Spin group">Spin(3)</a> is <a href="/wiki/Isometric_embedding" title="Isometric embedding" class="mw-redirect">isometric</a> to the hypersphere <i>S</i><sup>3</sup>, but the rotation space SO(3) is instead isometric to the <a href="/wiki/Real_projective_space" title="Real projective space">real projective space</a> <b>RP</b><sup>3</sup> which is a 2-fold <a href="/wiki/Quotient_space_(topology)" title="Quotient space (topology)">quotient space</a> of the hypersphere. This 2-to-1 ambiguity is the mathematical origin of <a href="/wiki/Spin_(physics)" title="Spin (physics)">spin in physics</a>.</p>
+<p>A similar three angle decomposition applies to <a href="/wiki/SU(2)" title="SU(2)" class="mw-redirect">SU(2)</a>, the <a href="/wiki/Special_unitary_group" title="Special unitary group">special unitary group</a> of rotations in complex 2D space, with the difference that <i>β</i> ranges from 0 to 2π. These are also called Euler angles.</p>
+<p>The <a href="/wiki/Haar_measure" title="Haar measure">Haar measure</a> for Euler angles has the simple form sin(<i>β</i>).<i>dα</i>.<i>dβ</i>.<i>dγ</i>, usually normalized by a factor of 1/8π².</p>
+<p>For example, to generate uniformly randomized orientations, let <i>α</i> and γ be uniform from 0 to 2π, let <i>z</i> be uniform from −1 to 1, and let <i>β</i> = arccos(<i>z</i>).</p>
+<h2><span class="mw-headline" id="Higher_dimensions">Higher dimensions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=23" title="Edit section: Higher dimensions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>It is possible to define parameters analogous to the Euler angles in dimensions higher than three.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<p>The number of degrees of freedom of a rotation matrix is always less than the dimension of the matrix squared. That is, the elements of a rotation matrix are not all completely independent. For example, the rotation matrix in dimension 2 has only one degree of freedom, since all four of its elements depend on a single angle of rotation. A rotation matrix in dimension 3 (which has nine elements) has three degrees of freedom, corresponding to each independent rotation, for example by its three Euler angles or a magnitude one (unit) quaternion.</p>
+<p>In <a href="/wiki/SO(4)" title="SO(4)" class="mw-redirect">SO(4)</a> the rotation matrix <a href="/wiki/Rotation_(mathematics)#In_four_dimensions" title="Rotation (mathematics)">is defined by two quaternions</a>, and is therefore 6-parametric (three degrees of freedom for every quaternion). The <span style="white-space:nowrap">4<span style="margin-left:0.2em">×</span><span style="margin-left:0.2em">4</span></span> rotation matrices have therefore 6 out of 16 independent components.</p>
+<p>Any set of 6 parameters that define the rotation matrix could be considered an extension of Euler angles to dimension 4.</p>
+<p>In general, the number of euler angles in dimension D is quadratic in D; since any one rotation consists of choosing two dimensions to rotate between, the total number of rotations available in dimension <img class="mwe-math-fallback-image-inline tex" alt="D" src="//upload.wikimedia.org/math/f/6/2/f623e75af30e62bbd73d6df5b50bb7b5.png" /> is <img class="mwe-math-fallback-image-inline tex" alt="N_{rot}=\binom{D}{2}=D(D-1)/2" src="//upload.wikimedia.org/math/b/2/5/b25919b3dd75b9248d07bc1e19056f89.png" />, which for <img class="mwe-math-fallback-image-inline tex" alt="D=2,3,4" src="//upload.wikimedia.org/math/9/5/7/957cc5bcfcb850c1d1233bb09ba78046.png" /> yields <img class="mwe-math-fallback-image-inline tex" alt="N_{rot}=1,3,6" src="//upload.wikimedia.org/math/4/1/8/418fad5a98c94da4696d02e51191dfab.png" />.</p>
+<h2><span class="mw-headline" id="Applications">Applications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=24" title="Edit section: Applications">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Gyroscope_operation.gif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gyroscope_operation.gif/220px-Gyroscope_operation.gif" width="220" height="220" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/d/d5/Gyroscope_operation.gif 1.5x, //upload.wikimedia.org/wikipedia/commons/d/d5/Gyroscope_operation.gif 2x" data-file-width="300" data-file-height="300" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Gyroscope_operation.gif" class="internal" title="Enlarge"></a></div>
+A <a href="/wiki/Gyroscope" title="Gyroscope">gyroscope</a> keeps its rotation axis constant. Therefore, angles measured in this frame are equivalent to angles measured in the lab frame</div>
+</div>
+</div>
+<h3><span class="mw-headline" id="Vehicles_and_moving_frames">Vehicles and moving frames</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=25" title="Edit section: Vehicles and moving frames">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote relarticle mainarticle">Main article: <a href="/wiki/Rigid_body" title="Rigid body">rigid body</a></div>
+<div role="note" class="hatnote">See also: <a href="/wiki/Axes_conventions" title="Axes conventions">axes conventions</a></div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Automation_of_foundry_with_robot.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Automation_of_foundry_with_robot.jpg/220px-Automation_of_foundry_with_robot.jpg" width="220" height="220" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Automation_of_foundry_with_robot.jpg/330px-Automation_of_foundry_with_robot.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/8/8a/Automation_of_foundry_with_robot.jpg 2x" data-file-width="400" data-file-height="400" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Automation_of_foundry_with_robot.jpg" class="internal" title="Enlarge"></a></div>
+Industrial robot operating in a foundry.</div>
+</div>
+</div>
+<p>Their main advantage over other orientation descriptions is that they are directly measurable from a gimbal mounted in a vehicle. As gyroscopes keep their rotation axis constant, angles measured in a gyro frame are equivalent to angles measured in the lab frame. Therefore, gyros are used to know the actual orientation of moving spacecraft, and Euler angles are directly measurable. Intrinsic rotation angle cannot be read from a single gimbal, so there has to be more than one gimbal in a spacecraft. Normally there are at least three for redundancy. There is also a relation to the well-known <a href="/wiki/Gimbal_lock" title="Gimbal lock">gimbal lock</a> problem of <a href="/wiki/Mechanical_engineering" title="Mechanical engineering">mechanical engineering</a> <sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>5<span>]</span></a></sup>&#160;.</p>
+<div class="thumb tleft">
+<div class="thumbinner" style="width:202px;"><a href="/wiki/File:Plane.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/67/Plane.svg/200px-Plane.svg.png" width="200" height="226" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/67/Plane.svg/300px-Plane.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/67/Plane.svg/400px-Plane.svg.png 2x" data-file-width="687" data-file-height="775" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Plane.svg" class="internal" title="Enlarge"></a></div>
+Heading, elevation and bank for an aircraft with axes <a href="/wiki/Deutsches_Institut_f%C3%BCr_Normung" title="Deutsches Institut für Normung">DIN</a> 9300</div>
+</div>
+</div>
+<p>The most popular application is to describe aircraft attitudes, normally using a Tait–Bryan convention so that zero degrees elevation represents the horizontal attitude. Tait–Bryan angles represent the orientation of the aircraft respect a reference axis system (<i>world frame</i>) with three angles which in the context of an aircraft are normally called Heading, Elevation and Bank. When dealing with vehicles, different <a href="/wiki/Axes_conventions" title="Axes conventions">axes conventions</a> are possible.</p>
+<p>When studying rigid bodies in general, one calls the <i>xyz</i> system <i>space coordinates</i>, and the <i>XYZ</i> system <i>body coordinates</i>. The space coordinates are treated as unmoving, while the body coordinates are considered embedded in the moving body. Calculations involving <a href="/wiki/Acceleration" title="Acceleration">acceleration</a>, <a href="/wiki/Angular_acceleration" title="Angular acceleration">angular acceleration</a>, <a href="/wiki/Angular_velocity" title="Angular velocity">angular velocity</a>, <a href="/wiki/Angular_momentum" title="Angular momentum">angular momentum</a>, and <a href="/wiki/Kinetic_energy" title="Kinetic energy">kinetic energy</a> are often easiest in body coordinates, because then the moment of inertia tensor does not change in time. If one also diagonalizes the rigid body's moment of inertia tensor (with nine components, six of which are independent), then one has a set of coordinates (called the principal axes) in which the moment of inertia tensor has only three components.</p>
+<p>The angular velocity of a rigid body takes a <a href="/wiki/Angular_velocity#Components_from_Euler_angles" title="Angular velocity">simple form</a> using Euler angles in the moving frame. Also the <a href="/wiki/Euler%27s_equations_(rigid_body_dynamics)" title="Euler's equations (rigid body dynamics)">Euler's rigid body equations</a> are simpler because the inertia tensor is constant in that frame.</p>
+<h3><span class="mw-headline" id="Crystallographic_texture">Crystallographic texture</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=26" title="Edit section: Crystallographic texture">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:MAUD-MTEX-TiAl-hasylab-2003-Liss.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0d/MAUD-MTEX-TiAl-hasylab-2003-Liss.png/220px-MAUD-MTEX-TiAl-hasylab-2003-Liss.png" width="220" height="146" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/0d/MAUD-MTEX-TiAl-hasylab-2003-Liss.png/330px-MAUD-MTEX-TiAl-hasylab-2003-Liss.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/0d/MAUD-MTEX-TiAl-hasylab-2003-Liss.png/440px-MAUD-MTEX-TiAl-hasylab-2003-Liss.png 2x" data-file-width="585" data-file-height="388" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:MAUD-MTEX-TiAl-hasylab-2003-Liss.png" class="internal" title="Enlarge"></a></div>
+Pole figures displaying crystallographic texture of gamma-TiAl in an alpha2-gamma alloy, as measured by high energy X-rays.<sup id="cite_ref-Liss_6-0" class="reference"><a href="#cite_note-Liss-6"><span>[</span>6<span>]</span></a></sup></div>
+</div>
+</div>
+<p>In materials science, crystallographic <a href="/wiki/Texture_(crystalline)" title="Texture (crystalline)">texture</a> (or preferred orientation) can be described using Euler angles. In texture analysis, the Euler angles provide a mathematical depiction of the orientation of individual crystallites within a polycrystalline material, allowing for the quantitative description of the macroscopic material.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>7<span>]</span></a></sup> The most common definition of the angles is due to Bunge and corresponds to the <i>ZXZ</i> convention. It is important to note, however, that the application generally involves axis transformations of tensor quantities, i.e. passive rotations. Thus the matrix that corresponds to the Bunge Euler angles is the transpose of that shown in the table above.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>8<span>]</span></a></sup></p>
+<h3><span class="mw-headline" id="Others">Others</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=27" title="Edit section: Others">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Euler angles, normally in the Tait–Bryan convention, are also used in <a href="/wiki/Industrial_robot" title="Industrial robot">robotics</a> for speaking about the degrees of freedom of a <a href="/wiki/Robotic_arm" title="Robotic arm">wrist</a>. They are also used in <a href="/wiki/Electronic_stability_control" title="Electronic stability control">Electronic stability control</a> in a similar way.</p>
+<p>Gun fire control systems require corrections to gun-order angles (bearing and elevation) to compensate for deck tilt (pitch and roll). In traditional systems, a stabilizing gyroscope with a vertical spin axis corrects for deck tilt, and stabilizes the optical sights and radar antenna. However, gun barrels point in a direction different from the line of sight to the target, to anticipate target movement and fall of the projectile due to gravity, among other factors. Gun mounts roll and pitch with the deck plane, but also require stabilization. Gun orders include angles computed from the vertical gyro data, and those computations involve Euler angles.</p>
+<p>Euler angles are also used extensively in the quantum mechanics of angular momentum. In quantum mechanics, explicit descriptions of the representations of <i>SO(3)</i> are very important for calculations, and almost all the work has been done using Euler angles. In the early history of quantum mechanics, when physicists and chemists had a sharply negative reaction towards abstract group theoretic methods (called the <i>Gruppenpest</i>), reliance on Euler angles was also essential for basic theoretical work.</p>
+<p>Many mobile computing devices contain <a href="/wiki/Accelerometer" title="Accelerometer">accelerometers</a> which can determine these devices' Euler angles with respect to the earth's gravitational attraction. These are used in applications such as games, <a href="/wiki/Bubble_level" title="Bubble level" class="mw-redirect">bubble level</a> simulations, and <a href="/wiki/Kaleidoscope" title="Kaleidoscope">kaleidoscopes</a>.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="accelerometers can measure orientation, yes; is there any evidence they use Euler angles for this? (May 2011)">citation needed</span></a></i>]</sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=28" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/3D_projection" title="3D projection">3D projection</a></li>
+<li><a href="/wiki/Axis-angle_representation" title="Axis-angle representation" class="mw-redirect">Axis-angle representation</a></li>
+<li><a href="/wiki/Conversion_between_quaternions_and_Euler_angles" title="Conversion between quaternions and Euler angles">Conversion between quaternions and Euler angles</a></li>
+<li><a href="/wiki/Euler%27s_rotation_theorem" title="Euler's rotation theorem">Euler's rotation theorem</a></li>
+<li><a href="/wiki/Quaternion" title="Quaternion">Quaternion</a></li>
+<li><a href="/wiki/Quaternions_and_spatial_rotation" title="Quaternions and spatial rotation">Quaternions and spatial rotation</a></li>
+<li><a href="/wiki/Rotation_formalisms_in_three_dimensions" title="Rotation formalisms in three dimensions">Rotation formalisms in three dimensions</a></li>
+<li><a href="/wiki/Spherical_coordinate_system" title="Spherical coordinate system">Spherical coordinate system</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=29" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">Novi Commentarii academiae scientiarum Petropolitanae 20, 1776, pp. 189–207 (E478) <a rel="nofollow" class="external text" href="http://math.dartmouth.edu/~euler/docs/originals/E478.pdf">pdf</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://mathworld.wolfram.com/EulerAngles.html">Mathworld</a> does a good job describing this issue</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.soi.city.ac.uk/~sbbh653/publications/euler.pdf">Gregory G. Slabaugh, Computing Euler angles from a rotation matrix</a></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="languageicon" style="font-size:0.95em; font-weight:bold; color:#555;">(Italian)</span> <a rel="nofollow" class="external text" href="http://ansi.altervista.org">A generalization of Euler Angles to <i>n</i>-dimensional real spaces</a></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text">The relation between the Euler angles and the Cardan suspension is explained in chap. 11.7 of the following textbook: U. Krey, A. Owen, <i>Basic Theoretical Physics – A Concise Overview, New York, London, Berlin, Heidelberg, Springer (2007)&#160;.</i></span></li>
+<li id="cite_note-Liss-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-Liss_6-0">^</a></b></span> <span class="reference-text"><cite class="citation journal">Liss KD, Bartels A, Schreyer A, Clemens H (2003). "High energy X-rays: A tool for advanced bulk investigations in materials science and physics". <i>Textures Microstruct.</i> <b>35</b> (3/4): 219–52. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1080%2F07303300310001634952">10.1080/07303300310001634952</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEuler+angles&amp;rft.atitle=High+energy+X-rays%3A+A+tool+for+advanced+bulk+investigations+in+materials+science+and+physics&amp;rft.au=Liss+KD%2C+Bartels+A%2C+Schreyer+A%2C+Clemens+H&amp;rft.date=2003&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1080%2F07303300310001634952&amp;rft.issue=3%2F4&amp;rft.jtitle=Textures+Microstruct.&amp;rft.pages=219-52&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=35" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite id="CITEREFKocksTom.C3.A9Wenk2000" class="citation">Kocks, U.F.; Tomé, C.N.; Wenk, H.-R. (2000), <i>Texture and Anisotropy: Preferred Orientations in Polycrystals and their effect on Materials Properties</i>, <a href="/wiki/Cambridge" title="Cambridge">Cambridge</a>, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-521-79420-6" title="Special:BookSources/978-0-521-79420-6">978-0-521-79420-6</a></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEuler+angles&amp;rft.aufirst=U.F.&amp;rft.aulast=Kocks&amp;rft.au=Tom%C3%A9%2C+C.N.&amp;rft.au=Wenk%2C+H.-R.&amp;rft.btitle=Texture+and+Anisotropy%3A+Preferred+Orientations+in+Polycrystals+and+their+effect+on+Materials+Properties&amp;rft.date=2000&amp;rft.genre=book&amp;rft.isbn=978-0-521-79420-6&amp;rft.pub=Cambridge&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite id="CITEREFBunge1993" class="citation">Bunge, H. (1993), <i>Texture Analysis in Materials Science: Mathematical Methods</i>, <a href="/w/index.php?title=CUVILLIER_VERLAG&amp;action=edit&amp;redlink=1" class="new" title="CUVILLIER VERLAG (page does not exist)">CUVILLIER VERLAG</a>, <a href="/wiki/Amazon_Standard_Identification_Number" title="Amazon Standard Identification Number">ASIN</a>&#160;<a rel="nofollow" class="external text" href="//www.amazon.com/dp/B0014XV9HU">B0014XV9HU</a></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEuler+angles&amp;rft.aufirst=H.&amp;rft.aulast=Bunge&amp;rft.btitle=Texture+Analysis+in+Materials+Science%3A+Mathematical+Methods&amp;rft.date=1993&amp;rft.genre=book&amp;rft.pub=CUVILLIER+VERLAG&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Bibliography">Bibliography</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=30" title="Edit section: Bibliography">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><cite id="CITEREFBiedenharnLouck1981" class="citation">Biedenharn, L. C.; Louck, J. D. (1981), <i>Angular Momentum in Quantum Physics</i>, Reading, MA: <a href="/wiki/Addison%E2%80%93Wesley" title="Addison–Wesley" class="mw-redirect">Addison–Wesley</a>, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-201-13507-7" title="Special:BookSources/978-0-201-13507-7">978-0-201-13507-7</a></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEuler+angles&amp;rft.aufirst=L.+C.&amp;rft.aulast=Biedenharn&amp;rft.au=Louck%2C+J.+D.&amp;rft.btitle=Angular+Momentum+in+Quantum+Physics&amp;rft.date=1981&amp;rft.genre=book&amp;rft.isbn=978-0-201-13507-7&amp;rft.place=Reading%2C+MA&amp;rft.pub=Addison%93Wesley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite id="CITEREFGoldstein1980" class="citation"><a href="/wiki/Herbert_Goldstein" title="Herbert Goldstein">Goldstein, Herbert</a> (1980), <i>Classical Mechanics</i> (2nd ed.), Reading, MA: Addison–Wesley, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-201-02918-5" title="Special:BookSources/978-0-201-02918-5">978-0-201-02918-5</a></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEuler+angles&amp;rft.aufirst=Herbert&amp;rft.aulast=Goldstein&amp;rft.btitle=Classical+Mechanics&amp;rft.date=1980&amp;rft.edition=2nd&amp;rft.genre=book&amp;rft.isbn=978-0-201-02918-5&amp;rft.place=Reading%2C+MA&amp;rft.pub=Addison%93Wesley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite id="CITEREFGray1918" class="citation">Gray, Andrew (1918), <i>A Treatise on Gyrostatics and Rotational Motion</i>, London: <a href="/wiki/Macmillan_Publishers" title="Macmillan Publishers">Macmillan</a> (published 2007), <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-4212-5592-7" title="Special:BookSources/978-1-4212-5592-7">978-1-4212-5592-7</a></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEuler+angles&amp;rft.aufirst=Andrew&amp;rft.aulast=Gray&amp;rft.btitle=A+Treatise+on+Gyrostatics+and+Rotational+Motion&amp;rft.date=1918&amp;rft.genre=book&amp;rft.isbn=978-1-4212-5592-7&amp;rft.place=London&amp;rft.pub=Macmillan&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite id="CITEREFRose1957" class="citation">Rose, M. E. (1957), <i>Elementary Theory of Angular Momentum</i>, New York, NY: <a href="/wiki/John_Wiley_%26_Sons" title="John Wiley &amp; Sons">John Wiley &amp; Sons</a> (published 1995), <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-486-68480-2" title="Special:BookSources/978-0-486-68480-2">978-0-486-68480-2</a></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEuler+angles&amp;rft.aufirst=M.+E.&amp;rft.aulast=Rose&amp;rft.btitle=Elementary+Theory+of+Angular+Momentum&amp;rft.date=1957&amp;rft.genre=book&amp;rft.isbn=978-0-486-68480-2&amp;rft.place=New+York%2C+NY&amp;rft.pub=John+Wiley+%26+Sons&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite id="CITEREFSymon1971" class="citation">Symon, Keith (1971), <i>Mechanics</i>, Reading, MA: Addison-Wesley, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-201-07392-8" title="Special:BookSources/978-0-201-07392-8">978-0-201-07392-8</a></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEuler+angles&amp;rft.aufirst=Keith&amp;rft.aulast=Symon&amp;rft.btitle=Mechanics&amp;rft.date=1971&amp;rft.genre=book&amp;rft.isbn=978-0-201-07392-8&amp;rft.place=Reading%2C+MA&amp;rft.pub=Addison-Wesley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite id="CITEREFLandauLifshitz1996" class="citation"><a href="/wiki/Lev_Landau" title="Lev Landau">Landau, L.D.</a>; <a href="/wiki/Evgeny_Lifshitz" title="Evgeny Lifshitz">Lifshitz, E. M.</a> (1996), <i>Mechanics</i> (3rd ed.), Oxford: Butterworth-Heinemann, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-7506-2896-9" title="Special:BookSources/978-0-7506-2896-9">978-0-7506-2896-9</a></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEuler+angles&amp;rft.aufirst=L.D.&amp;rft.aulast=Landau&amp;rft.au=Lifshitz%2C+E.+M.&amp;rft.btitle=Mechanics&amp;rft.date=1996&amp;rft.edition=3rd&amp;rft.genre=book&amp;rft.isbn=978-0-7506-2896-9&amp;rft.place=Oxford&amp;rft.pub=Butterworth-Heinemann&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Euler_angles&amp;action=edit&amp;section=31" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></td>
+<td class="mbox-text plainlist">Wikimedia Commons has media related to <i><b><a href="//commons.wikimedia.org/wiki/Euler_angles" class="extiw" title="commons:Euler angles">Euler angles</a></b></i>.</td>
+</tr>
+</table>
+<ul>
+<li><span class="citation mathworld" id="Reference-Mathworld-Euler_Angles"><a href="/wiki/Eric_W._Weisstein" title="Eric W. Weisstein">Weisstein, Eric W.</a>, <a rel="nofollow" class="external text" href="http://mathworld.wolfram.com/EulerAngles.html">"Euler Angles"</a>, <i><a href="/wiki/MathWorld" title="MathWorld">MathWorld</a></i>.</span></li>
+<li>Java applet for the simulation of Euler angles available at <a rel="nofollow" class="external free" href="http://www.parallemic.org/Java/EulerAngles.html">http://www.parallemic.org/Java/EulerAngles.html</a>.</li>
+<li><a rel="nofollow" class="external text" href="https://itunes.apple.com/us/app/eulerangles/id584911325">EulerAngles</a> - An iOS app for visualizing in 3D the three rotations associated with Euler angles.</li>
+<li><a rel="nofollow" class="external free" href="http://sourceforge.net/projects/orilib">http://sourceforge.net/projects/orilib</a> – A collection of routines for rotation / orientation manipulation, including special tools for crystal orientations.</li>
+<li>Online tool to compose rotation matrices available at <a rel="nofollow" class="external free" href="http://www.vectoralgebra.info/eulermatrix.html">http://www.vectoralgebra.info/eulermatrix.html</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1226
+Cached time: 20160226074800
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.246 seconds
+Real time usage: 0.533 seconds
+Preprocessor visited node count: 1735/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 28691/2097152 bytes
+Template argument size: 1581/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 2/500
+Lua time usage: 0.074/10.000 seconds
+Lua memory usage: 3.27 MB/50 MB
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  435.518      1 - -total
+ 14.57%   63.441      1 - Template:Reflist
+  8.14%   35.442      8 - Template:Citation
+  7.60%   33.109      1 - Template:Cite_journal
+  7.46%   32.486      1 - Template:Citation_needed
+  6.36%   27.685      1 - Template:Fix
+  5.96%   25.968      3 - Template:Category_handler
+  5.59%   24.356      1 - Template:About
+  4.34%   18.898      1 - Template:Hatnote
+  2.23%    9.704      1 - Template:Commons
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:411492-0!*!0!!en!4!*!math=0 and timestamp 20160226074831 and revision id 706966354
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Euler_angles&amp;oldid=706966354">https://en.wikipedia.org/w/index.php?title=Euler_angles&amp;oldid=706966354</a>"					</div>
+				<div id='catlinks' class='catlinks' data-mw='interface'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Rotation_in_three_dimensions" title="Category:Rotation in three dimensions">Rotation in three dimensions</a></li><li><a href="/wiki/Category:Euclidean_symmetries" title="Category:Euclidean symmetries">Euclidean symmetries</a></li><li><a href="/wiki/Category:Angle" title="Category:Angle">Angle</a></li><li><a href="/wiki/Category:Analytic_geometry" title="Category:Analytic geometry">Analytic geometry</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_Italian-language_external_links" title="Category:Articles with Italian-language external links">Articles with Italian-language external links</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_May_2011" title="Category:Articles with unsourced statements from May 2011">Articles with unsourced statements from May 2011</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Euler+angles&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Euler+angles" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Euler_angles"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Euler_angles"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Euler_angles" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Euler_angles&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Euler_angles&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Euler_angles" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Euler_angles" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Euler_angles&amp;oldid=706966354" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Euler_angles&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q751290" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Euler_angles&amp;id=706966354" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Euler+angles">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Euler+angles&amp;returnto=Euler+angles&amp;oldid=706966354&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Euler_angles&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:Euler_angles" hreflang="en">Wikimedia Commons</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="//ar.wikipedia.org/wiki/%D8%B2%D9%88%D8%A7%D9%8A%D8%A7_%D8%A3%D9%88%D9%8A%D9%84%D8%B1" title="زوايا أويلر – Arabic" lang="ar" hreflang="ar">العربية</a></li><li class="interlanguage-link interwiki-ca"><a href="//ca.wikipedia.org/wiki/Angles_d%27Euler" title="Angles d'Euler – Catalan" lang="ca" hreflang="ca">Català</a></li><li class="interlanguage-link interwiki-de"><a href="//de.wikipedia.org/wiki/Eulersche_Winkel" title="Eulersche Winkel – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="//es.wikipedia.org/wiki/%C3%81ngulos_de_Euler" title="Ángulos de Euler – Spanish" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="//fr.wikipedia.org/wiki/Angles_d%27Euler" title="Angles d'Euler – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-ga"><a href="//ga.wikipedia.org/wiki/Na_huillinneacha_Euler" title="Na huillinneacha Euler – Irish" lang="ga" hreflang="ga">Gaeilge</a></li><li class="interlanguage-link interwiki-ko"><a href="//ko.wikipedia.org/wiki/%EC%98%A4%EC%9D%BC%EB%9F%AC_%EA%B0%81" title="오일러 각 – Korean" lang="ko" hreflang="ko">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="//it.wikipedia.org/wiki/Angoli_di_Eulero" title="Angoli di Eulero – Italian" lang="it" hreflang="it">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="//he.wikipedia.org/wiki/%D7%96%D7%95%D7%95%D7%99%D7%95%D7%AA_%D7%90%D7%95%D7%99%D7%9C%D7%A8" title="זוויות אוילר – Hebrew" lang="he" hreflang="he">עברית</a></li><li class="interlanguage-link interwiki-kk"><a href="//kk.wikipedia.org/wiki/%D0%AD%D0%B9%D0%BB%D0%B5%D1%80_%D0%B1%D2%B1%D1%80%D1%8B%D1%88%D1%82%D0%B0%D1%80%D1%8B" title="Эйлер бұрыштары – Kazakh" lang="kk" hreflang="kk">Қазақша</a></li><li class="interlanguage-link interwiki-hu"><a href="//hu.wikipedia.org/wiki/Euler-sz%C3%B6gek" title="Euler-szögek – Hungarian" lang="hu" hreflang="hu">Magyar</a></li><li class="interlanguage-link interwiki-nl"><a href="//nl.wikipedia.org/wiki/Hoeken_van_Euler" title="Hoeken van Euler – Dutch" lang="nl" hreflang="nl">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="//ja.wikipedia.org/wiki/%E3%82%AA%E3%82%A4%E3%83%A9%E3%83%BC%E8%A7%92" title="オイラー角 – Japanese" lang="ja" hreflang="ja">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="//no.wikipedia.org/wiki/Tait-Bryan_rotasjoner" title="Tait-Bryan rotasjoner – Norwegian" lang="no" hreflang="no">Norsk bokmål</a></li><li class="interlanguage-link interwiki-pl"><a href="//pl.wikipedia.org/wiki/K%C4%85ty_Eulera" title="Kąty Eulera – Polish" lang="pl" hreflang="pl">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="//pt.wikipedia.org/wiki/%C3%82ngulos_de_Euler" title="Ângulos de Euler – Portuguese" lang="pt" hreflang="pt">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="//ro.wikipedia.org/wiki/Unghiurile_lui_Euler" title="Unghiurile lui Euler – Romanian" lang="ro" hreflang="ro">Română</a></li><li class="interlanguage-link interwiki-ru"><a href="//ru.wikipedia.org/wiki/%D0%A3%D0%B3%D0%BB%D1%8B_%D0%AD%D0%B9%D0%BB%D0%B5%D1%80%D0%B0" title="Углы Эйлера – Russian" lang="ru" hreflang="ru">Русский</a></li><li class="interlanguage-link interwiki-sl"><a href="//sl.wikipedia.org/wiki/Eulerjevi_koti" title="Eulerjevi koti – Slovenian" lang="sl" hreflang="sl">Slovenščina</a></li><li class="interlanguage-link interwiki-sr"><a href="//sr.wikipedia.org/wiki/%D0%9E%D1%98%D0%BB%D0%B5%D1%80%D0%BE%D0%B2%D0%B8_%D0%B8_%D0%A2%D0%B5%D1%98%D1%82-%D0%91%D1%80%D0%B0%D1%98%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8_%D1%83%D0%B3%D0%BB%D0%BE%D0%B2%D0%B8" title="Ојлерови и Тејт-Брајанови углови – Serbian" lang="sr" hreflang="sr">Српски / srpski</a></li><li class="interlanguage-link interwiki-sv"><a href="//sv.wikipedia.org/wiki/Eulervinklar" title="Eulervinklar – Swedish" lang="sv" hreflang="sv">Svenska</a></li><li class="interlanguage-link interwiki-uk"><a href="//uk.wikipedia.org/wiki/%D0%95%D0%B9%D0%BB%D0%B5%D1%80%D0%BE%D0%B2%D1%96_%D0%BA%D1%83%D1%82%D0%B8" title="Ейлерові кути – Ukrainian" lang="uk" hreflang="uk">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="//vi.wikipedia.org/wiki/G%C3%B3c_Euler" title="Góc Euler – Vietnamese" lang="vi" hreflang="vi">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="//zh.wikipedia.org/wiki/%E6%AC%A7%E6%8B%89%E8%A7%92" title="欧拉角 – Chinese" lang="zh" hreflang="zh">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q751290#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 26 February 2016, at 07:48.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="//wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Euler_angles&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ = window.RLQ || []).push(function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.eventLogging.subscriber","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","mmv.bootstrap.autostart","ext.visualEditor.targetLoader","ext.wikimediaEvents","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>(window.RLQ = window.RLQ || []).push(function () {
+mw.config.set({"wgBackendResponseTime":69,"wgHostname":"mw1252"}); /* @nomin */
+} );</script>
+	</body>
+</html>
