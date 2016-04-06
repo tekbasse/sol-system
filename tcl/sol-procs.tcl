@@ -84,3 +84,47 @@ ad_proc -public ssk::sol_earth_latitude {
     return $earth_sol_eq_angle
 }
 
+
+## following are notes originally from:
+##  USNO Astronomical Applications Dept
+##  Approximate Solar Coordinates page
+##  retrieved from http://aa.usno.navy.mil/faq/docs/SunApprox.php
+
+## These notes will evolve into procedures, some duplicative as a means to test calcs
+
+## D = JD - 2451545.0
+# see
+    #set t_j2000 \[ssk::days_since_j2000 $yyyymmdd\]
+    #set days_since_j2000 \[expr { $j2000_time - 2451545.0 } \]
+
+#Then compute
+
+#Mean anomaly of the Sun:g = 357.529 + 0.98560028 D
+#Mean longitude of the Sun:q = 280.459 + 0.98564736 D
+#Geocentric apparent ecliptic longitude
+#of the Sun (adjusted for aberration):L = q + 1.915 sin g + 0.020 sin 2g
+#where all the constants (therefore g, q, and L) are in degrees. It may be necessary or desirable to reduce g, q, and L to the range 0 to 360 degrees
+
+# The Sun's ecliptic latitude, b, can be approximated by b=0. The distance of the Sun from the Earth, R, in astronomical units (AU), can be approximated by
+
+# R = 1.00014 - 0.01671 *cos (g ) - 0.00014 * cos(2*g)
+
+#Once the Sun's apparent ecliptic longitude, L, has been computed, the Sun's right ascension and declination can be obtained. First compute the mean obliquity of the ecliptic, in degrees:
+
+# e = 23.439 - 0.00000036 D
+
+#Then the Sun's right ascension, RA, and declination, d, can be obtained from
+
+#tan RA = cos e sin L / cos L
+#sin d = sin e sin L
+
+#RA is always in the same quadrant as L. If the numerator and denominator on the right side of the expression for RA are used in a double-argument arctangent function (e.g., "atan2"), the proper quadrant will be obtained. If RA is obtained in degrees, it can be converted to hours simply by dividing by 15. RA is conventionally reduced to the range 0 to 24 hours
+
+# Other quantities can also be obtained. The Equation of Time, EqT, apparent solar time minus mean solar time, can be computed from
+
+# EqT = q/15 - RA
+# where Eqt and RA are in hours and q is in degrees. The angular semidiameter of the Sun, SD, in degrees, is simply
+# SD = 0.2666 / R
+
+#This algorithm is essentially the same as that found on page C5 of The Astronomical Almanac; a few constants have been adjusted above to extend the range of years for which the algorithm is valid.
+
