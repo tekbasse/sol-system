@@ -471,12 +471,7 @@ ad_proc -public ssk::pos_kepler {
                 
                 # fmod doesn't work as the solution expects. Using a manual rotation calc instead.
                 #set m_cap \[expr { fmod( $m_cap, 180.) } \]
-                while { $m_cap < -180. } {
-                    set m_cap [expr { $m_cap + 360. } ]
-                }
-                while { $m_cap > 180. } {
-                    set m_cap [expr { $m_cap - 360. } ]
-                }
+                set m_cap [::ssk::unwind $m_cap -180. 180.]
 
 
                 # 3b. Obtain the eccentric anomaly, e_cap from:
