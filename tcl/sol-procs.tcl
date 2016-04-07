@@ -154,6 +154,8 @@ ad_proc -public ssk::earth_sol_latitude {
     # The Equation of Time, EqT, apparent solar time minus mean solar time, can be computed from
     # EqT = q/15 - RA
     # where Eqt and RA are in hours and q is in degrees. 
+    # More at http://aa.usno.navy.mil/faq/docs/eqtime.php
+    
     # The angular semidiameter of the Sun, SD, in degrees, is simply
     # SD = 0.2666 / R
     set sol_diameter_deg [expr { 0.2666 / $r_au } ]
