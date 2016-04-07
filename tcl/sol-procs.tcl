@@ -36,6 +36,7 @@ ad_proc -public ssk::sol_earth_latitude {
     #        w_cap_0       position of the prime meridian at GEI J2000 ( degrees )
     #        w_cap         change in position ( degrees per day )
     variable ::ssk::table6_larr
+    variable ::ssk::km_per_au
     set alpha_0 [lindex $table6_larr(Sun) 0]
     set alpha_dot [lindex $table6_larr(Sun) 1]
     set delta_0 [lindex $table6_larr(Sun) 2]
@@ -48,12 +49,7 @@ ad_proc -public ssk::sol_earth_latitude {
     set alpha [expr { $alpha_0 + $alpha_dot * $t_cap } ]
     set delta [expr { $delta_0 + $delta_dot * $t_cap } ]
     set w_cap [expr { $w_cap_0 + $w_cap_per_day * $days_since_j2000 } ]
-    while { $w_cap < 0. } {
-        set w_cap [expr { $w_cap + 360. } ]
-    }
-    while { $w_cap > 360. } {
-        set w_cap [expr { $w_cap - 360. } ]
-    }
+    set w_cap [ssk::unwind $w_cap 0. 360.]
 
 
     # Solar equator is the plane defined as perpendicular (orthogonal) to a polar oriented vector
@@ -61,6 +57,8 @@ ad_proc -public ssk::sol_earth_latitude {
 
     # convert polar coordinates of sol's pole coordinates (in Geo RA, Dec) to Cartesian J2000
     # Let's assume r is radius of Sol.
+    set r_au [expr { 695700. / $km_per_au } ]
+
     # using spherical polar coordinates to Cartesian transformations,
     # where theta = 90 degrees - Dec angle, thus sin(theta) becomes cos(Dec Angle):
     # x = r * cos( Dec angle ) * cos ( Right accension angle)
@@ -119,10 +117,10 @@ ad_proc -public ssk::earth_sol_latitude {
     # where all the constants (therefore g, q, and L) are in degrees. 
 
     # It may be necessary or desirable to reduce g, q, and L to the range 0 to 360 degrees
-    set q_deg [::ssk::unwind $q_deg 0. 360.]
-    set g_deg [::ssk::unwind $g_deg 0. 360.]
+    set q_deg [ssk::unwind $q_deg 0. 360.]
+    set g_deg [ssk::unwind $g_deg 0. 360.]
     set l_deg [expr { $q_deg + 1.915 * sin( $g_deg / $180perpi )  + 0.020 sin( 2. * $g_deg / $180perpi) } ]
-    set l_deg [::ssk::unwind $l_deg 0. 360.]
+    set l_deg [ssk::unwind $l_deg 0. 360.]
 
 
     # The Sun's ecliptic latitude, b, can be approximated by b=0. 
@@ -157,7 +155,7 @@ ad_proc -public ssk::earth_sol_latitude {
     # More at http://aa.usno.navy.mil/faq/docs/eqtime.php
     
     # The angular semidiameter of the Sun, SD, in degrees, is simply
-    # SD = 0.2666 / R
+    # SD = 0.2666 / R   or between 0.52 and 0.545 degrees of arc
     set sol_diameter_deg [expr { 0.2666 / $r_au } ]
     #This algorithm is essentially the same as that found on page C5 of The Astronomical Almanac; 
     # a few constants have been adjusted above to extend the range of years for which the algorithm is valid.

@@ -29,6 +29,7 @@ namespace eval ::ssk {
     variable 180perpi 57.29577951308232
     # Epsilon is the obliquity of the ecliptic.
     variable icrf1_epsilon_deg 23.43928
+    variable km_per_au 149597870.7
     # Table Data PDF to txt work already available by Sonia Keys (Cambridge Mass) 
     # via public domain work in aprx.go file
     #   retrieved from https://github.com/soniakeys/aprx.git on 28 Feb 2016
@@ -471,7 +472,7 @@ ad_proc -public ssk::pos_kepler {
                 
                 # fmod doesn't work as the solution expects. Using a manual rotation calc instead.
                 #set m_cap \[expr { fmod( $m_cap, 180.) } \]
-                set m_cap [::ssk::unwind $m_cap -180. 180.]
+                set m_cap [ssk::unwind $m_cap -180. 180.]
 
 
                 # 3b. Obtain the eccentric anomaly, e_cap from:
