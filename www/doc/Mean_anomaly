@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8"/>
+<title>Mean anomaly - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Mean_anomaly","wgTitle":"Mean anomaly","wgCurRevisionId":705733540,"wgRevisionId":705733540,"wgArticleId":952915,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Orbits"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Mean_anomaly","wgRelevantArticleId":952915,"wgRequestId":"a0fad8df77f729727bb00a45","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSAcceptLanguageList":["ko-kr","ko","en-us","en"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCentralAuthMobileDomain":false,"wgWikibaseItemId":"Q216715","wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","mw.MediaWikiPlayer.loader","mw.PopUpMediaTransform","ext.centralNotice.bannerController","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.math.styles%7Cext.tmh.thumbnail.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.raggett%2CsectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.27.0-wmf.19"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Mean_anomaly"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Mean_anomaly&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Mean_anomaly&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Mean_anomaly"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Mean_anomaly skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Mean anomaly</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="thumb tright">
+<div class="thumbinner" style="width:262px;"><a href="/wiki/File:Mean_anomaly_diagram.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Mean_anomaly_diagram.png/260px-Mean_anomaly_diagram.png" width="260" height="258" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Mean_anomaly_diagram.png/390px-Mean_anomaly_diagram.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Mean_anomaly_diagram.png/520px-Mean_anomaly_diagram.png 2x" data-file-width="2128" data-file-height="2108" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Mean_anomaly_diagram.png" class="internal" title="Enlarge"></a></div>
+Area swept out per unit time by an object in an <a href="/wiki/Elliptic_orbit" title="Elliptic orbit">elliptical orbit</a> (grey) and by an imaginary object in a <a href="/wiki/Circular_orbit" title="Circular orbit">circular orbit</a> (red) which completes its orbit in the same period of time. Both sweep out equal areas in equal times, but the angular rate of sweep varies for the elliptical orbit and is constant for the circular orbit. Shown are <b>mean anomaly</b> and <a href="/wiki/True_anomaly" title="True anomaly">true anomaly</a> for two units of time.</div>
+</div>
+</div>
+<p>In <a href="/wiki/Celestial_mechanics" title="Celestial mechanics">celestial mechanics</a>, the <b>mean anomaly</b> is an <a href="/wiki/Angle" title="Angle">angle</a> used in calculating the position of a body in an <a href="/wiki/Elliptic_orbit" title="Elliptic orbit">elliptical orbit</a> in the classical <a href="/wiki/Two-body_problem" title="Two-body problem">two-body problem</a>. It is the angular distance from the <a href="/wiki/Apsis" title="Apsis">pericenter</a> which a fictitious body would have if it moved in a <a href="/wiki/Circular_orbit" title="Circular orbit">circular orbit</a>, with constant <a href="/wiki/Speed" title="Speed">speed</a>, in the same <a href="/wiki/Orbital_period" title="Orbital period">orbital period</a> as the actual body in its elliptical orbit.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Definition"><span class="tocnumber">1</span> <span class="toctext">Definition</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Formulae"><span class="tocnumber">2</span> <span class="toctext">Formulae</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Definition">Definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mean_anomaly&amp;action=edit&amp;section=1" title="Edit section: Definition">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Define <img class="mwe-math-fallback-image-inline tex" alt="T" src="//upload.wikimedia.org/math/b/9/e/b9ece18c950afbfa6b0fdbfa4ff731d3.png" /> as the time required for a particular body to complete one orbit. In time <img class="mwe-math-fallback-image-inline tex" alt="T" src="//upload.wikimedia.org/math/b/9/e/b9ece18c950afbfa6b0fdbfa4ff731d3.png" />, the <a href="/wiki/Radius_vector" title="Radius vector" class="mw-redirect">radius vector</a> sweeps out 2π radians or 360°. The average rate of sweep, <img class="mwe-math-fallback-image-inline tex" alt="n" src="//upload.wikimedia.org/math/7/b/8/7b8b965ad4bca0e41ab51de7b31363a1.png" />, is then</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="n={2\pi}/{T} " src="//upload.wikimedia.org/math/b/f/9/bf92a880a451a5ffaf610ca37a49a466.png" /> or</dd>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="n=360^\circ/T," src="//upload.wikimedia.org/math/5/7/a/57aea2f52b47fbf0887d6858d9c2dedf.png" /></dd>
+</dl>
+<p>which is called the <i><a href="/wiki/Mean_motion" title="Mean motion">mean angular motion</a></i> of the body, with dimensions of radians per unit time or degrees per unit time.</p>
+<p>Define <img class="mwe-math-fallback-image-inline tex" alt="\tau" src="//upload.wikimedia.org/math/8/1/a/81a69207104f00baaabd6f84cafd15a0.png" /> as the time at which the body is at the pericenter. From the above definitions, a new quantity, <img class="mwe-math-fallback-image-inline tex" alt="M" src="//upload.wikimedia.org/math/6/9/6/69691c7bdcc3ce6d5d8a1361f22d04ac.png" />, the <i>mean anomaly</i> can be defined</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="M=n(t-\tau)," src="//upload.wikimedia.org/math/4/b/7/4b7597c01b1528a23451795090e96688.png" /></dd>
+</dl>
+<p>which gives an angular distance from the pericenter at arbitrary time <img class="mwe-math-fallback-image-inline tex" alt="t" src="//upload.wikimedia.org/math/e/3/5/e358efa489f58062f10dd7316b65649e.png" />,<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> with dimensions of radians or degrees.</p>
+<p>Because the rate of increase, <img class="mwe-math-fallback-image-inline tex" alt="n" src="//upload.wikimedia.org/math/7/b/8/7b8b965ad4bca0e41ab51de7b31363a1.png" />, is a constant average, the mean anomaly increases uniformly (linearly) from 0 to 2π radians or 0° to 360° during each orbit. It is equal to 0 when the body is at the pericenter, π radians (180°) at the <a href="/wiki/Apsis" title="Apsis">apocenter</a>, and 2π radians (360°) after one complete revolution.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> If the mean anomaly is known at any given instant, it can be calculated at any later (or prior) instant by simply adding (or subtracting) <img class="mwe-math-fallback-image-inline tex" alt="n \, \delta t" src="//upload.wikimedia.org/math/6/f/8/6f82df8717f61232cc0d4893087dafd6.png" /> where <img class="mwe-math-fallback-image-inline tex" alt="\delta t" src="//upload.wikimedia.org/math/9/9/1/991e95055651fa1f4e2eb9dda23f4b08.png" /> represents the time difference.</p>
+<p>Mean anomaly does not measure an angle between any physical objects. It is simply a convenient uniform measure of how far around its orbit a body has progressed since pericenter. The mean anomaly is one of three angular parameters (known historically as "anomalies") that define a position along an orbit, the other two being the <a href="/wiki/Eccentric_anomaly" title="Eccentric anomaly">eccentric anomaly</a> and the <a href="/wiki/True_anomaly" title="True anomaly">true anomaly</a>.</p>
+<h2><span class="mw-headline" id="Formulae">Formulae</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mean_anomaly&amp;action=edit&amp;section=2" title="Edit section: Formulae">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The mean anomaly <i>M</i> can be computed from the <a href="/wiki/Eccentric_anomaly" title="Eccentric anomaly">eccentric anomaly</a> <i>E</i> and the <a href="/wiki/Orbital_eccentricity" title="Orbital eccentricity">eccentricity</a> <i>e</i> with <a href="/wiki/Kepler%27s_Equation" title="Kepler's Equation" class="mw-redirect">Kepler's Equation</a>:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="M =  E - e \sin E." src="//upload.wikimedia.org/math/5/7/3/573765ad498c553fb0c3e70f9752c1ba.png" /></dd>
+</dl>
+<p>Mean anomaly is also frequently seen as</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="M =  M_0 + n(t-t_0)," src="//upload.wikimedia.org/math/4/a/d/4ad01b27809fc30a601b72199ec930ca.png" /></dd>
+</dl>
+<p>where <img class="mwe-math-fallback-image-inline tex" alt="M_0" src="//upload.wikimedia.org/math/5/d/2/5d2aeb05dde80a94548fb618a06eae85.png" /> is the <i>mean anomaly at epoch</i> and <img class="mwe-math-fallback-image-inline tex" alt="t_0" src="//upload.wikimedia.org/math/6/d/5/6d523d2156a1f903c9cd55ab12627d5f.png" /> is the <i><a href="/wiki/Epoch_(astronomy)" title="Epoch (astronomy)">epoch</a></i>, a reference time to which the <a href="/wiki/Orbital_elements" title="Orbital elements">orbital elements</a> are referred, which may or may not coincide with <img class="mwe-math-fallback-image-inline tex" alt="\tau" src="//upload.wikimedia.org/math/8/1/a/81a69207104f00baaabd6f84cafd15a0.png" />, the time of pericenter passage. The classical method of finding the position of an object in an elliptical orbit from a set of orbital elements is to calculate the mean anomaly by this equation, and then to solve Kepler's equation for the eccentric anomaly.</p>
+<p>Define <img class="mwe-math-fallback-image-inline tex" alt="\varpi" src="//upload.wikimedia.org/math/5/8/f/58f07d7c83fe18c437ba3b47b089ef77.png" /> as the <i><a href="/wiki/Longitude_of_the_periapsis" title="Longitude of the periapsis">longitude of the pericenter</a></i>, the angular distance of the pericenter from a reference direction. Define <img class="mwe-math-fallback-image-inline tex" alt="l" src="//upload.wikimedia.org/math/2/d/b/2db95e8e1a9267b7a1188556b2013b33.png" /> as the <i><a href="/wiki/Mean_longitude" title="Mean longitude">mean longitude</a></i>, the angular distance of the body from the same reference direction, assuming it moves with uniform angular motion as with the mean anomaly. Thus mean anomaly is also <sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup></p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="M = l - \varpi." src="//upload.wikimedia.org/math/1/0/c/10c64e3c406bfcc5955467635d5032f8.png" /></dd>
+</dl>
+<p><a href="/wiki/Mean_motion" title="Mean motion">Mean angular motion</a> can also be expressed,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="n=\sqrt{\frac{\mu}{a^3}}," src="//upload.wikimedia.org/math/2/e/4/2e4a35eb098dd4eaaa02e615bc51de17.png" /></dd>
+</dl>
+<p>where <img class="mwe-math-fallback-image-inline tex" alt="\mu" src="//upload.wikimedia.org/math/b/7/2/b72bb92668acc30b4474caff40274044.png" /> is a <a href="/wiki/Standard_gravitational_parameter" title="Standard gravitational parameter">gravitational parameter</a> which varies with the masses of the objects, and <img class="mwe-math-fallback-image-inline tex" alt="a" src="//upload.wikimedia.org/math/0/c/c/0cc175b9c0f1b6a831c399e269772661.png" /> is the <a href="/wiki/Semi-major_axis" title="Semi-major axis">semi-major axis</a> of the orbit. Mean anomaly can then be expanded,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="M=\sqrt{\frac{\mu}{a^3}}(t-\tau)," src="//upload.wikimedia.org/math/7/e/c/7ec83d8380a63e31ddfba34b622d2934.png" /></dd>
+</dl>
+<p>and here mean anomaly represents uniform angular motion on a circle of radius <img class="mwe-math-fallback-image-inline tex" alt="a" src="//upload.wikimedia.org/math/0/c/c/0cc175b9c0f1b6a831c399e269772661.png" />.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></p>
+<p>Mean anomaly can be expressed as a <a href="/wiki/Series_expansion" title="Series expansion">series expansion</a> of the <a href="/wiki/Orbital_eccentricity" title="Orbital eccentricity">eccentricity</a> <img class="mwe-math-fallback-image-inline tex" alt="e" src="//upload.wikimedia.org/math/e/1/6/e1671797c52e15f763380b45e841ec32.png" /> and the <a href="/wiki/True_anomaly" title="True anomaly">true anomaly</a> <img class="mwe-math-fallback-image-inline tex" alt="\nu" src="//upload.wikimedia.org/math/7/3/6/7368318dd3647eb6bbf6afaf6d26c48d.png" />,<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup></p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="M=\nu - 2e\sin\nu + \left(\frac{3}{4}e^2+\frac{1}{8}e^4\right)\sin2\nu - \frac{1}{3}e^3\sin3\nu + \frac{5}{32}e^4\sin4\nu \dots" src="//upload.wikimedia.org/math/0/c/3/0c3738e80b0e85054f45a3d5fbbbbc33.png" /></dd>
+</dl>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mean_anomaly&amp;action=edit&amp;section=3" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Eccentric_anomaly" title="Eccentric anomaly">Eccentric anomaly</a></li>
+<li><a href="/wiki/Kepler%27s_laws_of_planetary_motion" title="Kepler's laws of planetary motion">Kepler's laws of planetary motion</a></li>
+<li><a href="/wiki/Mean_longitude" title="Mean longitude">Mean longitude</a></li>
+<li><a href="/wiki/Mean_motion" title="Mean motion">Mean motion</a></li>
+<li><a href="/wiki/Orbital_elements" title="Orbital elements">Orbital elements</a></li>
+<li><a href="/wiki/True_anomaly" title="True anomaly">True anomaly</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mean_anomaly&amp;action=edit&amp;section=4" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation book">Montenbruck, Oliver (1989). <i>Practical Ephemeris Calculations</i>. Springer-Verlag. p.&#160;44. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-387-50704-3" title="Special:BookSources/0-387-50704-3">0-387-50704-3</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMean+anomaly&amp;rft.aufirst=Oliver&amp;rft.aulast=Montenbruck&amp;rft.btitle=Practical+Ephemeris+Calculations&amp;rft.date=1989&amp;rft.genre=book&amp;rft.isbn=0-387-50704-3&amp;rft.pages=44&amp;rft.pub=Springer-Verlag&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation book">Meeus, Jean (1991). <i>Astronomical Algorithms</i>. Willmann-Bell, Inc., Richmond, VA. p.&#160;182. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-943396-35-2" title="Special:BookSources/0-943396-35-2">0-943396-35-2</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMean+anomaly&amp;rft.aufirst=Jean&amp;rft.aulast=Meeus&amp;rft.btitle=Astronomical+Algorithms&amp;rft.date=1991&amp;rft.genre=book&amp;rft.isbn=0-943396-35-2&amp;rft.pages=182&amp;rft.pub=Willmann-Bell%2C+Inc.%2C+Richmond%2C+VA&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation book">Smart, W. M. (1977). <i>Textbook on Spherical Astronomy</i> (sixth ed.). Cambridge University Press, Cambridge. p.&#160;113. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-521-29180-1" title="Special:BookSources/0-521-29180-1">0-521-29180-1</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMean+anomaly&amp;rft.aufirst=W.+M.&amp;rft.aulast=Smart&amp;rft.btitle=Textbook+on+Spherical+Astronomy&amp;rft.date=1977&amp;rft.edition=sixth&amp;rft.genre=book&amp;rft.isbn=0-521-29180-1&amp;rft.pages=113&amp;rft.pub=Cambridge+University+Press%2C+Cambridge&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text">Meeus (1991), p. 183</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text">Smart (1977), p. 122</span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation book">Vallado, David A. (2001). <i>Fundamentals of Astrodynamics and Applications</i> (second ed.). Microcosm Press, El Segundo, CA. pp.&#160;53–54. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/1-881883-12-4" title="Special:BookSources/1-881883-12-4">1-881883-12-4</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMean+anomaly&amp;rft.aufirst=David+A.&amp;rft.aulast=Vallado&amp;rft.btitle=Fundamentals+of+Astrodynamics+and+Applications&amp;rft.date=2001&amp;rft.edition=second&amp;rft.genre=book&amp;rft.isbn=1-881883-12-4&amp;rft.pages=53-54&amp;rft.pub=Microcosm+Press%2C+El+Segundo%2C+CA&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation book">Smart, W. M. (1953). <i>Celestial Mechanics</i>. Longmans, Green and Co., London. p.&#160;38.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMean+anomaly&amp;rft.aufirst=W.+M.&amp;rft.aulast=Smart&amp;rft.btitle=Celestial+Mechanics&amp;rft.date=1953&amp;rft.genre=book&amp;rft.pages=38&amp;rft.pub=Longmans%2C+Green+and+Co.%2C+London&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mean_anomaly&amp;action=edit&amp;section=5" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://asa.usno.navy.mil/SecM/Glossary.html">Glossary entry <i>anomaly, mean</i></a> at the US Naval Observatory's <a rel="nofollow" class="external text" href="http://asa.usno.navy.mil/index.html"><i>Astronomical Almanac Online</i></a></li>
+</ul>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks hlist collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Orbits" title="Template:Orbits"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Orbits" title="Template talk:Orbits"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Orbits&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div style="font-size:114%">Gravitational <a href="/wiki/Orbit" title="Orbit">orbits</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";"><span style="float:left;width:6em">&#160;</span>
+<div style="font-size:114%"><a href="/wiki/Orbit" title="Orbit">Types</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="width:9em">General</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Box_orbit" title="Box orbit">Box</a></li>
+<li><a href="/wiki/Parabolic_trajectory" title="Parabolic trajectory">Capture</a></li>
+<li><a href="/wiki/Circular_orbit" title="Circular orbit">Circular</a></li>
+<li><a href="/wiki/Elliptic_orbit" title="Elliptic orbit">Elliptical</a> / <a href="/wiki/Highly_elliptical_orbit" title="Highly elliptical orbit">Highly elliptical</a></li>
+<li><a href="/wiki/Parabolic_trajectory" title="Parabolic trajectory">Escape</a></li>
+<li><a href="/wiki/Graveyard_orbit" title="Graveyard orbit">Graveyard</a></li>
+<li><a href="/wiki/Hyperbolic_trajectory" title="Hyperbolic trajectory">Hyperbolic trajectory</a></li>
+<li><a href="/wiki/Inclined_orbit" title="Inclined orbit">Inclined</a> / <a href="/wiki/Non-inclined_orbit" title="Non-inclined orbit">Non-inclined</a></li>
+<li><a href="/wiki/Osculating_orbit" title="Osculating orbit">Osculating</a></li>
+<li><a href="/wiki/Parabolic_trajectory" title="Parabolic trajectory">Parabolic trajectory</a></li>
+<li><a href="/wiki/Parking_orbit" title="Parking orbit">Parking</a></li>
+<li><a href="/wiki/Synchronous_orbit" title="Synchronous orbit">Synchronous</a>
+<ul>
+<li><a href="/wiki/Semi-synchronous_orbit" title="Semi-synchronous orbit">semi</a></li>
+<li><a href="/wiki/Subsynchronous_orbit" title="Subsynchronous orbit">sub</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Hohmann_transfer_orbit" title="Hohmann transfer orbit">Transfer orbit</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:9em"><a href="/wiki/Geocentric_orbit" title="Geocentric orbit">Geocentric</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Geosynchronous_orbit" title="Geosynchronous orbit">Geosynchronous</a></li>
+<li><a href="/wiki/Geostationary_orbit" title="Geostationary orbit">Geostationary</a></li>
+<li><a href="/wiki/Sun-synchronous_orbit" title="Sun-synchronous orbit">Sun-synchronous</a></li>
+<li><a href="/wiki/Low_Earth_orbit" title="Low Earth orbit">Low Earth</a></li>
+<li><a href="/wiki/Medium_Earth_orbit" title="Medium Earth orbit">Medium Earth</a></li>
+<li><a href="/wiki/High_Earth_orbit" title="High Earth orbit">High Earth</a></li>
+<li><a href="/wiki/Molniya_orbit" title="Molniya orbit">Molniya</a></li>
+<li><a href="/wiki/Near_equatorial_orbit" title="Near equatorial orbit" class="mw-redirect">Near-equatorial</a></li>
+<li><a href="/wiki/Orbit_of_the_Moon" title="Orbit of the Moon">Orbit of the Moon</a></li>
+<li><a href="/wiki/Polar_orbit" title="Polar orbit">Polar</a></li>
+<li><a href="/wiki/Tundra_orbit" title="Tundra orbit">Tundra</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:9em">About other points</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Areosynchronous_orbit" title="Areosynchronous orbit">Areosynchronous</a></li>
+<li><a href="/wiki/Areostationary_orbit" title="Areostationary orbit">Areostationary</a></li>
+<li><a href="/wiki/Halo_orbit" title="Halo orbit">Halo</a></li>
+<li><a href="/wiki/Lissajous_orbit" title="Lissajous orbit">Lissajous</a></li>
+<li><a href="/wiki/Lunar_orbit" title="Lunar orbit">Lunar</a></li>
+<li><a href="/wiki/Heliocentric_orbit" title="Heliocentric orbit">Heliocentric</a></li>
+<li><a href="/wiki/Heliosynchronous_orbit" title="Heliosynchronous orbit" class="mw-redirect">Heliosynchronous</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";"><span style="float:left;width:6em">&#160;</span>
+<div style="font-size:114%"><a href="/wiki/Orbital_elements" title="Orbital elements">Parameters</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="width:9em">
+<div class="hlist">
+<ul>
+<li>Shape</li>
+<li>Size</li>
+</ul>
+</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><img class="mwe-math-fallback-image-inline tex" alt="e\,\!" src="//upload.wikimedia.org/math/4/6/0/460a1940ceddf45878d2e095af31128a.png" />&#160;<a href="/wiki/Orbital_eccentricity" title="Orbital eccentricity">Eccentricity</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="a\,\!" src="//upload.wikimedia.org/math/1/2/d/12de7673992b1735e29cdd211851fa05.png" />&#160;<a href="/wiki/Semi-major_axis" title="Semi-major axis">Semi-major axis</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="b\,\!" src="//upload.wikimedia.org/math/6/f/1/6f1f9c73279ad1872b1fa74df9858c5c.png" />&#160;<a href="/wiki/Semi-minor_axis" title="Semi-minor axis">Semi-minor axis</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="Q,q\,\!" src="//upload.wikimedia.org/math/9/c/d/9cdcc6a784cb2550a0ccd5a22362d47e.png" />&#160;<a href="/wiki/Apsis" title="Apsis">Apsides</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:9em">Orientation</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><img class="mwe-math-fallback-image-inline tex" alt="i\,\!" src="//upload.wikimedia.org/math/a/7/9/a796b40d92e81ae190a1e4f4e2a2c3ed.png" />&#160;<a href="/wiki/Inclination" title="Inclination" class="mw-redirect">Inclination</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="\Omega\,\!" src="//upload.wikimedia.org/math/4/2/e/42e294677ad426aff0fcadd03f77e54a.png" />&#160;<a href="/wiki/Longitude_of_the_ascending_node" title="Longitude of the ascending node">Longitude of the ascending node</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="\omega\,\!" src="//upload.wikimedia.org/math/1/4/1/141205d798217ffe19177ba53c00c409.png" />&#160;<a href="/wiki/Argument_of_periapsis" title="Argument of periapsis">Argument of periapsis</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="\varpi\,\!" src="//upload.wikimedia.org/math/e/1/6/e161137344373f046e2cfe3f095325de.png" />&#160;<a href="/wiki/Longitude_of_the_periapsis" title="Longitude of the periapsis">Longitude of the periapsis</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:9em">Position</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><img class="mwe-math-fallback-image-inline tex" alt="M\,\!" src="//upload.wikimedia.org/math/3/b/6/3b652357e59da356dbb6f2105020406e.png" />&#160;<strong class="selflink">Mean anomaly</strong></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="\nu\,\!" src="//upload.wikimedia.org/math/2/f/2/2f22ac11583dfea7c5f77622cd09363c.png" />&#160;<a href="/wiki/True_anomaly" title="True anomaly">True anomaly</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="E\,\!" src="//upload.wikimedia.org/math/8/0/1/801dd8e49c12855a8fb959ec5fe215ee.png" />&#160;<a href="/wiki/Eccentric_anomaly" title="Eccentric anomaly">Eccentric anomaly</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="L\,\!" src="//upload.wikimedia.org/math/1/0/2/102dc7004515c2ac64327380faa80844.png" />&#160;<a href="/wiki/Mean_longitude" title="Mean longitude">Mean longitude</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="l\,\!" src="//upload.wikimedia.org/math/2/4/a/24a4d5e671be5bb7026ad86a68d14220.png" />&#160;<a href="/wiki/True_longitude" title="True longitude">True longitude</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:9em">Variation</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><img class="mwe-math-fallback-image-inline tex" alt="T\,\!" src="//upload.wikimedia.org/math/c/d/3/cd322a0269b30952befe1f9ae7972bcc.png" />&#160;<a href="/wiki/Orbital_period" title="Orbital period">Orbital period</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="n\,\!" src="//upload.wikimedia.org/math/b/a/a/baa52b85c066dbd5eeff3c078a69205b.png" />&#160;<a href="/wiki/Mean_motion" title="Mean motion">Mean motion</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="v\,\!" src="//upload.wikimedia.org/math/7/8/e/78e5b690a2281690cf20f3ce49f2caab.png" />&#160;<a href="/wiki/Orbital_speed" title="Orbital speed">Orbital speed</a></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="t_0\,\!" src="//upload.wikimedia.org/math/9/b/6/9b69f8cc025b84cfc0c42487abaa77b7.png" />&#160;<a href="/wiki/Epoch_(astronomy)" title="Epoch (astronomy)">Epoch</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";"><span style="float:left;width:6em">&#160;</span>
+<div style="font-size:114%"><a href="/wiki/Orbital_maneuver" title="Orbital maneuver">Maneuvers</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Collision_avoidance_(spacecraft)" title="Collision avoidance (spacecraft)">Collision avoidance (spacecraft)</a></li>
+<li><a href="/wiki/Delta-v" title="Delta-v">Delta-v</a></li>
+<li><a href="/wiki/Delta-v_budget" title="Delta-v budget">Delta-v budget</a></li>
+<li><a href="/wiki/Bi-elliptic_transfer" title="Bi-elliptic transfer">Bi-elliptic transfer</a></li>
+<li><a href="/wiki/Geostationary_transfer_orbit" title="Geostationary transfer orbit">Geostationary transfer</a></li>
+<li><a href="/wiki/Gravity_assist" title="Gravity assist">Gravity assist</a></li>
+<li><a href="/wiki/Gravity_turn" title="Gravity turn">Gravity turn</a></li>
+<li><a href="/wiki/Hohmann_transfer_orbit" title="Hohmann transfer orbit">Hohmann transfer</a></li>
+<li><a href="/wiki/Low_energy_transfer" title="Low energy transfer" class="mw-redirect">Low energy transfer</a></li>
+<li><a href="/wiki/Oberth_effect" title="Oberth effect">Oberth effect</a></li>
+<li><a href="/wiki/Orbital_inclination_change" title="Orbital inclination change">Inclination change</a></li>
+<li><a href="/wiki/Orbit_phasing" title="Orbit phasing">Phasing</a></li>
+<li><a href="/wiki/Tsiolkovsky_rocket_equation" title="Tsiolkovsky rocket equation">Rocket equation</a></li>
+<li><a href="/wiki/Space_rendezvous" title="Space rendezvous">Rendezvous</a></li>
+<li><a href="/wiki/Transposition,_docking,_and_extraction" title="Transposition, docking, and extraction">Transposition, docking, and extraction</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="col" class="navbox-title" colspan="2" style=";"><span style="float:left;width:6em">&#160;</span>
+<div style="font-size:114%">Other <a href="/wiki/Orbital_mechanics" title="Orbital mechanics">orbital mechanics</a> topics</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Celestial_coordinate_system" title="Celestial coordinate system">Celestial coordinate system</a></li>
+<li><a href="/wiki/Characteristic_energy" title="Characteristic energy">Characteristic energy</a></li>
+<li><a href="/wiki/Ephemeris" title="Ephemeris">Ephemeris</a></li>
+<li><a href="/wiki/Equatorial_coordinate_system" title="Equatorial coordinate system">Equatorial coordinate system</a></li>
+<li><a href="/wiki/Ground_track" title="Ground track">Ground track</a></li>
+<li><a href="/wiki/Hill_sphere" title="Hill sphere">Hill sphere</a></li>
+<li><a href="/wiki/Interplanetary_Transport_Network" title="Interplanetary Transport Network">Interplanetary Transport Network</a></li>
+<li><a href="/wiki/Kepler%27s_laws_of_planetary_motion" title="Kepler's laws of planetary motion">Kepler's laws of planetary motion</a></li>
+<li><a href="/wiki/Lagrangian_point" title="Lagrangian point">Lagrangian point</a></li>
+<li><a href="/wiki/N-body_problem" title="N-body problem"><i>n</i>-body problem</a></li>
+<li><a href="/wiki/Orbit_equation" title="Orbit equation">Orbit equation</a></li>
+<li><a href="/wiki/Orbital_state_vectors" title="Orbital state vectors">Orbital state vectors</a></li>
+<li><a href="/wiki/Perturbation_(astronomy)" title="Perturbation (astronomy)">Perturbation</a></li>
+<li><a href="/wiki/Retrograde_motion" title="Retrograde motion" class="mw-redirect">Retrograde motion</a></li>
+<li><a href="/wiki/Specific_orbital_energy" title="Specific orbital energy">Specific orbital energy</a></li>
+<li><a href="/wiki/Specific_relative_angular_momentum" title="Specific relative angular momentum">Specific relative angular momentum</a></li>
+<li><a href="/wiki/Two-line_element_set" title="Two-line element set">Two-line elements</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><b><a href="/wiki/List_of_orbits" title="List of orbits">List of orbits</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1211
+Cached time: 20160401150040
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.186 seconds
+Real time usage: 0.233 seconds
+Preprocessor visited node count: 1170/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 57153/2097152 bytes
+Template argument size: 5766/2097152 bytes
+Highest expansion depth: 10/40
+Expensive parser function count: 0/500
+Lua time usage: 0.068/10.000 seconds
+Lua memory usage: 2.71 MB/50 MB
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  153.481      1 - -total
+ 50.65%   77.736      1 - Template:Orbits
+ 49.28%   75.635      1 - Template:Reflist
+ 48.57%   74.543      1 - Template:Navbox_with_collapsible_groups
+ 41.38%   63.511      5 - Template:Cite_book
+ 18.12%   27.817      2 - Template:Navbox
+  4.98%    7.647      1 - Template:Hlist
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:952915-0!*!0!!en!4!*!math=0 and timestamp 20160401150039 and revision id 705733540
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Mean_anomaly&amp;oldid=705733540">https://en.wikipedia.org/w/index.php?title=Mean_anomaly&amp;oldid=705733540</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Orbits" title="Category:Orbits">Orbits</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Mean+anomaly&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Mean+anomaly" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Mean_anomaly"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Mean_anomaly"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Mean_anomaly" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Mean_anomaly&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Mean_anomaly&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Mean_anomaly" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Mean_anomaly" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Mean_anomaly&amp;oldid=705733540" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Mean_anomaly&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q216715" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Mean_anomaly&amp;id=705733540" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Mean+anomaly">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Mean+anomaly&amp;returnto=Mean+anomaly&amp;oldid=705733540&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Mean_anomaly&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="//ar.wikipedia.org/wiki/%D9%88%D8%B3%D8%B7_%D8%B4%D8%A7%D8%B0" title="وسط شاذ – Arabic" lang="ar" hreflang="ar">العربية</a></li><li class="interlanguage-link interwiki-ast"><a href="//ast.wikipedia.org/wiki/Anomal%C3%ADa_media" title="Anomalía media – Asturian" lang="ast" hreflang="ast">Asturianu</a></li><li class="interlanguage-link interwiki-bg"><a href="//bg.wikipedia.org/wiki/%D0%A1%D1%80%D0%B5%D0%B4%D0%BD%D0%B0_%D0%B0%D0%BD%D0%BE%D0%BC%D0%B0%D0%BB%D0%B8%D1%8F" title="Средна аномалия – Bulgarian" lang="bg" hreflang="bg">Български</a></li><li class="interlanguage-link interwiki-ca"><a href="//ca.wikipedia.org/wiki/Anomalia_mitjana" title="Anomalia mitjana – Catalan" lang="ca" hreflang="ca">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="//cs.wikipedia.org/wiki/St%C5%99edn%C3%AD_anom%C3%A1lie" title="Střední anomálie – Czech" lang="cs" hreflang="cs">Čeština</a></li><li class="interlanguage-link interwiki-el"><a href="//el.wikipedia.org/wiki/%CE%9C%CE%AD%CF%83%CE%B7_%CE%B1%CE%BD%CF%89%CE%BC%CE%B1%CE%BB%CE%AF%CE%B1" title="Μέση ανωμαλία – Greek" lang="el" hreflang="el">Ελληνικά</a></li><li class="interlanguage-link interwiki-es"><a href="//es.wikipedia.org/wiki/Anomal%C3%ADa_media" title="Anomalía media – Spanish" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-eo"><a href="//eo.wikipedia.org/wiki/Meza_anomaliangulo" title="Meza anomaliangulo – Esperanto" lang="eo" hreflang="eo">Esperanto</a></li><li class="interlanguage-link interwiki-fa"><a href="//fa.wikipedia.org/wiki/%D8%A2%D9%86%D9%88%D9%85%D8%A7%D9%84%DB%8C_%D9%85%D8%AA%D9%88%D8%B3%D8%B7" title="آنومالی متوسط – Persian" lang="fa" hreflang="fa">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="//fr.wikipedia.org/wiki/Anomalie_moyenne" title="Anomalie moyenne – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-hy"><a href="//hy.wikipedia.org/wiki/%D5%84%D5%AB%D5%BB%D5%AB%D5%B6_%D5%A1%D5%B6%D5%B8%D5%B4%D5%A1%D5%AC%D5%AB%D5%A1" title="Միջին անոմալիա – Armenian" lang="hy" hreflang="hy">Հայերեն</a></li><li class="interlanguage-link interwiki-id"><a href="//id.wikipedia.org/wiki/Anomali_rata-rata" title="Anomali rata-rata – Indonesian" lang="id" hreflang="id">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-it"><a href="//it.wikipedia.org/wiki/Anomalia_media" title="Anomalia media – Italian" lang="it" hreflang="it">Italiano</a></li><li class="interlanguage-link interwiki-la"><a href="//la.wikipedia.org/wiki/Anomalia_media" title="Anomalia media – Latin" lang="la" hreflang="la">Latina</a></li><li class="interlanguage-link interwiki-ms"><a href="//ms.wikipedia.org/wiki/Min_anomali" title="Min anomali – Malay" lang="ms" hreflang="ms">Bahasa Melayu</a></li><li class="interlanguage-link interwiki-ja"><a href="//ja.wikipedia.org/wiki/%E5%B9%B3%E5%9D%87%E8%BF%91%E7%82%B9%E8%A7%92" title="平均近点角 – Japanese" lang="ja" hreflang="ja">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="//no.wikipedia.org/wiki/Midlere_anomali" title="Midlere anomali – Norwegian" lang="no" hreflang="no">Norsk bokmål</a></li><li class="interlanguage-link interwiki-nn"><a href="//nn.wikipedia.org/wiki/Gjennomsnittleg_anomali" title="Gjennomsnittleg anomali – Norwegian Nynorsk" lang="nn" hreflang="nn">Norsk nynorsk</a></li><li class="interlanguage-link interwiki-pl"><a href="//pl.wikipedia.org/wiki/Anomalia_%C5%9Brednia" title="Anomalia średnia – Polish" lang="pl" hreflang="pl">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="//pt.wikipedia.org/wiki/Anomalia_m%C3%A9dia" title="Anomalia média – Portuguese" lang="pt" hreflang="pt">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="//ro.wikipedia.org/wiki/Anomalie_medie" title="Anomalie medie – Romanian" lang="ro" hreflang="ro">Română</a></li><li class="interlanguage-link interwiki-ru"><a href="//ru.wikipedia.org/wiki/%D0%AD%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B_%D0%BE%D1%80%D0%B1%D0%B8%D1%82%D1%8B#.D0.90.D0.BD.D0.BE.D0.BC.D0.B0.D0.BB.D0.B8.D0.B8" title="Элементы орбиты – Russian" lang="ru" hreflang="ru">Русский</a></li><li class="interlanguage-link interwiki-simple"><a href="//simple.wikipedia.org/wiki/Mean_anomaly" title="Mean anomaly – Simple English" lang="simple" hreflang="simple">Simple English</a></li><li class="interlanguage-link interwiki-sk"><a href="//sk.wikipedia.org/wiki/Stredn%C3%A1_anom%C3%A1lia" title="Stredná anomália – Slovak" lang="sk" hreflang="sk">Slovenčina</a></li><li class="interlanguage-link interwiki-sl"><a href="//sl.wikipedia.org/wiki/Srednja_anomalija" title="Srednja anomalija – Slovenian" lang="sl" hreflang="sl">Slovenščina</a></li><li class="interlanguage-link interwiki-fi"><a href="//fi.wikipedia.org/wiki/Keskianomalia" title="Keskianomalia – Finnish" lang="fi" hreflang="fi">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="//sv.wikipedia.org/wiki/Medelanomali" title="Medelanomali – Swedish" lang="sv" hreflang="sv">Svenska</a></li><li class="interlanguage-link interwiki-th"><a href="//th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%99%E0%B8%AD%E0%B8%A1%E0%B8%B1%E0%B8%A5%E0%B8%A5%E0%B8%B5%E0%B9%80%E0%B8%89%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2" title="อนอมัลลีเฉลี่ย – Thai" lang="th" hreflang="th">ไทย</a></li><li class="interlanguage-link interwiki-vi"><a href="//vi.wikipedia.org/wiki/%C4%90%E1%BB%99_b%E1%BA%A5t_th%C6%B0%E1%BB%9Dng_trung_b%C3%ACnh" title="Độ bất thường trung bình – Vietnamese" lang="vi" hreflang="vi">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="//zh.wikipedia.org/wiki/%E5%B9%B3%E8%BF%91%E9%BB%9E%E8%A7%92" title="平近點角 – Chinese" lang="zh" hreflang="zh">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q216715#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 19 February 2016, at 06:36.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="//wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Mean_anomaly&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.eventLogging.subscriber","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","mmv.bootstrap.autostart","ext.visualEditor.targetLoader","ext.wikimediaEvents","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":68,"wgHostname":"mw1255"});});</script>
+	</body>
+</html>
