@@ -37,6 +37,7 @@ ad_proc -public ssk::sol_earth_latitude {
     #        w_cap         change in position ( degrees per day )
     variable ::ssk::table6_larr
     variable ::ssk::km_per_au
+    variable ::ssk::180perpi
     set alpha_0 [lindex $table6_larr(Sun) 0]
     set alpha_dot [lindex $table6_larr(Sun) 1]
     set delta_0 [lindex $table6_larr(Sun) 2]
@@ -58,19 +59,25 @@ ad_proc -public ssk::sol_earth_latitude {
     # convert polar coordinates of sol's pole coordinates (in Geo RA, Dec) to Cartesian J2000
     # Let's assume r is radius of Sol.
     set r_au [expr { 695700. / $km_per_au } ]
-
+  
     # using spherical polar coordinates to Cartesian transformations,
     # where theta = 90 degrees - Dec angle, thus sin(theta) becomes cos(Dec Angle):
     # x = r * cos( Dec angle ) * cos ( Right accension angle)
     # y = r * cos( Dec angle ) * sin ( righ accension angle )
     # z = r * sin( Dec angle )
-
+    set cos_dec_angle [expr { cos( $delta / $180perpi ) } ]
+    set x_n_au [expr { $r_au * $cos_dec_angle * cos( $alpha / $180perpi ) } ]
+    set y_n_au [expr { $r_au * $cos_dec_angle * sin( $alpha / $180perpi ) } ]
+    set z_n_au [expr { $r_au * sin( $delta / $180perpi ) } ]
 
     # get position of Earth in x y z coordinates
-
+    ssk::pos_kepler $time_utc Earth e_larr 0
     # Since Sun is at origin (0,0,0), the angle of the line that intersects the Solar equatorial plane
     # is the solar latitude of Earth at Zenith if observer is at Sun.
-
+    # A line through origin is defined by delta X + delta Y + delta Z = 0, or since origin is 0,0,0:
+    set x_e_au [lindex $e_larr 0]
+    set y_e_au [lindex $e_larr 1]
+    set z_e_au [lindex $e_larr 2]
     
     # given a plane with perpenicular vector from origin to N1,N2,N3, and a line
     # from origin to U1,U2,U3
@@ -78,8 +85,11 @@ ad_proc -public ssk::sol_earth_latitude {
     #    arcsin(  ( N1*U1 + N2*U2 + N3*U3 ) /
     #           ( sqrt( pow(N1,2) + pow(N2,2) + pow(N3,2) ) * sqrt(pow(u1,2)+pow(u2,2)+pow(u3,2) ) ) )
     # geometry reference: http://www.vitutor.com/geometry/distance/line_plane.html
+    # (Here N1,N2,N3 = x_n_au,y_n_au,z_n_au  and U1,U2,U3 = x_e_au,y_e_au,z_e_au )
+    set solar_lat_rad [expr { asin( ( $x_n_au * $x_e_au + $y_n_au * $y_e_au + $z_n_au * $z_e_au ) / ( sqrt( pow($x_n_au,2) + pow($y_n_au,2) + pow($z_n_au,2) ) * sqrt( pow($x_e_au,2) + pow($y_e_au,2) + pow($z_e_au,2) ) ) ) } ]
+    set solar_lat_deg [expr { $solar_lat_rad * $180perpi } ]
 
-    return $earth_sol_eq_angle
+    return $solar_lat_deg
 }
 
 
