@@ -89,6 +89,15 @@ ad_proc -public ssk::sol_earth_latitude {
     set solar_lat_rad [expr { asin( ( $x_n_au * $x_e_au + $y_n_au * $y_e_au + $z_n_au * $z_e_au ) / ( sqrt( pow($x_n_au,2) + pow($y_n_au,2) + pow($z_n_au,2) ) * sqrt( pow($x_e_au,2) + pow($y_e_au,2) + pow($z_e_au,2) ) ) ) } ]
     set solar_lat_deg [expr { $solar_lat_rad * $180perpi } ]
 
+
+    # Data should be available here to also calculate the tilt of the solar northern pole 
+    # as seen from the solar disc from Earth's perspective.
+    # ie. the solar North pole vector projected onto the plane passing through the ecliptic origin (Sun) and 
+    # perpendicular (orthogonal) to the Sun-Earth vector.
+
+    # The equation for a projection of a vector onto a plane (of any orientation) is:
+    
+
     return $solar_lat_deg
 }
 
