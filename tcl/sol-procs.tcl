@@ -58,7 +58,7 @@ ad_proc -public ssk::sol_earth_latitude {
 
     # convert polar coordinates of sol's pole coordinates (in Geo RA, Dec) to Cartesian J2000
     # Let's assume r is radius of Sol.
-    set r_au [expr { 695700. / $km_per_au } ]
+    set sol_r_au [expr { 695700. / $km_per_au } ]
   
     # using spherical polar coordinates to Cartesian transformations,
     # where theta = 90 degrees - Dec angle, thus sin(theta) becomes cos(Dec Angle):
@@ -66,18 +66,18 @@ ad_proc -public ssk::sol_earth_latitude {
     # y = r * cos( Dec angle ) * sin ( righ accension angle )
     # z = r * sin( Dec angle )
     set cos_dec_angle [expr { cos( $delta / $180perpi ) } ]
-    set x_n_au [expr { $r_au * $cos_dec_angle * cos( $alpha / $180perpi ) } ]
-    set y_n_au [expr { $r_au * $cos_dec_angle * sin( $alpha / $180perpi ) } ]
-    set z_n_au [expr { $r_au * sin( $delta / $180perpi ) } ]
+    set n_x_au [expr { $sol_r_au * $cos_dec_angle * cos( $alpha / $180perpi ) } ]
+    set n_y_au [expr { $sol_r_au * $cos_dec_angle * sin( $alpha / $180perpi ) } ]
+    set n_z_au [expr { $sol_r_au * sin( $delta / $180perpi ) } ]
 
     # get position of Earth in x y z coordinates
     ssk::pos_kepler $time_utc Earth e_larr 0
     # Since Sun is at origin (0,0,0), the angle of the line that intersects the Solar equatorial plane
     # is the solar latitude of Earth at Zenith if observer is at Sun.
     # A line through origin is defined by delta X + delta Y + delta Z = 0, or since origin is 0,0,0:
-    set x_e_au [lindex $e_larr 0]
-    set y_e_au [lindex $e_larr 1]
-    set z_e_au [lindex $e_larr 2]
+    set e_x_au [lindex $e_larr 0]
+    set e_y_au [lindex $e_larr 1]
+    set e_z_au [lindex $e_larr 2]
     
     # given a plane with perpenicular vector from origin to N1,N2,N3, and a line
     # from origin to U1,U2,U3
@@ -85,8 +85,8 @@ ad_proc -public ssk::sol_earth_latitude {
     #    arcsin(  ( N1*U1 + N2*U2 + N3*U3 ) /
     #           ( sqrt( pow(N1,2) + pow(N2,2) + pow(N3,2) ) * sqrt(pow(u1,2)+pow(u2,2)+pow(u3,2) ) ) )
     # geometry reference: http://www.vitutor.com/geometry/distance/line_plane.html
-    # (Here N1,N2,N3 = x_n_au,y_n_au,z_n_au  and U1,U2,U3 = x_e_au,y_e_au,z_e_au )
-    set solar_lat_rad [expr { asin( ( $x_n_au * $x_e_au + $y_n_au * $y_e_au + $z_n_au * $z_e_au ) / ( sqrt( pow($x_n_au,2) + pow($y_n_au,2) + pow($z_n_au,2) ) * sqrt( pow($x_e_au,2) + pow($y_e_au,2) + pow($z_e_au,2) ) ) ) } ]
+    # (Here N1,N2,N3 = n_x_au,n_y_au,n_z_au  and U1,U2,U3 = e_x_au,e_y_au,e_z_au )
+    set solar_lat_rad [expr { asin( ( $n_x_au * $e_x_au + $n_y_au * $e_y_au + $n_z_au * $e_z_au ) / ( sqrt( pow($n_x_au,2) + pow($n_y_au,2) + pow($n_z_au,2) ) * sqrt( pow($e_x_au,2) + pow($e_y_au,2) + pow($e_z_au,2) ) ) ) } ]
     set solar_lat_deg [expr { $solar_lat_rad * $180perpi } ]
 
 
@@ -94,9 +94,24 @@ ad_proc -public ssk::sol_earth_latitude {
     # as seen from the solar disc from Earth's perspective.
     # ie. the solar North pole vector projected onto the plane passing through the ecliptic origin (Sun) and 
     # perpendicular (orthogonal) to the Sun-Earth vector.
+    # ie find: D_vector
 
-    # The equation for a projection of a vector onto a plane (of any orientation) is:
-    
+    # One way is:
+    # given:  n_vector as the cartesian solar Northpole vector
+    #         e_vector as the Cartesian Sun-Earth vector
+    #          
+    # create a C_vector by
+    #  adjusting e_vector's magnitude so that n_vector = C_vector + D_vector
+    # or D_vector = n_vector - C_vector
+
+    #  C_vector is parallel to e_vector
+
+    # the angle of the intersection of n_vector with plane defined by e_vector
+    # provides a way to obtain the magnitude of C_vector.
+    # (Here N1,N2,N3 = e_x_au,e_y_au,e_z_au  and U1,U2,U3 = n_x_au,n_y_au,n_z_au 
+    # ie swap parameters of prior use of angle between line and plane solution in this procedure.)
+
+
 
     return $solar_lat_deg
 }
