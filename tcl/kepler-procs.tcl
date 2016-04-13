@@ -134,7 +134,8 @@ namespace eval ::ssk {
     # Franz and Harper's"Heliospheric coordinate systems" appears to reference the Earth ecliptic orbital plane
     # for the Heliocentric coordinate systems with references to "GEI J2000".
     # Geocentric Earth Equatorial (GEI) j2000 is the International Celestial Reference Frame (ICRF),
-    # where XY-plane is Earth mean equator at J2000.0.
+    # where XY-plane is Earth mean equator at J2000.0. (Think Celestial Sphere at J2000.0)
+
     # +X axis is vector Earth-Sun of vernal equinox at j2000.0.
     # declination angle XYtoZ Z=90degrees
     # right ascension is "right handed"

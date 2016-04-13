@@ -38,15 +38,17 @@ ad_proc -public ssk::sol_earth_latitude {
     variable ::ssk::table6_larr
     variable ::ssk::km_per_au
     variable ::ssk::180perpi
+    set days_since_j2000 [ssk::days_since_j2000 $time_utc]
+    #set days_since_j2000 \[expr { $j2000_time - 2451545.0 } \]
+    set t_cap [expr { $days_since_j2000 / 36525. } ]
+
     set alpha_0 [lindex $table6_larr(Sun) 0]
     set alpha_dot [lindex $table6_larr(Sun) 1]
     set delta_0 [lindex $table6_larr(Sun) 2]
     set delta_dot [lindex $table6_larr(Sun) 3]
     set w_cap_0 [lindex $table6_larr(Sun) 4]
     set w_cap_per_day [lindex $table6_larr(Sun) 5]
-    set days_since_j2000 [ssk::days_since_j2000 $time_utc]
-    #set days_since_j2000 \[expr { $j2000_time - 2451545.0 } \]
-    set t_cap [expr { $days_since_j2000 / 36525. } ]
+
     set alpha [expr { $alpha_0 + $alpha_dot * $t_cap } ]
     set delta [expr { $delta_0 + $delta_dot * $t_cap } ]
     set w_cap [expr { $w_cap_0 + $w_cap_per_day * $days_since_j2000 } ]
@@ -86,7 +88,14 @@ ad_proc -public ssk::sol_earth_latitude {
     #           ( sqrt( pow(N1,2) + pow(N2,2) + pow(N3,2) ) * sqrt(pow(u1,2)+pow(u2,2)+pow(u3,2) ) ) )
     # geometry reference: http://www.vitutor.com/geometry/distance/line_plane.html
     # (Here N1,N2,N3 = n_x_au,n_y_au,n_z_au  and U1,U2,U3 = e_x_au,e_y_au,e_z_au )
-    set solar_lat_rad [expr { asin( ( $n_x_au * $e_x_au + $n_y_au * $e_y_au + $n_z_au * $e_z_au ) / ( sqrt( pow($n_x_au,2) + pow($n_y_au,2) + pow($n_z_au,2) ) * sqrt( pow($e_x_au,2) + pow($e_y_au,2) + pow($e_z_au,2) ) ) ) } ]
+
+    # caching some values (initially for repeated use later, but also helps show that
+    # switching the parameters for e_ and n_ vectors result in same value
+    set e_magnitude [expr { sqrt( pow( $e_x_au , 2 ) + pow( $e_y_au , 2 ) + pow( $e_z_au ) ) } ]
+    set n_magnitude [expr { sqrt( pow( $n_x_au , 2 ) + pow( $n_y_au , 2 ) + pow( $n_z_au ) ) } ]
+
+    set factor_block1 [expr { ( $n_x_au * $e_x_au + $n_y_au * $e_y_au + $n_z_au * $e_z_au ) / ( $n_magnitude * $e_magnitude ) } ]
+    set solar_lat_rad [expr { asin( $factor_block1 ) } ]
     set solar_lat_deg [expr { $solar_lat_rad * $180perpi } ]
 
 
@@ -94,27 +103,84 @@ ad_proc -public ssk::sol_earth_latitude {
     # as seen from the solar disc from Earth's perspective.
     # ie. the solar North pole vector projected onto the plane passing through the ecliptic origin (Sun) and 
     # perpendicular (orthogonal) to the Sun-Earth vector.
+
     # ie find: D_vector
 
     # One way is:
     # given:  n_vector as the cartesian solar Northpole vector
     #         e_vector as the Cartesian Sun-Earth vector
     #         g_vector as Earth's North pole vector         
+
     # create a C_vector by
     #  adjusting e_vector's magnitude so that n_vector = C_vector + D_vector
     # or D_vector = n_vector - C_vector
 
     #  C_vector is parallel to e_vector
 
-    # the angle of the intersection of n_vector with plane defined by e_vector
-    # provides a way to obtain the magnitude of C_vector.
+    #    convert e_vector to a unit vector u_e_vector
+    set u_e_x_au [expr { $e_x_au / $e_magnitude } ]
+    set u_e_y_au [expr { $e_y_au / $e_magnitude } ]
+    set u_e_z_au [expr { $e_z_au / $e_magnitude } ]
+
+    # The magnitude of C_vector can be determined by taking the sin of
+    # the angle of the intersection of n_vector with plane defined by e_vector.
+    # Let's call this angle: nv_eplane_rad   ( *_rad for radians)
+
+    # Using the same forumla for calculating the intersection of n_vector with plane defined by e_vector,
     # (Here N1,N2,N3 = e_x_au,e_y_au,e_z_au  and U1,U2,U3 = n_x_au,n_y_au,n_z_au 
     # ie swap parameters of prior use of angle between line and plane solution in this procedure.)
+    # set nv_eplane_rad \[expr { asin( ( $n_x_au * $e_x_au + $n_y_au * $e_y_au + $n_z_au * $e_z_au ) / ( $n_magnitude * $e_magnitude ) ) } \]
+
+    # swapping the parameters, the result is the same, so simplifying to:
+    set nv_eplane_rad $solar_lat_rad
+
+    # set d_magnitude \[expr { sin($nv_eplane_rad) * $n_magnitude } \]
+    # Note that the calculation of the first factor is essentially the same as calcing solar_lat_rad less the last step, ie
+    # calcing factor_block1, so we save some calc time by inserting the prior calced value here:
+    set d_magnitude [expr { $factor_block1 * $n_magnitude } ]
+    # We can use $d_magnitude to check final results, but not immediately useful to obtain the angle needed for D_vector
+    # We know c_vector direction, so calculate c_magnitude
+    set c_magnitude [expr { cos( asin( $factor_block1) ) * $n_magnitude } ]
+    # Now we can make C_vector:
+    set c_x_au [expr { $u_e_x_au * $c_magnitude } ]
+    set c_y_au [expr { $u_e_y_au * $c_magnitude } ]
+    set c_z_au [expr { $u_e_z_au * $c_magnitude } ]
+
+    # Restated from above: D_vector = n_vector - C_vector
+    # D_vector equals:
+    set d_x_au [expr { $n_x_au - $c_x_au } ]
+    set d_y_au [expr { $n_y_au - $c_y_au } ]
+    set d_z_au [expr { $n_z_au - $c_z_au } ]
+
+    ## At some point, it may make more sense to convert to km instead of au.
+
+    ## Here we could add a sanity check, d_magnitude <= $sol_r_au
+    ## and check D_vector's magnitude against prior calculated $d_magnitude
 
     # D_vector is on plane defined by e_vector (essentially solar disc image)
 
-    # 
+    # table6_larr(Earth) contains orientation of Earth's North pole ( g_vector )
+    ## this code should be made into a separate proc that returns alpha, delta, w_cap..
+    set alpha_0 [lindex $table6_larr(Earth) 0]
+    set alpha_dot [lindex $table6_larr(Earth) 1]
+    set delta_0 [lindex $table6_larr(Earth) 2]
+    set delta_dot [lindex $table6_larr(Earth) 3]
+    set w_cap_0 [lindex $table6_larr(Earth) 4]
+    set w_cap_per_day [lindex $table6_larr(Earth) 5]
+
+    set alpha [expr { $alpha_0 + $alpha_dot * $t_cap } ]
+    set delta [expr { $delta_0 + $delta_dot * $t_cap } ]
+    set w_cap [expr { $w_cap_0 + $w_cap_per_day * $days_since_j2000 } ]
+    set w_cap [ssk::unwind $w_cap 0. 360.]
+
+
+    # g_vector needs to be projected into the same plane as defined by e_vector for viewing perpsective.
+    # Call the projected g_vector onto the solar disc.. g_sd_vector
+
+
     # Angle between D_vector and g_vector = apparent angle of Sun's North pole from Earth's polar North.
+
+
 
     return $solar_lat_deg
 }
