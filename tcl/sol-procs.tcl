@@ -99,7 +99,7 @@ ad_proc -public ssk::sol_earth_latitude {
     # One way is:
     # given:  n_vector as the cartesian solar Northpole vector
     #         e_vector as the Cartesian Sun-Earth vector
-    #          
+    #         g_vector as Earth's North pole vector         
     # create a C_vector by
     #  adjusting e_vector's magnitude so that n_vector = C_vector + D_vector
     # or D_vector = n_vector - C_vector
@@ -111,7 +111,10 @@ ad_proc -public ssk::sol_earth_latitude {
     # (Here N1,N2,N3 = e_x_au,e_y_au,e_z_au  and U1,U2,U3 = n_x_au,n_y_au,n_z_au 
     # ie swap parameters of prior use of angle between line and plane solution in this procedure.)
 
+    # D_vector is on plane defined by e_vector (essentially solar disc image)
 
+    # 
+    # Angle between D_vector and g_vector = apparent angle of Sun's North pole from Earth's polar North.
 
     return $solar_lat_deg
 }
