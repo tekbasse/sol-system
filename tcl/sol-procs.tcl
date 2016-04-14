@@ -160,7 +160,9 @@ ad_proc -public ssk::sol_earth_latitude {
     # D_vector is on plane defined by e_vector (essentially solar disc image)
 
     # table6_larr(Earth) contains orientation of Earth's North pole ( g_vector )
-    ## this code should be made into a separate proc that returns alpha, delta, w_cap..
+    # Following code essentially duplicates table6 calcs in first part of this procedure,
+    # which warrants creating a separate procedure.  However,
+    # calculations are kept in context for complete perspective.
     set alpha_0 [lindex $table6_larr(Earth) 0]
     set alpha_dot [lindex $table6_larr(Earth) 1]
     set delta_0 [lindex $table6_larr(Earth) 2]
@@ -173,14 +175,88 @@ ad_proc -public ssk::sol_earth_latitude {
     set w_cap [expr { $w_cap_0 + $w_cap_per_day * $days_since_j2000 } ]
     set w_cap [ssk::unwind $w_cap 0. 360.]
 
+    # Earth equator is the plane defined as perpendicular (orthogonal) to a polar oriented vector
+    # given a vector N1,N2,N3, plane is equation N1*x + N2*y + N3*z = 0
 
+    # convert polar coordinates of Earth's North pole coordinates (in Geo RA, Dec) to Cartesian J2000
+    # Let's assume r is radius of Earth.
+    set gaia_r_au [expr { 6371. / $km_per_au } ]
+  
+    # using spherical polar coordinates to Cartesian transformations,
+    # where theta = 90 degrees - Dec angle, thus sin(theta) becomes cos(Dec Angle):
+    # x = r * cos( Dec angle ) * cos ( Right accension angle)
+    # y = r * cos( Dec angle ) * sin ( righ accension angle )
+    # z = r * sin( Dec angle )
+    set cos_dec_angle [expr { cos( $delta / $180perpi ) } ]
+    set g_x_au [expr { $gaia_r_au * $cos_dec_angle * cos( $alpha / $180perpi ) } ]
+    set g_y_au [expr { $gaia_r_au * $cos_dec_angle * sin( $alpha / $180perpi ) } ]
+    set g_z_au [expr { $gaia_r_au * sin( $delta / $180perpi ) } ]
     # g_vector needs to be projected into the same plane as defined by e_vector for viewing perpsective.
     # Call the projected g_vector onto the solar disc.. g_sd_vector
 
+    # given a plane with perpenicular vector from origin to N1,N2,N3, and a line
+    # from origin to U1,U2,U3
+    # latitude angle =
+    #    arcsin(  ( N1*U1 + N2*U2 + N3*U3 ) /
+    #           ( sqrt( pow(N1,2) + pow(N2,2) + pow(N3,2) ) * sqrt(pow(u1,2)+pow(u2,2)+pow(u3,2) ) ) )
+    # geometry reference: http://www.vitutor.com/geometry/distance/line_plane.html
+    # (Here N1,N2,N3 = g_x_au,g_y_au,g_z_au  and U1,U2,U3 = u_e_x_au,u_e_y_au,u_e_z_au )
 
-    # Angle between D_vector and g_vector = apparent angle of Sun's North pole from Earth's polar North.
+    #  u_e_magnitude = 1
+    set g_magnitude [expr { sqrt( pow( $g_x_au , 2 ) + pow( $g_y_au , 2 ) + pow( $g_z_au ) ) } ]
 
+    set factor_block2 [expr { ( $g_x_au * $e_x_au + $g_y_au * $e_y_au + $g_z_au * $e_z_au ) / ( $g_magnitude * $e_magnitude ) } ]
+    set gaia_lat_rad [expr { asin( $factor_block2 ) } ]
+    set gaia_lat_deg [expr { $gaia_lat_rad * $180perpi } ]
 
+    # Repeating use of D_vector (now m_vector) and C_vector (now p_vector) in context of g_vector instead of n_vector:
+    # Angle between m_vector and g_vector = apparent angle of Sun's North pole from Earth's polar North.
+
+    # create a p_vector by
+    #  adjusting e_vector's magnitude so that g_vector = p_vector + m_vector
+    # or m_vector = g_vector - p_vector
+
+    #  p_vector is parallel to e_vector
+
+    #    convert e_vector to a unit vector u_e_vector
+    # (Alread defined from prior calcuations )
+    #set u_e_x_au [expr { $e_x_au / $e_magnitude } ]
+    #set u_e_y_au [expr { $e_y_au / $e_magnitude } ]
+    #set u_e_z_au [expr { $e_z_au / $e_magnitude } ]
+
+    # The magnitude of p_vector can be determined by taking the sin of
+    # the angle of the intersection of g_vector with plane defined by e_vector.
+    # Let's call this angle: gv_eplane_rad   ( *_rad for radians)
+
+    # Using the same forumla for calculating the intersection of g_vector with plane defined by e_vector,
+    # (Here N1,N2,N3 = e_x_au,e_y_au,e_z_au  and U1,U2,U3 = g_x_au,g_y_au,g_z_au 
+    # ie swap parameters of prior use of angle between line and plane solution in this procedure.)
+    # set gv_eplane_rad \[expr { asin( ( $g_x_au * $e_x_au + $g_y_au * $e_y_au + $g_z_au * $e_z_au ) / ( $g_magnitude * $e_magnitude ) ) } \]
+
+    # swapping the parameters, the result is the same, so simplifying to:
+    set gv_eplane_rad $gaia_lat_rad
+
+    # set d_magnitude \[expr { sin($nv_eplane_rad) * $n_magnitude } \]
+    # Note that the calculation of the first factor is essentially the same as calcing gaia_lat_rad less the last step, ie
+    # calcing factor_block2, so we save some calc time by inserting the prior calced value here:
+    set m_magnitude [expr { $factor_block2 * $g_magnitude } ]
+    # We can use $d_magnitude to check final results, but not immediately useful to obtain the angle needed for m_vector
+    # We know p_vector direction, so calculate c_magnitude
+    set p_magnitude [expr { cos( asin( $factor_block2) ) * $g_magnitude } ]
+    # Now we can make p_vector:
+    set p_x_au [expr { $u_e_x_au * $p_magnitude } ]
+    set p_y_au [expr { $u_e_y_au * $p_magnitude } ]
+    set p_z_au [expr { $u_e_z_au * $p_magnitude } ]
+
+    # Restated from above: m_vector = g_vector - p_vector
+    # m_vector equals:
+    set m_x_au [expr { $g_x_au - $p_x_au } ]
+    set m_y_au [expr { $g_y_au - $p_y_au } ]
+    set m_z_au [expr { $g_z_au - $p_z_au } ]
+
+    # Angle of D_vector - M_vector is the relative counter-clockwise angle between Earth North Pole and 
+    # Solar North Pole as seen on Solar disc
+## must code this
 
     return $solar_lat_deg
 }
