@@ -268,6 +268,37 @@ ad_proc -public ssk::sol_earth_latitude {
     set solar_disc_tilt_deg [expr { $solar_disc_tilt_rad * $180perpi } ]
     set relative_pole_radius [expr { $d_magnitude / $sol_r_au } ]
     set return_list [list $solar_lat_deg $solar_disc_tilt_deg $relative_pole_radius]
+    # These results should be cached.
+
+    return $return_list
+}
+
+
+ad_proc -public ssk::sol_transform1 {
+    x
+    y
+    diameter_px
+    time_utc
+    {utc_format "%Y-%h-%d %H:%M:%S"}
+    {array_name "temp2_larr"}
+} {
+    Determines solar latitude and longitude according to 0degrees Earth at Zenith perspective, 
+    given a time_utc, position x,y and diameter of image in pixels
+} {
+    upvar 1 $array_name temp2_larr
+    # Would be ideal to have a proc that converts solar disc x,y (at Earth's perspective) to solar coordinates
+    # for now can settle having solar latitude and solar longitude according to 0degrees Earth perspective.
+
+    if { ![info exists temp2_larr($time_utc) ] } {
+        set temp2_larr($time_utc) [ssk::sol_earth_latitude $time_utc $utc_format]
+    } else {
+        set solar_lat_deg [lindex $temp2_larr($time_utc) 0]
+        set solar_disc_tilt_deg [lindex $temp2_larr($time_utc) 1]
+        set relative_pole_radius [lindex $temp2_larr($time_utc) 2]
+
+    }
+### To code
+    set return_list [list ]
     return $return_list
 }
 
