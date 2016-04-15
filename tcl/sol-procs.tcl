@@ -256,9 +256,19 @@ ad_proc -public ssk::sol_earth_latitude {
 
     # Angle of D_vector - M_vector is the relative counter-clockwise angle between Earth North Pole and 
     # Solar North Pole as seen on Solar disc
-## must code this
 
-    return $solar_lat_deg
+    # The angle can be determined using these vector dot product formulas:
+    #  dot( v_vector, w_vector ) / ( magnitude( v_vector) * magnitude( w_vector ) ) = cos( angle between v_vector and w_vector)
+    # and
+    #  dot( v_vector, w_vector ) = Vx * Wx + Vy * Wy + Vz * Wz
+    #
+    # becomes:
+    # angle = acos( (Vx * Wx + Vy * Wy + Vz * Wz) / (magnitude( v_vector) * magnitude( w_vector ) ) )
+    set solar_disc_tilt_rad [expr { acos( ($m_x_au * $d_x_au + $m_y_au * $d_y_au + $m_z_au * $d_z_au ) / ( $m_magnitude * $d_magnitude ) ) } ]
+    set solar_disc_tilt_deg [expr { $solar_disc_tilt_rad * $180perpi } ]
+    set relative_pole_radius [expr { $d_magnitude / $sol_r_au } ]
+    set return_list [list $solar_lat_deg $solar_disc_tilt_deg $relative_pole_radius]
+    return $return_list
 }
 
 
