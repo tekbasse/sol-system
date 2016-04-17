@@ -316,12 +316,20 @@ ad_proc -public ssk::sol_tranx_disc_to_3d {
     set xy_angle_rad [expr { acos( $dx / $xy_radius_px ) } ]
     set xy_angle2_rad [expr { $xy_angle_rad - $solar_disc_tilt_deg / $180perpi } ]
 
-    set x2_px [expr { $xy_radius_px * cos( $xy_angle2_rad ) } ]
-    set y2_px [expr { $xy_radius_px * sin( $xy_angle2_rad ) } ]
+    # rotate (transform)
+    set dx2_px [expr { $xy_radius_px * cos( $xy_angle2_rad ) } ]
+    set dy2_px [expr { $xy_radius_px * sin( $xy_angle2_rad ) } ]
 
-                          
+    # Determine declination angle dec_rad
+    # asin( dy2_px / height of disc at dx2_px )
+    # height is the same as sol_r_px * sin(theta), where theta = acos( dx2_px / sol_r_px )
+    set disc_r_at_dx2 [expr { $sol_r_px * sin( acos( $dx2_px / $sol_r_px ) ) } ]
+    set dec_red [expr { asin( $dy2_px / $disc_r_at_dx2 ) } ]
+
     # Adjust dec according to solar tilt away from (or toward) Earth. This angle
     # is the same as ssk::sol_earth_latitude of observer on Sun with Earth at Zenith 
+    # Negative is Earth below solar equator (move reference down same angle). 
+
 ##
     set return_list [list ]
     return $return_list
