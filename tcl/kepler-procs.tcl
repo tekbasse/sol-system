@@ -197,6 +197,7 @@ namespace eval ::ssk {
 
 ad_proc -public ssk::days_since_j2000 {
     yyyymmdd
+    {utc_format "%Y%h%d %H:%M:%S"}
 } {
     Returns decimal days since j2000, where yyyymmdd is in format "20160102" for Jan. 2, 2016. 
     A negative number means days before j2000.
@@ -223,7 +224,7 @@ ad_proc -public ssk::days_since_j2000 {
     # So, including time standard in s1. Theoretically, s2 could include time also.
 
     set s1 [clock scan "20000101 12:00" -format "%Y%m%d %H:%M" -gmt 1]
-    set s2 [clock scan $yyyymmdd -gmt 1]
+    set s2 [clock scan $yyyymmdd -format $utc_format -gmt 1]
     #set day_in_secs \[expr { 24 * 60 * 60 } \]
     set day_in_secs 86400.0
     set delta_days [expr { ( $s2 - $s1 ) / $day_in_secs } ]
@@ -232,6 +233,7 @@ ad_proc -public ssk::days_since_j2000 {
 
 ad_proc -public ssk::in_j2000 {
     yyyymmdd
+    {utc_format "%Y%m%d"}
 } {
     Returns decimal days in j2000.
     Time can be optionally appended to yyyymmdd, such as "20160102 11:05 AM".
@@ -239,7 +241,7 @@ ad_proc -public ssk::in_j2000 {
     # Based on days_since_j2000
     # adding standard value of j2000
     set s1 [clock scan "20000101 12:00" -format "%Y%m%d %H:%M" -gmt 1]
-    set s2 [clock scan $yyyymmdd -gmt 1]
+    set s2 [clock scan $yyyymmdd -format $utc_format -gmt 1]
     #set day_in_secs \[expr { 24 * 60 * 60 } \]
     set day_in_secs 86400.0
     set j2000 2451545.0
@@ -267,6 +269,7 @@ ad_proc -public ssk::pos_kepler {
     planets
     array_name
     {icrf_p 0}
+    {utc_format "%Y%m%d"}
 } {
     Returns position of planet(s).
     If yyyymmdd is a decimal number with a prefix of "J", then value is assumed to be j2000 number.
@@ -314,17 +317,10 @@ ad_proc -public ssk::pos_kepler {
         } else {
             set success_p 0
         }
-    } elseif { [string length $yyyymmdd] == 10 && [string range $yyyymmdd 4 4] eq "-" } {
-        # must be in yyyy-mm-dd format, concatinate
-        set yyyymmdd "[string range $yyyymmdd 0 3][string range $yyyymmdd 5 6][string range $yyyymmdd 8 9]"
-        set t_cap [expr { [ssk::days_since_j2000 $yyyymmdd] / 36525. } ]
-        set time_s [clock scan $yyyymmdd -format "%Y%m%d" -gmt 1]
-    } elseif { [string length $yyyymmdd] == 8 } {
-        set t_cap [expr { [ssk::days_since_j2000 $yyyymmdd] / 36525. } ]
-        set time_s [clock scan $yyyymmdd -format "%Y%m%d" -gmt 1]
     } else {
-        set success_p 0
-    }
+        set t_cap [expr { [ssk::days_since_j2000 $yyyymmdd $utc_format] / 36525. } ]
+        set time_s [clock scan $yyyymmdd -format $utc_format -gmt 1]
+    } 
 
     set test_ymd [string range $yyyymmdd 0 7]
     set Debug 0

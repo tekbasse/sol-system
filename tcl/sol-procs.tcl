@@ -39,6 +39,9 @@ ad_proc -public ssk::sol_earth_latitude {
     variable ::ssk::table6_larr
     variable ::ssk::km_per_au
     variable ::ssk::180perpi
+    variable ::ssk::temp2_larr
+
+    if { [info exists $temp2_larr($time_u
     set days_since_j2000 [ssk::days_since_j2000 $time_utc]
     #set days_since_j2000 \[expr { $j2000_time - 2451545.0 } \]
     set t_cap [expr { $days_since_j2000 / 36525. } ]
@@ -281,26 +284,21 @@ ad_proc -public ssk::sol_tranx_disc_to_3d {
     diameter_px
     time_utc
     {utc_format "%Y-%h-%d %H:%M:%S"}
-    {array_name "temp2_larr"}
 } {
     Determines solar latitude and longitude according to 0degrees Earth at Zenith perspective, 
     given a time_utc, position x,y and diameter of image in pixels
     Origin p(0,0) is assumed to be upper left, with center of disc at diameter_px/2. x > 0 and y > 0
 } {
-    upvar 1 $array_name temp2_larr
     variable ::ssk::180perpi
     # Would be ideal to have a proc that converts solar disc x,y (at Earth's perspective) to solar coordinates
     # for now can settle having solar latitude and solar longitude according to 0degrees Earth perspective.
 
     # Origin p(0,0) is assumed to be upper left, with center of disc at diameter_px/2. x > 0 and y > 0
-    if { ![info exists temp2_larr($time_utc) ] } {
-        set temp2_larr($time_utc) [ssk::sol_earth_latitude $time_utc $utc_format]
-    } else {
-        set solar_lat_deg [lindex $temp2_larr($time_utc) 0]
-        set solar_disc_tilt_deg [lindex $temp2_larr($time_utc) 1]
-        set relative_pole_radius [lindex $temp2_larr($time_utc) 2]
+    set temp_list [ssk::sol_earth_latitude $time_utc $utc_format]
+    set solar_lat_deg [lindex $temp_list 0]
+    set solar_disc_tilt_deg [lindex $temp_list 1]
+    set relative_pole_radius [lindex $temp_list 2]
 
-    }
     
     # transform p(x,y) to p2(x,y) where solar North is up (X positive)
     # 2D polar transform.
