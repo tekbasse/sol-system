@@ -22,6 +22,7 @@ ad_proc -public ssk::sol_earth_latitude {
     {utc_format "%Y-%h-%d %H:%M:%S"}
 } {
     Finds the angle of the Earth above or below the Solar equatorial plane.
+    This is the same as finding the latitude of an observer on the Sun with Earth at Zenith.
 } {
     # Sun is at origin (0,0,0)
     # get Solar pole orientation
@@ -274,7 +275,7 @@ ad_proc -public ssk::sol_earth_latitude {
 }
 
 
-ad_proc -public ssk::sol_transform1 {
+ad_proc -public ssk::sol_tranx_disc_to_3d {
     x
     y
     diameter_px
@@ -284,11 +285,14 @@ ad_proc -public ssk::sol_transform1 {
 } {
     Determines solar latitude and longitude according to 0degrees Earth at Zenith perspective, 
     given a time_utc, position x,y and diameter of image in pixels
+    Origin p(0,0) is assumed to be upper left, with center of disc at diameter_px/2. x > 0 and y > 0
 } {
     upvar 1 $array_name temp2_larr
+    variable ::ssk::180perpi
     # Would be ideal to have a proc that converts solar disc x,y (at Earth's perspective) to solar coordinates
     # for now can settle having solar latitude and solar longitude according to 0degrees Earth perspective.
 
+    # Origin p(0,0) is assumed to be upper left, with center of disc at diameter_px/2. x > 0 and y > 0
     if { ![info exists temp2_larr($time_utc) ] } {
         set temp2_larr($time_utc) [ssk::sol_earth_latitude $time_utc $utc_format]
     } else {
@@ -297,7 +301,28 @@ ad_proc -public ssk::sol_transform1 {
         set relative_pole_radius [lindex $temp2_larr($time_utc) 2]
 
     }
-### To code
+    
+    # transform p(x,y) to p2(x,y) where solar North is up (X positive)
+    # 2D polar transform.
+    # This could be tweeked for oblateness by specifiying a different diameter and height.
+    #
+    # determine dec, right acsention angle
+    set sol_r_px [expr { $diameter_px / 2. } ]
+    set x_center_px $radius_px
+    set y_center_px $radius_px
+    set dx [expr { $x - $x_center_px } ]
+    set dy [expr { $y - $y_center_px } ]
+    set xy_radius_px [expr { sqrt( pow( $dx, 2 ) + pow( $dy, 2 ) ) } ]
+    set xy_angle_rad [expr { acos( $dx / $xy_radius_px ) } ]
+    set xy_angle2_rad [expr { $xy_angle_rad - $solar_disc_tilt_deg / $180perpi } ]
+
+    set x2_px [expr { $xy_radius_px * cos( $xy_angle2_rad ) } ]
+    set y2_px [expr { $xy_radius_px * sin( $xy_angle2_rad ) } ]
+
+                          
+    # Adjust dec according to solar tilt away from (or toward) Earth. This angle
+    # is the same as ssk::sol_earth_latitude of observer on Sun with Earth at Zenith 
+##
     set return_list [list ]
     return $return_list
 }
