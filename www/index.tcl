@@ -109,9 +109,10 @@ if { 1 } {
     append results "<td>z (km)</td><td>radians</td><td>degrees</td>"
     append results "</tr>"
     while { $t < $ss } {
-        set t_yyyymmdd [clock format $t -f "%Y%m%d %H:%M:%S" -gmt 1]
+        set format_t "%Y%m%d %H:%M:%S"
+        set t_yyyymmdd [clock format $t -f $format_t -gmt 1]
         set t_j2000 "j"
-        append t_j2000 [::ssk::in_j2000 $t_yyyymmdd]
+        append t_j2000 [::ssk::in_j2000 $t_yyyymmdd $format_t]
         ssk::pos_kepler $t_j2000 $gaia earth_larr
         set x [lindex $earth_larr($gaia) 0]
         set y [lindex $earth_larr($gaia) 1]
